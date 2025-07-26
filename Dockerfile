@@ -33,7 +33,7 @@ ENV NODE_OPTIONS=--max-old-space-size=4096
 RUN apk add --no-cache git
 
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci --force
 
 COPY . .
 ENV APP_BUILD_HASH=${BUILD_HASH}
