@@ -110,9 +110,9 @@ log.setLevel(SRC_LOG_LEVELS["CONFIG"])
 ##if WEBUI_NAME != "Open WebUI":
 ##    WEBUI_NAME += " (Open WebUI)"
 
-WEBUI_NAME = os.environ.get("WEBUI_NAME", "RegOS")
-if WEBUI_NAME != "RegOS":
-    WEBUI_NAME += " (RegOS)"
+WEBUI_NAME = os.environ.get("WEBUI_NAME", "Apas OS")
+if WEBUI_NAME != "Apas OS":
+    WEBUI_NAME += " (Apas OS)"
 
 WEBUI_FAVICON_URL = "https://openwebui.com/favicon.png"
 
