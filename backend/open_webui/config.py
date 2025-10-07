@@ -222,9 +222,10 @@ class PersistentConfig(Generic[T]):
 
 
 class AppConfig:
-    _state: dict[str, PersistentConfig]
     _redis: Union[redis.Redis, redis.cluster.RedisCluster] = None
     _redis_key_prefix: str
+
+    _state: dict[str, PersistentConfig]
 
     def __init__(
         self,
@@ -233,9 +234,8 @@ class AppConfig:
         redis_cluster: Optional[bool] = False,
         redis_key_prefix: str = "open-webui",
     ):
-        super().__setattr__("_state", {})
-        super().__setattr__("_redis_key_prefix", redis_key_prefix)
         if redis_url:
+            super().__setattr__("_redis_key_prefix", redis_key_prefix)
             super().__setattr__(
                 "_redis",
                 get_redis_connection(
@@ -245,6 +245,8 @@ class AppConfig:
                     decode_responses=True,
                 ),
             )
+
+        super().__setattr__("_state", {})
 
     def __setattr__(self, key, value):
         if isinstance(value, PersistentConfig):
@@ -513,6 +515,30 @@ OAUTH_GROUPS_CLAIM = PersistentConfig(
     os.environ.get("OAUTH_GROUPS_CLAIM", os.environ.get("OAUTH_GROUP_CLAIM", "groups")),
 )
 
+FEISHU_CLIENT_ID = PersistentConfig(
+    "FEISHU_CLIENT_ID",
+    "oauth.feishu.client_id",
+    os.environ.get("FEISHU_CLIENT_ID", ""),
+)
+
+FEISHU_CLIENT_SECRET = PersistentConfig(
+    "FEISHU_CLIENT_SECRET",
+    "oauth.feishu.client_secret",
+    os.environ.get("FEISHU_CLIENT_SECRET", ""),
+)
+
+FEISHU_OAUTH_SCOPE = PersistentConfig(
+    "FEISHU_OAUTH_SCOPE",
+    "oauth.feishu.scope",
+    os.environ.get("FEISHU_OAUTH_SCOPE", "contact:user.base:readonly"),
+)
+
+FEISHU_REDIRECT_URI = PersistentConfig(
+    "FEISHU_REDIRECT_URI",
+    "oauth.feishu.redirect_uri",
+    os.environ.get("FEISHU_REDIRECT_URI", ""),
+)
+
 ENABLE_OAUTH_ROLE_MANAGEMENT = PersistentConfig(
     "ENABLE_OAUTH_ROLE_MANAGEMENT",
     "oauth.enable_role_mapping",
@@ -705,6 +731,33 @@ def load_oauth_providers():
             "register": oidc_oauth_register,
         }
 
+    if FEISHU_CLIENT_ID.value and FEISHU_CLIENT_SECRET.value:
+
+        def feishu_oauth_register(client: OAuth):
+            client.register(
+                name="feishu",
+                client_id=FEISHU_CLIENT_ID.value,
+                client_secret=FEISHU_CLIENT_SECRET.value,
+                access_token_url="https://open.feishu.cn/open-apis/authen/v2/oauth/token",
+                authorize_url="https://accounts.feishu.cn/open-apis/authen/v1/authorize",
+                api_base_url="https://open.feishu.cn/open-apis",
+                userinfo_endpoint="https://open.feishu.cn/open-apis/authen/v1/user_info",
+                client_kwargs={
+                    "scope": FEISHU_OAUTH_SCOPE.value,
+                    **(
+                        {"timeout": int(OAUTH_TIMEOUT.value)}
+                        if OAUTH_TIMEOUT.value
+                        else {}
+                    ),
+                },
+                redirect_uri=FEISHU_REDIRECT_URI.value,
+            )
+
+        OAUTH_PROVIDERS["feishu"] = {
+            "register": feishu_oauth_register,
+            "sub_claim": "user_id",
+        }
+
     configured_providers = []
     if GOOGLE_CLIENT_ID.value:
         configured_providers.append("Google")
@@ -712,6 +765,8 @@ def load_oauth_providers():
         configured_providers.append("Microsoft")
     if GITHUB_CLIENT_ID.value:
         configured_providers.append("GitHub")
+    if FEISHU_CLIENT_ID.value:
+        configured_providers.append("Feishu")
 
     if configured_providers and not OPENID_PROVIDER_URL.value:
         provider_list = ", ".join(configured_providers)
@@ -1162,6 +1217,11 @@ USER_PERMISSIONS_WORKSPACE_MODELS_ALLOW_PUBLIC_SHARING = (
     == "true"
 )
 
+USER_PERMISSIONS_NOTES_ALLOW_PUBLIC_SHARING = (
+    os.environ.get("USER_PERMISSIONS_NOTES_ALLOW_PUBLIC_SHARING", "False").lower()
+    == "true"
+)
+
 USER_PERMISSIONS_WORKSPACE_KNOWLEDGE_ALLOW_PUBLIC_SHARING = (
     os.environ.get(
         "USER_PERMISSIONS_WORKSPACE_KNOWLEDGE_ALLOW_PUBLIC_SHARING", "False"
@@ -1299,6 +1359,7 @@ DEFAULT_USER_PERMISSIONS = {
         "public_knowledge": USER_PERMISSIONS_WORKSPACE_KNOWLEDGE_ALLOW_PUBLIC_SHARING,
         "public_prompts": USER_PERMISSIONS_WORKSPACE_PROMPTS_ALLOW_PUBLIC_SHARING,
         "public_tools": USER_PERMISSIONS_WORKSPACE_TOOLS_ALLOW_PUBLIC_SHARING,
+        "public_notes": USER_PERMISSIONS_NOTES_ALLOW_PUBLIC_SHARING,
     },
     "chat": {
         "controls": USER_PERMISSIONS_CHAT_CONTROLS,
@@ -1944,16 +2005,23 @@ if VECTOR_DB == "chroma":
 # this uses the model defined in the Dockerfile ENV variable. If you dont use docker or docker based deployments such as k8s, the default embedding model will be used (sentence-transformers/all-MiniLM-L6-v2)
 
 # Milvus
-
 MILVUS_URI = os.environ.get("MILVUS_URI", f"{DATA_DIR}/vector_db/milvus.db")
 MILVUS_DB = os.environ.get("MILVUS_DB", "default")
 MILVUS_TOKEN = os.environ.get("MILVUS_TOKEN", None)
-
 MILVUS_INDEX_TYPE = os.environ.get("MILVUS_INDEX_TYPE", "HNSW")
 MILVUS_METRIC_TYPE = os.environ.get("MILVUS_METRIC_TYPE", "COSINE")
 MILVUS_HNSW_M = int(os.environ.get("MILVUS_HNSW_M", "16"))
 MILVUS_HNSW_EFCONSTRUCTION = int(os.environ.get("MILVUS_HNSW_EFCONSTRUCTION", "100"))
 MILVUS_IVF_FLAT_NLIST = int(os.environ.get("MILVUS_IVF_FLAT_NLIST", "128"))
+MILVUS_DISKANN_MAX_DEGREE = int(os.environ.get("MILVUS_DISKANN_MAX_DEGREE", "56"))
+MILVUS_DISKANN_SEARCH_LIST_SIZE = int(
+    os.environ.get("MILVUS_DISKANN_SEARCH_LIST_SIZE", "100")
+)
+ENABLE_MILVUS_MULTITENANCY_MODE = (
+    os.environ.get("ENABLE_MILVUS_MULTITENANCY_MODE", "false").lower() == "true"
+)
+# Hyphens not allowed, need to use underscores in collection names
+MILVUS_COLLECTION_PREFIX = os.environ.get("MILVUS_COLLECTION_PREFIX", "open_webui")
 
 # Qdrant
 QDRANT_URI = os.environ.get("QDRANT_URI", None)
@@ -2116,10 +2184,20 @@ ENABLE_ONEDRIVE_INTEGRATION = PersistentConfig(
     os.getenv("ENABLE_ONEDRIVE_INTEGRATION", "False").lower() == "true",
 )
 
-ONEDRIVE_CLIENT_ID = PersistentConfig(
-    "ONEDRIVE_CLIENT_ID",
-    "onedrive.client_id",
-    os.environ.get("ONEDRIVE_CLIENT_ID", ""),
+
+ENABLE_ONEDRIVE_PERSONAL = (
+    os.environ.get("ENABLE_ONEDRIVE_PERSONAL", "True").lower() == "true"
+)
+ENABLE_ONEDRIVE_BUSINESS = (
+    os.environ.get("ENABLE_ONEDRIVE_BUSINESS", "True").lower() == "true"
+)
+
+ONEDRIVE_CLIENT_ID = os.environ.get("ONEDRIVE_CLIENT_ID", "")
+ONEDRIVE_CLIENT_ID_PERSONAL = os.environ.get(
+    "ONEDRIVE_CLIENT_ID_PERSONAL", ONEDRIVE_CLIENT_ID
+)
+ONEDRIVE_CLIENT_ID_BUSINESS = os.environ.get(
+    "ONEDRIVE_CLIENT_ID_BUSINESS", ONEDRIVE_CLIENT_ID
 )
 
 ONEDRIVE_SHAREPOINT_URL = PersistentConfig(
@@ -2701,6 +2779,12 @@ WEB_SEARCH_TRUST_ENV = PersistentConfig(
     os.getenv("WEB_SEARCH_TRUST_ENV", "False").lower() == "true",
 )
 
+
+OLLAMA_CLOUD_WEB_SEARCH_API_KEY = PersistentConfig(
+    "OLLAMA_CLOUD_WEB_SEARCH_API_KEY",
+    "rag.web.search.ollama_cloud_api_key",
+    os.getenv("OLLAMA_CLOUD_API_KEY", ""),
+)
 
 SEARXNG_QUERY_URL = PersistentConfig(
     "SEARXNG_QUERY_URL",
