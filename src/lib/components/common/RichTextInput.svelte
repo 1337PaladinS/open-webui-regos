@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { marked } from 'marked';
+	import DOMPurify from 'dompurify';
+
 	marked.use({
 		breaks: true,
 		gfm: true,
@@ -167,7 +169,7 @@
 
 	export let documentId = '';
 
-	export let className = 'input-prose';
+	export let className = 'input-prose min-h-fit h-full';
 	export let placeholder = $i18n.t('Type here...');
 	let _placeholder = placeholder;
 
@@ -336,12 +338,14 @@
 		let tr = state.tr;
 
 		if (insertPromptAsRichText) {
-			const htmlContent = marked
-				.parse(text, {
-					breaks: true,
-					gfm: true
-				})
-				.trim();
+			const htmlContent = DOMPurify.sanitize(
+				marked
+					.parse(text, {
+						breaks: true,
+						gfm: true
+					})
+					.trim()
+			);
 
 			// Create a temporary div to parse HTML
 			const tempDiv = document.createElement('div');
@@ -691,7 +695,6 @@
 							CodeBlockLowlight.configure({
 								lowlight
 							}),
-							Highlight,
 							Typography,
 							TableKit.configure({
 								table: { resizable: true }
@@ -722,7 +725,7 @@
 							})
 						]
 					: []),
-				...(richText && autocomplete
+				...(autocomplete
 					? [
 							AIAutocompletion.configure({
 								generateCompletion: async (text) => {
@@ -1153,7 +1156,5 @@
 
 <div
 	bind:this={element}
-	class="relative w-full min-w-full h-full min-h-fit {className} {!editable
-		? 'cursor-not-allowed'
-		: ''}"
+	class="relative w-full min-w-full {className} {!editable ? 'cursor-not-allowed' : ''}"
 />

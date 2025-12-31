@@ -21,7 +21,6 @@ from open_webui.models.knowledge import Knowledges
 
 
 from open_webui.config import UPLOAD_DIR
-from open_webui.env import SRC_LOG_LEVELS
 from open_webui.constants import ERROR_MESSAGES
 
 
@@ -34,7 +33,6 @@ from open_webui.utils.access_control import has_permission
 
 
 log = logging.getLogger(__name__)
-log.setLevel(SRC_LOG_LEVELS["MODELS"])
 
 
 router = APIRouter()
@@ -46,7 +44,23 @@ router = APIRouter()
 
 
 @router.get("/", response_model=list[FolderNameIdResponse])
-async def get_folders(user=Depends(get_verified_user)):
+async def get_folders(request: Request, user=Depends(get_verified_user)):
+    if request.app.state.config.ENABLE_FOLDERS is False:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=ERROR_MESSAGES.ACCESS_PROHIBITED,
+        )
+
+    if user.role != "admin" and not has_permission(
+        user.id,
+        "features.folders",
+        request.app.state.config.USER_PERMISSIONS,
+    ):
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail=ERROR_MESSAGES.ACCESS_PROHIBITED,
+        )
+
     folders = Folders.get_folders_by_user_id(user.id)
 
     # Verify folder data integrity
@@ -258,7 +272,10 @@ async def update_folder_is_expanded_by_id(
 
 @router.delete("/{id}")
 async def delete_folder_by_id(
-    request: Request, id: str, user=Depends(get_verified_user)
+    request: Request,
+    id: str,
+    delete_contents: Optional[bool] = True,
+    user=Depends(get_verified_user),
 ):
     if Chats.count_chats_by_folder_id_and_user_id(id, user.id):
         chat_delete_permission = has_permission(
@@ -277,8 +294,14 @@ async def delete_folder_by_id(
         if folder:
             try:
                 folder_ids = Folders.delete_folder_by_id_and_user_id(id, user.id)
+
                 for folder_id in folder_ids:
-                    Chats.delete_chats_by_user_id_and_folder_id(user.id, folder_id)
+                    if delete_contents:
+                        Chats.delete_chats_by_user_id_and_folder_id(user.id, folder_id)
+                    else:
+                        Chats.move_chats_by_user_id_and_folder_id(
+                            user.id, folder_id, None
+                        )
 
                 return True
             except Exception as e:

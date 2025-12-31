@@ -27,13 +27,11 @@ from open_webui.utils.auth import get_admin_user, get_verified_user
 from open_webui.utils.access_control import has_access, has_permission
 from open_webui.utils.tools import get_tool_servers
 
-from open_webui.env import SRC_LOG_LEVELS
 from open_webui.config import CACHE_DIR, BYPASS_ADMIN_ACCESS_CONTROL
 from open_webui.constants import ERROR_MESSAGES
 
 
 log = logging.getLogger(__name__)
-log.setLevel(SRC_LOG_LEVELS["MAIN"])
 
 
 router = APIRouter()
@@ -247,9 +245,19 @@ async def load_tool_from_url(
 
 
 @router.get("/export", response_model=list[ToolModel])
-async def export_tools(user=Depends(get_admin_user)):
-    tools = Tools.get_tools()
-    return tools
+async def export_tools(request: Request, user=Depends(get_verified_user)):
+    if user.role != "admin" and not has_permission(
+        user.id, "workspace.tools_export", request.app.state.config.USER_PERMISSIONS
+    ):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=ERROR_MESSAGES.UNAUTHORIZED,
+        )
+
+    if user.role == "admin" and BYPASS_ADMIN_ACCESS_CONTROL:
+        return Tools.get_tools()
+    else:
+        return Tools.get_tools_by_user_id(user.id, "read")
 
 
 ############################
@@ -263,8 +271,13 @@ async def create_new_tools(
     form_data: ToolForm,
     user=Depends(get_verified_user),
 ):
-    if user.role != "admin" and not has_permission(
-        user.id, "workspace.tools", request.app.state.config.USER_PERMISSIONS
+    if user.role != "admin" and not (
+        has_permission(
+            user.id, "workspace.tools", request.app.state.config.USER_PERMISSIONS
+        )
+        or has_permission(
+            user.id, "workspace.tools_import", request.app.state.config.USER_PERMISSIONS
+        )
     ):
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,

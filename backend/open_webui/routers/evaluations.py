@@ -4,9 +4,12 @@ from pydantic import BaseModel
 
 from open_webui.models.users import Users, UserModel
 from open_webui.models.feedbacks import (
+    FeedbackIdResponse,
     FeedbackModel,
     FeedbackResponse,
     FeedbackForm,
+    FeedbackUserResponse,
+    FeedbackListResponse,
     Feedbacks,
 )
 
@@ -56,35 +59,16 @@ async def update_config(
     }
 
 
-class UserResponse(BaseModel):
-    id: str
-    name: str
-    email: str
-    role: str = "pending"
-
-    last_active_at: int  # timestamp in epoch
-    updated_at: int  # timestamp in epoch
-    created_at: int  # timestamp in epoch
-
-
-class FeedbackUserResponse(FeedbackResponse):
-    user: Optional[UserResponse] = None
-
-
-@router.get("/feedbacks/all", response_model=list[FeedbackUserResponse])
+@router.get("/feedbacks/all", response_model=list[FeedbackResponse])
 async def get_all_feedbacks(user=Depends(get_admin_user)):
     feedbacks = Feedbacks.get_all_feedbacks()
+    return feedbacks
 
-    feedback_list = []
-    for feedback in feedbacks:
-        user = Users.get_user_by_id(feedback.user_id)
-        feedback_list.append(
-            FeedbackUserResponse(
-                **feedback.model_dump(),
-                user=UserResponse(**user.model_dump()) if user else None,
-            )
-        )
-    return feedback_list
+
+@router.get("/feedbacks/all/ids", response_model=list[FeedbackIdResponse])
+async def get_all_feedback_ids(user=Depends(get_admin_user)):
+    feedbacks = Feedbacks.get_all_feedbacks()
+    return feedbacks
 
 
 @router.delete("/feedbacks/all")
@@ -94,7 +78,7 @@ async def delete_all_feedbacks(user=Depends(get_admin_user)):
 
 
 @router.get("/feedbacks/all/export", response_model=list[FeedbackModel])
-async def get_all_feedbacks(user=Depends(get_admin_user)):
+async def export_all_feedbacks(user=Depends(get_admin_user)):
     feedbacks = Feedbacks.get_all_feedbacks()
     return feedbacks
 
@@ -109,6 +93,31 @@ async def get_feedbacks(user=Depends(get_verified_user)):
 async def delete_feedbacks(user=Depends(get_verified_user)):
     success = Feedbacks.delete_feedbacks_by_user_id(user.id)
     return success
+
+
+PAGE_ITEM_COUNT = 30
+
+
+@router.get("/feedbacks/list", response_model=FeedbackListResponse)
+async def get_feedbacks(
+    order_by: Optional[str] = None,
+    direction: Optional[str] = None,
+    page: Optional[int] = 1,
+    user=Depends(get_admin_user),
+):
+    limit = PAGE_ITEM_COUNT
+
+    page = max(1, page)
+    skip = (page - 1) * limit
+
+    filter = {}
+    if order_by:
+        filter["order_by"] = order_by
+    if direction:
+        filter["direction"] = direction
+
+    result = Feedbacks.get_feedback_items(filter=filter, skip=skip, limit=limit)
+    return result
 
 
 @router.post("/feedback", response_model=FeedbackModel)
