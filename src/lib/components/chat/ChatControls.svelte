@@ -231,7 +231,7 @@
 			mediaQuery.removeEventListener('change', handleMediaQuery);
 			document.removeEventListener('mousedown', onMouseDown);
 			document.removeEventListener('mouseup', onMouseUp);
-		}
+		};
 	});
 
 	const closeHandler = () => {
