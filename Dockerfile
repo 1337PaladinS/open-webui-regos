@@ -23,6 +23,7 @@ ARG BUILD_HASH=dev-build
 ARG UID=0
 ARG GID=0
 
+ARG BUILDPLATFORM=linux/amd64
 ######## WebUI frontend ########
 FROM --platform=$BUILDPLATFORM node:22-alpine3.20 AS build
 ARG BUILD_HASH
@@ -31,6 +32,9 @@ ARG BUILD_HASH
 # ENV NODE_OPTIONS="--max-old-space-size=4096"
 
 WORKDIR /app
+
+# Increase Node memory
+ENV NODE_OPTIONS=--max-old-space-size=4096
 
 # to store git revision in build
 RUN apk add --no-cache git
@@ -61,7 +65,7 @@ ARG GID
 ENV PYTHONUNBUFFERED=1
 
 ## Basis ##
-ENV ENV=prod \
+ENV ENV=dev \
     PORT=8080 \
     # pass build args to the build
     USE_OLLAMA_DOCKER=${USE_OLLAMA} \
