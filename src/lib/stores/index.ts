@@ -85,6 +85,7 @@ export const showSettings = writable(false);
 export const showShortcuts = writable(false);
 export const showArchivedChats = writable(false);
 export const showChangelog = writable(false);
+export const showRegOSDisclaimer = writable(false);
 
 export const showControls = writable(false);
 export const showEmbeds = writable(false);
@@ -160,6 +161,7 @@ type Settings = {
 	detectArtifacts?: boolean;
 	showUpdateToast?: boolean;
 	showChangelog?: boolean;
+	regosDisclaimerAcked?: boolean;
 	showEmojiInCall?: boolean;
 	voiceInterruption?: boolean;
 	collapseCodeBlocks?: boolean;

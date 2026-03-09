@@ -31,6 +31,7 @@
 		showSettings,
 		showShortcuts,
 		showChangelog,
+		showRegOSDisclaimer,
 		temporaryChatEnabled,
 		toolServers,
 		showSearch,
@@ -40,6 +41,7 @@
 	import Sidebar from '$lib/components/layout/Sidebar.svelte';
 	import SettingsModal from '$lib/components/chat/SettingsModal.svelte';
 	import ChangelogModal from '$lib/components/ChangelogModal.svelte';
+	import RegOSDisclaimerModal from '$lib/components/RegOSDisclaimerModal.svelte';
 	import AccountPending from '$lib/components/layout/Overlay/AccountPending.svelte';
 	import UpdateInfoToast from '$lib/components/layout/UpdateInfoToast.svelte';
 	import Spinner from '$lib/components/common/Spinner.svelte';
@@ -146,7 +148,7 @@
 			await goto('/auth');
 			return;
 		}
-		if (!['user', 'admin'].includes($user?.role)) {
+		if (!['user', 'admin', 'guest'].includes($user?.role)) {
 			return;
 		}
 
@@ -266,6 +268,18 @@
 			showChangelog.set($settings?.version !== $config.version);
 		}
 
+		// RegOS: Show one-time service agreement disclaimer for ALL users.
+		// If the changelog modal is also showing, the disclaimer is chained
+		// after it (see reactive block below). Otherwise it fires immediately.
+		if (!$settings?.regosDisclaimerAcked) {
+			if ($showChangelog) {
+				// Changelog is up — the reactive $showChangelog watcher will
+				// trigger the disclaimer once the user dismisses the changelog.
+			} else {
+				showRegOSDisclaimer.set(true);
+			}
+		}
+
 		if ($user?.role === 'admin' || ($user?.permissions?.chat?.temporary ?? true)) {
 			if ($page.url.searchParams.get('temporary-chat') === 'true') {
 				temporaryChatEnabled.set(true);
@@ -303,10 +317,20 @@
 			};
 		});
 	};
+
+	// RegOS: When changelog modal closes, chain the disclaimer if not yet acknowledged.
+	let prevShowChangelog = false;
+	$: {
+		if (prevShowChangelog && !$showChangelog && !$settings?.regosDisclaimerAcked) {
+			showRegOSDisclaimer.set(true);
+		}
+		prevShowChangelog = $showChangelog;
+	}
 </script>
 
 <SettingsModal bind:show={$showSettings} />
 <ChangelogModal bind:show={$showChangelog} />
+<RegOSDisclaimerModal bind:show={$showRegOSDisclaimer} />
 
 {#if version && compareVersion(version.latest, version.current) && ($settings?.showUpdateToast ?? true)}
 	<div class=" absolute bottom-8 right-8 z-50" in:fade={{ duration: 100 }}>
@@ -325,7 +349,7 @@
 		<div
 			class=" text-gray-700 dark:text-gray-100 bg-white dark:bg-gray-900 h-screen max-h-[100dvh] overflow-auto flex flex-row justify-end"
 		>
-			{#if !['user', 'admin'].includes($user?.role)}
+			{#if !['user', 'admin', 'guest'].includes($user?.role)}
 				<AccountPending />
 			{:else}
 				{#if localDBChats.length > 0}

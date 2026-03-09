@@ -248,6 +248,34 @@ Find this URL in the RunPod dashboard under your pod's "Connect" section.
 - **Ollama can't see the GPU** — make sure you installed Ollama on the host, not inside Docker. Run `ollama list` to verify it's working.
 - **Port not accessible** — confirm port 3000 is listed in "Expose HTTP Ports" in your pod settings. RunPod won't proxy ports that aren't declared.
 
+## RegOS: Regulatory Compliance Intelligence
+
+RegOS is the regulatory compliance layer built on top of Apas OS. It adds domain-specific intelligence for Miami-Dade County Chapter 24 (Environmental Quality Control Board) regulatory compliance.
+
+### Components
+
+| Component | Location | Version | What it does |
+|---|---|---|---|
+| GraphRAG Filter | `functions/graphrag_filter.py` | v0.13.0 | Graph-enhanced retrieval from Neo4j knowledge graph with confidence scoring, guardrails, escalation |
+| Audit Logger | `functions/audit_logger.py` | v0.4.0 | Regulatory audit trail — logs every query/response with SHA-256 integrity hashes |
+| Threshold Eval Tool | `functions/threshold_eval.py` | v0.1.0 | LLM-callable tool for checking values against 96 Chapter 24 regulatory thresholds |
+| SCADA Streaming API | `api/scada_stream.py` | v0.1.0 | Real-time SCADA data ingestion via WebSocket/SSE/REST with compliance evaluation |
+| APAS Bridge | `api/apas_bridge.py` | v0.1.0 | Polls APAS Telemetry API, maps metrics to regulatory parameters, evaluates compliance |
+| Breach API | `api/breach_api.py` | v0.1.0 | REST endpoints for threshold checks, breach history, evidence hash verification |
+| Regulatory Thresholds | `data/regulatory_thresholds.json` | — | 96 curated thresholds from Chapter 24 (concentration limits, distances, timeframes, penalties) |
+| APAS Metric Mappings | `data/apas_metric_mappings.json` | — | Maps 123SCADA metric names to Chapter 24 parameters with unit conversions |
+| FEA Knowledge Graph | Neo4j Aura | — | 30 concepts, 144 sections, 2,600+ entities connected via cosine similarity and regex extraction |
+| System Prompt | `functions/system_prompt.md` | — | Custom model system prompt (3 personas, response structure, citation rules) |
+
+### Documentation
+
+- `functions/README.md` — Architecture overview, deployment checklist, file inventory
+- `functions/graphrag_filter.md` — Full GraphRAG Filter documentation
+- `functions/audit_logger.md` — Audit Logger documentation
+- `functions/confidence_scoring.md` — Confidence scoring algorithm details
+- `REGOS_CHANGELOG.md` — Complete development changelog across all sessions
+- `demo_script.md` — 4-act demo script
+
 ## Upstream documentation
 
 For full feature documentation (RAG, image generation, voice/video, RBAC, LDAP/SSO, etc.), refer to the [Open WebUI docs](https://docs.openwebui.com/).

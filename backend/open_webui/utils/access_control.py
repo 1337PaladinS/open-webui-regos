@@ -3,7 +3,7 @@ from open_webui.models.users import Users, UserModel
 from open_webui.models.groups import Groups
 
 
-from open_webui.config import DEFAULT_USER_PERMISSIONS
+from open_webui.config import DEFAULT_USER_PERMISSIONS, GUEST_USER_PERMISSIONS
 import json
 
 
@@ -53,6 +53,11 @@ def get_permissions(
                         permissions[key] or value
                     )  # Use the most permissive value (True > False)
         return permissions
+
+    # Guest users get locked-down permissions — skip group resolution entirely
+    user = Users.get_user_by_id(user_id, db=db)
+    if user and user.role == "guest":
+        return json.loads(json.dumps(GUEST_USER_PERMISSIONS))
 
     user_groups = Groups.get_groups_by_member_id(user_id, db=db)
 

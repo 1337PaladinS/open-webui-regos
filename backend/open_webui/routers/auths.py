@@ -794,6 +794,83 @@ async def signup(
         raise HTTPException(500, detail="An internal error occurred during signup.")
 
 
+############################
+# Guest Access
+############################
+
+
+@router.post("/guest", response_model=SessionUserResponse)
+async def guest_signin(
+    request: Request,
+    response: Response,
+    db: Session = Depends(get_session),
+):
+    """
+    Create a temporary guest account with limited permissions.
+    No form fields required — auto-generates a throwaway identity.
+    Guest JWT expires in 3 hours. Guest role has restricted permissions
+    enforced at both backend (access_control.py) and frontend.
+    """
+    client_ip = request.client.host if request.client else "unknown"
+    if signin_rate_limiter.is_limited(f"guest:{client_ip}"):
+        raise HTTPException(429, detail=ERROR_MESSAGES.RATE_LIMIT_EXCEEDED)
+
+    # Auto-generate guest identity
+    guest_uuid = str(uuid.uuid4())
+    guest_email = f"guest_{guest_uuid[:8]}@guest.local"
+    guest_name = "Guest"
+    guest_password = get_password_hash(str(uuid.uuid4()))
+
+    user = Auths.insert_new_auth(
+        email=guest_email,
+        password=guest_password,
+        name=guest_name,
+        profile_image_url="/user.png",
+        role="guest",
+        db=db,
+    )
+    if not user:
+        raise HTTPException(500, detail=ERROR_MESSAGES.CREATE_USER_ERROR)
+
+    # Guest JWT expires in 3 hours (not the global JWT_EXPIRES_IN)
+    from datetime import timedelta as _td
+
+    guest_expires = _td(hours=3)
+    expires_at = int(time.time()) + int(guest_expires.total_seconds())
+
+    token = create_token(
+        data={"id": user.id},
+        expires_delta=guest_expires,
+    )
+
+    # Set auth cookie
+    datetime_expires_at = datetime.datetime.fromtimestamp(
+        expires_at, datetime.timezone.utc
+    )
+    response.set_cookie(
+        key="token",
+        value=token,
+        expires=datetime_expires_at,
+        httponly=True,
+        samesite=WEBUI_AUTH_COOKIE_SAME_SITE,
+        secure=WEBUI_AUTH_COOKIE_SECURE,
+    )
+
+    from open_webui.config import GUEST_USER_PERMISSIONS
+
+    return {
+        "token": token,
+        "token_type": "Bearer",
+        "expires_at": expires_at,
+        "id": user.id,
+        "email": user.email,
+        "name": user.name,
+        "role": user.role,
+        "profile_image_url": f"/api/v1/users/{user.id}/profile/image",
+        "permissions": GUEST_USER_PERMISSIONS,
+    }
+
+
 @router.get("/signout")
 async def signout(
     request: Request, response: Response, db: Session = Depends(get_session)

@@ -14,6 +14,7 @@
 		getSessionUser,
 		userSignIn,
 		userSignUp,
+		userGuestSignIn,
 		updateUserTimezone
 	} from '$lib/apis/auths';
 
@@ -101,6 +102,21 @@
 			return null;
 		});
 		await setSessionUser(sessionUser);
+	};
+
+	let guestLoading = false;
+
+	const guestSignInHandler = async () => {
+		guestLoading = true;
+		try {
+			const sessionUser = await userGuestSignIn().catch((error) => {
+				toast.error(`${error}`);
+				return null;
+			});
+			await setSessionUser(sessionUser);
+		} finally {
+			guestLoading = false;
+		}
 	};
 
 	const submitHandler = async () => {
@@ -565,6 +581,22 @@
 												? $i18n.t('Continue with Email')
 												: $i18n.t('Continue with LDAP')}</span
 										>
+									</button>
+								</div>
+							{/if}
+
+							{#if !($config?.onboarding ?? false)}
+								<div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+									<button
+										class="flex justify-center items-center text-sm w-full text-center text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition"
+										type="button"
+										disabled={guestLoading}
+										on:click={guestSignInHandler}
+									>
+										{#if guestLoading}
+											<Spinner className="size-4 mr-2" />
+										{/if}
+										<span>{$i18n.t('or continue as guest')} &rarr;</span>
 									</button>
 								</div>
 							{/if}

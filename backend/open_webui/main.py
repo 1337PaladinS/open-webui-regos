@@ -1610,6 +1610,19 @@ async def chat_completion(
     form_data: dict,
     user=Depends(get_verified_user),
 ):
+    # Guest rate limiting: cap total completions per guest session
+    if user.role == "guest":
+        from open_webui.config import GUEST_MESSAGE_LIMIT
+
+        guest_chats = Chats.get_chat_list_by_user_id(
+            user.id, include_archived=True, limit=GUEST_MESSAGE_LIMIT + 1
+        )
+        if len(guest_chats) >= GUEST_MESSAGE_LIMIT:
+            raise HTTPException(
+                status_code=429,
+                detail="Guest message limit reached. Sign up for unlimited access.",
+            )
+
     if not request.app.state.MODELS:
         await get_all_models(request, user=user)
 
