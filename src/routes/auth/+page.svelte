@@ -18,6 +18,7 @@
 		updateUserTimezone
 	} from '$lib/apis/auths';
 
+	import { getRegosGuestStatus } from '$lib/apis/configs';
 	import { WEBUI_API_BASE_URL, WEBUI_BASE_URL } from '$lib/constants';
 	import { WEBUI_NAME, config, user, socket } from '$lib/stores';
 
@@ -105,6 +106,7 @@
 	};
 
 	let guestLoading = false;
+	let guestEnabled = false;
 
 	const guestSignInHandler = async () => {
 		guestLoading = true;
@@ -201,6 +203,15 @@
 
 		loaded = true;
 		setLogoImage();
+
+		// Fetch guest access status from RegOS config (unauthenticated endpoint)
+		try {
+			const guestStatus = await getRegosGuestStatus();
+			guestEnabled = guestStatus?.enabled && guestStatus?.show_button;
+		} catch (e) {
+			console.warn('Could not fetch guest status:', e);
+			guestEnabled = false;
+		}
 
 		if (($config?.features.auth_trusted_header ?? false) || $config?.features.auth === false) {
 			await signInHandler();
@@ -585,7 +596,7 @@
 								</div>
 							{/if}
 
-							{#if !($config?.onboarding ?? false)}
+							{#if guestEnabled && !($config?.onboarding ?? false)}
 								<div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
 									<button
 										class="flex justify-center items-center text-sm w-full text-center text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition"

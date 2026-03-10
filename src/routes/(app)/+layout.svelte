@@ -42,6 +42,7 @@
 	import SettingsModal from '$lib/components/chat/SettingsModal.svelte';
 	import ChangelogModal from '$lib/components/ChangelogModal.svelte';
 	import RegOSDisclaimerModal from '$lib/components/RegOSDisclaimerModal.svelte';
+	import { getRegosPublicConfig } from '$lib/apis/configs';
 	import AccountPending from '$lib/components/layout/Overlay/AccountPending.svelte';
 	import UpdateInfoToast from '$lib/components/layout/UpdateInfoToast.svelte';
 	import Spinner from '$lib/components/common/Spinner.svelte';
@@ -50,6 +51,7 @@
 	const i18n = getContext('i18n');
 
 	let loaded = false;
+	let regosConfig = null;
 	let DB = null;
 	let localDBChats = [];
 
@@ -268,10 +270,14 @@
 			showChangelog.set($settings?.version !== $config.version);
 		}
 
-		// RegOS: Show one-time service agreement disclaimer for ALL users.
-		// If the changelog modal is also showing, the disclaimer is chained
-		// after it (see reactive block below). Otherwise it fires immediately.
-		if (!$settings?.regosDisclaimerAcked) {
+		// RegOS: Fetch public config and show disclaimer if enabled + not yet acked.
+		try {
+			regosConfig = await getRegosPublicConfig(localStorage.token);
+		} catch (e) {
+			console.warn('Could not load RegOS config:', e);
+		}
+
+		if (regosConfig?.disclaimer?.enabled && !$settings?.regosDisclaimerAcked) {
 			if ($showChangelog) {
 				// Changelog is up — the reactive $showChangelog watcher will
 				// trigger the disclaimer once the user dismisses the changelog.
@@ -321,7 +327,7 @@
 	// RegOS: When changelog modal closes, chain the disclaimer if not yet acknowledged.
 	let prevShowChangelog = false;
 	$: {
-		if (prevShowChangelog && !$showChangelog && !$settings?.regosDisclaimerAcked) {
+		if (prevShowChangelog && !$showChangelog && regosConfig?.disclaimer?.enabled && !$settings?.regosDisclaimerAcked) {
 			showRegOSDisclaimer.set(true);
 		}
 		prevShowChangelog = $showChangelog;
@@ -330,7 +336,7 @@
 
 <SettingsModal bind:show={$showSettings} />
 <ChangelogModal bind:show={$showChangelog} />
-<RegOSDisclaimerModal bind:show={$showRegOSDisclaimer} />
+<RegOSDisclaimerModal bind:show={$showRegOSDisclaimer} disclaimerConfig={regosConfig?.disclaimer} />
 
 {#if version && compareVersion(version.latest, version.current) && ($settings?.showUpdateToast ?? true)}
 	<div class=" absolute bottom-8 right-8 z-50" in:fade={{ duration: 100 }}>

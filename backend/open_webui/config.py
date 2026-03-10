@@ -1661,6 +1661,88 @@ GUEST_USER_PERMISSIONS = {
     },
 }
 
+####################################
+# RegOS Admin Settings
+####################################
+
+REGOS_DISCLAIMER_ENABLED = PersistentConfig(
+    "REGOS_DISCLAIMER_ENABLED",
+    "regos.disclaimer.enabled",
+    os.environ.get("REGOS_DISCLAIMER_ENABLED", "True").lower() == "true",
+)
+
+REGOS_DISCLAIMER_TITLE = PersistentConfig(
+    "REGOS_DISCLAIMER_TITLE",
+    "regos.disclaimer.title",
+    os.environ.get("REGOS_DISCLAIMER_TITLE", "Welcome to RegOS Compliance Copilot"),
+)
+
+REGOS_DISCLAIMER_BODY = PersistentConfig(
+    "REGOS_DISCLAIMER_BODY",
+    "regos.disclaimer.body",
+    os.environ.get("REGOS_DISCLAIMER_BODY", ""),
+)
+
+REGOS_DISCLAIMER_ACCEPT_LABEL = PersistentConfig(
+    "REGOS_DISCLAIMER_ACCEPT_LABEL",
+    "regos.disclaimer.accept_label",
+    os.environ.get("REGOS_DISCLAIMER_ACCEPT_LABEL", "I Understand & Accept"),
+)
+
+REGOS_GUEST_ENABLED = PersistentConfig(
+    "REGOS_GUEST_ENABLED",
+    "regos.guest.enabled",
+    os.environ.get("REGOS_GUEST_ENABLED", "True").lower() == "true",
+)
+
+REGOS_GUEST_MESSAGE_LIMIT = PersistentConfig(
+    "REGOS_GUEST_MESSAGE_LIMIT",
+    "regos.guest.message_limit",
+    int(os.environ.get("REGOS_GUEST_MESSAGE_LIMIT", str(GUEST_MESSAGE_LIMIT))),
+)
+
+REGOS_GUEST_GENERATION_LIMIT = PersistentConfig(
+    "REGOS_GUEST_GENERATION_LIMIT",
+    "regos.guest.generation_limit",
+    int(os.environ.get("REGOS_GUEST_GENERATION_LIMIT", "50")),
+)
+
+REGOS_GUEST_SESSION_TTL = PersistentConfig(
+    "REGOS_GUEST_SESSION_TTL",
+    "regos.guest.session_ttl",
+    int(os.environ.get("REGOS_GUEST_SESSION_TTL", str(GUEST_MESSAGE_WINDOW))),
+)
+
+REGOS_GUEST_SHOW_BUTTON = PersistentConfig(
+    "REGOS_GUEST_SHOW_BUTTON",
+    "regos.guest.show_button",
+    os.environ.get("REGOS_GUEST_SHOW_BUTTON", "True").lower() == "true",
+)
+
+REGOS_CONFIDENCE_ENABLED = PersistentConfig(
+    "REGOS_CONFIDENCE_ENABLED",
+    "regos.confidence.enabled",
+    os.environ.get("REGOS_CONFIDENCE_ENABLED", "True").lower() == "true",
+)
+
+REGOS_CONFIDENCE_STYLE = PersistentConfig(
+    "REGOS_CONFIDENCE_STYLE",
+    "regos.confidence.style",
+    os.environ.get("REGOS_CONFIDENCE_STYLE", "emoji_blockquote"),
+)
+
+REGOS_CONFIDENCE_HIGH_THRESHOLD = PersistentConfig(
+    "REGOS_CONFIDENCE_HIGH_THRESHOLD",
+    "regos.confidence.high_threshold",
+    int(os.environ.get("REGOS_CONFIDENCE_HIGH_THRESHOLD", "70")),
+)
+
+REGOS_CONFIDENCE_MEDIUM_THRESHOLD = PersistentConfig(
+    "REGOS_CONFIDENCE_MEDIUM_THRESHOLD",
+    "regos.confidence.medium_threshold",
+    int(os.environ.get("REGOS_CONFIDENCE_MEDIUM_THRESHOLD", "45")),
+)
+
 ENABLE_FOLDERS = PersistentConfig(
     "ENABLE_FOLDERS",
     "folders.enable",
