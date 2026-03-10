@@ -37,6 +37,17 @@
 
 	const i18n = getContext('i18n');
 
+	// Optional role filtering props
+	export let filterRole: string | undefined = undefined;   // e.g. "guest" → show only guests
+	export let excludeRoles: string[] | undefined = undefined; // e.g. ["guest"] → hide guests from overview
+
+	// Build the roles query param: "guest" for include, "!guest" for exclude
+	$: rolesParam = filterRole
+		? filterRole
+		: excludeRoles?.length
+			? excludeRoles.map((r) => `!${r}`).join(',')
+			: undefined;
+
 	let page = 1;
 
 	let users = null;
@@ -82,7 +93,7 @@
 
 	const getUserList = async () => {
 		try {
-			const res = await getUsers(localStorage.token, query, orderBy, direction, page).catch(
+			const res = await getUsers(localStorage.token, query, orderBy, direction, page, rolesParam).catch(
 				(error) => {
 					toast.error(`${error}`);
 					return null;

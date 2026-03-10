@@ -15,7 +15,7 @@
 	$: {
 		const pathParts = $page.url.pathname.split('/');
 		const tabFromPath = pathParts[pathParts.length - 1];
-		selectedTab = ['overview', 'groups'].includes(tabFromPath) ? tabFromPath : 'overview';
+		selectedTab = ['overview', 'guests', 'groups'].includes(tabFromPath) ? tabFromPath : 'overview';
 	}
 
 	$: if (selectedTab) {
@@ -86,6 +86,33 @@
 		</button>
 
 		<button
+			id="guests"
+			class="px-0.5 py-1 min-w-fit rounded-lg lg:flex-none flex text-right transition {selectedTab ===
+			'guests'
+				? ''
+				: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
+			on:click={() => {
+				goto('/admin/users/guests');
+			}}
+		>
+			<div class=" self-center mr-2">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 16 16"
+					fill="currentColor"
+					class="size-4"
+				>
+					<path
+						fill-rule="evenodd"
+						d="M15 8A7 7 0 1 1 1 8a7 7 0 0 1 14 0Zm-5-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-2 9c-2.227 0-4.193-1.14-5.343-2.87a6.958 6.958 0 0 1 2.076-1.633A5.012 5.012 0 0 1 8 9.5c1.153 0 2.216.39 3.063 1.044.383.295.74.634 1.064 1.017A6.978 6.978 0 0 1 8 15Z"
+						clip-rule="evenodd"
+					/>
+				</svg>
+			</div>
+			<div class=" self-center">{$i18n.t('Guests')}</div>
+		</button>
+
+		<button
 			id="groups"
 			class="px-0.5 py-1 min-w-fit rounded-lg lg:flex-none flex text-right transition {selectedTab ===
 			'groups'
@@ -113,7 +140,9 @@
 
 	<div class="flex-1 mt-1 lg:mt-0 px-[16px] lg:pr-[16px] lg:pl-0 overflow-y-scroll">
 		{#if selectedTab === 'overview'}
-			<UserList />
+			<UserList excludeRoles={['guest']} />
+		{:else if selectedTab === 'guests'}
+			<UserList filterRole="guest" />
 		{:else if selectedTab === 'groups'}
 			<Groups />
 		{/if}

@@ -324,7 +324,7 @@ export const userSignUp = async (
 	return res;
 };
 
-export const userGuestSignIn = async () => {
+export const userGuestSignIn = async (email: string) => {
 	let error = null;
 
 	const res = await fetch(`${WEBUI_API_BASE_URL}/auths/guest`, {
@@ -332,7 +332,8 @@ export const userGuestSignIn = async () => {
 		headers: {
 			'Content-Type': 'application/json'
 		},
-		credentials: 'include'
+		credentials: 'include',
+		body: JSON.stringify({ email })
 	})
 		.then(async (res) => {
 			if (!res.ok) throw await res.json();

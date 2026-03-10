@@ -1648,14 +1648,17 @@ async def chat_completion(
     if user.role == "guest":
         from open_webui.config import GUEST_MESSAGE_LIMIT
 
-        # 1. Chat limit (number of conversations)
+        # Fetch ALL guest chats (no artificial limit) for accurate counting
         guest_chats = Chats.get_chat_list_by_user_id(
-            user.id, include_archived=True, limit=GUEST_MESSAGE_LIMIT + 1
+            user.id, include_archived=True, limit=500
         )
-        if len(guest_chats) >= GUEST_MESSAGE_LIMIT:
+
+        # 1. Chat limit (number of conversations)
+        chat_limit = request.app.state.config.REGOS_GUEST_MESSAGE_LIMIT or GUEST_MESSAGE_LIMIT
+        if len(guest_chats) >= chat_limit:
             raise HTTPException(
                 status_code=429,
-                detail="Guest chat limit reached. Sign up for unlimited access.",
+                detail=f"Guest chat limit ({chat_limit}) reached. Sign up for unlimited access.",
             )
 
         # 2. Generation limit (total AI responses across all chats)

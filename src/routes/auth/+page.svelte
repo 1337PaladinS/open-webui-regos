@@ -107,11 +107,23 @@
 
 	let guestLoading = false;
 	let guestEnabled = false;
+	let showGuestEmailInput = false;
+	let guestEmail = '';
 
 	const guestSignInHandler = async () => {
+		if (!showGuestEmailInput) {
+			showGuestEmailInput = true;
+			return;
+		}
+
+		if (!guestEmail.trim() || !guestEmail.includes('@') || !guestEmail.split('@')[1]?.includes('.')) {
+			toast.error('Please enter a valid email address.');
+			return;
+		}
+
 		guestLoading = true;
 		try {
-			const sessionUser = await userGuestSignIn().catch((error) => {
+			const sessionUser = await userGuestSignIn(guestEmail.trim()).catch((error) => {
 				toast.error(`${error}`);
 				return null;
 			});
@@ -598,17 +610,47 @@
 
 							{#if guestEnabled && !($config?.onboarding ?? false)}
 								<div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-									<button
-										class="flex justify-center items-center text-sm w-full text-center text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition"
-										type="button"
-										disabled={guestLoading}
-										on:click={guestSignInHandler}
-									>
-										{#if guestLoading}
-											<Spinner className="size-4 mr-2" />
-										{/if}
-										<span>{$i18n.t('or continue as guest')} &rarr;</span>
-									</button>
+									{#if showGuestEmailInput}
+										<div class="flex flex-col gap-2">
+											<div class="text-xs text-center text-gray-500 dark:text-gray-400">
+												{$i18n.t('Enter your email to continue as guest')}
+											</div>
+											<input
+												class="w-full text-sm rounded-lg px-4 py-2.5 bg-gray-50 dark:bg-gray-850 dark:text-gray-100 outline-none border border-gray-200 dark:border-gray-700 focus:border-gray-400 dark:focus:border-gray-500 transition"
+												type="email"
+												bind:value={guestEmail}
+												placeholder="your@email.com"
+												autocomplete="email"
+												on:keydown={(e) => { if (e.key === 'Enter') guestSignInHandler(); }}
+											/>
+											<button
+												class="flex justify-center items-center text-sm w-full text-center rounded-lg px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+												type="button"
+												disabled={guestLoading}
+												on:click={guestSignInHandler}
+											>
+												{#if guestLoading}
+													<Spinner className="size-4 mr-2" />
+												{/if}
+												<span>{$i18n.t('Continue as Guest')} &rarr;</span>
+											</button>
+											<button
+												class="text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition"
+												type="button"
+												on:click={() => { showGuestEmailInput = false; guestEmail = ''; }}
+											>
+												{$i18n.t('Cancel')}
+											</button>
+										</div>
+									{:else}
+										<button
+											class="flex justify-center items-center text-sm w-full text-center text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition"
+											type="button"
+											on:click={guestSignInHandler}
+										>
+											<span>{$i18n.t('or continue as guest')} &rarr;</span>
+										</button>
+									{/if}
 								</div>
 							{/if}
 						</div>

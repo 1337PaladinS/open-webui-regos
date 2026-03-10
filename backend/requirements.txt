@@ -111,6 +111,9 @@ google-auth-oauthlib
 googleapis-common-protos==1.72.0
 google-cloud-storage==3.9.0
 
+## Neo4j (RegOS Graph-RAG)
+neo4j
+
 ## Databases
 pymongo
 psycopg2-binary==2.9.11

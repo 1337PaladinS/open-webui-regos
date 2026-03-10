@@ -121,7 +121,8 @@ export const getUsers = async (
 	query?: string,
 	orderBy?: string,
 	direction?: string,
-	page = 1
+	page = 1,
+	roles?: string
 ) => {
 	let error = null;
 	let res = null;
@@ -140,6 +141,10 @@ export const getUsers = async (
 
 	if (direction) {
 		searchParams.set('direction', direction);
+	}
+
+	if (roles) {
+		searchParams.set('roles', roles);
 	}
 
 	res = await fetch(`${WEBUI_API_BASE_URL}/users/?${searchParams.toString()}`, {
