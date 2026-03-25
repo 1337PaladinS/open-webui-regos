@@ -1,0 +1,395 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1860" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1B3A5C"/>
+      <stop offset="100%" style="stop-color:#2E5984"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F8FAFC"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5A7DA8"/>
+    </marker>
+    <marker id="arrowDashed" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#B0B0B0"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2E8B57"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D4820A"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1860" fill="#F0F4F8" rx="0"/>
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="1200" height="70" fill="url(#headerGrad)"/>
+  <text x="40" y="45" fill="white" font-size="26" font-weight="bold">RegOS Infrastructure Architecture</text>
+  <text x="1160" y="45" fill="#8AB4D8" font-size="14" text-anchor="end">APAS AI — March 2026</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LAYER 1: USER LAYER (top)              -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="30" y="90" width="1140" height="120" rx="12" fill="url(#boxGrad)" stroke="#D0D8E0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="90" width="1140" height="32" rx="12" fill="#E8EFF5"/>
+  <rect x="30" y="108" width="1140" height="14" fill="#E8EFF5"/>
+  <text x="50" y="112" fill="#1B3A5C" font-size="13" font-weight="bold">USER LAYER</text>
+
+  <!-- Admin User -->
+  <rect x="60" y="135" width="160" height="55" rx="8" fill="#1B3A5C" stroke="none"/>
+  <text x="140" y="158" fill="white" font-size="12" font-weight="bold" text-anchor="middle">Admin</text>
+  <text x="140" y="175" fill="#8AB4D8" font-size="10" text-anchor="middle">Full access + config</text>
+
+  <!-- Regular User -->
+  <rect x="245" y="135" width="160" height="55" rx="8" fill="#2E5984" stroke="none"/>
+  <text x="325" y="158" fill="white" font-size="12" font-weight="bold" text-anchor="middle">Regular User</text>
+  <text x="325" y="175" fill="#8AB4D8" font-size="10" text-anchor="middle">Granted models only</text>
+
+  <!-- Guest User -->
+  <rect x="430" y="135" width="160" height="55" rx="8" fill="#5A7DA8" stroke="none"/>
+  <text x="510" y="158" fill="white" font-size="12" font-weight="bold" text-anchor="middle">Guest (Email-only)</text>
+  <text x="510" y="175" fill="#C8D8E8" font-size="10" text-anchor="middle">Limited generations</text>
+
+  <!-- External Platform -->
+  <rect x="640" y="135" width="200" height="55" rx="8" fill="#3D7AB5" stroke="none"/>
+  <text x="740" y="158" fill="white" font-size="12" font-weight="bold" text-anchor="middle">External Platforms</text>
+  <text x="740" y="175" fill="#C8D8E8" font-size="10" text-anchor="middle">NIDS, other consumers</text>
+
+  <!-- APAS/SCADA -->
+  <rect x="870" y="135" width="270" height="55" rx="8" fill="#D4820A" stroke="none"/>
+  <text x="1005" y="158" fill="white" font-size="12" font-weight="bold" text-anchor="middle">APAS / 123SCADA</text>
+  <text x="1005" y="175" fill="#FFE0B0" font-size="10" text-anchor="middle">Telemetry sensor data</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- ARROWS: Users → Docker Container       -->
+  <!-- ═══════════════════════════════════════ -->
+  <line x1="140" y1="190" x2="140" y2="240" stroke="#5A7DA8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="325" y1="190" x2="325" y2="240" stroke="#5A7DA8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="190" x2="510" y2="240" stroke="#5A7DA8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="335" y="230" fill="#5A7DA8" font-size="10" text-anchor="middle">Port 3000 → 8080</text>
+
+  <!-- External API arrow -->
+  <line x1="740" y1="190" x2="740" y2="500" stroke="#5A7DA8" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowhead)"/>
+  <text x="755" y="350" fill="#5A7DA8" font-size="10">Port 8300</text>
+
+  <!-- SCADA arrow -->
+  <line x1="1005" y1="190" x2="1005" y2="500" stroke="#D4820A" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowOrange)"/>
+  <text x="1020" y="350" fill="#D4820A" font-size="10">REST polling</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LAYER 2: DOCKER CONTAINER              -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="30" y="240" width="680" height="830" rx="12" fill="url(#boxGrad)" stroke="#3D7AB5" stroke-width="2" stroke-dasharray="8,4" filter="url(#shadow)"/>
+  <rect x="30" y="240" width="680" height="32" rx="12" fill="#E3EDF5"/>
+  <rect x="30" y="258" width="680" height="14" fill="#E3EDF5"/>
+  <text x="50" y="262" fill="#1B3A5C" font-size="13" font-weight="bold">DOCKER CONTAINER (open-webui)</text>
+  <text x="680" y="262" fill="#5A7DA8" font-size="10" text-anchor="end">Python 3.11 + SvelteKit</text>
+
+  <!-- Frontend Box -->
+  <rect x="50" y="285" width="300" height="110" rx="8" fill="#FFFFFF" stroke="#2E5984" stroke-width="1.5"/>
+  <rect x="50" y="285" width="300" height="26" rx="8" fill="#2E5984"/>
+  <rect x="50" y="299" width="300" height="12" fill="#2E5984"/>
+  <text x="200" y="303" fill="white" font-size="11" font-weight="bold" text-anchor="middle">SVELTE FRONTEND</text>
+  <text x="65" y="332" fill="#333" font-size="10">Login Page (guest email flow)</text>
+  <text x="65" y="349" fill="#333" font-size="10">Admin Panel (Users + Guests + RegOS)</text>
+  <text x="65" y="366" fill="#333" font-size="10">Chat Interface (citations + banners)</text>
+  <text x="65" y="383" fill="#333" font-size="10">RegOSDisclaimerModal (onboarding)</text>
+
+  <!-- Backend Box -->
+  <rect x="370" y="285" width="320" height="110" rx="8" fill="#FFFFFF" stroke="#2E5984" stroke-width="1.5"/>
+  <rect x="370" y="285" width="320" height="26" rx="8" fill="#2E5984"/>
+  <rect x="370" y="299" width="320" height="12" fill="#2E5984"/>
+  <text x="530" y="303" fill="white" font-size="11" font-weight="bold" text-anchor="middle">FASTAPI BACKEND</text>
+  <text x="385" y="332" fill="#333" font-size="10">POST /auths/guest (email login)</text>
+  <text x="385" y="349" fill="#333" font-size="10">GET/POST /configs/regos (admin CRUD)</text>
+  <text x="385" y="366" fill="#333" font-size="10">GET /users/ (role filtering)</text>
+  <text x="385" y="383" fill="#333" font-size="10">Model access control (guest+user)</text>
+
+  <!-- Arrow: Frontend → Backend -->
+  <line x1="350" y1="340" x2="370" y2="340" stroke="#5A7DA8" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FUNCTIONS LAYER (inside Docker)        -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="410" width="640" height="220" rx="8" fill="#FAFCFE" stroke="#3D7AB5" stroke-width="1"/>
+  <text x="65" y="432" fill="#1B3A5C" font-size="12" font-weight="bold">OPEN WEBUI FUNCTIONS — Python (registered via admin)</text>
+
+  <!-- GraphRAG Filter -->
+  <rect x="65" y="445" width="300" height="180" rx="6" fill="#FFFFFF" stroke="#1B3A5C" stroke-width="1.5"/>
+  <rect x="65" y="445" width="300" height="36" rx="6" fill="#1B3A5C"/>
+  <rect x="65" y="463" width="300" height="18" fill="#1B3A5C"/>
+  <text x="215" y="462" fill="white" font-size="11" font-weight="bold" text-anchor="middle">GraphRAG Filter (2,162 lines)</text>
+  <text x="215" y="476" fill="#8AB4D8" font-size="9" text-anchor="middle">Global Filter | Priority 0</text>
+  <text x="78" y="500" fill="#333" font-size="9" font-weight="bold">INLET:</text>
+  <text x="78" y="514" fill="#555" font-size="9">1. Guardrail checks (keywords + jurisdiction)</text>
+  <text x="78" y="528" fill="#555" font-size="9">2. Threshold detection + evaluation</text>
+  <text x="78" y="542" fill="#555" font-size="9">3. 4-step graph retrieval (Neo4j)</text>
+  <text x="78" y="556" fill="#555" font-size="9">4. 5-signal confidence scoring</text>
+  <text x="78" y="570" fill="#555" font-size="9">5. Context injection into user message</text>
+  <text x="78" y="590" fill="#333" font-size="9" font-weight="bold">OUTLET:</text>
+  <text x="78" y="604" fill="#555" font-size="9">Citations, compliance table, escalation,</text>
+  <text x="78" y="616" fill="#555" font-size="9">disclaimer, trace (35 configurable valves)</text>
+
+  <!-- Audit Logger -->
+  <rect x="385" y="445" width="140" height="80" rx="6" fill="#FFFFFF" stroke="#2E5984" stroke-width="1.2"/>
+  <rect x="385" y="445" width="140" height="22" rx="6" fill="#2E5984"/>
+  <rect x="385" y="457" width="140" height="10" fill="#2E5984"/>
+  <text x="455" y="462" fill="white" font-size="10" font-weight="bold" text-anchor="middle">Audit Logger</text>
+  <text x="398" y="484" fill="#555" font-size="9">332 lines</text>
+  <text x="398" y="498" fill="#555" font-size="9">SHA-256 hashed records</text>
+  <text x="398" y="512" fill="#555" font-size="9">→ audit.db</text>
+
+  <!-- Threshold Eval -->
+  <rect x="540" y="445" width="140" height="80" rx="6" fill="#FFFFFF" stroke="#2E5984" stroke-width="1.2"/>
+  <rect x="540" y="445" width="140" height="22" rx="6" fill="#2E5984"/>
+  <rect x="540" y="457" width="140" height="10" fill="#2E5984"/>
+  <text x="610" y="462" fill="white" font-size="10" font-weight="bold" text-anchor="middle">Threshold Eval</text>
+  <text x="553" y="484" fill="#555" font-size="9">520 lines (LLM Tool)</text>
+  <text x="553" y="498" fill="#555" font-size="9">96 thresholds, 92 params</text>
+  <text x="553" y="512" fill="#555" font-size="9">→ regos_breaches.db</text>
+
+  <!-- GraphRAG Pipe -->
+  <rect x="385" y="540" width="295" height="75" rx="6" fill="#FFFFFF" stroke="#5A7DA8" stroke-width="1" stroke-dasharray="4,3"/>
+  <rect x="385" y="540" width="295" height="22" rx="6" fill="#5A7DA8"/>
+  <rect x="385" y="552" width="295" height="10" fill="#5A7DA8"/>
+  <text x="532" y="557" fill="white" font-size="10" font-weight="bold" text-anchor="middle">GraphRAG Pipe (legacy, 477 lines)</text>
+  <text x="398" y="580" fill="#888" font-size="9">Alternative model: graphrag-chapter24</text>
+  <text x="398" y="594" fill="#888" font-size="9">Older approach — Filter is primary in production</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- DOCKER VOLUME (inside container box)   -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="645" width="640" height="100" rx="8" fill="#FFF8F0" stroke="#D4820A" stroke-width="1.2"/>
+  <text x="65" y="668" fill="#8B5E00" font-size="11" font-weight="bold">DOCKER VOLUME (open-webui:/app/backend/data) — persists across rebuilds</text>
+  <rect x="65" y="680" width="120" height="30" rx="4" fill="#FFF0E0" stroke="#D4820A" stroke-width="0.8"/>
+  <text x="125" y="700" fill="#8B5E00" font-size="9" text-anchor="middle">webui.db</text>
+  <rect x="195" y="680" width="110" height="30" rx="4" fill="#FFF0E0" stroke="#D4820A" stroke-width="0.8"/>
+  <text x="250" y="700" fill="#8B5E00" font-size="9" text-anchor="middle">audit.db</text>
+  <rect x="315" y="680" width="140" height="30" rx="4" fill="#FFF0E0" stroke="#D4820A" stroke-width="0.8"/>
+  <text x="385" y="700" fill="#8B5E00" font-size="9" text-anchor="middle">regos_breaches.db</text>
+  <rect x="465" y="680" width="80" height="30" rx="4" fill="#FFF0E0" stroke="#D4820A" stroke-width="0.8"/>
+  <text x="505" y="700" fill="#8B5E00" font-size="9" text-anchor="middle">uploads/</text>
+  <rect x="555" y="680" width="120" height="30" rx="4" fill="#E8F5E8" stroke="#2E8B57" stroke-width="0.8"/>
+  <text x="615" y="700" fill="#2E6B2E" font-size="9" text-anchor="middle">vector_db/</text>
+  <text x="65" y="733" fill="#2E6B2E" font-size="10" font-weight="bold">ChromaDB (embedded vector store)</text>
+  <text x="335" y="733" fill="#8B5E00" font-size="9">— powers Open WebUI Knowledge Base RAG (document uploads, chunking, similarity search)</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- BUILT-IN RAG PIPELINE (inside Docker)  -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="50" y="760" width="640" height="90" rx="8" fill="#FAFCFE" stroke="#2E8B57" stroke-width="1.2"/>
+  <rect x="50" y="760" width="640" height="26" rx="8" fill="#2E8B57"/>
+  <rect x="50" y="774" width="640" height="12" fill="#2E8B57"/>
+  <text x="65" y="778" fill="white" font-size="11" font-weight="bold">OPEN WEBUI KNOWLEDGE BASE RAG (built-in naive RAG)</text>
+  <text x="560" y="778" fill="#C8E8C8" font-size="9">Native pipeline</text>
+
+  <text x="65" y="806" fill="#333" font-size="9" font-weight="bold">Pipeline:</text>
+  <text x="125" y="806" fill="#555" font-size="9">Admin uploads docs → chunk (1,500 tokens) → embed (sentence-transformers) → store in ChromaDB</text>
+  <text x="65" y="822" fill="#333" font-size="9" font-weight="bold">At query time:</text>
+  <text x="145" y="822" fill="#555" font-size="9">Similarity search → top-k retrieval → context injected into LLM prompt (used alongside GraphRAG)</text>
+  <text x="65" y="840" fill="#2E8B57" font-size="8" font-weight="bold">Dual retrieval: GraphRAG (Neo4j, structured) + KB RAG (ChromaDB, document uploads)</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SIDECAR APIS (right column)            -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="730" y="240" width="440" height="445" rx="12" fill="url(#boxGrad)" stroke="#3D7AB5" stroke-width="1.5" stroke-dasharray="6,4" filter="url(#shadow)"/>
+  <rect x="730" y="240" width="440" height="32" rx="12" fill="#E3EDF5"/>
+  <rect x="730" y="258" width="440" height="14" fill="#E3EDF5"/>
+  <text x="750" y="262" fill="#1B3A5C" font-size="13" font-weight="bold">SIDECAR SERVICES</text>
+
+  <!-- RegOS Query API -->
+  <rect x="750" y="290" width="400" height="85" rx="6" fill="#FFFFFF" stroke="#1B3A5C" stroke-width="1.2"/>
+  <rect x="750" y="290" width="400" height="22" rx="6" fill="#1B3A5C"/>
+  <rect x="750" y="302" width="400" height="10" fill="#1B3A5C"/>
+  <text x="950" y="307" fill="white" font-size="11" font-weight="bold" text-anchor="middle">RegOS Query API (Port 8300)</text>
+  <text x="763" y="332" fill="#555" font-size="9">POST /api/regos/query — external query endpoint</text>
+  <text x="763" y="346" fill="#555" font-size="9">Supports streaming (SSE), reasoning tokens, tracing</text>
+  <text x="763" y="360" fill="#555" font-size="9">Proxies through Open WebUI GraphRAG pipeline</text>
+
+  <!-- SCADA Stream -->
+  <rect x="750" y="390" width="400" height="85" rx="6" fill="#FFFFFF" stroke="#D4820A" stroke-width="1.2"/>
+  <rect x="750" y="390" width="400" height="22" rx="6" fill="#D4820A"/>
+  <rect x="750" y="402" width="400" height="10" fill="#D4820A"/>
+  <text x="950" y="407" fill="white" font-size="11" font-weight="bold" text-anchor="middle">SCADA Streaming API</text>
+  <text x="763" y="432" fill="#555" font-size="9">WebSocket /ws/scada | SSE /stream/scada | REST /ingest</text>
+  <text x="763" y="446" fill="#555" font-size="9">Real-time compliance determinations (COMPLIANT/BREACH)</text>
+  <text x="763" y="460" fill="#555" font-size="9">200-determination in-memory buffer</text>
+
+  <!-- APAS Bridge -->
+  <rect x="750" y="490" width="195" height="80" rx="6" fill="#FFFFFF" stroke="#D4820A" stroke-width="1.2"/>
+  <rect x="750" y="490" width="195" height="22" rx="6" fill="#D4820A"/>
+  <rect x="750" y="502" width="195" height="10" fill="#D4820A"/>
+  <text x="847" y="507" fill="white" font-size="10" font-weight="bold" text-anchor="middle">APAS Bridge</text>
+  <text x="763" y="530" fill="#555" font-size="9">JWT-auth poller (30s)</text>
+  <text x="763" y="544" fill="#555" font-size="9">8 active mappings</text>
+  <text x="763" y="558" fill="#555" font-size="9">Unit conversion (°C→°F)</text>
+
+  <!-- Breach Dashboard -->
+  <rect x="955" y="490" width="195" height="80" rx="6" fill="#FFFFFF" stroke="#2E5984" stroke-width="1.2"/>
+  <rect x="955" y="490" width="195" height="22" rx="6" fill="#2E5984"/>
+  <rect x="955" y="502" width="195" height="10" fill="#2E5984"/>
+  <text x="1052" y="507" fill="white" font-size="10" font-weight="bold" text-anchor="middle">Breach Dashboard API</text>
+  <text x="968" y="530" fill="#555" font-size="9">GET /summary, /evaluations</text>
+  <text x="968" y="544" fill="#555" font-size="9">POST /check (on-demand)</text>
+  <text x="968" y="558" fill="#555" font-size="9">GET /verify/{hash}</text>
+
+  <!-- Arrow: Query API → Open WebUI -->
+  <line x1="750" y1="335" x2="710" y2="335" stroke="#5A7DA8" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <text x="720" y="328" fill="#5A7DA8" font-size="8" text-anchor="middle">proxy</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LAYER 3: EXTERNAL SERVICES             -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="30" y="1090" width="1140" height="300" rx="12" fill="url(#boxGrad)" stroke="#D0D8E0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="1090" width="1140" height="32" rx="12" fill="#E8EFF5"/>
+  <rect x="30" y="1108" width="1140" height="14" fill="#E8EFF5"/>
+  <text x="50" y="1112" fill="#1B3A5C" font-size="13" font-weight="bold">EXTERNAL SERVICES</text>
+
+  <!-- Neo4j -->
+  <rect x="60" y="1135" width="280" height="235" rx="8" fill="#FFFFFF" stroke="#2E8B57" stroke-width="1.8"/>
+  <rect x="60" y="1135" width="280" height="36" rx="8" fill="#2E8B57"/>
+  <rect x="60" y="1153" width="280" height="18" fill="#2E8B57"/>
+  <text x="200" y="1154" fill="white" font-size="12" font-weight="bold" text-anchor="middle">Neo4j Aura (Cloud)</text>
+  <text x="200" y="1168" fill="#C8E8C8" font-size="9" text-anchor="middle">Knowledge Graph</text>
+  <text x="75" y="1189" fill="#333" font-size="10" font-weight="bold">Graph Schema (FEA v0.17.3):</text>
+  <text x="75" y="1203" fill="#555" font-size="9">Ch24Document — regulation sections</text>
+  <text x="75" y="1218" fill="#555" font-size="9">Ch24Entity — regulatory concepts</text>
+  <text x="75" y="1233" fill="#555" font-size="9">Ch24Class — ontology categories</text>
+  <text x="75" y="1253" fill="#333" font-size="10" font-weight="bold">Relationships:</text>
+  <text x="75" y="1271" fill="#555" font-size="9">MENTIONS_ENTITY (Doc→Entity)</text>
+  <text x="75" y="1286" fill="#555" font-size="9">RELATES_TO_CONCEPT (Doc→Class)</text>
+  <text x="75" y="1306" fill="#333" font-size="10" font-weight="bold">Indexes:</text>
+  <text x="75" y="1324" fill="#555" font-size="9">Fulltext on Doc (title+content)</text>
+  <text x="75" y="1339" fill="#555" font-size="9">Fulltext on Entity (value)</text>
+  <text x="75" y="1359" fill="#888" font-size="8">226 MB graph from Chapter 24</text>
+
+  <!-- LLM Provider -->
+  <rect x="370" y="1135" width="250" height="235" rx="8" fill="#FFFFFF" stroke="#6C3BAA" stroke-width="1.8"/>
+  <rect x="370" y="1135" width="250" height="26" rx="8" fill="#6C3BAA"/>
+  <rect x="370" y="1149" width="250" height="12" fill="#6C3BAA"/>
+  <text x="495" y="1153" fill="white" font-size="12" font-weight="bold" text-anchor="middle">LLM Inference</text>
+
+  <text x="385" y="1180" fill="#333" font-size="10" font-weight="bold">Current: OpenRouter (demo)</text>
+  <text x="385" y="1198" fill="#555" font-size="9">OpenAI-compatible API endpoint</text>
+  <text x="385" y="1213" fill="#555" font-size="9">Models: Gemini, Claude, GPT, etc.</text>
+  <text x="385" y="1228" fill="#555" font-size="9">Branded as "Better Hardeep.ai"</text>
+
+  <line x1="385" y1="1240" x2="605" y2="1240" stroke="#DDD" stroke-width="1"/>
+
+  <text x="385" y="1260" fill="#333" font-size="10" font-weight="bold">Endgame: RunPod (self-hosted)</text>
+  <text x="385" y="1278" fill="#555" font-size="9">Fine-tuned model on GPU pods</text>
+  <text x="385" y="1293" fill="#555" font-size="9">Bundled with Open WebUI in Docker</text>
+  <text x="385" y="1308" fill="#555" font-size="9">Single-container deployment</text>
+  <rect x="385" y="1320" width="220" height="20" rx="3" fill="#F0E8FF" stroke="#6C3BAA" stroke-width="0.6"/>
+  <text x="495" y="1334" fill="#6C3BAA" font-size="9" font-weight="bold" text-anchor="middle">OpenAI-compatible API (both paths)</text>
+  <text x="385" y="1359" fill="#888" font-size="8">Swap via OPENAI_API_BASE_URL env var</text>
+
+  <!-- n8n -->
+  <rect x="650" y="1135" width="230" height="120" rx="8" fill="#FFFFFF" stroke="#E07020" stroke-width="1.8"/>
+  <rect x="650" y="1135" width="230" height="26" rx="8" fill="#E07020"/>
+  <rect x="650" y="1149" width="230" height="12" fill="#E07020"/>
+  <text x="765" y="1153" fill="white" font-size="12" font-weight="bold" text-anchor="middle">n8n (Automation)</text>
+  <text x="663" y="1180" fill="#555" font-size="9">Escalation Workflow (6 nodes)</text>
+  <text x="663" y="1198" fill="#555" font-size="9">Webhook → Validate → Case File</text>
+  <text x="663" y="1216" fill="#555" font-size="9">→ AI Brief → Respond → (No-Op)</text>
+  <text x="663" y="1234" fill="#555" font-size="9">Triggered on confidence &lt; 0.60</text>
+
+  <!-- Embeddings + ChromaDB -->
+  <rect x="910" y="1135" width="240" height="145" rx="8" fill="#FFFFFF" stroke="#2E8B57" stroke-width="1.8"/>
+  <rect x="910" y="1135" width="240" height="26" rx="8" fill="#2E8B57"/>
+  <rect x="910" y="1149" width="240" height="12" fill="#2E8B57"/>
+  <text x="1030" y="1153" fill="white" font-size="11" font-weight="bold" text-anchor="middle">Embeddings + Vector Store</text>
+  <text x="923" y="1180" fill="#333" font-size="9" font-weight="bold">Embeddings: sentence-transformers</text>
+  <text x="923" y="1196" fill="#555" font-size="9">all-MiniLM-L6-v2 (runs locally)</text>
+  <line x1="923" y1="1208" x2="1137" y2="1208" stroke="#DDD" stroke-width="1"/>
+  <text x="923" y="1226" fill="#333" font-size="9" font-weight="bold">Vector DB: ChromaDB (embedded)</text>
+  <text x="923" y="1242" fill="#555" font-size="9">Stores document embeddings at</text>
+  <text x="923" y="1256" fill="#555" font-size="9">/app/backend/data/vector_db/</text>
+  <text x="923" y="1270" fill="#555" font-size="9">Powers KB RAG (upload → chunk → embed → search)</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- ARROWS: Container → External Services  -->
+  <!-- ═══════════════════════════════════════ -->
+
+  <!-- GraphRAG Filter → Neo4j -->
+  <line x1="215" y1="620" x2="215" y2="870" stroke="#2E8B57" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <line x1="215" y1="870" x2="200" y2="1080" stroke="#2E8B57" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="170" y="965" fill="#2E8B57" font-size="10" font-weight="bold">Bolt (neo4j+s://)</text>
+  <text x="170" y="980" fill="#2E8B57" font-size="9">4-step retrieval</text>
+
+  <!-- Container → LLM -->
+  <line x1="490" y1="870" x2="495" y2="1080" stroke="#6C3BAA" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="505" y="965" fill="#6C3BAA" font-size="10" font-weight="bold">HTTPS</text>
+  <text x="505" y="980" fill="#6C3BAA" font-size="9">LLM inference</text>
+
+  <!-- Container → n8n -->
+  <line x1="400" y1="870" x2="765" y2="1080" stroke="#E07020" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowOrange)"/>
+  <text x="610" y="955" fill="#E07020" font-size="10">Webhook POST</text>
+  <text x="610" y="970" fill="#E07020" font-size="9">(on low confidence)</text>
+
+  <!-- KB RAG → Embeddings/ChromaDB -->
+  <line x1="600" y1="850" x2="1030" y2="1080" stroke="#2E8B57" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowGreen)"/>
+  <text x="850" y="945" fill="#2E8B57" font-size="9">embed + search</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LAYER 4: SOURCE PATCHER               -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="30" y="1420" width="1140" height="130" rx="12" fill="url(#boxGrad)" stroke="#D0D8E0" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="1420" width="1140" height="32" rx="12" fill="#E8EFF5"/>
+  <rect x="30" y="1438" width="1140" height="14" fill="#E8EFF5"/>
+  <text x="50" y="1442" fill="#1B3A5C" font-size="13" font-weight="bold">BUILD LAYER — Source Patcher (regos-installer)</text>
+
+  <rect x="60" y="1465" width="240" height="65" rx="6" fill="#FFFFFF" stroke="#2E5984" stroke-width="1"/>
+  <text x="180" y="1485" fill="#1B3A5C" font-size="11" font-weight="bold" text-anchor="middle">apply-patches.py</text>
+  <text x="180" y="1502" fill="#555" font-size="9" text-anchor="middle">1,209 lines | 15 idempotent patches</text>
+  <text x="180" y="1516" fill="#555" font-size="9" text-anchor="middle">Applies all fork modifications</text>
+
+  <rect x="320" y="1465" width="180" height="65" rx="6" fill="#FFFFFF" stroke="#2E5984" stroke-width="1"/>
+  <text x="410" y="1485" fill="#1B3A5C" font-size="11" font-weight="bold" text-anchor="middle">fragments/</text>
+  <text x="410" y="1502" fill="#555" font-size="9" text-anchor="middle">guest_endpoint.py</text>
+  <text x="410" y="1516" fill="#555" font-size="9" text-anchor="middle">Injected into auths.py</text>
+
+  <rect x="520" y="1465" width="180" height="65" rx="6" fill="#FFFFFF" stroke="#2E5984" stroke-width="1"/>
+  <text x="610" y="1485" fill="#1B3A5C" font-size="11" font-weight="bold" text-anchor="middle">new/</text>
+  <text x="610" y="1502" fill="#555" font-size="9" text-anchor="middle">3 new Svelte files</text>
+  <text x="610" y="1516" fill="#555" font-size="9" text-anchor="middle">Copied into source tree</text>
+
+  <!-- Flow: Patcher → Docker -->
+  <rect x="730" y="1465" width="410" height="65" rx="6" fill="#F0F8FF" stroke="#3D7AB5" stroke-width="1"/>
+  <text x="935" y="1485" fill="#1B3A5C" font-size="11" font-weight="bold" text-anchor="middle">Deployment Flow</text>
+  <text x="745" y="1505" fill="#555" font-size="9">git clone → python apply-patches.py → docker compose up -d --build</text>
+  <text x="745" y="1520" fill="#555" font-size="9">Rebuilds from clean upstream with all RegOS modifications applied</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- LEGEND                                 -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="30" y="1570" width="1140" height="80" rx="12" fill="#FFFFFF" stroke="#D0D8E0" stroke-width="1" filter="url(#shadow)"/>
+  <text x="50" y="1595" fill="#1B3A5C" font-size="12" font-weight="bold">LEGEND</text>
+
+  <line x1="50" y1="1620" x2="85" y2="1620" stroke="#5A7DA8" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="95" y="1624" fill="#555" font-size="10">HTTP/API call</text>
+
+  <line x1="220" y1="1620" x2="255" y2="1620" stroke="#2E8B57" stroke-width="2" marker-end="url(#arrowGreen)"/>
+  <text x="265" y="1624" fill="#555" font-size="10">Neo4j Bolt</text>
+
+  <line x1="370" y1="1620" x2="405" y2="1620" stroke="#D4820A" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <text x="415" y="1624" fill="#555" font-size="10">SCADA/Telemetry</text>
+
+  <line x1="560" y1="1620" x2="595" y2="1620" stroke="#B0B0B0" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="605" y="1624" fill="#555" font-size="10">Async/webhook</text>
+
+  <rect x="740" y="1610" width="20" height="14" rx="2" fill="#FFF0E0" stroke="#D4820A" stroke-width="0.8"/>
+  <text x="770" y="1622" fill="#555" font-size="10">Persistent storage</text>
+
+  <rect x="910" y="1610" width="20" height="14" rx="2" fill="#FFFFFF" stroke="#3D7AB5" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="940" y="1622" fill="#555" font-size="10">Container boundary</text>
+
+  <!-- Footer -->
+  <text x="600" y="1680" fill="#999" font-size="11" text-anchor="middle">RegOS v1.5+ — APAS AI — Confidential</text>
+</svg>

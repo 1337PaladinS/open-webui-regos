@@ -1,0 +1,12 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+docling==2.14.0
+neo4j==5.27.0
+openai==1.58.1
+pydantic==2.10.3
+aiosqlite==0.20.0
+numpy==1.26.4
+tiktoken==0.8.0
+pdf2image==1.17.0
+pypdf==5.1.0

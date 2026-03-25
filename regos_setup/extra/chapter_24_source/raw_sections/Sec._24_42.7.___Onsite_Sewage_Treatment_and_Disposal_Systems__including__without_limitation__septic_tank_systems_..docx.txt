@@ -1,0 +1,127 @@
+Sec. 24-42.7. - Onsite Sewage Treatment and Disposal Systems (including, without limitation, septic tank systems). 
+
+(1)  Purpose and intent. The purpose and intent of this section is to safeguard public health, safety, and welfare and protect water quality by setting minimum requirements and standards for onsite sewage treatment and disposal systems as defined in this chapter. 
+
+(2)  OSTDS types and standards; definitions. OSTDSs are classified into the following types and contain the following features for purposes of this chapter: 
+
+(a)  Type 1 OSTDS shall mean a standard or conventional onsite sewage treatment and disposal system designed consistent with section 62-6.008, Florida Administrative Code, that is not otherwise defined herein as a Type 2, 3 or 4 OSTDS. A Type 1 OSTDS does not require a remote telemetry unit. No new or replacement of an entire existing OSTDS may be a Type 1 OSTDS. 
+
+(b)  Type 2 OSTDS shall mean an onsite sewage treatment and disposal system that produces an effluent that, prior to reaching the drainfield or disposal system, complies with Secondary Treatment Standards established in chapter 62-6, Florida Administrative Code. A Type 2 OSTDS does not require a remote telemetry unit. 
+
+(c)  Type 3 OSTDS shall mean an onsite sewage treatment and disposal system that produces an effluent that, prior to reaching the drainfield or disposal system, complies with Advanced Secondary Treatment Standards established in chapter 62-6, Florida Administrative Code. 
+
+(d)  Type 4 OSTDS shall mean an onsite sewage treatment and disposal system that produces an effluent that, prior to reaching the drainfield or disposal system, complies with the Florida Keys nutrient reduction treatment standards established in chapter 62-6, Florida Administrative Code. 
+
+(e)  All Type 3 OSTDS and Type 4 OSTDS shall be equipped with a remote telemetry unit, except that for single family residences and duplexes, a remote telemetry unit shall not be required. A remote telemetry unit equipped for a Type 3 or 4 OSTDS shall provide operational status of the system at a frequency of no less than 15 minutes. Operational status shall include, at a minimum, signal and connectivity, back-up battery, power, mechanical equipment, liquid levels, warnings, and alarms. 
+
+(3)  General Requirements. The following requirements shall apply to all OSTDSs: 
+
+(a)  No person shall cause, let, or permit an OSTDS to violate the water pollution standards set forth in Section 24-42. 
+
+(b)  No person shall install a new OSTDS, or replace an existing OSTDS in whole or in part, if an approved public gravity sanitary sewer or approved sanitary sewer force main is available and operative in a public right-of-way or easement abutting the property in accordance with Section 24-43.1(7). 
+
+(c)  It shall be unlawful for any person to use, operate, or maintain an OSTDS that: 
+
+(i)  Causes a nuisance or sanitary nuisance as set forth in Sections 24-5 or 24-28; or 
+
+(ii)  Was installed on or after January 1, 2023, and fails to comply with the applicable effluent standards pursuant to this section; or 
+
+(iii)  Was installed on or after January 1, 2023, and has not been installed in conformance with plans approved by the Director; or 
+
+(iv)  Was installed on or after January 1, 2023, and is not operated in conformance with plans approved by the Director. 
+
+(d)  Nothing in this section shall be construed to preclude temporary measures, such as pumping and hauling of sewage, that are necessary to prevent or correct a sanitary nuisance. 
+
+(4)  Registration required. 
+
+(a)  On and after January 1, 2023, as part of the plan approval process required by Section 24-15 for a new OSTDS or replacement of an entire existing OSTDS, the new or replacement OSTDS shall be registered with the Department in the name of the property owner on a form acceptable to the Director. 
+
+(b)  An OSTDS that was installed prior to January 1, 2023, and which has not otherwise been registered pursuant to subsection (a), shall be registered with the Department on a form acceptable to the Director by January 1, 2024. 
+
+(c)  The Department shall ensure that registration forms can be submitted both on paper and electronically, and the registration form shall only require the physical address of the property on which the OSTDS is located as well as contact information for the property owner to allow for future communications. 
+
+(5)  Standards and procedures governing installation of an OSTDS. On and after January 1, 2023, the installation of a new OSTDS or replacement of an entire existing OSTDS shall comply with the following: 
+
+(a)  Approval required. 
+
+(i)  Prior to installation, an approval shall be obtained from the Department. Such approval may be obtained as part of the review of an application for building or other development permit. 
+
+(ii)  Applications for approval shall be submitted to the Department on a form acceptable to the Director and shall include, at a minimum, engineering reports and plans that have been signed and sealed by a professional engineer licensed in the State of Florida. 
+
+(iii)  The Director may issue the approval only upon demonstration that the applied-for OSTDS complies with the requirements of this section, as well as other applicable requirements of this chapter. 
+
+(iv)  The Department shall charge such fees for its review as may be established by implementing order approved by the Board of County Commissioners. 
+
+(b)  General requirements applicable to the installation of all new OSTDS and replacements of an entire existing OSTDS. 
+
+(i)  Each OSTDS shall comply with Sections 24-42.6, 24-43, and 24-43.1. 
+
+(ii)  Treatment units shall be certified by NSF International Standard/American National Standard (NSF/ANSI) as 40-2013, 245-2013, or 350-2013, latest edition, or shall have an equivalent certification by a third party approved by the Director. 
+
+(iii)  Each OSTDS, including the reserved area, shall be located no less than 100 feet from any surface water body. This minimum distance shall not apply to replacement of systems installed prior to January 1, 2023, when site conditions and physical constraints prohibit compliance with the minimum distance, provided that the existing distance from any surface water body shall not be reduced. 
+
+(iv)  Where public water is not available, each OSTDS, including the reserved area, shall be located no less than 50 feet from all property lines. This minimum distance shall not apply to replacement of systems installed prior to January 1, 2023, when site conditions and physical constraints prohibit compliance with the minimum distance, provided that the existing distance from all property lines shall not be reduced. 
+
+(v)  Each OSTDS shall serve only one lot. 
+
+1.  Sharing of OSTDSs by buildings or other users on separate lots is prohibited. For purposes of this section, lots that are joined by a unity of title, in a form acceptable to the Director and recorded in the public records of Miami-Dade County at the property owner's expense, shall be treated as a single lot, but lots joined by a declaration of restrictive covenants in lieu of unity of title shall be treated as separate lots. 
+
+2.  An OSTDS that was installed prior to January 1, 2023, and that serves two or more lots may remain, but if the entire existing OSTDS is replaced, then each parcel shall be required to be individually served by an OSTDS that complies with this section. 
+
+(vii)  The bottom of the drainfield or other disposal system shall be designed and installed no less than 36 inches above the wet season high water table as of the date of approval pursuant to this section. For purposes of this paragraph, the wet season high water table shall be the highest water level determined by either site-specific seasonal high water table soil indicators or the latest wet season high water table maps, which shall be maintained on file with the Department. 
+
+(c)  OSTDS requirements based on type of development. The following standards shall govern the use of an OSTDS based on the type of development. 
+
+(i)  For purposes of calculating the maximum domestic sewage flow set forth in subparagraphs (ii)-(v) below, sewage flow and loading shall be based on the unit flows set forth in Section 24-43.1(5). However, notwithstanding any provision to the contrary, the foregoing calculation shall not be construed to determine any sewage flow rate calculations required by chapter 62-6, Florida Administrative Code, or other applicable laws; for example, the OSTDS shall be designed to meet the applicable unit flows for sewage flow and loading established in chapter 62-6, Florida Administrative Code, regardless of whether the calculation pursuant to chapter 62-6 results in a different unit flow than that calculated pursuant to Section 24-43.1(5). 
+
+(ii)  Single-family and duplex residences that do not generate a liquid waste other than domestic sewage and that meet the following criteria shall install a Type 2, 3, or 4 OSTDS: 
+
+1.  Domestic sewage flow does not exceed 500 gallons per day; and 
+
+2.  Minimum distance between any surface water body and the OSTDS, including reserved areas, is at least 1,000 feet; and 
+
+3.  The residence is served or to be served by public water; and 
+
+4.  The residence is located outside of all wellfield protection areas; and 
+
+5.  Domestic sewage loading does not exceed 500 gallons per day per unsubmerged acre. 
+
+(iii)  Single-family and duplex residences that do not meet the criteria set forth above shall install a Type 3 or 4 OSTDS. 
+
+(iv)  Multi-family residences and other uses that meet the following criteria shall install a Type 3 or 4 OSTDS: 
+
+1.  Domestic sewage flow does not exceed 1,000 gallons per day; and 
+
+2.  Minimum distance between any surface water body and the OSTDS, including reserved areas, is at least 1,000 feet; and 
+
+3.  The use is served or to be served by public water; and 
+
+4.  The use is located outside of all wellfield protection areas; and 
+
+5.  Domestic sewage loading does not exceed 500 gallons per day per unsubmerged acre. 
+
+(v)  All other uses shall install a Type 4 OSTDS. 
+
+(vi)  The infiltrative surface area of the drainfield or disposal system shall be sized as a standard subsurface drainfield system or larger as established in chapter 62-6, Florida Administrative Code, unless the Director approves a reduction in infiltrative surface area upon a finding that the following criteria are met: 
+
+1.  The OSTDS with the infiltrative surface area reduction complies with chapter 62-6; and 
+
+2.  Plans and calculations signed and sealed by a professional engineer licensed in the State of Florida demonstrate that, even with the reduced infiltrative area, the OSTDS provides overall pollutant reduction that is equal to or greater than an OSTDS with a standard infiltrative surface area. 
+
+(vii)  An OSTDS may utilize an in-ground nitrogen-reducing biofilter (INRB) to comply with the requirements of subparagraph (vi). 
+
+(6)  Administrative adjustments authorized. 
+
+(a)  Notwithstanding any provision to the contrary, the Director is authorized to approve an OSTDS that: 
+
+(i)  Discharges an effluent that, prior to reaching the drainfield or disposal system, is in compliance with the OSTDS Type required in paragraph (5)(c) above; or 
+
+(ii)  Produces concentrations of applicable constituents (e.g. CBOD5, TSS, TN, and TP) after reaching the drainfield or disposal system, but prior to reaching the groundwater, that are equal to or lower than the concentrations that would result from the OSTDS Type required in paragraph (5)(c) above. 
+
+(b)  Applications for approval of administrative adjustments shall be submitted to the Department on a form acceptable to the Director and shall include, at a minimum, modeling, plans, and calculations in an engineering report signed and sealed by a professional engineer licensed in the State of Florida demonstrating that the proposed OSTDS complies with all applicable requirements. 
+
+(7)  Conflicts with other regulations. In the event of a conflict with Section 32-7 or any other provision of this code, this section shall govern. It is provided, however, that nothing in this section shall be construed to supersede any additional or more restrictive requirements in federal or state law. 
+
+(Ord. No. 22-83, § 5, 7-7-22) 
+
+Editor's note— Ord. No. 08-55, § 4, adopted May 5, 2008, repealed former § 24-42.7 which pertained to detergents and derived from Ord. No. 04-214, adopted Dec. 2, 2004.

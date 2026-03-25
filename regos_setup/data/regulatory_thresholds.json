@@ -1,0 +1,866 @@
+[
+  {
+    "value": "90",
+    "unit": "%",
+    "parameter": "Treatment efficiency",
+    "direction": "min",
+    "context": "All sewage treatment plants shall effect ninety (90) percent treatment or better",
+    "section_ref": "24_42",
+    "type": "percentage"
+  },
+  {
+    "value": "2.0",
+    "unit": "mg/l",
+    "parameter": "Dissolved oxygen",
+    "direction": "min",
+    "context": "Dissolved oxygen not less than 2.0 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "40",
+    "unit": "mg/l",
+    "parameter": "Suspended solids",
+    "direction": "max",
+    "context": "Suspended solids shall not exceed 40 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "30",
+    "unit": "mg/l",
+    "parameter": "Biochemical oxygen demand (BOD)",
+    "direction": "max",
+    "context": "BOD shall not exceed 30 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "30",
+    "unit": "mg/l",
+    "parameter": "Oil and grease",
+    "direction": "max",
+    "context": "Oil and grease shall not exceed 30 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.1",
+    "unit": "mg/l",
+    "parameter": "Settleable solids",
+    "direction": "max",
+    "context": "Settleable solids not greater than 0.1 mg/l on Imhoff cone 1 hr test",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "92",
+    "unit": "\u00b0F",
+    "parameter": "Temperature - Fresh water",
+    "direction": "max",
+    "context": "Temperature for fresh water sources 92\u00b0F maximum",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "29",
+    "unit": "NTU",
+    "parameter": "Turbidity",
+    "direction": "max",
+    "context": "Turbidity 29 NTU above background",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "500",
+    "unit": "mg/l",
+    "parameter": "Chlorides",
+    "direction": "max",
+    "context": "Chlorides shall not exceed 500 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.5",
+    "unit": "mg/l",
+    "parameter": "Chromium (Hexavalent)",
+    "direction": "max",
+    "context": "Chromium (Hexavalent) maximum 0.5 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "1.0",
+    "unit": "mg/l",
+    "parameter": "Chromium (Total)",
+    "direction": "max",
+    "context": "Chromium (Total) maximum 1.0 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.5",
+    "unit": "mg/l",
+    "parameter": "Copper",
+    "direction": "max",
+    "context": "Copper maximum 0.5 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.01",
+    "unit": "mg/l",
+    "parameter": "Cyanides",
+    "direction": "max",
+    "context": "Cyanides maximum 0.01 mg/l",
+    "section_ref": "24_42",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "95",
+    "unit": "%",
+    "parameter": "BOD removal efficiency",
+    "direction": "min",
+    "context": "Ninety-five (95) percent removal of influent biochemical oxygen demand",
+    "section_ref": "24_42.1",
+    "type": "percentage"
+  },
+  {
+    "value": "15.0",
+    "unit": "mg/l",
+    "parameter": "BOD effluent concentration",
+    "direction": "max",
+    "context": "BOD effluent concentration shall not exceed 15.0 mg/l",
+    "section_ref": "24_42.1",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "95",
+    "unit": "%",
+    "parameter": "Total Suspended Solids removal efficiency",
+    "direction": "min",
+    "context": "Ninety-five (95) percent removal of total suspended solids",
+    "section_ref": "24_42.1",
+    "type": "percentage"
+  },
+  {
+    "value": "15.0",
+    "unit": "mg/l",
+    "parameter": "TSS effluent concentration",
+    "direction": "max",
+    "context": "TSS effluent shall not exceed 15.0 mg/l",
+    "section_ref": "24_42.1",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "3.0",
+    "unit": "mg/l",
+    "parameter": "MBAS (Methylene Blue Active Substance)",
+    "direction": "max",
+    "context": "Effluent to surface waters shall not exceed 3.0 mg/l of MBAS",
+    "section_ref": "24_42.1",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "1.0",
+    "unit": "mg/l",
+    "parameter": "Phosphorous",
+    "direction": "max",
+    "context": "Effluent to surface waters shall not exceed 1.0 mg/l of phosphorous",
+    "section_ref": "24_42.1",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "200",
+    "unit": "mg/l",
+    "parameter": "Biochemical oxygen demand (BOD)",
+    "direction": "max",
+    "context": "145 lbs/day at concentration not to exceed 200 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "145",
+    "unit": "lbs/day",
+    "parameter": "Biochemical oxygen demand (BOD)",
+    "direction": "max",
+    "context": "BOD 145 lbs/day at concentration not to exceed 200 mg/l",
+    "section_ref": "24_42.4",
+    "type": "volume"
+  },
+  {
+    "value": "200",
+    "unit": "mg/l",
+    "parameter": "Total suspended solids",
+    "direction": "max",
+    "context": "TSS 145 lbs/day at concentration not to exceed 200 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "100.0",
+    "unit": "mg/l",
+    "parameter": "Oil and grease (EPA Method 1664)",
+    "direction": "max",
+    "context": "Oil and grease EPA Method 1664 maximum 100.0 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "150.0",
+    "unit": "mg/l",
+    "parameter": "Oil and Grease - FOG Generators",
+    "direction": "max",
+    "context": "FOG Generators oil and grease maximum 150.0 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "50.0",
+    "unit": "mg/l",
+    "parameter": "Total Recoverable Petroleum Hydrocarbons",
+    "direction": "max",
+    "context": "TRPH EPA Method 1664 maximum 50.0 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "100.0",
+    "unit": "mg/l",
+    "parameter": "Ammonia (un-ionized)",
+    "direction": "max",
+    "context": "Ammonia (un-ionized) maximum 100.0 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "150",
+    "unit": "\u00b0F",
+    "parameter": "Temperature",
+    "direction": "max",
+    "context": "Temperature maximum 150\u00b0F",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.325",
+    "unit": "mg/l",
+    "parameter": "Arsenic",
+    "direction": "max",
+    "context": "Arsenic maximum 0.325 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.187",
+    "unit": "mg/l",
+    "parameter": "Cadmium",
+    "direction": "max",
+    "context": "Cadmium maximum 0.187 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "7.6",
+    "unit": "mg/l",
+    "parameter": "Chromium (Total)",
+    "direction": "max",
+    "context": "Chromium (Total) maximum 7.6 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.5",
+    "unit": "mg/l",
+    "parameter": "Copper",
+    "direction": "max",
+    "context": "Copper maximum 0.5 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.7",
+    "unit": "mg/l",
+    "parameter": "Lead",
+    "direction": "max",
+    "context": "Lead maximum 0.7 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.01",
+    "unit": "mg/l",
+    "parameter": "Mercury",
+    "direction": "max",
+    "context": "Mercury maximum 0.01 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.4",
+    "unit": "mg/l",
+    "parameter": "Molybdenum",
+    "direction": "max",
+    "context": "Molybdenum maximum 0.4 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "1.9",
+    "unit": "mg/l",
+    "parameter": "Manganese",
+    "direction": "max",
+    "context": "Manganese maximum 1.9 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.39",
+    "unit": "mg/l",
+    "parameter": "Nickel",
+    "direction": "max",
+    "context": "Nickel maximum 0.39 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.65",
+    "unit": "mg/l",
+    "parameter": "Selenium",
+    "direction": "max",
+    "context": "Selenium maximum 0.65 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.6",
+    "unit": "mg/l",
+    "parameter": "Silver",
+    "direction": "max",
+    "context": "Silver maximum 0.6 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.0005",
+    "unit": "mg/l",
+    "parameter": "Thallium",
+    "direction": "max",
+    "context": "Thallium maximum 0.0005 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "6.8",
+    "unit": "mg/l",
+    "parameter": "Zinc",
+    "direction": "max",
+    "context": "Zinc maximum 6.8 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.5",
+    "unit": "mg/l",
+    "parameter": "Cyanides (total)",
+    "direction": "max",
+    "context": "Cyanides (total) maximum 0.5 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.008",
+    "unit": "mg/l",
+    "parameter": "Polychlorinated biphenyls",
+    "direction": "max",
+    "context": "PCBs maximum 0.008 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.2",
+    "unit": "mg/l",
+    "parameter": "Benzene",
+    "direction": "max",
+    "context": "Benzene maximum 0.2 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.22",
+    "unit": "mg/l",
+    "parameter": "Carbon tetrachloride",
+    "direction": "max",
+    "context": "Carbon tetrachloride maximum 0.22 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "3.75",
+    "unit": "mg/l",
+    "parameter": "1,2-Dichloroethylene",
+    "direction": "max",
+    "context": "1,2-c-Dichloroethylene maximum 3.75 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.125",
+    "unit": "mg/l",
+    "parameter": "Tetrachloroethylene",
+    "direction": "max",
+    "context": "Tetrachloroethylene maximum 0.125 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.16",
+    "unit": "mg/l",
+    "parameter": "Trichloroethylene",
+    "direction": "max",
+    "context": "Trichloroethylene maximum 0.16 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "0.08",
+    "unit": "mg/l",
+    "parameter": "Vinyl Chloride",
+    "direction": "max",
+    "context": "Vinyl Chloride maximum 0.08 mg/l",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "25000",
+    "unit": "gallons/day",
+    "parameter": "Process wastewater - SIU threshold",
+    "direction": "min",
+    "context": "SIU discharges 25,000 gallons or more per day",
+    "section_ref": "24_42.4",
+    "type": "volume"
+  },
+  {
+    "value": "5",
+    "unit": "%",
+    "parameter": "Process wastewater contribution - SIU",
+    "direction": "min",
+    "context": "Contributes 5% or more of POTW capacity",
+    "section_ref": "24_42.4",
+    "type": "percentage"
+  },
+  {
+    "value": "140",
+    "unit": "\u00b0F",
+    "parameter": "Flash point - Flammable liquids",
+    "direction": "max",
+    "context": "Waste streams closed cup flash point less than 140\u00b0F prohibited",
+    "section_ref": "24_42.4",
+    "type": "concentration_limit"
+  },
+  {
+    "value": "7",
+    "unit": "days",
+    "parameter": "Temporary repairs for breached FOG device",
+    "direction": "max",
+    "context": "Make temporary repairs within 7 days of breach",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "30",
+    "unit": "days",
+    "parameter": "Submit FOG device replacement plans",
+    "direction": "max",
+    "context": "Within 30 days submit plans for new device",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "90",
+    "unit": "days",
+    "parameter": "Install new FOG control device",
+    "direction": "max",
+    "context": "Within 90 days install Department approved device",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "60",
+    "unit": "days",
+    "parameter": "Submit as-built plans for FOG generators",
+    "direction": "max",
+    "context": "Within 60 days submit as-built plans",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "180",
+    "unit": "days",
+    "parameter": "Complete FOG facility upgrade",
+    "direction": "max",
+    "context": "Facility upgrade completed within 180 days",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "30",
+    "unit": "inches",
+    "parameter": "FOG device access riser height",
+    "direction": "max",
+    "context": "Access riser height shall not exceed 30 inches",
+    "section_ref": "24_42.6",
+    "type": "distance"
+  },
+  {
+    "value": "4",
+    "unit": "feet",
+    "parameter": "FOG device vertical clearance",
+    "direction": "min",
+    "context": "4 feet of vertical clearance required for access",
+    "section_ref": "24_42.6",
+    "type": "distance"
+  },
+  {
+    "value": "3",
+    "unit": "feet",
+    "parameter": "FOG device horizontal clearance",
+    "direction": "min",
+    "context": "3 feet of horizontal clearance required",
+    "section_ref": "24_42.6",
+    "type": "distance"
+  },
+  {
+    "value": "20",
+    "unit": "gpm",
+    "parameter": "Hydromechanical Grease Interceptor minimum",
+    "direction": "min",
+    "context": "Minimum 20 gallons per minute for hydromechanical units",
+    "section_ref": "24_42.6",
+    "type": "volume"
+  },
+  {
+    "value": "60",
+    "unit": "days",
+    "parameter": "Gravity grease interceptor cleaning frequency",
+    "direction": "max",
+    "context": "Cleaned every 60 days or more frequently",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "180",
+    "unit": "days",
+    "parameter": "Cleaning frequency with Monitoring Device",
+    "direction": "max",
+    "context": "With Monitoring Device, cleaned not to exceed 180 days",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "50",
+    "unit": "feet",
+    "parameter": "FOG drain access point spacing",
+    "direction": "max",
+    "context": "Access points not spaced greater than 50 feet center-to-center",
+    "section_ref": "24_42.6",
+    "type": "distance"
+  },
+  {
+    "value": "100",
+    "unit": "feet",
+    "parameter": "Remote FOG device location threshold",
+    "direction": "min",
+    "context": "Remote locations exceed 100 feet horizontal distance",
+    "section_ref": "24_42.6",
+    "type": "distance"
+  },
+  {
+    "value": "90",
+    "unit": "%",
+    "parameter": "Grease container fill level threshold",
+    "direction": "max",
+    "context": "Containers emptied before reaching 90% capacity",
+    "section_ref": "24_42.6",
+    "type": "percentage"
+  },
+  {
+    "value": "24",
+    "unit": "hours",
+    "parameter": "Sanitary nuisance abatement deadline",
+    "direction": "max",
+    "context": "Sanitary nuisance abated within 24 hours",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "20",
+    "unit": "days",
+    "parameter": "FOG waste transporter reporting deadline",
+    "direction": "max",
+    "context": "Reporting within 20 days after end of month",
+    "section_ref": "24_42.6",
+    "type": "timeframe"
+  },
+  {
+    "value": "3",
+    "unit": "minutes",
+    "parameter": "Air contaminant discharge duration",
+    "direction": "max",
+    "context": "No more than 3 minutes in any hour",
+    "section_ref": "24_41",
+    "type": "timeframe"
+  },
+  {
+    "value": "2",
+    "unit": "Ringelmann",
+    "parameter": "Smoke density standard",
+    "direction": "max",
+    "context": "No air contaminant equal to or greater than Ringelmann #2",
+    "section_ref": "24_41",
+    "type": "other"
+  },
+  {
+    "value": "100",
+    "unit": "feet",
+    "parameter": "Feasible distance - single family gravity sewer",
+    "direction": "min",
+    "context": "Minimum feasible distance for single family gravity sewer",
+    "section_ref": "24_43.4",
+    "type": "distance"
+  },
+  {
+    "value": "500",
+    "unit": "feet",
+    "parameter": "Feasible distance - single family gravity sewer subdivision",
+    "direction": "min",
+    "context": "Minimum for single family subdivision gravity sewer",
+    "section_ref": "24_43.4",
+    "type": "distance"
+  },
+  {
+    "value": "500",
+    "unit": "feet",
+    "parameter": "Feasible distance - force main",
+    "direction": "min",
+    "context": "Minimum for force main connection",
+    "section_ref": "24_43.4",
+    "type": "distance"
+  },
+  {
+    "value": "200",
+    "unit": "feet",
+    "parameter": "Feasible distance - single family water main",
+    "direction": "min",
+    "context": "Minimum for single family water main",
+    "section_ref": "24_43.4",
+    "type": "distance"
+  },
+  {
+    "value": "750",
+    "unit": "feet",
+    "parameter": "Feasible distance - water main subdivision",
+    "direction": "min",
+    "context": "Minimum for single family subdivision water main",
+    "section_ref": "24_43.4",
+    "type": "distance"
+  },
+  {
+    "value": "700",
+    "unit": "feet",
+    "parameter": "Feasible distance - industrial sewer",
+    "direction": "min",
+    "context": "Minimum for industrial sewer use",
+    "section_ref": "24_43.4",
+    "type": "distance"
+  },
+  {
+    "value": "1000",
+    "unit": "feet",
+    "parameter": "Feasible distance - industrial water main",
+    "direction": "min",
+    "context": "Minimum for industrial water main",
+    "section_ref": "24_43.4",
+    "type": "distance"
+  },
+  {
+    "value": "1000",
+    "unit": "feet",
+    "parameter": "Water body distance threshold",
+    "direction": "exact",
+    "context": "Development more than 1000 feet from waters",
+    "section_ref": "24_43.4",
+    "type": "distance"
+  },
+  {
+    "value": "25",
+    "unit": "%",
+    "parameter": "Addition percent threshold for feasible distance",
+    "direction": "exact",
+    "context": "Addition 25% or more of existing floor area",
+    "section_ref": "24_43.4",
+    "type": "percentage"
+  },
+  {
+    "value": "500",
+    "unit": "USD",
+    "parameter": "General penalty for violations",
+    "direction": "max",
+    "context": "Fine not to exceed $500.00",
+    "section_ref": "24_30",
+    "type": "penalty"
+  },
+  {
+    "value": "2000",
+    "unit": "USD/day",
+    "parameter": "Penalty for Section 24-42.4 violations",
+    "direction": "max",
+    "context": "Fine not to exceed $2,000 per day for water violations",
+    "section_ref": "24_30",
+    "type": "penalty"
+  },
+  {
+    "value": "60",
+    "unit": "days",
+    "parameter": "Jail time for violations",
+    "direction": "max",
+    "context": "Imprisonment not to exceed 60 days",
+    "section_ref": "24_30",
+    "type": "timeframe"
+  },
+  {
+    "value": "25000",
+    "unit": "USD",
+    "parameter": "Civil penalty per offense",
+    "direction": "max",
+    "context": "Civil penalty not more than $25,000.00 per offense",
+    "section_ref": "24_31",
+    "type": "penalty"
+  },
+  {
+    "value": "15",
+    "unit": "%",
+    "parameter": "Delinquent assessment penalty",
+    "direction": "exact",
+    "context": "Delinquent sums bear penalty of 15 percent per annum",
+    "section_ref": "24_31",
+    "type": "percentage"
+  },
+  {
+    "value": "60",
+    "unit": "days",
+    "parameter": "Delinquency deadline",
+    "direction": "max",
+    "context": "Delinquent if not paid within 60 days after due date",
+    "section_ref": "24_31",
+    "type": "timeframe"
+  },
+  {
+    "value": "5",
+    "unit": "years",
+    "parameter": "Lien duration for special assessments",
+    "direction": "exact",
+    "context": "Special assessment liens remain 5 years from due date",
+    "section_ref": "24_31",
+    "type": "timeframe"
+  },
+  {
+    "value": "10",
+    "unit": "%",
+    "parameter": "Hardwood hammock clearing limit",
+    "direction": "max",
+    "context": "Not to exceed 10% of hardwood hammock canopy",
+    "section_ref": "24_49.2",
+    "type": "percentage"
+  },
+  {
+    "value": "20",
+    "unit": "%",
+    "parameter": "Pineland clearing limit",
+    "direction": "max",
+    "context": "Not to exceed 20% of pineland canopy",
+    "section_ref": "24_49.2",
+    "type": "percentage"
+  },
+  {
+    "value": "5",
+    "unit": "acres",
+    "parameter": "Minimum natural forest community site size",
+    "direction": "exact",
+    "context": "Clearing limits apply to sites 5 acres or greater",
+    "section_ref": "24_49.2",
+    "type": "area"
+  },
+  {
+    "value": "0.5",
+    "unit": "acre",
+    "parameter": "Hammock clearing allowance under 5 acres",
+    "direction": "max",
+    "context": "Up to one-half acre clearing in hammock",
+    "section_ref": "24_49.2",
+    "type": "area"
+  },
+  {
+    "value": "1",
+    "unit": "acre",
+    "parameter": "Pineland clearing allowance under 5 acres",
+    "direction": "max",
+    "context": "Up to 1 acre clearing in pineland",
+    "section_ref": "24_49.2",
+    "type": "area"
+  },
+  {
+    "value": "10",
+    "unit": "%",
+    "parameter": "Firebreak allowance",
+    "direction": "max",
+    "context": "Firebreaks up to 10% not included in clearing limit",
+    "section_ref": "24_49.2",
+    "type": "percentage"
+  },
+  {
+    "value": "15",
+    "unit": "days",
+    "parameter": "Native plant salvage period",
+    "direction": "min",
+    "context": "Minimum 15 days for salvaging native materials",
+    "section_ref": "24_49.2",
+    "type": "timeframe"
+  },
+  {
+    "value": "30",
+    "unit": "days",
+    "parameter": "Boundary modification furnishing deadline",
+    "direction": "max",
+    "context": "Modified boundary furnished within 30 days",
+    "section_ref": "24_49.2",
+    "type": "timeframe"
+  },
+  {
+    "value": "50",
+    "unit": "%",
+    "parameter": "Specimen tree preservation exemption threshold",
+    "direction": "min",
+    "context": "50% or more of specimen trees must be preserved",
+    "section_ref": "24_49.2",
+    "type": "percentage"
+  },
+  {
+    "value": "2",
+    "unit": "times",
+    "parameter": "Specimen tree replacement multiplier",
+    "direction": "min",
+    "context": "Replacement requirement twice the standard rate",
+    "section_ref": "24_49.2",
+    "type": "percentage"
+  },
+  {
+    "value": "20",
+    "unit": "days",
+    "parameter": "Written determination for natural forest community",
+    "direction": "max",
+    "context": "Department determination within 20 days of request",
+    "section_ref": "24_49.2",
+    "type": "timeframe"
+  }
+]

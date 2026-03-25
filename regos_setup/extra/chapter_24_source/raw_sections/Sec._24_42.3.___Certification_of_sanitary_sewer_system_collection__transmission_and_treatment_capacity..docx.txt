@@ -1,0 +1,97 @@
+Sec. 24-42.3. - Certification of sanitary sewer system collection, transmission and treatment capacity. 
+
+(1)  Notwithstanding any provision of this Code, no county or municipal officer, agent, employee or board shall approve, grant or issue any building permit, certificate of occupancy, certificate of completion, certificate of use (except for changes in ownership) or municipal occupational license (except for changes in ownership) for any land use served or to be served by a utility or non-utility owned or operated wastewater collection and transmission system until the county or municipal officer, agent, employee or board has obtained the prior written unconditional approval or prior written conditional approval of the Director or the Director's designee. Notwithstanding any provision of this Code, no person shall construct, utilize, operate, occupy or cause, allow, let, permit or suffer to be constructed, utilized, operated or occupied any land use served or to be served by a utility or non-utility owned or operated wastewater collection and transmission system until the person has obtained the prior written unconditional approval or the prior written conditional approval of the Director or the Director's designee. 
+
+(a)  For projects with an existing sanitary sewer service connection or connecting to an existing sanitary sewer system with a gravity sewage lateral the Director or the Director's designee shall issue an unconditional written approval only if the Director or the Director's designee finds that at the time that the new additional sewage flows are authorized there will be adequate treatment capacity; and: 
+
+(i)  There is adequate transmission capacity or, 
+
+(ii)  There is not adequate transmission capacity and: 
+
+1.  The new additional sewage flow is less than 10,000 gallons per day; and, 
+
+2.  All sewage pump stations through which the new additional sewage will flow, with a Projected NAPOT greater than ten (10) hours per day, will have a Proposed NAPOT equal to or less than twelve (12) hours per day and which Proposed NAPOT is no more than 0.5 hours per day greater than the Projected NAPOT; and 
+
+3.  The utility or non-utility has obtained the written approval of the Director or the Director's designee for the plan of corrective action designed to provide adequate transmission capacity. 
+
+(b)  For projects requiring a sanitary sewer extension in the public right-of-way the Director or the Director's designee shall issue an unconditional written approval only if the Director or the Director's designee determines that at the time that new additional sewage flows are authorized there will be adequate treatment capacity and adequate transmission capacity and: 
+
+(i)  The new additional sewage flow is equal to or less than 1,000 gallons per day; or 
+
+(ii)  The High Annual Monthly Average (HAMA) for all sewage pump stations, through which the new additional sewage will flow, is less than or equal to fifteen (15) hours per day; or 
+
+(iii)  The HAMA for any pump stations through which the new sewage will flow, is greater than fifteen (15) hours per day but a peak capacity study, that takes into consideration rain dependent peak flows, demonstrates that the new additional sewage flows can be accommodated without requiring any upgrades to the sanitary sewer system and no sanitary sewer overflows have occurred in the station's basin within the previous twelve (12) months. 
+
+(c)  For projects not meeting the requirements of (1)(a) or (1)(b) above, and the Director or the Director's designee determines that there is adequate treatment capacity the Director or the Director's designee shall issue a conditional written approval only if the Director or the Director's designee determines that: 
+
+(i)  The utility or non-utility has obtained the written approval of the Director or the Director's designee, and all other local, state and federal environmental approvals for plan(s) of corrective action designed to (1) reduce HAMA to fifteen (15) hours or less for all pump stations, (2) prevent the reoccurrence of Sanitary Sewer Overflows (SSOs) and (3), provide adequate transmission capacity; and 
+
+(ii)  The person seeking the written conditional approval submits an executed estoppel document, in such form as prescribed by the Director or the Director's designee and recorded in the public records of Miami-Dade County, Florida, at the expense of the person seeking the written conditional approval. Said estoppel document shall contain, at a minimum, the following requirements: 
+
+1.  The person obtaining a building permit pursuant to a conditional written approval issued by the Director or the Director's designee shall not apply for a certificate of use and occupancy or municipal occupational license, nor shall the facilities being constructed under said building permit be connected to the utility or non-utility owned or operated WCTS, until all of the conditions set forth in (c)(i) above have been complied with, that the construction pursuant to (c)(i) above has been completed and certified and that the plan of corrective action pursuant to (c)(i) above has been completed by the utility or non-utility and certified by the Director or Director's designee. 
+
+(d)  No written conditional or unconditional approval shall be issued if: 
+
+(i)  A previously implemented approved plan for corrective action fails to achieve the approved corrective action(s) within twelve (12) months of the plan being completed and certified; or 
+
+(ii)  A previously implemented approved plan for corrective action has been certified and the current monthly average run time exceeds ten (10) hours within twelve (12) months of the plan being certified; or 
+
+(iii)  The utility or non-utility has not obtained the written approval of the Director or Director's designee for the plan(s) of corrective action; or 
+
+(iv)  Sanitary Sewer Overflows (SSOs) have occurred in the receiving pump station's basin or in a force main that is required to receive the flow from the pump station pursuant to the following criteria: 
+
+1.  An SSO of 1,000 gallons or more, or any SSO that reaches surface water, has occurred due to lack of system capacity in the collection piping or pump station, until capacity of the system is changed to prevent a future overflow. 
+
+2.  Two (2) or more SSOs of 1,000 gallons or more each, or two (2) or more SSOs that reach surface water, have occurred within the last twelve (12) months caused by blockages in the collection piping or pump station, until a remedial plan directed at preventing the reoccurrence of these overflows has been implemented. 
+
+New additional sewage flows may be allowed downstream of the sewer subsystem that has experienced two (2) or more SSOs of 1,000 gallons or more each, or two (2) or more SSOs that reach surface water, within the last twelve (12) months, caused by blockages, if the downstream sewer system has experienced less than five (5) SSOs of any size within the previous twelve (12) months. 
+
+3.  Two (2) or more SSOs of 1,000 gallons or more, or two (2) or more SSOs that reach surface water, have occurred within the last twelve (12) months caused by failure of the force main required to receive the flow from the pump station, until a remedial plan directed at preventing the reoccurrence of these overflows has been implemented. SSOs caused by contractor damage or vandalism shall not be considered for this item; or 
+
+(v)  The new additional sewage flow may reasonably be expected to cause a violation of effluent limitations in the NPDES permit for a WWTP that will receive the new additional sewage flows; or 
+
+(vi)  The WWTP that will receive the proposed additional sewage flow is in non-compliance as defined in 40 CFR Part 123.45, App A. 
+
+(e)  If the Director or the Director's designee determines that there is not adequate treatment capacity, the Director or the Director's designee shall issue a conditional written approval only if the Director or the Director's designee determines that the following are met: 
+
+(i)  The utility or non-utility has obtained all local, state and federal environmental approvals for the construction of additional wastewater treatment capacity; and 
+
+(ii)  The person seeking the written conditional approval submits an executed estoppel document, in such form as prescribed by the Director or the Director's designee and recorded in the public records under the folio(s) and legal description of the property or properties of Miami-Dade County, Florida, at the expense of the person seeking the written conditional approval. Said estoppel document shall contain, at a minimum, the following requirements: 
+
+1.  The person obtaining a building permit pursuant to a conditional written approval issued by the Director or the Director's designee shall not apply for a certificate of use and occupancy or municipal occupational license, nor shall the facilities being constructed under said building permit be connected to the utility or non-utility owned or operated WCTS, until all of the conditions set forth in (e)(i) above have been complied with and that the construction pursuant to (e)(i) above has been completed by the utility or non-utility and certified by the Director or Director's designee. 
+
+No county or municipal officer, agent, employee or board shall approve, grant or issue any certificate of use and occupancy or municipal occupational license associated with a building permit obtained pursuant to a conditional written approval issued by the Director or the Director's designee until the plan of corrective action has been completed by the utility or non-utility and certified by the Director or Director's designee. 
+
+(2)  Projects that require a sanitary sewer extension in the public right-of-way shall be subject to the following: 
+
+(i)  The person(s) obtaining a building permit pursuant to an unconditional or conditional written approval issued by the Director or the Director's designee shall not apply for a certificate of occupancy, certificate of use or equivalent municipal occupational license until the sewer extension is completed and has been certified by the Director or the Director's designee. 
+
+No county or municipal officer, agent, employee or board shall approve, grant or issue any certificate of occupancy, certificate of use or equivalent municipal occupational license associated with a building permit obtained pursuant to an unconditional or conditional written approval issued by the Director or the Director's designee until the sewer extension is completed and has been certified by the Director or the Director's designee. 
+
+(3)  No new additional sewage flows shall be authorized for any sanitary sewer basin, sewage pump station, or system pursuant to Section 24-42.3 unless and until: 
+
+(a)  The official responsible for issuing certificates of occupancy, certificates of use or equivalent municipal occupational licenses provides a monthly report that identifies projects that have been issued a certificate of occupancy, certificate of completion, certificate of use or an equivalent municipal occupational license that have also received a conditional or unconditional written approval, and 
+
+(b)  All actions or reports required by Section 24-42.2 and Section 24-42.6(12) for the basin, pump station, or system have been completed according to the schedules required therein; and 
+
+(c)  All reports required by Section 24-43.11 for the respective utility have been submitted to the Department. 
+
+(4)  Any and all conditional or unconditional written approvals issued by the Director or the Director's designee shall expire and be null and void and be of no further force and effect unless an application for a construction permit is submitted and a valid process number for the project is obtained from the building department, or permit issuing department, within ninety (90) days from the date of issuance of such written approval. If an application for a building permit is submitted and a process number is obtained from the building department or permit issuing department, the conditional or unconditional written approval shall expire in accordance with the following: 
+
+(a)  When the application for the construction permit expires; or 
+
+(b)  Within one hundred and fifty (150) days of the construction permit expiration unless said permit is renewed or replaced; or 
+
+(c)  In all other events, after one hundred and eighty (180) days or upon the issuance of the certificate of occupancy or certificate of use or other use authorization. 
+
+(5)  Where certification of transmission or treatment capacity cannot be issued, the utility or non-utility shall submit a corrective action plan to the Department within thirty (30) days of the date of a determination that certification cannot be issued. Where a previously implemented approved plan for corrective action fails to achieve the approved corrective action(s) within twelve (12) months of the plan being certified, the utility or non-utility shall submit a new corrective action plan to the Department within thirty (30) days of the previously implemented approved plan for corrective action failing to achieve the approved corrective action(s) and no written conditional or unconditional approvals shall be issued until the adequate transmission capacity and adequate treatment capacity is demonstrated. 
+
+(6)  New additional sewage flows may be authorized without the required certifications of adequate treatment and transmission capacity in those cases where a pollution, contamination, or sanitary nuisance condition exists as a result of the discharge of untreated wastewater from an on-site septic tank provided that: 
+
+(a)  The County has verified and documented the existence of the pollution, contamination, or sanitary nuisance, and 
+
+(b)  The County has documented the nature of the nuisance condition, and the address and the precise point of the discharge to the collection system. 
+
+(7)  Notwithstanding any of the foregoing, no county or municipal officer, agent, employee or board shall approve, grant or issue any building permit for any land use served or to be served by a public water main or public sanitary sewer unless and until the owner or operator of said public water main or public sanitary sewer has issued the owner's or operator's written approval of said service. 
+
+(Ord. No. 04-214, §§ 1, 5, 12-2-04; Ord. No. 08-55, § 2, 5-6-08; Ord. No. 14-49, § 2, 5-20-14; Ord. No. 18-22, § 8, 2-21-18; Ord. No. 21-69, § 2, 7-20-21)

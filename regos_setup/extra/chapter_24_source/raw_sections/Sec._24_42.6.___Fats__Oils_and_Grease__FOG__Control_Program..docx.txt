@@ -1,0 +1,399 @@
+Sec. 24-42.6. - Fats, Oils and Grease (FOG) Control Program. 
+
+The intent and purpose of this section is to safeguard public health, safety and welfare, and protect the sanitary sewer collection, transmission and treatment systems by setting minimum requirements and standards for the design and operation of FOG generating facilities. Nothing in this Section shall limit such facilities from the application of Section 24-42.2 and all other applicable provisions of Chapter 24 of the Code of Miami-Dade County. 
+
+(1)  No person shall dispose of any wastewater, FOG or food waste, or cause, let, permit, suffer or allow disposal or discharge of any wastewater, FOG or food waste to be disposed or discharged into any stormwater drainage system, ground or groundwater, surface water, private street, public right-of-way, or any other location not approved by the Director or Director's designee. 
+
+(2)  When a breached FOG control device is the source of wastewater, FOG or food waste discharge as prohibited above, the FOG generator or FOG control device operator shall: 
+
+(a)  Make temporary repairs within seven (7) days of the date the Director or the Director's designee determines that the FOG control device is breached. 
+
+(b)  Within 30 days of the date the Director or the Director's designee determines that the FOG control device is breached, the FOG generator or FOG control device operator shall submit plans to the Department for review and approval for the installation of a new FOG control device that complies with design requirements in Section 24-42.6(9). 
+
+(c)  Within 90 days of the date the Director or the Director's designee determines that the FOG control device is breached, the FOG generator or FOG control device operator shall obtain all required approvals and permits and install the Department approved FOG control device. 
+
+(d)  Cease the discharge of FOG and wastewater as prohibited above. Failure to stop the discharge of FOG and wastewater as prohibited above shall result in the Director or the Director's designee directing the FOG generator or FOG control device operator to cease operating or ordering the utility providing water service to the facility to cease providing such service. 
+
+(3)  No person shall dispose of any FOG, or cause, let, permit, suffer or allow disposal or discharge of any FOG into any onsite sewage treatment and disposal system, non-utility or utility sanitary sewer system in quantities which hinder the operation of any onsite sewage treatment and disposal system, sewage collection, transmission or treatment system, exceeds the Oil and Grease standard applicable to FOG generators in Section 24-42.4, or causes a sanitary nuisance. 
+
+(a)  When a FOG generator or a FOG control device operator is found to have violated Section 24-42.6(3), the FOG generator or FOG control device operator shall immediately cease and desist from discharging FOG in such quantities or concentrations. The FOG generator or FOG control device operator shall submit a corrective action plan to the Department within 30 days of the date the Director or the Director's designee determines that the FOG generator or FOG control device operator discharged FOG in such quantities or concentrations. The corrective action plan shall include equipment, process or procedure modifications proposed to prevent discharging FOG in such quantities or concentrations. The corrective action plan shall be implemented within the timeframe provided in the Department's approval of the corrective action plan. Until the corrective action plan is approved by the Director or Director's designee and implemented in accordance with the Director or Director designee's approval, the FOG generator or FOG control device operator shall take all necessary actions to prevent the discharge of FOG in such quantities or concentrations and to prevent causation of a sanitary nuisance. 
+
+(b)  When a Residential FOG Source is found to have violated Section 24-42.6(3), the Residential FOG Source shall immediately cease and desist from discharging FOG in such quantities or concentrations. 
+
+(i)  When a Residential FOG Source is located in an apartment building or condominium, the building manager, association, property owner, or other responsible party shall submit a corrective action plan to the Department within 30 days of the date the Director or the Director's designee determines that the FOG residential source has violated Section 24-42.6(3). The corrective action plan shall be implemented within the timeframe provided in the Department's approval of the corrective action plan. 
+
+(ii)  The corrective action plan shall include equipment, process or procedure modifications proposed to correct the FOG discharge. 
+
+(iii)  Until the corrective action plan is approved by the Director or Director's designee and implemented in accordance with the Director or Director designee's approval, the building manager, association, property owner, or other responsible party shall take all necessary actions to prevent violation of Section 24-42.6(3) and to prevent causation of a sanitary nuisance. 
+
+(4)  Existing FOG generators with a current FOG operating permit issued prior to the effective date of this section, not proposing to increase seating capacity, dining area or drive-thru capacity, nor proposing to make any other modification, any of which will increase the discharge of FOG, shall comply with the following: 
+
+(a)  Where there is an existing FOG control device and sampling point, the sampling point shall be located after the point of no further treatment and shall be directly accessible for visual inspection and sampling. 
+
+(b)  Where there is no FOG control device, plans shall be submitted to the Department for the installation of a FOG control device which shall be installed in accordance with plans approved by the Director or Director's designee and within 90 days of the date the Director or the Director's designee determines that there is no FOG control device. The FOG generator shall take all necessary actions to prevent the discharge of FOG to the building sanitary drains and to prevent causing a sanitary nuisance until a FOG control device is properly installed. 
+
+(c)  Where the discharge from a FOG control device exceeds the Oil and Grease standard applicable to FOG generators in Section 24-42.4, or causes the accumulation of FOG in building sanitary drains or building sewer, the FOG control device shall be repaired, upgraded or replaced within 90 days of the date the Director or the Director's designee determines that Section 24-42.4 Oil and Grease standard applicable to FOG generators have been exceeded, or from the date the Director or the Director's designee determines that FOG has accumulated in building sanitary drains or building sewer. Repairs or upgrades that render third party certifications or approvals null and void are prohibited. 
+
+(d)  Where the Director or Director's designee determines that there is no sampling point or the existing sampling point is not reasonably accessible or adequate for sampling, a new reasonably accessible sampling point shall be installed within 60 days of the determination of the Director or Director's designee. 
+
+(e)  Where a FOG control device or sampling point are required to be repaired, replaced or installed, plans shall be submitted to the Department for review and approval and all required permits shall be obtained prior to repair, replacement or installation. Replacement or new FOG control devices shall be designed pursuant to Section 24-42.6(9). Repairs or upgrades that render third party certifications or approvals null and void are prohibited. 
+
+(f)  FOG generators shall comply with their current FOG generator operating permit conditions until the permit expires. Thereafter, FOG generators shall comply with permit conditions based on Section 24-42.6(10) requirements. 
+
+(5)  Existing FOG generators and FOG control device operators that discharge to a utility or non-utility owned or operated sanitary sewer system, without a valid FOG operating permit issued prior to the effective date of this section, shall comply with the following: 
+
+(a)  Submit as-built plans prepared by a Florida Professional Engineer and condition assessment prepared by a licensed plumber or Florida Professional Engineer within 60 days from the Director or the Director designee's determination that the FOG generator or FOG control device operator does not have a valid FOG operating permit. As-built plans and condition assessment shall demonstrate the following, where applicable: 
+
+(i)  That all existing back of the house fixtures discharge to existing FOG control devices and not directly to the building sanitary drains or building sewers. 
+
+(ii)  That existing FOG control devices comply with Section 24-42.6(9). 
+
+(iii)  That the FOG control device is functioning in accordance with the manufacturer's specifications and its integrity is not compromised. 
+
+(iv)  That a sampling point is located after the point of no further treatment, is reasonably accessible for visual inspection and sampling, and complies with Section 24-42.6(8). 
+
+(v)  That existing yellow and brown grease storage areas prevent the release of FOG to ground, groundwater, surface waters or storm sewers. 
+
+(vi)  That existing mat and equipment wash-down areas prevent the release of FOG to ground, groundwater, surface waters or storm sewers and prevent inflow of stormwater. 
+
+(b)  FOG generators or FOG control device operators that cannot comply with Sections 24-42.6(5)(a) shall submit plans to upgrade the facility pursuant to Section 24-42.6(5)(a)(i), (ii), (iii), and (iv) within 90 days of the date the Director or the Director's designee determines that the FOG generator or FOG control device operator does not have a valid FOG operating permit. The facility upgrade shall be completed within 180 days of the date the Director or the Director's designee determines that the FOG generator or FOG control device operator does not hold a valid FOG operating permit. 
+
+(c)  Within five days of the Director or the Director designee's approval of the as-built plans or plans to upgrade the facility pursuant to Section 24-42.6(5)(b), a FOG operating permit application shall be submitted to the Department pursuant to Sections 24-18(A)(18) and 24-42.6(10). 
+
+(6)  Existing FOG generators and FOG control device operators that discharge to an onsite sewage treatment and disposal system located in a wellfield protection area of any utility potable water supply wells, without a valid FOG operating permit issued prior to the effective date of this section, shall comply with the following within one year of Department notification: 
+
+(a)  Submit as-built plans prepared by a Florida Professional Engineer and condition assessment prepared by a licensed plumber or Florida Professional Engineer. As-built plans and condition assessment shall demonstrate the following, where applicable: 
+
+(i)  That all existing back of the house fixtures discharge to existing FOG control devices and not directly to the building sanitary drains or building sewers. 
+
+(ii)  That existing FOG control devices comply with Chapter 64E-6, FAC. 
+
+(iii)  That the FOG control device is functioning in accordance with the manufacturer's specifications and its integrity is not compromised. 
+
+(iv)  That the outlet tee of the last grease interceptor is reasonably accessible for visual inspection and sampling. 
+
+(v)  That existing yellow and brown grease storage areas prevent the release of FOG to ground, groundwater, surface waters or storm sewers. 
+
+(vi)  That existing mat and equipment wash-down areas prevent the release of FOG to ground, groundwater, surface waters or storm sewers and prevent inflow of stormwater. 
+
+(b)  FOG generators or FOG control device operators that cannot comply with Section 24-42.6(6)(a) shall submit plans to upgrade the facility pursuant to Section 24-42.6(6)(a)(i), (ii), (iii), and (iv) and implement upgrades within one (1) year of Department notification. 
+
+(c)  Within five days of the Director or the Director designee's approval of the as-built plans or plans to upgrade the facility pursuant to Section 24-42.6(6)(b), a FOG operating permit application shall be submitted to the Department pursuant to Sections 24-18(A)(18) and 24-42.6(10). 
+
+(7)  Notwithstanding any provision of this Code, no county or municipal officer, agent, employee or board shall approve, grant or issue any building permit, certificate of occupancy, certificate of completion, certificate of use or municipal occupational license for a FOG generator or FOG control device operator until prior written approval of the Director or the Director's designee has been obtained. Furthermore, no person shall construct, utilize, operate, occupy or cause, allow, let, permit or suffer to be constructed, utilized, operated or occupied any FOG generator or FOG control device until prior written approval of the Director or the Director's designee has been obtained. 
+
+(a)  For new FOG generators or FOG control operators discharging to a utility or non-utility owned or operated sanitary sewer collection system or to an onsite sewage treatment and disposal system located in a wellfield protection area of any utility potable water supply wells, the Director or the Director's designee shall not issue a written approval until the Director or the Director's designee finds that: 
+
+(i)  For the issuance of a building permit, construction plans have been found to be in compliance with Section 24-42.6(8). 
+
+(ii)  For the issuance of a certificate of occupancy, certificate of completion, or municipal equivalent, the FOG control devices have been inspected by the Department and found to be in compliance with Section 24-42.6(9) and with Department approved construction plans pursuant to Section 24-42.6(7)(a)(i). Compliance with approved plans shall be determined by construction inspection. No building/plumbing permit final inspection, certificate of occupancy or certificate of completion shall be issued prior to the Department's inspection finding that the FOG control devices have been installed in compliance with Department approved construction plans. 
+
+(iii)  For the issuance of a certificate of use or municipal equivalent, the FOG operating permit application has been submitted and found to be in compliance with Sections 24-18(A)(18), 24-42.6(10), 24-42.6(7)(a)(i) and 24-42.6(7)(a)(ii). 
+
+(b)  For existing FOG generators discharging to a utility or non-utility owned or operated sanitary sewer system or discharging to an onsite sewage treatment and disposal system located in a wellfield protection area of any utility potable water supply wells, proposing to increase seating capacity, dining area or drive-thru capacity, or other modification any of which will increase the discharge of FOG, the Director or the Director's designee shall not issue a written approval until the Director or the Director's designee finds that the proposed increased seating capacity, dining area or drive-thru capacity, or other modification any of which will increase the discharge of FOG, complies with Section 24-42.6 (7)(a)(i), (ii) and (iii). 
+
+(c)  For changes in ownership or other changes that require the issuance of a certificate of use, municipal occupational license, or equivalent municipal approval to operate or use a business, the Director or the Director's designee shall not issue a written approval until the Director or the Director's designee finds that: 
+
+(i)  The prior use had a valid FOG operating permit within the last 12 months. 
+
+(ii)  There is no construction proposed or required. 
+
+(iii)  There are no changes to the back of house. 
+
+(iv)  No changes have been made, or are proposed, to the plumbing system, use, or facility operations that will impact the FOG control device. 
+
+(v)  A FOG control device condition assessment is performed by a licensed plumber or Florida Professional Engineer and the findings, submitted to the Department in a form prescribed by the Director or the Director's designee, show that the FOG control device is functioning in accordance with the manufacturer's specifications and instructions and that the sampling point complies with Section 24-42.6(8). 
+
+(d)  For changes in ownership or other changes that require the issuance of a certificate of use, municipal occupational license, or equivalent municipal approval to operate or use a business, that do not comply with Section 24-42.6(7)(c) shall be required to comply with Section 24-42.6(7)(a)(i), (ii) and (iii) prior to the Department approval of the change in ownership or other changes that require the issuance of a certificate of use, municipal occupational license, or equivalent municipal approval to operate or use a business. 
+
+(8)  Plans. Where required in Section 24-42.6, plans shall include the following minimum information: 
+
+(a)  Florida Professional Engineer signature, seal and date. 
+
+(b)  All existing and proposed back of the house and front of the house areas and drive-thru lanes are shown and labeled. 
+
+(c)  Plan and isometric drawings showing and labeling all existing and proposed drainage pipes, fixtures, sumps, pumps, ejectors, solids separators, FOG control devices and sampling points. All drainage pipes that receive or can receive waste from back of the house fixtures, and other fixtures that can discharge food waste or FOG, shall be labeled grease waste drains or GW and shall include slope, diameter and drainage fixture units. Back of the house fixtures include floor drains, floor sinks, trough drains, mop sinks, three-compartment sinks, hand sinks, pre-rinse station/sink, preparation sink, pot sink, wok sink, self-cleaning kitchen exhaust hoods, and any and all fixtures, appurtenances and equipment that have the potential to introduce food waste or FOG into drainage pipes. Screens shall be shown and labeled in all sinks and drains. 
+
+(d)  Where multiple users/tenant spaces connect to a common FOG control device, the plans shall include all users/tenant spaces. 
+
+(e)  Plan and isometric drawings showing grease waste drains and sanitary drains from bathrooms and other non-FOG drains connecting to building drain and include slope, diameter and drainage fixture units. 
+
+(f)  All grease waste drains are connected to a FOG control device that complies with Section 24-42.6(9). FOG control devices shall not receive flow under pressure. No pump, ejector or any equipment that can mechanically emulsify FOG, or reduce the efficiency of a FOG control device, shall connect directly or indirectly to a FOG control device. 
+
+(g)  FOG control devices installed below ground/grade to intersect the building grease waste drain. When installation below grade is not physically possible, the Director or Director's designee may approve a single above grade installation if the FOG control device required pursuant to Section 24-42.6(9) is rated at 25 gallons per minute or less and includes an air gap or air break. 
+
+(h)  At least one sampling point, located after the point of no further treatment, shown and labeled. 
+
+(i)  Profiles, sections and details of FOG control device and sampling point drawn to scale. FOG control devices and sampling points shall be accessible for cleaning. At a minimum, four feet of vertical clearance and three feet of horizontal clearance shall be provided for each. 
+
+(j)  Where FOG control device access risers are required, the riser height shall not exceed 30 inches. A greater riser height may be approved by the Director or Director's designee where access for inspection and cleaning can be achieved and demonstrated. 
+
+(k)  Construction material for FOG control devices shall be labeled and shall be compatible with all waste, including waste with a pH of 3 or less. 
+
+(l)  The point and method of wastewater discharge for kiosk and booths using holding tanks shall be shown and labeled. The point of discharge shall be a grease waste drain or FOG control device sized for the quantity of waste generated. All waste containers shall be shown on plans. 
+
+(m)  FOG control device sizing calculations and assumptions, including peak flow rate, temperature, FOG and solids loading rates, and frequency of FOG and solids removal shall be shown and labeled. Where the FOG control device will serve multiple users/tenants, each user/tenant shall be identified and their flows and loading rates shall also be included on the plans. Loading rates shall include waste from food preparation and cleaning associated with eat-in, take-out and drive-thru meals. FOG loading shall include all FOG sources, including kitchen exhaust hoods. For self-cleaning kitchen exhaust hoods, the manufacturer's specifications for peak discharge shall be included. 
+
+(n)  Manufacturer's and third party certification installation requirements. 
+
+(o)  FOG control device model numbers and third party certifications shall be shown and labeled. Plan profiles and sections shall demonstrate how all labels and markings on FOG control devices remain visible during and after installation. 
+
+(p)  State Health Office's designated approval/tank numbers for grease interceptors designed in accordance with 64E-6, Florida Administrative Code, shall be shown and labeled. All labels and markings on FOG control devices shall be visible before and after installation. 
+
+(q)  For concrete precast FOG control devices, the precast concrete plant name and precast concrete plant certifying agency accepted by the Florida Department of Transportation shall be shown and labeled accordingly. Site cast FOG control devices are not permitted. 
+
+(r)  Dishmachines and dishwashers shall be connected to a FOG control device sized to account for emulsified FOG. 
+
+(s)  Locations and details for all stored waste, including yellow and brown grease, shall be shown and labeled. Storage areas shall be designed to prevent the release of FOG to ground, groundwater, surface waters or storm sewers. Storage containers shall be identified by waste type and capacity in gallons and sized to prevent overfilling. All storage containers shall have a lid that prevents rainwater inflow and that can be locked to prevent vandalism. 
+
+(t)  Locations and details for all wash-down areas shall be shown and labeled. All wash-down areas shall be designed to prevent the release of wash-water and FOG to ground, groundwater, surface waters, storm sewer or any other location not approved by the Director or Director's designee. Where mat and equipment wash-down is to be performed in a mop sink, the mop sink shall be sized and labeled. 
+
+(u)  Solids separation is provided prior to existing or proposed FOG control devices that require a flow control device or that are not certified to handle solids. 
+
+(v)  Access is provided for cleaning of FOG in grease waste drains where the horizontal run from the source of food waste and FOG is greater than 50 feet from the solids separator or FOG control device. Access points shall not be spaced greater than 50 feet, measured center-to-center. Location of access points and details for access point shall be provided in drawings. Where the horizontal run from the source of food waste and FOG is greater than 100 feet, plans shall include provisions for preventing clogging by FOG and other waste. Where the FOG control device is located at a remote location, it shall be equipped with a functional Interceptor Monitoring Alarm or Device. Remote locations include a different floor, or any horizontal distance exceeding 100 feet from the back of the house area. 
+
+(w)  Sanitary wastes from bathrooms and stormwater are not discharged into grease waste drains, solids separators, FOG control devices or sampling point. Only grease waste lines and drains shall connect to a FOG control device. 
+
+(9)  FOG Control Device Sizing. Where required in Section 24-42.6, FOG control devices shall be sized for all intended users, facilities and tenants using one of the following criteria and approved by the Director or Director's designee: 
+
+(a)  Gravity Grease Interceptors. The minimum design volume for gravity grease interceptors shall be the largest volume of the following: 
+
+(i)  Calculations or selection based on the Florida Building Code, latest edition. 
+
+(ii)  Alternative calculations: 
+
+1.  Calculations prepared by a Florida Professional Engineer that include peak flow rate, 30 minute hydraulic detention time calculated using net wet volume, temperature, FOG and solids loading rates, and proposed frequency of FOG and solids removal. Net wet volume shall be total wet volume minus the maximum volume of waste stored between cleaning cycles; or 
+
+2.  Calculations prepared by a Florida Professional Engineer that include peak flow rate; temperature; FOG and solids loading rates; proposed frequency of FOG and solids removal; third party certification of the maximum FOG containment capacity; and third party certification of the effluent concentration or of the FOG removal efficiency. The certified effluent concentration shall be equal to or less than the FOG sanitary sewer discharge limitation and pretreatment standards referenced in Section 24-42.4. The minimum FOG removal efficiency shall be 99% at the third party certified flow rate and minimum required FOG containment capacity. 
+
+(iii)  Where Chapter 64E-6, Florida Administrative Code, applies, as determined by the Director or Director's designee, total volume shall be calculated using seats and meals, where meals are used to calculate the volume associated with take out, drive through and other FOG loads not accounted for in seats, and the total volume is increased to account for the maximum volume of waste stored between cleaning cycles. As an alternative to calculating the maximum volume of waste stored between cleaning cycles, the following multiplication factors can be used to increase the volume calculated by seats and meals: 
+
+Cleaning Cycle 
+
+Multiplication Factor 
+
+Every 30 days 
+
+1.0 
+
+Every 60 days 
+
+1.15 
+
+Every 90 days 
+
+1.25 
+
+ 
+
+(b)  Where more than one gravity grease interceptor is required to provide the largest volume calculated in Section 24-42.6(9)(a), they shall be installed in series with consideration given to minimize disturbance between tanks by utilizing appropriately sized pipes and influent and effluent appurtenances that maximize FOG separation. 
+
+(c)  Hydromechanical Grease Interceptors. The minimum size and number of hydromechanical grease interceptors shall be the greatest of the following: 
+
+(i)  Twenty (20) gallons per minute. 
+
+(ii)  Calculations or selection based on the Florida Building Code, latest edition. 
+
+(iii)  Calculations prepared by a Florida Professional Engineer that include projected peak flow rate; temperature; FOG and solids loading rates; proposed frequency of FOG and solids removal; third party certification of the maximum FOG containment capacity; and third party certification of the effluent concentration or of the FOG removal efficiency. The certified effluent concentration shall be equal to or less than the Oil and Grease standard applicable to FOG generators referenced in Section 24-42.4. The minimum FOG removal efficiency shall be 99% at the third party certified flow rate and minimum required FOG containment capacity. 
+
+(d)  Where more than one hydromechanical grease interceptor is required to provide the required removal efficiency, they shall be installed in series and the removal efficiency shall be based on third party testing of the proposed configuration and number of grease interceptors proposed. The test configuration, including flow control, air entrainment and other appurtenances, shall match the proposed field installation. 
+
+(e)  FOG Control Devices not classified by the Director or Director's designee as hydromechanical or gravity grease interceptors. The minimum size and number of FOG control devices shall be the greatest of the following: 
+
+(i)  Calculations or selection based on the Florida Building Code, latest edition. 
+
+(ii)  Calculations prepared by a Florida Professional Engineer that include peak flow rate; temperature; FOG and solids loading rates; FOG and solids biological and chemical removal rates; frequency of FOG and solids removal; and third party certification of maximum FOG containment capacity and effluent concentration. The certified effluent concentration shall be equal to or less than the Oil and Grease standard applicable to FOG generators referenced in Section 24-42.4. 
+
+(f)  Where more than one FOG control device, not classified by the Director or Director's designee as hydromechanical or gravity grease interceptors, is required to provide the required effluent concentration, it shall be based on third party testing of the proposed configuration and number of grease interceptors proposed. The test configuration, including flow control, air entrainment and other appurtenances, shall match the proposed field installation. 
+
+(g)  Peak Flow Rate. Where peak flow rate is required in Section 24-42.6, it shall be estimated as follows: 
+
+(i)  Shell buildings. Peak flow shall be calculated using Manning's Formula for full pipe flow for the grease waste drain nominal diameter and slope and a roughness coefficient of 0.0113. 
+
+(ii)  Plans with complete plumbing design. Peak flow shall be estimated as provided above for shell building, total fixture flow rate using one or two minute drain time, or drainage fixture units (DFUs). For DFUs, the peak flow rate shall be calculated by multiplying the proposed DFUs by the flow rate calculated using Manning's Formula for full pipe flow and a roughness coefficient of 0.0113 and divided by the maximum number of DFUs allowed under the Florida Building Code, latest edition, for the grease waste drain diameter and slope. Calculated flow shall not be less than the minimum peak flow in the table below: 
+
+Nominal pipe size in inches 
+
+Minimum Total Flow Rate at Grease Interceptor Influent 
+
+1.25—2.5 
+
+20 gpm 
+
+3 
+
+23 gpm 
+
+4 
+
+50 gpm 
+
+5 
+
+91 gpm 
+
+6 
+
+147 gpm 
+
+8 
+
+317 gpm 
+
+10 
+
+576 gpm 
+
+12 
+
+936 gpm 
+
+15 
+
+1,697 gpm 
+
+ 
+
+(10)  Operating Permits for FOG Generators and FOG Control Device Operators. No person shall operate, cause, let, permit, suffer or allow the operation of a FOG generating facility or FOG control devices serving FOG generators discharging to a utility or non-utility owned or operated sanitary sewer system or an onsite sewage treatment and disposal system located in a wellfield protection area of any utility potable water supply wells without a valid FOG operating permit issued by the Director or the Director's designee or in violation of any condition, limitation or restriction which is part of a FOG operating permit. 
+
+(a)  Existing FOG generators and FOG control device operators that do not hold a valid FOG operating permit issued prior to the effective date of this section, that discharge to an onsite sewage treatment and disposal system located in a wellfield protection area of any utility potable water supply wells, shall apply for and obtain a FOG operating permit using a form prescribed by the Director or Director's designee in accordance with Section 24-42.6(6). 
+
+(b)  Applications for new FOG generators and new FOG control device operators shall be in a form prescribed by the Director or Director's designee. When the FOG operating permit applicant is a tenant, the application shall be completed and signed by the tenant(s) and property owner(s) as co-applicants. The owner's section of the application shall include a statement acknowledging that the property owner(s) is responsible for the proper closure of a FOG generator pursuant to Section 24-42.6(10)(d)(vi). 
+
+(c)  Each FOG generator shall, on an annual basis, submit a FOG control device certification form which is prescribed by the Director or the Director's designee. Where made available by the Department, certification shall be completed using a secure online system or by an equivalent system developed by the Department. Said certification shall be prepared by a Florida Professional Engineer or licensed plumber or liquid waste transporter, attesting that the existing FOG control devices are functioning as designed and are in good working order. Where required in this Section, the renewal shall also include training certificates for staff trained pursuant to Section 24-42.6(10)(d)(iv). 
+
+(d)  Operating permits for new FOG generators and new FOG control device operators, and renewal of same, discharging to a utility or non-utility owned or operated sanitary sewer system or an onsite sewage treatment and disposal system located in a wellfield protection area of any utility potable water supply wells shall include the following: 
+
+(i)  Best management practices. The Director or Director's designee shall maintain a list of approved best management practices and update the list as necessary. 
+
+(ii)  Maintenance. All FOG control devices and equipment shall be serviced to function properly and continuously to prevent the discharge of FOG into building sanitary drains, building sewers, utility or non-utility owned or operated sanitary sewer systems, or onsite sewage treatment and disposal systems. Where cleaning of FOG control devices is required in Section 24-42.6, cleaning shall include the complete removal of the full contents of the FOG control device, including settled solids, wastewater and floating materials. Side walls, baffle walls, cross-pipes, and inlet and outlet pipes shall be pressure washed or scraped to remove all attached materials. Decanting, skimming, or backflushing is prohibited. Emulsifiers, grease cutters or other chemicals or detergents which could cause FOG to pass through the system to the building sanitary drains or building sewers are prohibited and shall not be used. At a minimum, the following maintenance shall be performed: 
+
+1.  Grease Waste Drains, Building Sanitary Drains and Building Sewers. When jetting, rodding or other cleaning activities are required, FOG shall not be flushed, discharged, conveyed or allowed to pass through to utility or non-utility owned or operated sanitary sewer systems or onsite sewage treatment and disposal systems. All FOG shall be collected and transported by a liquid waste transporter, permitted by the Department, to an approved disposal facility. 
+
+2.  Kitchen Exhaust Hoods. All waste generated by manual hood cleaning shall not be flushed, discharged, conveyed or allowed to pass through to utility or non-utility owned or operated sanitary sewer systems or onsite sewage treatment and disposal systems. All wastes shall be collected and transported by a liquid waste transporter permitted by the Department to an approved disposal facility. Where a hood is designed to be self-cleaning, the FOG control device shall be designed for the maximum cold water and hot water flow rates. Where a surfactant/detergent is used, the FOG control device shall be sized to provide sufficient detention time to allow FOG waste separation so that the effluent does not exceed the standards set forth in Section 24-42.4. 
+
+3.  Yellow and Brown Grease Storage Areas. Yellow and brown grease storage areas shall be maintained free of debris and storage containers shall not be overfilled. Storage containers shall be visually inspected daily and emptied before they reach 90 percent capacity. Spills shall be contained and cleaned using absorbent materials. Wet cleanup methods shall not be used. Storage container lids shall be maintained to prevent rainwater inflow and locked to prevent vandalism. 
+
+4.  Mat and Equipment Wash-Down Areas. Mat and equipment wash-down areas shall be maintained free of debris and wash-water shall not be released to ground, groundwater, surface waters, storm sewer or any other location not approved by the Director or Director's designee. Wash-down areas shall not allow stormwater or rainwater to enter the building sanitary drains, building sewers, utility or non-utility owned or operated sanitary sewer systems, or onsite sewage treatment and disposal systems. 
+
+5.  Solids Separators. Where installation of a solids separator is required or approved pursuant to Section 24-42.6(8), solids separators shall be serviced to function as designed and shall not be missing or have defective elements or components that reduce its ability to separate solids. All solids separators shall be visually inspected daily to prevent excessive accumulation and discharge of food solids to FOG control devices, building sanitary drains, building sewers, utility or non-utility owned or operated sanitary sewer systems, or onsite sewage treatment and disposal systems. Solids shall be properly discarded as solid waste or removed by a liquid waste transporter permitted by the Department. 
+
+6.  Hydromechanical Grease Interceptors. Cleaning of grease interceptors shall be performed as follows: 
+
+a.  Automatic grease interceptors shall be cleaned by a liquid waste transporter, permitted by the Department, monthly or more frequently so that the FOG capacity limit or the Oil and Grease standard applicable to FOG generators in Section 24-42.4 are not exceeded. The contents of the strainer/screen and automatic storage receptacles shall be emptied by the FOG generator or FOG control device operator on a daily basis and transferred to waste containers intended and approved for such use to prevent overfilling or spills. If at any time the automatic elements or components do not function as intended and designed, the malfunctioning automatic grease interceptor shall be operated and reported as a manual grease interceptor and cleaned by a liquid waste transporter, permitted by the Department, on a daily basis until the system is repaired. In no instance shall the automatic grease interceptor be allowed to cause a sanitary nuisance at any time. In the event of a sanitary nuisance, such conditions shall be abated within 24 hours pursuant to Section 24-28. The automatic grease interceptor shall be repaired within 30 days of malfunctioning. If the automatic grease interceptor is not capable of repair, it shall be replaced within 90 days of malfunctioning. Plans for replacement shall be reviewed and approved by the Director or Director's designee pursuant to Section 24-42.6(9). 
+
+b.  Manual grease interceptor shall be cleaned monthly by a liquid waste transporter permitted by the Department or more frequently when necessary to avoid exceeding the FOG capacity limit or effluent standards in Section 24-42.4. The FOG generator or FOG control device operator may remove floating materials and settled solids on a regular basis, between cleaning intervals performed by a liquid waste transporter, and may transfer the waste to containers intended and approved for such use to prevent overfilling or spills. 
+
+c.  Alternative cleaning frequencies, not to exceed 90 days, may be approved by the Director or Director's designee based on a complete engineering analysis, pursuant to Section 24-42.6(9), or the results of a field study approved by the Director or Director's designee that demonstrates that less frequent cleaning is appropriate and will not result in an exceedance of the Oil and Grease standard applicable to FOG generators referenced in Section 24-42.4. 
+
+d.  Exception. Notwithstanding the foregoing, a FOG generator shall not be required to have a liquid waste transporter clean the grease interceptor on a monthly basis, as required above in Section 24-42.6(10)(d)(ii)6., if the FOG generator does not discharge FOG or food waste in quantities which hinder the operation of any onsite sewage treatment and disposal system, sewage collection, transmission or treatment system, or exceed the oil and grease standard applicable to FOG generators in Section 24-42.4, or cause a sanitary nuisance, provided that the FOG generator: does not have fryers; is not required by the Florida Building Code Mechanical (latest edition) to have a Type I kitchen exhaust hood; has a grease interceptor rated at 20 gallons per minute or less; and cleans the grease interceptor daily. 
+
+7.  Gravity Grease Interceptors. Cleaning of gravity grease interceptors shall be performed as follows: 
+
+a.  Gravity grease interceptors shall be cleaned every 60 days by a liquid waste transporter permitted by the Department or more frequently when necessary to avoid exceeding the FOG capacity limit or the Oil and Grease standard applicable to FOG generators in Section 24-42.4. 
+
+b.  Single and grouped gravity grease interceptors equipped with a functional Interceptor Monitoring Device shall all be cleaned by a liquid waste transporter permitted by the Department at an interval not to exceed 180 days, the FOG capacity limit, or the Oil and Grease standard applicable to FOG generators in Section 24-42.4. 
+
+c.  Alternative cleaning frequencies may be approved pursuant to Section 24-42.6(10)(d)(ii)6.c. 
+
+8.  FOG Control Devices not classified by the Director or Director's designee as hydromechanical or gravity grease interceptors: FOG control devices shall be cleaned pursuant Section 24-42.6(10)(d)(ii)6. 
+
+(iii)  Record Keeping. Each FOG generator and FOG control device operator shall maintain records of maintenance and repair activities, service calls and staff training. All records shall be retained onsite for a period of not less than three years and made available onsite to Department staff upon request. Offsite records shall not be an acceptable substitute for onsite records required herein. At a minimum, each FOG generator and FOG control device operator shall maintain the following records using forms prescribed by the Director or Director's designee. 
+
+1.  Scheduled and unscheduled service calls to clean grease waste drains, building sanitary drains, or building sewers. 
+
+2.  Repairs required resulting from food or FOG accumulation or blockages. 
+
+3.  Kitchen exhaust hood cleaning. 
+
+4.  FOG control device cleaning, maintenance and repair. 
+
+5.  Waste manifest forms pursuant to Sections 24-42.6(10)(c)(v) and 24-46. 
+
+6.  Staff training records pursuant to Section 24-42.6(10)(d)(iv). 
+
+(iv)  Training Requirements. Each FOG generator and FOG control device operators shall maintain trained staff to ensure compliance with the requirements of Section 24-42.6(10). The content and form of training shall be prescribed by the Director or Director's designee. Training shall include orientation of new employees and quarterly training of existing employees. On or before January 1, 2019, each FOG generator and FOG control device operator shall have one trained person on staff which has working knowledge of the following where applicable: 
+
+1.  Kitchen exhaust hoods. 
+
+2.  Solids separators. 
+
+3.  FOG control devices. 
+
+4.  Best management practices. 
+
+5.  Yellow and brown grease storage. 
+
+6.  Mat and equipment wash-down areas. 
+
+7.  Record keeping and reporting. 
+
+(v)  Reporting. Each FOG generator and FOG control device operator shall submit reports to the Department using forms prescribed by the Director or Director's designee pursuant to maintenance schedules in Section 24-42.6(10)(d)(ii). Where made available by the Department, reporting shall be completed using a secure online system or by an equivalent system developed by the Department. Reports shall include the date and the name of liquid waste transporter. 
+
+(vi)  Closure Requirements. No more than 30 days after a FOG generator ceases operation, the property owner shall notify the Department to perform a closure inspection. On or before the closure inspection, the property owner shall have all yellow and brown grease containers and bins emptied, storage areas cleaned and FOG control devices cleaned. Decanting, skimming, or backflushing is prohibited. Emulsifiers, grease cutters or other chemicals and detergents which could cause FOG to pass through the system to the drain lines are prohibited and shall not be used. All waste shall be disposed at a permitted facility, using an approved liquid waste transporter with manifests submitted to the Department. 
+
+(e)  Existing FOG generators with a current FOG operating permit, issued prior to the effective date of this section, proposing to increase seating capacity, dining area or drive-thru capacity, or other modification, any of which will increase the discharge of FOG, shall comply with Sections 24-42.6(7)(a)(i), (ii) and (iii), and 24-42.6(9). 
+
+(f)  FOG generators discharging to an onsite sewage treatment and disposal system located in a wellfield protection area of any utility potable water supply wells, proposing to increase seating capacity, dining area or drive-thru capacity, or other modification, any of which will increase the discharge of FOG, shall comply with Sections 24-42.6(6)(b), and 24-42.6(9). 
+
+(g)  FOG generators discharging to an onsite sewage treatment and disposal system located in a wellfield protection area of any utility potable water supply wells, not proposing to increase seating capacity, dining area or drive-thru capacity, or other modification, any of which will increase the discharge of FOG, shall apply for and obtain an operating permit pursuant to Section 24-42.6(6). 
+
+(h)  Any FOG operating permit approved and issued by the Department may be revoked for failure to comply with permit conditions or conditions established in Section 24-42.6. Cause for revoking an operating permit may include, but not be limited to, the following: 
+
+(i)  Falsifying information on any record or document required by the county; or 
+
+(ii)  Failure to have a FOG control device cleaned properly or in a timely manner as described in Section 24-42.6(10); or 
+
+(iii)  Having a FOG control device cleaned by a person not permitted by the Department to perform such cleaning; or 
+
+(iv)  Utilizing a liquid waste transporter not permitted by the Department; or 
+
+(v)  Failure to comply with any permit condition; or 
+
+(vi)  Violation of any federal, state, or local regulation governing the handling of FOG wastes; or 
+
+(vii)  Failure to pay invoices, fees, fines, judgments or liens owed to the county. 
+
+(viii)  The revocation of an operating permit shall be in addition to any penalties assessed for violation of this Chapter, or provided elsewhere in the Code of Miami-Dade County. 
+
+(11)  FOG Liquid Waste Transporters. Notwithstanding any provision of this Code, no person shall collect, pump, transport, or cause, let, permit, suffer or allow any FOG, yellow grease, brown grease or black grease to be collected, pumped or transported without a valid operating permit issued by the Department pursuant to Sections 24-18, and 24-46. In addition to the requirements enumerated in Section 24-46, FOG liquid waste transporters shall comply with the following: 
+
+(a)  All waste transported and FOG control device condition assessments shall be manifested using forms prescribed by the Director or Director's designee and reported using a secure online system or an equivalent system developed by the Department. Reporting shall be completed no later than 20 days after the end of the month during which cleaning was performed. 
+
+(b)  FOG, yellow grease, black grease and brown grease shall only be stored or disposed at private or public facilities approved by the Department. 
+
+(c)  FOG control device cleaning shall include completely removing the full contents of the FOG control device, including settled solids, wastewater and floating materials, pressure washing or scraping side walls, baffle walls, cross-pipes, and inlet and outlet pipes to remove all attached materials. Decanting, skimming, or backflushing is prohibited. Emulsifiers, grease cutters or other chemicals and detergents which could cause FOG to pass through the system to the building sanitary drains or building sewers are prohibited and shall not be used. 
+
+(d)  Effective January 1, 2019, liquid waste transporter staff shall be trained to ensure compliance with the requirements of Sections 24-42.6(10)(d)(ii) and 24-42.6(11)(c). The content and form of training shall be prescribed by the Director or Director's designee. At a minimum, one trained staff member shall be present while FOG control devices are being cleaned. Staff performing assessments of the condition of any system or part thereof (condition assessments) stipulated in Section 24-42.6(11) shall be trained in accordance with this Section. 
+
+(e)  Septage or other waste shall not be commingled with yellow or brown grease. 
+
+(f)  Liquid waste transporters shall perform FOG control device condition assessments when cleaning is required pursuant to Section 24-42.6(10). The condition assessment shall be performed and reported pursuant to Section 24-42.6(11)(a). At a minimum, the condition assessment shall document the following: 
+
+(i)  The water level and thickness of floating FOG and settled solids prior to cleaning. 
+
+1.  Where FOG control devices are installed below ground and the water level prior to cleaning is below the invert of the outlet pipe, or groundwater infiltration is observed during or after cleaning, the condition assessment shall document leaks. 
+
+2.  Where FOG control devices are installed above ground and leaks are observed, the condition assessment shall document leaks. 
+
+3.  Should a leak cause a sanitary nuisance, the sanitary nuisance shall be removed, abated or corrected within 24 hours or such other reasonable time as the Director or the Director's designee may determine. 
+
+(ii)  Integrity of solids separators and FOG control devices, including the inlet and outlet appurtenances; interior, bottom, top, side walls, baffle walls, and cross-pipes; manhole rings, extenders and covers; sampling points and cleanouts; interceptor monitoring alarms and devices; and other elements and equipment approved by the Department. 
+
+(iii)  The condition of yellow and brown grease containers and bins. 
+
+(12)  FOG Disposal Facilities. All facilities accepting, storing, transferring or treating FOG, yellow grease or brown grease shall obtain an operating permit pursuant to Section 24-18(A)(22) and comply with the following: 
+
+(a)  Maintain trained staff to assure compliance with the requirements of Section 24-42.6. The content and form of training shall be prescribed by the Director or Director's designee. Training shall be completed prior to permit renewal starting January 1, 2019. At a minimum, one trained staff member shall be present during maintenance and repair of the system and/or system components. 
+
+(b)  Submit monthly reports to the Department using forms prescribed by the Director or Director's designee. Where made available by the Department, reporting shall be completed using a secure online system or by an equivalent system developed by the Department. Monthly reports shall include total volume of each waste stream accepted, collected, stored, treated, disposed, or transported and include waste manifests for all waste transported. Waste manifests shall track waste from the point of origin to the final disposal facility. 
+
+(13)  Utilities. Utilities shall submit a monthly report to the Department that includes the following minimum information: 
+
+(a)  A list with dates and locations where accelerated FOG maintenance was performed to prevent a sanitary sewer overflow. Locations shall also be identified in a geographical information system (GIS) format based on the utilities atlas pursuant to Section 24-42.2(6). 
+
+(b)  A description of accelerated FOG maintenance performed, including quantities of waste removed, recovered, collected or treated to prevent a sanitary sewer overflow. The information shall be provided in text and GIS form. 
+
+(c)  Cost of accelerated FOG maintenance, including, equipment and materials. Labor shall include field and office staff. 
+
+(Ord. No. 18-22, § 10, 2-21-18)

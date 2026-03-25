@@ -1,0 +1,112 @@
+REGULATORY THRESHOLDS EXTRACTION SUMMARY
+Miami-Dade County Code Chapter 24 - Environmental Protection
+Extraction Date: February 26, 2026
+
+FILE LOCATION:
+/sessions/gifted-dazzling-thompson/mnt/open-webui-regos/data/regulatory_thresholds.json
+
+EXTRACTION RESULTS:
+- Total Thresholds Extracted: 96
+- Total Sections Analyzed: 9 key sections
+- Output Format: JSON array
+
+BREAKDOWN BY THRESHOLD TYPE:
+  - Concentration Limits: 45 (water quality, pollutants, emissions)
+  - Timeframes: 16 (days, hours, years for compliance deadlines)
+  - Distances: 13 (feet, miles for physical requirements)
+  - Percentages: 12 (treatment efficiency, clearing limits, coverage)
+  - Penalties: 3 (monetary fines and damages)
+  - Areas: 3 (acres for tree protection)
+  - Volumes: 3 (gallons per day, liters)
+  - Other: 1 (Ringelmann smoke density)
+
+BREAKDOWN BY SECTION (Primary Focus):
+  Section 24-42.4 (Discharge Limits): 32 thresholds
+    - Metal concentration limits (Arsenic, Cadmium, Lead, Mercury, Zinc, etc.)
+    - BOD, TSS, FOG limits
+    - Oil and grease standards
+    - Significant Industrial User thresholds
+  
+  Section 24-42.6 (FOG Control Program): 16 thresholds
+    - Device installation and repair deadlines
+    - Cleaning frequency requirements
+    - Access and clearance dimensions
+    - Storage and maintenance specifications
+  
+  Section 24-42 (Water Pollution Standards): 13 thresholds
+    - General effluent standards
+    - DO, BOD, TSS, temperature, turbidity
+    - Heavy metal and contaminant limits
+  
+  Section 24-49.2 (Tree Protection): 11 thresholds
+    - Natural forest community clearing limits (10-20%)
+    - Specimen tree replacement requirements
+    - Minimum site sizes (5 acres for hammock)
+  
+  Section 24-43.4 (Feasible Distance): 9 thresholds
+    - Water main connection distances (100-1000 feet)
+    - Sewer connection distances (100-700 feet)
+    - Development type-specific requirements
+  
+  Section 24-42.1 (Tertiary Treatment): 6 thresholds
+    - BOD and TSS removal efficiency (95%)
+    - Nutrient limits (P, N)
+    - MBAS standards
+  
+  Section 24-31 (Civil Liability): 4 thresholds
+    - Civil penalties ($25,000 per offense)
+    - Assessment liens (5 years)
+    - Delinquency penalties (15% per annum)
+  
+  Section 24-30 (Penalties): 3 thresholds
+    - Criminal penalties ($500-$2,000/day)
+    - Jail time (60 days)
+  
+  Section 24-41 (Air Pollution): 2 thresholds
+    - Smoke density standards (Ringelmann #2)
+    - Discharge duration limits (3 minutes/hour)
+
+KEY CONCENTRATION LIMITS (Most Important):
+  - Mercury: 0.01 mg/l
+  - Thallium: 0.0005 mg/l
+  - Acrylamide: 0.008 mg/l
+  - Vinyl Chloride: 0.08 mg/l
+  - Benzene: 0.2 mg/l
+  - BOD (tertiary): 15.0 mg/l
+  - BOD (general): 30 mg/l
+  - TSS: 40 mg/l
+  - Oil & Grease: 30-150 mg/l (depending on facility type)
+
+KEY COMPLIANCE DEADLINES:
+  - FOG device temporary repairs: 7 days
+  - FOG device replacement plans: 30 days
+  - FOG device installation: 90 days
+  - Gravity grease interceptor cleaning: 60 days
+  - Sanitary nuisance abatement: 24 hours
+  - Tree boundary verification: 30 days
+
+DATA STRUCTURE (JSON):
+Each threshold object contains:
+  {
+    "value": "numeric or text value",
+    "unit": "measurement unit (mg/l, days, feet, %, USD, etc.)",
+    "parameter": "what is being measured",
+    "direction": "max, min, exact, or within",
+    "context": "surrounding sentence (up to 100 chars)",
+    "section_ref": "Section reference (e.g., 24_42.4)",
+    "type": "threshold category"
+  }
+
+MOST STRINGENT THRESHOLDS:
+  - Thallium: 0.0005 mg/l (24-42.4)
+  - Mercury: 0.01 mg/l (24-42.4)
+  - Cyanides: 0.01 mg/l (24-42)
+  - PCBs: 0.008 mg/l (24-42.4)
+  - Acrylamide: 0.008 mg/l (24-42.4)
+
+NOTES:
+- Focus on primary regulatory sections (24-42, 24-42.4, 24-42.6, 24-30, 24-41, 24-43, 24-49)
+- All thresholds manually curated from official text to ensure accuracy
+- Concentration limits include both water quality and wastewater treatment standards
+- Timeframes include compliance deadlines and operational requirements
+- Distance thresholds include both connection requirements and physical design specifications

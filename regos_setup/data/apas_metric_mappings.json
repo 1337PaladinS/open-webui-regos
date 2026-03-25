@@ -1,0 +1,183 @@
+{
+  "_comment": "Maps APAS Telemetry API metric names to RegOS Chapter 24 threshold parameters. Only mapped metrics are evaluated for compliance. Add new mappings as sensors are deployed.",
+  "_version": "1.0.0",
+  "mappings": [
+    {
+      "apas_source_id": "123scada_pump_station",
+      "apas_metric": "wetwell.*.level",
+      "regos_parameter": null,
+      "regos_unit": null,
+      "description": "Wet well water level — no direct Chapter 24 threshold. Monitored for operational awareness only.",
+      "evaluate": false
+    },
+    {
+      "apas_source_id": "123scada_pump_station",
+      "apas_metric": "rtu.*.temperature",
+      "regos_parameter": "Temperature",
+      "regos_unit": "°F",
+      "unit_conversion": {
+        "from": "°C",
+        "to": "°F",
+        "formula": "value * 9/5 + 32"
+      },
+      "description": "RTU temperature — evaluated against Chapter 24 discharge temperature limits (92°F freshwater, 95°F marine). APAS reports in °C, converted to °F for threshold check.",
+      "evaluate": true
+    },
+    {
+      "apas_source_id": "123scada_pump_station",
+      "apas_metric": "rtu.*.ac",
+      "regos_parameter": null,
+      "regos_unit": null,
+      "description": "RTU AC voltage — operational metric, no Chapter 24 threshold.",
+      "evaluate": false
+    },
+    {
+      "apas_source_id": "123scada_pump_station",
+      "apas_metric": "rtu.*.battery",
+      "regos_parameter": null,
+      "regos_unit": null,
+      "description": "RTU battery voltage — operational metric, no Chapter 24 threshold.",
+      "evaluate": false
+    },
+    {
+      "apas_source_id": "123scada_pump_station",
+      "apas_metric": "pump.*.running",
+      "regos_parameter": null,
+      "regos_unit": null,
+      "description": "Pump running state (0/1) — operational, no Chapter 24 threshold.",
+      "evaluate": false
+    },
+    {
+      "apas_source_id": "123scada_pump_station",
+      "apas_metric": "pumpstation.*.state",
+      "regos_parameter": null,
+      "regos_unit": null,
+      "description": "Station state code — operational, no Chapter 24 threshold.",
+      "evaluate": false
+    },
+    {
+      "apas_source_id": "123scada_pump_station",
+      "apas_metric": "pumpstation.*.ac_fail",
+      "regos_parameter": null,
+      "regos_unit": null,
+      "description": "AC failure flag — operational, no Chapter 24 threshold.",
+      "evaluate": false
+    },
+    {
+      "apas_source_id": "123scada_pump_station",
+      "apas_metric": "pumpstation.*.is_online",
+      "regos_parameter": null,
+      "regos_unit": null,
+      "description": "Online status — operational, no Chapter 24 threshold.",
+      "evaluate": false
+    }
+  ],
+  "effluent_sensor_templates": {
+    "_comment": "These mappings activate when effluent quality sensors are added to the SCADA system. Each maps an expected APAS metric pattern to a Chapter 24 parameter. Copy into 'mappings' array and set evaluate:true when the sensor is installed.",
+    "templates": [
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.bod",
+        "regos_parameter": "Biochemical oxygen demand (BOD)",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.tss",
+        "regos_parameter": "Suspended solids",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.do",
+        "regos_parameter": "Dissolved oxygen",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.ph",
+        "regos_parameter": "pH",
+        "regos_unit": "",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.oil_grease",
+        "regos_parameter": "Oil and grease",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.turbidity",
+        "regos_parameter": "Turbidity",
+        "regos_unit": "NTU",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.temperature",
+        "regos_parameter": "Temperature",
+        "regos_unit": "°F",
+        "unit_conversion": {
+          "from": "°C",
+          "to": "°F",
+          "formula": "value * 9/5 + 32"
+        },
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.copper",
+        "regos_parameter": "Copper",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.lead",
+        "regos_parameter": "Lead",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.zinc",
+        "regos_parameter": "Zinc",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.chromium",
+        "regos_parameter": "Chromium (Total)",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.nickel",
+        "regos_parameter": "Nickel",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.cyanide",
+        "regos_parameter": "Cyanides",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      },
+      {
+        "apas_source_id": "123scada_pump_station",
+        "apas_metric": "effluent.*.fog",
+        "regos_parameter": "Oil and Grease - FOG Generators",
+        "regos_unit": "mg/l",
+        "evaluate": true
+      }
+    ]
+  }
+}

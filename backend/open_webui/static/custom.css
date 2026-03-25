@@ -1,0 +1,15 @@
+/* ──────────────────────────────────────────────────────────
+   APAS Brand Overrides
+   Brand blue: #1DA1D4 (from APAS logo)
+   ────────────────────────────────────────────────────────── */
+
+/* Message action toolbar buttons — default state */
+.buttons.text-gray-600 {
+  color: #1DA1D4 !important;
+}
+
+/* Dark mode default state */
+.dark .buttons.text-gray-600,
+.buttons.dark\:text-gray-500 {
+  color: #1DA1D4 !important;
+}
