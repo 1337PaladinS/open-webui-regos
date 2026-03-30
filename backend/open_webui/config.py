@@ -4036,6 +4036,69 @@ LDAP_ATTRIBUTE_FOR_GROUPS = PersistentConfig(
 GUEST_MESSAGE_LIMIT = int(os.environ.get("GUEST_MESSAGE_LIMIT", "10"))
 GUEST_MESSAGE_WINDOW = int(os.environ.get("GUEST_MESSAGE_WINDOW", "10800"))  # 3 hours
 
+GUEST_USER_PERMISSIONS = {
+    "workspace": {
+        "models": False,
+        "knowledge": False,
+        "prompts": False,
+        "tools": False,
+        "skills": False,
+        "models_import": False,
+        "models_export": False,
+        "prompts_import": False,
+        "prompts_export": False,
+        "tools_import": False,
+        "tools_export": False,
+    },
+    "sharing": {
+        "models": False,
+        "public_models": False,
+        "knowledge": False,
+        "public_knowledge": False,
+        "prompts": False,
+        "public_prompts": False,
+        "tools": False,
+        "public_tools": False,
+        "notes": False,
+        "public_notes": False,
+    },
+    "chat": {
+        "controls": False,
+        "valves": False,
+        "system_prompt": False,
+        "params": False,
+        "file_upload": False,
+        "delete": False,
+        "delete_message": False,
+        "continue_response": True,
+        "regenerate_response": True,
+        "rate_response": False,
+        "edit": False,
+        "share": False,
+        "export": False,
+        "stt": False,
+        "tts": False,
+        "call": False,
+        "multiple_models": False,
+        "temporary": True,
+        "temporary_enforced": True,
+    },
+    "features": {
+        "api_keys": False,
+        "notes": False,
+        "folders": False,
+        "channels": False,
+        "direct_tool_servers": False,
+        "web_search": False,
+        "image_generation": False,
+        "code_interpreter": False,
+        "memories": False,
+    },
+    "settings": {
+        "interface": False,
+    },
+}
+
 
 ####################################
 # RegOS Admin Settings
