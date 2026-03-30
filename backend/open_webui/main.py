@@ -1338,28 +1338,7 @@ app.state.MODELS = MODELS
 
 # Add the middleware to the app
 if ENABLE_COMPRESSION_MIDDLEWARE:
-    
-########################################
-#
-# REGOS
-#
-########################################
-
-app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
-app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
-app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
-app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
-app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
-app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
-app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
-app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
-app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
-app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
-app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
-app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
-app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
-
-app.add_middleware(CompressMiddleware)
+    app.add_middleware(CompressMiddleware)
 
 
 class RedirectMiddleware(BaseHTTPMiddleware):
@@ -1402,49 +1381,7 @@ class RedirectMiddleware(BaseHTTPMiddleware):
         return response
 
 
-
-########################################
-#
-# REGOS
-#
-########################################
-
-app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
-app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
-app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
-app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
-app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
-app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
-app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
-app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
-app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
-app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
-app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
-app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
-app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
-
 app.add_middleware(RedirectMiddleware)
-
-########################################
-#
-# REGOS
-#
-########################################
-
-app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
-app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
-app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
-app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
-app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
-app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
-app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
-app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
-app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
-app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
-app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
-app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
-app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
-
 app.add_middleware(SecurityHeadersMiddleware)
 
 
@@ -1489,27 +1426,6 @@ class APIKeyRestrictionMiddleware:
 
         await self.app(scope, receive, send)
 
-
-
-########################################
-#
-# REGOS
-#
-########################################
-
-app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
-app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
-app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
-app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
-app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
-app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
-app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
-app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
-app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
-app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
-app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
-app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
-app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
 
 app.add_middleware(APIKeyRestrictionMiddleware)
 
@@ -1569,27 +1485,6 @@ async def inspect_websocket(request: Request, call_next):
             )
     return await call_next(request)
 
-
-
-########################################
-#
-# REGOS
-#
-########################################
-
-app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
-app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
-app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
-app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
-app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
-app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
-app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
-app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
-app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
-app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
-app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
-app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
-app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
 
 app.add_middleware(
     CORSMiddleware,
@@ -1654,7 +1549,16 @@ except ValueError as e:
     audit_level = AuditLevel.NONE
 
 if audit_level != AuditLevel.NONE:
-    
+    app.add_middleware(
+        AuditLoggingMiddleware,
+        audit_level=audit_level,
+        excluded_paths=AUDIT_EXCLUDED_PATHS,
+        included_paths=AUDIT_INCLUDED_PATHS,
+        max_body_size=MAX_BODY_LOG_SIZE,
+    )
+##################################
+#
+
 ########################################
 #
 # REGOS
@@ -1675,15 +1579,6 @@ app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
 app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
 app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
 
-app.add_middleware(
-        AuditLoggingMiddleware,
-        audit_level=audit_level,
-        excluded_paths=AUDIT_EXCLUDED_PATHS,
-        included_paths=AUDIT_INCLUDED_PATHS,
-        max_body_size=MAX_BODY_LOG_SIZE,
-    )
-##################################
-#
 # Chat Endpoints
 #
 ##################################
@@ -2485,50 +2380,8 @@ try:
             prefix=(f'{REDIS_KEY_PREFIX}:session:' if REDIS_KEY_PREFIX else 'session:'),
         )
 
-        
-########################################
-#
-# REGOS
-#
-########################################
-
-app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
-app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
-app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
-app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
-app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
-app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
-app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
-app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
-app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
-app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
-app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
-app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
-app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
-
-app.add_middleware(SessionAutoloadMiddleware)
-        
-########################################
-#
-# REGOS
-#
-########################################
-
-app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
-app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
-app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
-app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
-app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
-app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
-app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
-app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
-app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
-app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
-app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
-app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
-app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
-
-app.add_middleware(
+        app.add_middleware(SessionAutoloadMiddleware)
+        app.add_middleware(
             StarSessionsMiddleware,
             store=redis_session_store,
             cookie_name='owui-session',
@@ -2539,28 +2392,7 @@ app.add_middleware(
     else:
         raise ValueError('No Redis URL provided')
 except Exception as e:
-    
-########################################
-#
-# REGOS
-#
-########################################
-
-app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
-app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
-app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
-app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
-app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
-app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
-app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
-app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
-app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
-app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
-app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
-app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
-app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
-
-app.add_middleware(
+    app.add_middleware(
         SessionMiddleware,
         secret_key=WEBUI_SECRET_KEY,
         session_cookie='owui-session',
