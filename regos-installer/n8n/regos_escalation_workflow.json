@@ -1,0 +1,170 @@
+{
+  "name": "RegOS Escalation Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "regos-escalation",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0001-4000-8000-000000000001",
+      "name": "Webhook: Receive Escalation",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ],
+      "webhookId": "regos-escalation"
+    },
+    {
+      "parameters": {
+        "jsCode": "// \u2500\u2500 RegOS Escalation: Validate & Enrich \u2500\u2500\n// n8n v2 webhook wraps POST body \u2014 handle both nested and flat.\n\nconst raw = $input.first().json;\nconst item = raw.body && typeof raw.body === 'object' && raw.body.case_ref\n  ? raw.body\n  : raw;\n\n// Validate required fields\nconst required = ['case_ref', 'timestamp', 'user', 'query', 'confidence', 'escalation'];\nconst missing = required.filter(f => !item[f]);\n\nif (missing.length > 0) {\n  const receivedKeys = Object.keys(item).join(', ');\n  throw new Error(`Missing required fields: ${missing.join(', ')}. Received keys: ${receivedKeys}`);\n}\n\n// Enrich with processing metadata\nconst enriched = {\n  ...item,\n  pipeline: {\n    received_at: new Date().toISOString(),\n    workflow_version: '1.1.0',\n    status: 'received',\n    reviewer_assigned: null,\n    resolution: null\n  }\n};\n\nreturn [{ json: enriched }];"
+      },
+      "id": "a1b2c3d4-0002-4000-8000-000000000002",
+      "name": "Code: Validate & Enrich",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// \u2500\u2500 RegOS Escalation: Generate Raw Case File \u2500\u2500\n// Stores the FULL context dump as a downloadable JSON file.\n// Reviewers can download this from n8n Execution History.\n\nconst item = $input.first().json;\n\n// Build the complete raw case file with all context\nconst caseFile = {\n  _meta: {\n    title: `Escalation Case ${item.case_ref}`,\n    generated: new Date().toISOString(),\n    pipeline_version: item.pipeline?.workflow_version || '1.1.0',\n    type: 'raw_dump'\n  },\n  case_ref: item.case_ref,\n  status: 'pending_review',\n  timestamp: item.timestamp,\n  user: item.user || {},\n  query: item.query,\n  response: item.response || '',\n  confidence: {\n    score: item.confidence?.score,\n    band: item.confidence?.band,\n    score_percent: item.confidence?.score ? Math.round(item.confidence.score * 100) + '%' : 'N/A',\n    signals: item.confidence?.signals || {}\n  },\n  escalation_reason: item.escalation?.reason || 'Unknown',\n  conversation_history: item.conversation_history || [],\n  retrieval_context: item.retrieval_context || {},\n  context: item.context || {}\n};\n\nconst jsonString = JSON.stringify(caseFile, null, 2);\nconst buffer = Buffer.from(jsonString, 'utf-8');\n\nreturn [{\n  json: { ...item, raw_case_file: caseFile },\n  binary: {\n    data: {\n      data: buffer.toString('base64'),\n      mimeType: 'application/json',\n      fileName: `${item.case_ref}_raw.json`,\n      fileExtension: 'json'\n    }\n  }\n}];"
+      },
+      "id": "a1b2c3d4-0003-4000-8000-000000000003",
+      "name": "Code: Generate Raw Case File",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {\n  \"status\": \"received\",\n  \"case_ref\": $json.case_ref,\n  \"message\": \"Case received. A reviewer will be assigned within 24 hours.\",\n  \"timestamp\": $now.toISO()\n} }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "a1b2c3d4-0004-4000-8000-000000000004",
+      "name": "Respond: Confirmation",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [
+        720,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// \u2500\u2500 RegOS Escalation: Format Email v2 \u2500\u2500\n// Renders a professional HTML email from the case packet.\n// Properly converts markdown to HTML, humanizes field names,\n// and handles missing data gracefully.\n\nconst item = $input.first().json;\n\nconst caseRef = item.case_ref || 'UNKNOWN';\nconst trigger = (item.escalation?.trigger === 'manual') ? 'MANUAL' : 'AUTO';\n\n// \u2500\u2500 Confidence display \u2500\u2500\nconst score = item.confidence?.score;\nconst band = item.confidence?.band;\nlet confidenceDisplay = '';\nif (score != null && score > 0) {\n  const pct = Math.round(score * 100);\n  const bandLabel = band && band !== 'N/A' ? ` \u00b7 ${band}` : '';\n  confidenceDisplay = `${pct}%${bandLabel}`;\n} else {\n  confidenceDisplay = 'Not available (non-RegOS response)';\n}\n\n// \u2500\u2500 User info \u2500\u2500\nconst userName = item.user?.name || 'Unknown';\nconst userEmail = item.user?.email || '';\nconst userRole = item.user?.role || '';\n\n// \u2500\u2500 Humanize reason \u2500\u2500\nconst reasonMap = {\n  'manual_user_flag': 'Manually flagged by user',\n  'low_confidence': 'Low confidence score',\n  'threshold_breach': 'Confidence below threshold',\n  'guardrail_triggered': 'Guardrail triggered',\n};\nconst rawReason = item.escalation?.reason || 'Unknown';\nconst reason = reasonMap[rawReason] || rawReason.replace(/_/g, ' ');\n\nconst query = item.query || '(no query captured)';\nconst response = item.response || '(no response captured)';\nconst chatId = item.context?.chat_id || '';\nconst timestamp = item.timestamp || new Date().toISOString();\n\n// \u2500\u2500 Markdown \u2192 HTML converter \u2500\u2500\nfunction md2html(text) {\n  if (!text) return '';\n  return text\n    // Escape HTML entities first\n    .replace(/&/g, '&amp;')\n    .replace(/</g, '&lt;')\n    .replace(/>/g, '&gt;')\n    // Headers\n    .replace(/^### (.+)$/gm, '<h4 style=\"color:#1B3A5C;margin:14px 0 6px;font-size:13px\">$1</h4>')\n    .replace(/^## (.+)$/gm, '<h3 style=\"color:#1B3A5C;margin:16px 0 8px;font-size:14px\">$1</h3>')\n    .replace(/^# (.+)$/gm, '<h2 style=\"color:#1B3A5C;margin:18px 0 8px;font-size:16px\">$1</h2>')\n    // Bold + italic\n    .replace(/\\*\\*\\*(.+?)\\*\\*\\*/g, '<strong><em>$1</em></strong>')\n    // Bold\n    .replace(/\\*\\*(.+?)\\*\\*/g, '<strong>$1</strong>')\n    // Italic\n    .replace(/\\*(.+?)\\*/g, '<em>$1</em>')\n    // Inline code\n    .replace(/`([^`]+)`/g, '<code style=\"background:#f0f0f0;padding:1px 5px;border-radius:3px;font-size:12px\">$1</code>')\n    // Blockquotes\n    .replace(/^&gt; (.+)$/gm, '<div style=\"border-left:3px solid #ccc;padding:4px 12px;margin:6px 0;color:#555\">$1</div>')\n    // Unordered lists\n    .replace(/^[-*] (.+)$/gm, '<div style=\"padding:2px 0 2px 16px\">\u2022 $1</div>')\n    // Numbered lists\n    .replace(/^\\d+\\. (.+)$/gm, '<div style=\"padding:2px 0 2px 16px\">$1</div>')\n    // Citations [G1], [G2] etc\n    .replace(/\\[(G\\d+)\\]/g, '<span style=\"background:#E8F4FD;color:#1B3A5C;padding:1px 4px;border-radius:2px;font-size:11px;font-weight:600\">$1</span>')\n    // Section references (Sec. 24-xxx)\n    .replace(/(Sec(?:tion)?\\.?\\s*24[-\u2013]\\d+(?:\\.\\d+)*(?:\\([^)]+\\))?)/g, '<span style=\"background:#FFF3E0;padding:1px 4px;border-radius:2px;font-size:12px\">$1</span>')\n    // Line breaks\n    .replace(/\\n\\n/g, '</p><p style=\"margin:8px 0\">')\n    .replace(/\\n/g, '<br>');\n}\n\n// \u2500\u2500 Format the AI response \u2500\u2500\nconst responseHtml = md2html(response);\nconst responseTruncated = response.length > 3000;\nconst responseDisplay = responseTruncated\n  ? md2html(response.substring(0, 3000)) + '<br><em style=\"color:#888\">\u2026 truncated \u2014 see attached case file for full response</em>'\n  : responseHtml;\n\n// \u2500\u2500 User's concern (from the popup input) \u2500\u2500\nconst userConcern = item.escalation?.user_concern || '';\nlet concernHtml = '';\nlet concernText = '';\nif (userConcern.trim()) {\n  concernText = userConcern;\n  concernHtml = md2html(userConcern);\n}\n\n// \u2500\u2500 Retrieval context summary \u2500\u2500\nconst citations = item.retrieval_context?.graphrag_citations || [];\nconst kbSources = item.retrieval_context?.kb_sources || [];\nconst entities = item.retrieval_context?.entity_matches || [];\nconst hasContext = citations.length > 0 || kbSources.length > 0 || entities.length > 0;\n\nlet contextHtml = '';\nif (hasContext) {\n  if (citations.length > 0) {\n    contextHtml += `<div style=\"margin-bottom:12px\"><strong style=\"color:#1B3A5C\">Graph Citations (${citations.length})</strong>`;\n    citations.forEach((c, i) => {\n      const section = c.section || c.id || `Citation ${i+1}`;\n      const snippet = (c.content || '').substring(0, 200);\n      contextHtml += `<div style=\"background:#f8f9fa;padding:8px 12px;margin:4px 0;border-radius:4px;font-size:12px\"><span style=\"background:#E8F4FD;color:#1B3A5C;padding:1px 4px;border-radius:2px;font-size:11px;font-weight:600\">G${c.index || i+1}</span> <strong>${section}</strong>${snippet ? '<br><span style=\"color:#666\">' + snippet + '\u2026</span>' : ''}</div>`;\n    });\n    contextHtml += '</div>';\n  }\n  if (kbSources.length > 0) {\n    contextHtml += `<div style=\"margin-bottom:12px\"><strong style=\"color:#1B3A5C\">Knowledge Base Sources (${kbSources.length})</strong>`;\n    kbSources.forEach(s => {\n      contextHtml += `<div style=\"background:#f8f9fa;padding:6px 12px;margin:4px 0;border-radius:4px;font-size:12px\">${s.name || 'Unnamed source'}</div>`;\n    });\n    contextHtml += '</div>';\n  }\n  if (entities.length > 0) {\n    contextHtml += `<div><strong style=\"color:#1B3A5C\">Entity Matches (${entities.length})</strong>`;\n    contextHtml += '<div style=\"margin:4px 0;font-size:12px\">' + entities.map(e => `<span style=\"background:#EDE7F6;padding:2px 8px;border-radius:12px;margin:2px 4px 2px 0;display:inline-block\">${e.name || e}</span>`).join('') + '</div></div>';\n  }\n}\n\n// \u2500\u2500 Confidence bar visual \u2500\u2500\nlet confidenceBar = '';\nif (score != null && score > 0) {\n  const pct = Math.round(score * 100);\n  const barColor = pct >= 85 ? '#27AE60' : pct >= 60 ? '#F39C12' : '#E74C3C';\n  confidenceBar = `\n    <div style=\"margin:4px 0\">\n      <div style=\"background:#eee;border-radius:4px;height:8px;width:200px;display:inline-block;vertical-align:middle\">\n        <div style=\"background:${barColor};border-radius:4px;height:8px;width:${pct * 2}px\"></div>\n      </div>\n      <span style=\"font-weight:600;color:${barColor};margin-left:8px\">${pct}%</span>\n      <span style=\"color:#888;font-size:12px;margin-left:4px\">${band || ''}</span>\n    </div>`;\n}\n\n// \u2500\u2500 Subject line \u2500\u2500\nconst subject = `[RegOS Escalation] ${caseRef} \u2014 ${trigger === 'MANUAL' ? 'Manual Flag' : 'Auto-Escalated'}`;\n\n// \u2500\u2500 Trigger badge colors \u2500\u2500\nconst triggerBg = trigger === 'MANUAL' ? '#D4820A' : '#C0392B';\nconst triggerLabel = trigger === 'MANUAL' ? 'MANUAL FLAG' : 'AUTO-ESCALATED';\n\n// \u2500\u2500 Date formatting \u2500\u2500\nconst dateObj = new Date(timestamp);\nconst dateStr = dateObj.toLocaleString('en-US', {\n  weekday: 'short', year: 'numeric', month: 'short', day: 'numeric',\n  hour: '2-digit', minute: '2-digit', timeZoneName: 'short'\n});\n\n// \u2500\u2500 HTML Email Body \u2500\u2500\nconst htmlBody = `<!DOCTYPE html>\n<html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"></head>\n<body style=\"font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#333;background:#f5f5f5;margin:0;padding:20px\">\n<div style=\"max-width:680px;margin:0 auto\">\n\n  <!-- Header -->\n  <div style=\"background:linear-gradient(135deg,#1B3A5C,#2C5F8A);color:#fff;padding:24px 28px;border-radius:8px 8px 0 0\">\n    <table style=\"width:100%\"><tr>\n      <td><h1 style=\"margin:0;font-size:22px;font-weight:600\">RegOS Escalation</h1>\n        <p style=\"margin:6px 0 0;font-size:13px;color:#A8C8E8\">${dateStr}</p></td>\n      <td style=\"text-align:right;vertical-align:top\">\n        <span style=\"background:${triggerBg};color:#fff;padding:4px 12px;border-radius:4px;font-size:11px;font-weight:700;letter-spacing:0.5px\">${triggerLabel}</span>\n      </td>\n    </tr></table>\n  </div>\n\n  <!-- Body -->\n  <div style=\"background:#fff;border:1px solid #e0e0e0;border-top:none;padding:24px 28px;border-radius:0 0 8px 8px\">\n\n    <!-- Case info grid -->\n    <table style=\"width:100%;border-collapse:collapse;margin-bottom:20px\">\n      <tr>\n        <td style=\"padding:10px 16px;background:#f8f9fb;border:1px solid #eee;width:50%\">\n          <div style=\"font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.5px\">Case Reference</div>\n          <div style=\"font-size:15px;font-weight:600;color:#1B3A5C;margin-top:2px;font-family:monospace\">${caseRef}</div>\n        </td>\n        <td style=\"padding:10px 16px;background:#f8f9fb;border:1px solid #eee;width:50%\">\n          <div style=\"font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.5px\">Reason</div>\n          <div style=\"font-size:14px;font-weight:500;margin-top:2px\">${reason}</div>\n        </td>\n      </tr>\n      <tr>\n        <td style=\"padding:10px 16px;background:#f8f9fb;border:1px solid #eee\">\n          <div style=\"font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.5px\">Flagged By</div>\n          <div style=\"font-size:14px;margin-top:2px\">${userName}${userEmail ? ' <span style=\"color:#888\">&lt;' + userEmail + '&gt;</span>' : ''}${userRole ? ' <span style=\"background:#E8F0FE;color:#1B3A5C;padding:1px 6px;border-radius:3px;font-size:11px;margin-left:4px\">' + userRole + '</span>' : ''}</div>\n        </td>\n        <td style=\"padding:10px 16px;background:#f8f9fb;border:1px solid #eee\">\n          <div style=\"font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.5px\">Confidence</div>\n          ${confidenceBar || `<div style=\"font-size:14px;margin-top:2px;color:#888\">${confidenceDisplay}</div>`}\n        </td>\n      </tr>\n    </table>\n\n    <!-- User Query -->\n    <div style=\"margin-bottom:20px\">\n      <h2 style=\"color:#1B3A5C;font-size:14px;margin:0 0 8px;padding-bottom:6px;border-bottom:2px solid #1DA1D4\">User Query</h2>\n      <div style=\"background:#F7FAFC;padding:14px 16px;border-left:4px solid #1DA1D4;border-radius:0 4px 4px 0;font-size:14px;line-height:1.5\">${md2html(query)}</div>\n    </div>\n\n    <!-- AI Response -->\n    <div style=\"margin-bottom:20px\">\n      <h2 style=\"color:#1B3A5C;font-size:14px;margin:0 0 8px;padding-bottom:6px;border-bottom:2px solid #E67E22\">AI Response <span style=\"font-weight:400;color:#E67E22;font-size:12px\">\u2014 Under Review</span></h2>\n      <div style=\"background:#FFFBF5;padding:14px 16px;border-left:4px solid #E67E22;border-radius:0 4px 4px 0;font-size:13px;line-height:1.6\"><p style=\"margin:0\">${responseDisplay}</p></div>\n    </div>\n\n    ${hasContext ? `\n    <!-- Retrieval Context -->\n    <div style=\"margin-bottom:20px\">\n      <h2 style=\"color:#1B3A5C;font-size:14px;margin:0 0 8px;padding-bottom:6px;border-bottom:2px solid #8E44AD\">Retrieval Context</h2>\n      <div style=\"padding:4px 0\">${contextHtml}</div>\n    </div>\n    ` : ''}\n\n    ${concernHtml ? `\n    <!-- User's Concern -->\n    <div style=\"margin-bottom:20px\">\n      <h2 style=\"color:#1B3A5C;font-size:14px;margin:0 0 8px;padding-bottom:6px;border-bottom:2px solid #E74C3C\">Reviewer Note <span style=\"font-weight:400;color:#E74C3C;font-size:12px\">\u2014 from ${userName}</span></h2>\n      <div style=\"background:#FDF2F2;padding:14px 16px;border-left:4px solid #E74C3C;border-radius:0 4px 4px 0;font-size:14px;line-height:1.6\"><p style=\"margin:0\">${concernHtml}</p></div>\n    </div>\n    ` : ''}\n\n    ${chatId ? `\n    <!-- Metadata footer -->\n    <div style=\"background:#f8f9fb;padding:10px 14px;border-radius:4px;font-size:11px;color:#888;margin-top:16px\">\n      <strong>Chat ID:</strong> <span style=\"font-family:monospace\">${chatId}</span>\n    </div>\n    ` : ''}\n\n    <!-- Footer -->\n    <div style=\"margin-top:24px;padding-top:16px;border-top:1px solid #eee;font-size:11px;color:#aaa;line-height:1.5\">\n      RegOS Escalation Pipeline v1.1.0 \u00b7 Raw case file attached as JSON<br>\n      Do not reply to this email \u2014 replies go to noreply@regos.ai\n    </div>\n\n  </div>\n</div>\n</body></html>`;\n\n// \u2500\u2500 Plain-text fallback \u2500\u2500\nconst divider = '\u2500'.repeat(50);\nconst textBody = [\n  `REGOS ESCALATION \u2014 ${caseRef}`,\n  divider,\n  '',\n  `Trigger:     ${triggerLabel}`,\n  `Reason:      ${reason}`,\n  `Confidence:  ${confidenceDisplay}`,\n  `Flagged by:  ${userName}${userEmail ? ' <' + userEmail + '>' : ''}${userRole ? ' (' + userRole + ')' : ''}`,\n  `Date:        ${dateStr}`,\n  chatId ? `Chat ID:     ${chatId}` : '',\n  '',\n  divider,\n  'USER QUERY',\n  divider,\n  query,\n  '',\n  divider,\n  'AI RESPONSE (UNDER REVIEW)',\n  divider,\n  response.substring(0, 3000),\n  responseTruncated ? '\\n\u2026 truncated \u2014 see attached case file' : '',\n  '',\n  concernText ? [divider, `REVIEWER NOTE (from ${userName})`, divider, concernText].join('\\n') : '',\n  '',\n  divider,\n  'Raw case file attached as JSON.',\n  'RegOS Escalation Pipeline v1.1.0',\n].filter(l => l !== null).join('\\n');\n\nreturn [{\n  json: {\n    ...item,\n    email_subject: subject,\n    email_html: htmlBody,\n    email_text: textBody\n  },\n  binary: $input.first().binary\n}];\n"
+      },
+      "id": "a1b2c3d4-0008-4000-8000-000000000008",
+      "name": "Code: Format Email",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1200,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.email_to || 'sysadmin1@regos.ai' }}",
+        "subject": "={{ $json.email_subject }}",
+        "emailType": "html",
+        "html": "={{ $json.email_html }}",
+        "options": {
+          "replyTo": "noreply@regos.ai",
+          "attachments": "data"
+        }
+      },
+      "id": "a1b2c3d4-0009-4000-8000-000000000009",
+      "name": "Email: Send Notification",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1440,
+        180
+      ],
+      "credentials": {
+        "smtp": {
+          "id": "CONFIGURE_ME",
+          "name": "Gmail SMTP \u2014 RegOS Escalation"
+        }
+      },
+      "notesInFlow": true,
+      "notes": "SETUP: Create an SMTP credential in n8n Settings > Credentials.\nGmail: host=smtp.gmail.com, port=587, user=your@gmail.com, password=App Password.\nThe credential ID above ('CONFIGURE_ME') must be replaced with your actual credential ID after creating it in n8n."
+    }
+  ],
+  "connections": {
+    "Webhook: Receive Escalation": {
+      "main": [
+        [
+          {
+            "node": "Code: Validate & Enrich",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Validate & Enrich": {
+      "main": [
+        [
+          {
+            "node": "Code: Generate Raw Case File",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Respond: Confirmation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Generate Raw Case File": {
+      "main": [
+        [
+          {
+            "node": "Code: Format Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Format Email": {
+      "main": [
+        [
+          {
+            "node": "Email: Send Notification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "name": "RegOS",
+      "createdAt": "2026-02-24T00:00:00.000Z",
+      "updatedAt": "2026-02-24T00:00:00.000Z"
+    }
+  ],
+  "triggerCount": 0
+}
