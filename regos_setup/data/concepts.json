@@ -1,0 +1,278 @@
+{
+  "concepts": [
+    {
+      "id": "SEWER_DISCHARGE_LIMITS",
+      "name": "Sewer Discharge Limits",
+      "description": "Pollutant concentration limits for sanitary sewer discharge, pretreatment standards, industrial user discharge requirements, effluent standards",
+      "primary_sections": [
+        "24-42",
+        "24-42.4",
+        "24-42.5"
+      ]
+    },
+    {
+      "id": "FOG_CONTROL",
+      "name": "FOG Control Program",
+      "description": "Fats, Oils and Grease management for food service establishments, grease interceptor installation and maintenance requirements, accelerated maintenance schedules",
+      "primary_sections": [
+        "24-42.6"
+      ]
+    },
+    {
+      "id": "STORMWATER_MANAGEMENT",
+      "name": "Stormwater Management",
+      "description": "Stormwater utility creation, discharge standards, management system recertification, BMP requirements, stormwater fees and billing",
+      "primary_sections": [
+        "24-42.8",
+        "24-51",
+        "24-21.1"
+      ]
+    },
+    {
+      "id": "WELLFIELD_PROTECTION",
+      "name": "Wellfield Protection",
+      "description": "Protection zones around potable water supply wells, prohibited activities within wellfield zones, contamination prevention measures, zone of influence",
+      "primary_sections": [
+        "24-43"
+      ]
+    },
+    {
+      "id": "POTABLE_WATER_STANDARDS",
+      "name": "Potable Water Standards",
+      "description": "Drinking water quality requirements, water supply well regulation, domestic well systems, cross-connection control, water main standards",
+      "primary_sections": [
+        "24-43.2",
+        "24-43.3"
+      ]
+    },
+    {
+      "id": "SEPTIC_OSTDS",
+      "name": "Septic System (OSTDS) Regulation",
+      "description": "Onsite sewage treatment and disposal systems, septic tank standards, connection to public sewer requirements, abandonment procedures",
+      "primary_sections": [
+        "24-42.7",
+        "24-43.4"
+      ]
+    },
+    {
+      "id": "TREE_REMOVAL",
+      "name": "Tree Removal & Replacement",
+      "description": "Permits for tree removal and relocation, replacement requirements, specimen tree standards, natural forest community protection, tree trust fund",
+      "primary_sections": [
+        "24-49"
+      ]
+    },
+    {
+      "id": "WETLANDS_MANGROVE",
+      "name": "Wetlands & Mangrove Protection",
+      "description": "Environmental permits for work in wetlands, mangrove trimming certification, mitigation requirements, wetland determination",
+      "primary_sections": [
+        "24-48"
+      ]
+    },
+    {
+      "id": "AIR_QUALITY",
+      "name": "Air Quality & Emissions",
+      "description": "Prohibitions against air pollution, vehicle emission standards, open burning restrictions, sulfur dioxide limits, ozone-depleting compounds, asbestos spraying prohibition",
+      "primary_sections": [
+        "24-41"
+      ]
+    },
+    {
+      "id": "UNDERGROUND_STORAGE",
+      "name": "Underground Storage Tanks",
+      "description": "Registration, monitoring, and closure requirements for underground storage facilities containing hazardous materials, tank abandonment procedures",
+      "primary_sections": [
+        "24-45"
+      ]
+    },
+    {
+      "id": "ENVIRONMENTAL_PERMIT_PROCESS",
+      "name": "Environmental Permit Process",
+      "description": "Application procedures for environmental permits, evaluation factors, bonding requirements, permit issuance, transfer, suspension, revocation",
+      "primary_sections": [
+        "24-48",
+        "24-48.1",
+        "24-48.2",
+        "24-48.3"
+      ]
+    },
+    {
+      "id": "OPERATING_PERMITS",
+      "name": "Operating Permits",
+      "description": "Permits for operating wastewater treatment, water supply, or air pollution control facilities, competent supervision requirements",
+      "primary_sections": [
+        "24-18",
+        "24-19"
+      ]
+    },
+    {
+      "id": "PLAN_APPROVAL",
+      "name": "Plan Approval & Engineering",
+      "description": "Requirements for plan approval before construction, licensed engineer requirements, technical report standards, standards for preparation of plans",
+      "primary_sections": [
+        "24-15"
+      ]
+    },
+    {
+      "id": "PENALTIES_LIABILITY",
+      "name": "Penalties & Civil Liability",
+      "description": "Criminal penalties for environmental violations, civil liability, joint and several liability, attorney fees, penalty amounts per day and per violation",
+      "primary_sections": [
+        "24-30",
+        "24-31"
+      ]
+    },
+    {
+      "id": "ENFORCEMENT_ACTIONS",
+      "name": "Enforcement Actions",
+      "description": "Stop orders, injunctions, enforcement procedures, contempt powers, remedies for environmental violations",
+      "primary_sections": [
+        "24-9",
+        "24-10",
+        "24-29"
+      ]
+    },
+    {
+      "id": "VARIANCES_EXTENSIONS",
+      "name": "Variances & Extensions",
+      "description": "Procedures for obtaining variances from environmental requirements, time extensions for compliance, conditions for granting variances",
+      "primary_sections": [
+        "24-12",
+        "24-13"
+      ]
+    },
+    {
+      "id": "SPILL_REPORTING",
+      "name": "Spill & Abnormal Occurrence Reporting",
+      "description": "Reporting requirements for abnormal occurrences, unauthorized discharges, spills of hazardous materials, emergency response procedures, notification timelines",
+      "primary_sections": [
+        "24-20"
+      ]
+    },
+    {
+      "id": "SITE_REHABILITATION",
+      "name": "Site Rehabilitation & Cleanup (CTLs)",
+      "description": "Cleanup target levels for contaminated sites, site rehabilitation action procedures, compliance testing, sampling methods and points",
+      "primary_sections": [
+        "24-44"
+      ]
+    },
+    {
+      "id": "BROWNFIELDS",
+      "name": "Brownfields Redevelopment",
+      "description": "Brownfields program adoption, rehabilitation incentives for contaminated properties, State coordination for brownfield designations",
+      "primary_sections": [
+        "24-26"
+      ]
+    },
+    {
+      "id": "NUISANCE_ABATEMENT",
+      "name": "Nuisance Abatement",
+      "description": "Prohibition of nuisances, sanitary nuisances injurious to health, conditions constituting nuisance, abatement procedures",
+      "primary_sections": [
+        "24-27",
+        "24-28"
+      ]
+    },
+    {
+      "id": "LIQUID_WASTE_TRANSPORT",
+      "name": "Liquid Waste Transport",
+      "description": "Regulation of liquid waste transporters, vehicle and equipment requirements, approved disposal site requirements, manifesting",
+      "primary_sections": [
+        "24-46"
+      ]
+    },
+    {
+      "id": "METAL_RECYCLING",
+      "name": "Metal Recycling Facilities",
+      "description": "Operating standards for metal recycling facilities, stormwater controls, containment requirements for recyclable materials",
+      "primary_sections": [
+        "24-47"
+      ]
+    },
+    {
+      "id": "EQCB_ADMINISTRATION",
+      "name": "EQCB Authority & Administration",
+      "description": "Environmental Quality Control Board structure and powers, Department Director duties, appeals process, department organization, water control map",
+      "primary_sections": [
+        "24-6",
+        "24-7",
+        "24-8",
+        "24-11"
+      ]
+    },
+    {
+      "id": "BISCAYNE_BAY",
+      "name": "Biscayne Bay Conservation",
+      "description": "Aquatic park designation for Biscayne Bay, floating structure prohibitions, non-water-dependent structure restrictions, environmental enhancement trust fund",
+      "primary_sections": [
+        "24-48.22",
+        "24-48.23",
+        "24-48.24",
+        "24-40"
+      ]
+    },
+    {
+      "id": "EEL_PROGRAM",
+      "name": "Environmentally Endangered Lands",
+      "description": "EEL acquisition program, trust fund, land acquisition selection committee, management plans for environmentally endangered lands",
+      "primary_sections": [
+        "24-50"
+      ]
+    },
+    {
+      "id": "CONSTRUCTION_APPROVAL",
+      "name": "Construction Project Approval",
+      "description": "Requirements for constructing wastewater, water supply, or air pollution control facilities, certificates of occupancy, facility construction standards",
+      "primary_sections": [
+        "24-16",
+        "24-17"
+      ]
+    },
+    {
+      "id": "FEES_BONDS_FUNDS",
+      "name": "Fees, Bonds & Trust Funds",
+      "description": "Service fees payable to County, collection procedures, refund policies, performance bond waivers, enforcement fund, pollution prevention fund, wetlands fund, tree trust fund",
+      "primary_sections": [
+        "24-32",
+        "24-33",
+        "24-34",
+        "24-35",
+        "24-36",
+        "24-37",
+        "24-38",
+        "24-39"
+      ]
+    },
+    {
+      "id": "SEWER_INFRASTRUCTURE",
+      "name": "Sewer System Infrastructure",
+      "description": "Sanitary sewer collection and transmission system standards, tertiary treatment requirements, capacity certification, system evaluation surveys",
+      "primary_sections": [
+        "24-42.1",
+        "24-42.2",
+        "24-42.3"
+      ]
+    },
+    {
+      "id": "WATER_SEWER_SERVICE",
+      "name": "Water & Sewer Service Approval",
+      "description": "Statements of approved water or sewer service, emergency rate requests, feasible distance for public water mains and sanitary sewers",
+      "primary_sections": [
+        "24-14",
+        "24-43.4"
+      ]
+    },
+    {
+      "id": "COASTAL_ENVIRONMENTAL_IMPACT",
+      "name": "Coastal & Environmental Impact",
+      "description": "Comprehensive environmental impact statements, coastal construction requirements, wetland basin plans, North Trail Basin, Bird Drive Everglades",
+      "primary_sections": [
+        "24-48.15",
+        "24-48.20",
+        "24-48.21"
+      ]
+    }
+  ]
+}

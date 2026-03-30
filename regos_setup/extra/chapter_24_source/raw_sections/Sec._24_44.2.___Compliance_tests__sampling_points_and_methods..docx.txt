@@ -1,0 +1,27 @@
+Sec. 24-44.2. - Compliance tests, sampling points and methods. 
+
+COMPLIANCE TESTS. Sampling points to determine compliance with Section 24-42, Section 24-42.1, Section 24-42.4, Section 24-42.5, Section 24-44.1 and Section 24-44.2, except for Section 24-44 shall be selected as follows: 
+
+(1)  Effluents. For compliance with the effluent standards in Section 24-42(2) and the pretreatment standards in Section 24-42.4, the samples shall be taken at the point past which no further treatment is given by the facility to the waste or in the case of effluents subject to Federal Pretreatment Regulations, at a sampling point as determined by the Director or the Director's designee in accordance with the Federal Pretreatment Regulations. An outfall line shall not be considered as further treatment. In facilities which have sand filter beds where the effluent percolates directly into the soil and no approved sampling points are provided, the samples will be taken before the sand filter and a five (5) percent overall reduction of the effluent sewage will be allowed. 
+
+(2)  Sampling stations may be required to be installed if reasonable access is not available, as determined by the Director or the Director's designee. 
+
+(3)  Surface water and tidal salt water. The sample for compliance with the water quality standards of Section 24-42(4) should normally be taken at a point at least fifty (50) feet from the point of discharge of the waste stream; where possible the samples should be taken upstream and downstream from the point of discharge. 
+
+(4)  Groundwater. For compliance with Section 24-42(4) samples shall be taken from wells nearest to and encircling the point of entry of a waste stream into the ground water table. Test wells may be required to be installed and maintained if existing sampling points are found to be inadequate in the judgment of the Director or the Director's designee. 
+
+(5)  Methods. Determination of plant efficiency and percent removal of BOD and suspended solids shall be based on the average of three (3) eight-hour composite samples taken on three (3) consecutive days. At least one (1) peak flow period should be included in each eight-hour period. Composite sampling devices will be required. Determination of the effluent values as set forth in Section 24-42(2) will be based on individual, not composite, samples. Field testing, sample collection and preservation, and laboratory testing, including quality control procedures, shall be in accordance with methods approved by the Department or as published in the sixteenth edition of Standard Methods for the Examination of Water and Wastewater or the following methods: 
+
+(a)  40 CFR 136, 49 FR 43234, October 26, 1984. 
+
+(b)  40 CFR 136, 40 FR 690, January 4, 1985. 
+
+(c)  EPA SW-846 Test Methods for Evaluating Solid Waste, November, 1986. 
+
+(d)  EPA-600/4-79-020 Methods for Chemical Analysis of Water and Wastes, March, 1979. 
+
+(e)  EPA Methods 502.1, 502.2, 503.1, 504, 505, 507, 508, 515, 524.2, Environmental Monitoring and Support Laboratory, September, 1986. 
+
+(f)  EPA-600/4-85/054 Method 531. 
+
+(Ord. No. 04-214, §§ 1, 5, 12-2-04; Ord. No. 08-55, § 2, 5-6-08)

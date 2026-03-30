@@ -1,0 +1,437 @@
+Sec. 24-42. - Prohibitions against water pollution. 
+
+(1)  PROHIBITIONS AGAINST DISCHARGE. It shall be unlawful for any person to throw, drain, run or otherwise discharge into any of the waters of this County, or to cause, permit or suffer to be thrown, run, drained, allowed to seep, or otherwise discharged into such water any organic or inorganic matter which shall: 
+
+(a)  Breach the values set forth in Section 24-42(2); 
+
+(b)  Cause water pollution as herein defined; or 
+
+(c)  Cause a nuisance or sanitary nuisance as herein defined. 
+
+(2)  EFFLUENT STANDARDS FOR MIAMI-DADE COUNTY. All sewage treatment plants and industrial waste treatment plants (except those discharging to approved ocean outfalls) shall effect ninety (90) percent treatment or better at the defined sampling point (24-44.2(1)). However, in no case shall the following effluent standards be exceeded (except where the standard is noted to be a minimum). 
+
+Chemical, Physical, or Biological Characteristic 
+
+Standard 
+
+Dissolved oxygen 
+
+Not less than 2.0 mg/l 
+
+Suspended solids 
+
+40 mg/l 
+
+Biochemical oxygen demand 
+
+30 mg/l 
+
+Floating solids 
+
+None visible to the naked eye 
+
+pH 
+
+6.0—8.5 
+
+Settleable solids 
+
+Not greater than 0.1 mg/l on Imhoff cone 1 hr. test 
+
+Oil and grease 
+
+30 mg/l 
+
+Odor-producing substances 
+
+None attributable to sewage or industrial wastes 
+
+Temperature 
+
+
+
+ Sources permitted after July 1, 1972 
+
+  Fresh water 
+
+92°F 
+
+  Salt water 
+
+(June—September) 92°F 
+
+
+
+(October-May) 90°F 
+
+Turbidity 
+
+29 NTU above background 
+
+Chlorides 
+
+500 mg/l 1 
+
+Chromium 
+
+
+
+ Hexavalent 
+
+.5 mg/l 
+
+ Total 
+
+1.0 mg/l 
+
+Copper 
+
+.5 mg/l 
+
+Cyanides 
+
+0.01 mg/l 
+
+Color 
+
+Not more than 10 units above normal background of the receiving water 
+
+Foam 
+
+Effluent shall not cause foaming in the stream 
+
+Chlorine 
+
+Minimum residual level of .5 mg/l after a ½ hour contact time at peak flow, where the nature of the waste requires disinfection 
+
+LAS 
+
+6.0 mg/l 
+
+Mercury 
+
+None detectable 
+
+Lead 
+
+0.05 mg/l 
+
+Arsenic 
+
+.05 mg/l 
+
+Phenol 
+
+0.001 mg/l 
+
+Iron 
+
+.3 mg/l 
+
+Zinc 
+
+1.0 mg/l 
+
+Sulfides 
+
+0.2 mg/l 
+
+Coliform organisms 
+
+
+
+ (MPN 100 ml) 
+
+1,000 total 0 Fecal 
+
+Other compounds 
+
+Other toxic or undesirable compounds than those listed above may occur in individual waste streams. Limits for these components may be specified by the Director based on the latest scientific knowledge concerning toxicity and adverse effects on the intended water use. 
+
+Synergistic action 
+
+Whenever scientific evidence indicates that a combination of pollutants exert a greater effect than the individual pollutants, the Director may, on the basis of these findings, lower the herein established limits to the level necessary to prevent damage to the waters of the County. 
+
+ 
+
+1 In waters other than fresh water, waste shall not increase natural background more than ten (10) percent. 
+
+(3)  DISCHARGES AFFECTING WATER QUALITY AND PROHIBITION OF POSITIVE DRAINAGE. 
+
+(a)  Dewatering and discharges prohibited. It shall be unlawful for any person to dewater or to discharge sewage, industrial wastes, cooling water, solid wastes (including but not limited to plastics or floatable, settleable, suspended, or aquatic trash), or any other wastes into the waters of this County, including but not limited to surface water, tidal salt water estuaries, or ground water in such quantities, and of such characteristics as: 
+
+(i)  To cause the receiving waters, after mixing with the waste streams, to be of poorer quality than the water quality standards set forth in subsection (4) below; 
+
+(ii)  To cause water pollution as defined in Section 24-5; or 
+
+(iii)  To cause a nuisance or sanitary nuisance as herein defined; or 
+
+(iv)  To cause or allow sediment to discharge into waterways or off-site private or public properties or into stormwater infrastructure in a manner that causes sedimentation. 
+
+(b)  Corrective action required. Upon the earlier of discovering the violation or receiving an order from the Director, the property owner shall be responsible for immediately correcting, or causing the immediate correction of, the siltation of stormwater infrastructure, roadways, adjacent properties, or waterways by sediments, silt, and other construction materials originating within a construction site. 
+
+(c)  Director's approval required for positive drainage. It shall be unlawful for any County or municipal officer, agent, employee, or board to approve, grant, or issue any permit, or permit, allow, let, or suffer the approval or issuance of any permit that authorizes positive drainage, including discharges or outfalls of stormwater, without the Director's prior written approval. The Director shall issue a written approval only if the Director determines that all of the following are met: 
+
+(i)  If a groundwater contamination plume exists under or in the vicinity of the subject site the plume will not be adversely impacted by partial or full on-site stormwater disposal; and 
+
+(ii)  The water quality of the receiving water bodies will not be degraded as defined in this chapter; and 
+
+(iii)  Drainage is free of materials, whether solid or liquid (including but not limited to plastics or floatable, settleable, suspended, or aquatic trash), that could degrade the water quality of the receiving waters as defined in this chapter; and 
+
+(iv)  Drainage is free of materials from construction sites; and 
+
+(v)  Drainage does not form visible plumes; and 
+
+(vi)  Drainage does not run off onto other properties. 
+
+(4)  WATER QUALITY STANDARDS FOR MIAMI-DADE COUNTY: 
+
+Chemical, Physical or Biological Characteristic 
+
+Fresh Water (water containing less than 500 ppm chlorides) 
+
+Tidal Salt Water (water containing more than 500 ppm chlorides) 
+
+Groundwater 
+
+Dissolved oxygen (mg/l) 
+
+5 ppm during at least 10 hours per 24-hour period, never less than 4 ppm, unless acceptable data indicate that the natural background dissolved oxygen is lower than the values established herein. 
+
+— 
+
+Biochemical oxygen demand (mg/l) 
+
+Shall not exceed a value which would cause dissolved oxygen to be depressed below values listed under dissolved oxygen and in no case shall be great enough to produce nuisance conditions. 
+
+— 
+
+pH 
+
+6.0—8.5 1 
+
+6.0—8.5 1 
+
+6.0—8.5 1 
+
+Floatable solids, settleable solids, sludge deposits, suspended solids, sediments, trash, and debris 
+
+None attributable to stormwater, sewage, industrial wastes, or other wastes. 
+
+None attributable to stormwater, sewage, industrial wastes, or other wastes. 
+
+— 
+
+Oil and grease (mg/l) 
+
+15 2 
+
+15 2 
+
+15 2 
+
+Odor-producing substances 
+
+None attributable to sewage, industrial wastes, or other wastes. Threshold odor number not to exceed 24 at 60°C as a daily average. 
+
+— 
+
+Temperature 
+
+
+
+
+
+
+
+ Sources permitted prior to July 1, 1972 
+
+Shall cause no environmental damage. 
+
+
+
+ Sources permitted after July 1, 1972 
+
+3° F above ambient. 
+
+(June—September) 2° F above ambient. (October—May) 4° F above ambient. 
+
+— 
+
+Turbidity 
+
+29 NTU above background outside of Outstanding Florida Waters as defined in 62-302.700 F.A.C. 
+  
+0 NTU above background within Outstanding Florida Waters as defined in 62-302.700 F.A.C. 
+
+
+
+Ammonia (mg/l) 
+
+.5 ppm as N 
+
+.5 ppm as N 
+
+.5 ppm as N 
+
+Chlorides (mg/l) 
+
+500 3 
+
+3 
+
+500 3 
+
+Chromium (mg/l) total 
+
+.05 
+
+.05 
+
+.05 
+
+Copper (mg/l) 
+
+0.4 
+
+0.4 
+
+0.4 
+
+Cyanides (mg/l) 
+
+None detectable 
+
+None detectable 
+
+None detectable 
+
+Detergents (mg/l) 
+
+0.5 
+
+Insufficient to cause foaming 
+
+0.5 
+
+Fluoride (mg/l) 
+
+1.4 as F 
+
+10 as F 
+
+1.4 as F 
+
+Lead (mg/l) 
+
+0.95 
+
+0.35 
+
+0.05 
+
+Phenol (mg/l) 
+
+0.001 
+
+0.005 
+
+0.001 
+
+Zinc (mg/l) 
+
+1.0 
+
+1.0 
+
+1.0 
+
+Sulfides (mg/l) 
+
+0.2 
+
+1.0 
+
+0.2 
+
+Coliform organisms (MPN/100 ml) 
+
+1,000 4 
+
+1,000 5 
+
+50 
+
+Escherichia coli bacteria (MPN/100ml) 
+
+410 
+
+- 
+
+- 
+
+Enterococci bacteria (MPN/100ml) 
+
+- 
+
+130 
+
+- 
+
+Mercury 
+
+None detectable 
+
+None detectable 
+
+None detectable 
+
+Iron (mg/l) 
+
+0.3 
+
+0.3 
+
+0.3 
+
+Arsenic (mg/l) 
+
+0.05 
+
+0.05 
+
+0.05 
+
+Specific conductance 
+
+500 micromhos per cm (fresh water). Not more than 100% above background, in waters other than fresh. 
+
+Dissolved solids 
+
+Not to exceed 500 mg/l for monthly average or 1000 mg/l at any time. 
+
+Radioactive substances 
+
+Gross beta activity (in known absence of strontium 90 and alpha emitters), not to exceed 1,000 micro-microcuries at any time. 
+
+Other compounds, chemical, physical, or biological pollutants 
+
+Other toxic or undesirable pollutants and compounds other than those listed above may occur in individual waste streams. Limits for these pollutants or compounds may be specified by the Director based on the latest scientific knowledge concerning toxicity and adverse effect of the intended water use. 
+
+Synergistic action 
+
+Whenever scientific evidence indicates that a combination of pollutants exerts a greater effect than the individual pollutants, the Director may, on the basis of these findings, lower the herein established limits to the level necessary to prevent damage to the waters of the County. 
+
+ 
+
+1 Shall not cause the pH of the receiving waters to vary more than 1.0 unit. When the natural background pH lies outside the limits established, the introduction of a waste shall not displace the pH of the receiving waters more than 0.5 pH units from these standards. 
+
+2 Shall not be visible, defined as iridescence, or cause taste or odors. 
+
+3 Waste shall not increase natural background more than 10 percent. 
+
+4 Maximum MPN/100 ml in a surface water used as a drinking water supply shall be 100. 
+
+5 Maximum MPN/100 ml in a tidal water from which shellfish are harvested for human consumption shall be 70. 
+
+(Ord. No. 04-214, §§ 1, 5, 12-2-04; Ord. No. 08-55, § 2, 5-6-08; Ord. No. 24-92, § 4, 9-4-24)

@@ -62,6 +62,7 @@ async def get_users(
     order_by: Optional[str] = None,
     direction: Optional[str] = None,
     page: Optional[int] = 1,
+    roles: Optional[str] = None,
     user=Depends(get_admin_user),
     db: Session = Depends(get_session),
 ):
@@ -77,6 +78,8 @@ async def get_users(
         filter['order_by'] = order_by
     if direction:
         filter['direction'] = direction
+    if roles:
+        filter['roles'] = [r.strip() for r in roles.split(',') if r.strip()]
 
     filter['direction'] = direction
 

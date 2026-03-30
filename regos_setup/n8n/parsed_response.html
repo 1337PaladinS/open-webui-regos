@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RegOS API Response — Parsed</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.6; padding: 32px; }
+
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* Header */
+  .header { background: linear-gradient(135deg, #1B3A5C, #2E75B6); color: white; padding: 24px 32px; border-radius: 12px 12px 0 0; }
+  .header h1 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+  .header .subtitle { font-size: 13px; opacity: 0.8; }
+
+  /* Main content card */
+  .card { background: white; border-radius: 0 0 12px 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 32px; margin-bottom: 24px; }
+
+  /* Badge */
+  .badge { display: inline-block; background: #2E75B6; color: white; font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin-bottom: 20px; }
+
+  /* Sections */
+  h2 { font-size: 18px; color: #1B3A5C; margin: 28px 0 12px 0; padding-bottom: 8px; border-bottom: 2px solid #e8edf2; }
+  h2:first-of-type { margin-top: 0; }
+
+  h3 { font-size: 15px; color: #2E75B6; margin: 20px 0 8px 0; }
+
+  p { margin-bottom: 12px; font-size: 15px; }
+
+  /* Ordered list */
+  ol { margin: 12px 0 12px 24px; }
+  ol > li { margin-bottom: 12px; font-size: 15px; }
+  ol > li strong { color: #1B3A5C; }
+
+  /* Unordered list */
+  ul { margin: 8px 0 8px 24px; }
+  ul > li { margin-bottom: 6px; font-size: 15px; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th { background: #1B3A5C; color: white; text-align: left; padding: 10px 14px; font-weight: 600; }
+  td { padding: 10px 14px; border-bottom: 1px solid #e8edf2; }
+  tr:nth-child(even) td { background: #f8f9fb; }
+  td:first-child { font-weight: 600; color: #2E75B6; white-space: nowrap; }
+
+  /* Callout boxes */
+  .callout { background: #fff8e6; border-left: 4px solid #f0ad4e; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+  .callout strong { color: #946200; }
+
+  .callout-action { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+  .callout-action strong { color: #2e7d32; }
+
+  .callout-gap { background: #fce4ec; border-left: 4px solid #e57373; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 14px; }
+  .callout-gap strong { color: #c62828; }
+
+  /* Footer confidence bar */
+  .footer { background: #f0f4f8; border-top: 1px solid #e0e5ec; padding: 20px 32px; border-radius: 0 0 12px 12px; margin-top: -12px; }
+  .confidence-row { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+  .confidence-label { font-size: 13px; font-weight: 600; color: #666; min-width: 120px; }
+  .confidence-bar-bg { flex: 1; height: 8px; background: #e0e5ec; border-radius: 4px; overflow: hidden; }
+  .confidence-bar { height: 100%; background: linear-gradient(90deg, #f0ad4e, #ff9800); border-radius: 4px; width: 78%; }
+  .confidence-value { font-size: 14px; font-weight: 700; color: #ff9800; min-width: 40px; }
+
+  /* Metadata grid */
+  .meta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 12px; }
+  .meta-item { text-align: center; }
+  .meta-item .label { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: 0.5px; }
+  .meta-item .value { font-size: 15px; font-weight: 600; color: #1B3A5C; margin-top: 2px; }
+
+  /* Next step */
+  .next-step { background: linear-gradient(135deg, #1B3A5C, #2E75B6); color: white; padding: 18px 24px; border-radius: 8px; margin-top: 20px; font-size: 14px; }
+  .next-step strong { color: #9dd5ff; }
+
+  /* Disclaimer */
+  .disclaimer { text-align: center; font-size: 12px; color: #999; margin-top: 16px; font-style: italic; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>RegOS Regulatory Analysis</h1>
+    <div class="subtitle">Miami-Dade Chapter 24 — BOD Limits for Wastewater Discharge</div>
+  </div>
+
+  <div class="card">
+    <span class="badge">GraphRAG</span>
+
+    <h2>Summary</h2>
+    <p>The specific BOD (Biochemical Oxygen Demand) limits for wastewater discharge in Miami-Dade County Chapter 24 are not explicitly stated in the retrieved sections. However, the regulatory framework requires compliance with effluent standards under <strong>Section 24-42(2)</strong> (referenced in [G2]) and pretreatment standards under <strong>Section 24-42.4</strong> ([G1]). Compliance testing for BOD removal is mandated, and sampling must follow methods outlined in <strong>Section 24-44.2</strong> ([G2]).</p>
+
+    <h2>Regulatory Analysis</h2>
+
+    <h3>1. BOD Compliance Context</h3>
+    <ul>
+      <li>While the exact BOD numerical limit is not directly quoted in the retrieved sections, <strong>Section 24-44.2(1)</strong> ([G2]) states that samples for compliance with effluent standards (including BOD) must be taken at the point past which no further treatment occurs.</li>
+      <li><strong>Section 24-44.2(5)</strong> ([G2]) explicitly mentions "percent removal of BOD and suspended solids," indicating that BOD limits are tied to removal efficiency requirements.</li>
+    </ul>
+
+    <h3>2. Pretreatment Standards</h3>
+    <ul>
+      <li><strong>Section 24-42.4</strong> ([G1]) governs pretreatment standards for industrial users discharging into publicly owned treatment works (POTWs). It prohibits discharges that cause "interference" or "pass-through" of pollutants, which may indirectly regulate BOD levels.</li>
+    </ul>
+
+    <h3>3. Stormwater and FOG Provisions</h3>
+    <ul>
+      <li><strong>Sections 24-42.8</strong> ([G3]) and <strong>24-42.6</strong> ([G4]) address stormwater and Fats, Oils, and Grease (FOG) controls but do not specify BOD limits.</li>
+    </ul>
+
+    <h2>Applicable Sections</h2>
+    <table>
+      <thead>
+        <tr><th>Ref</th><th>Section</th><th>Relevance</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>[G1]</td><td>§24-42.4 Sanitary sewer discharge</td><td>Defines pretreatment standards and prohibited discharges affecting BOD.</td></tr>
+        <tr><td>[G2]</td><td>§24-44.2 Compliance tests</td><td>Specifies sampling methods and references BOD removal requirements.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>What You Need To Do</h2>
+    <div class="callout-action">
+      <ul>
+        <li><strong>Review Section 24-42(2):</strong> Locate the full text of Section 24-42(2) to identify explicit BOD limits for effluent.</li>
+        <li><strong>Follow Sampling Protocols:</strong> Ensure compliance testing for BOD is conducted at the designated discharge point per Section 24-44.2 ([G2]).</li>
+        <li><strong>Check Pretreatment Rules:</strong> If discharging to a POTW, comply with Section 24-42.4 ([G1]) to avoid interference or pass-through violations.</li>
+      </ul>
+    </div>
+
+    <h2>Gaps & Limitations</h2>
+    <div class="callout-gap">
+      <ul>
+        <li>The retrieved sections do not include the exact BOD numerical limit (e.g., mg/L), which is likely specified in <strong>Section 24-42(2)</strong> (not fully retrieved here).</li>
+        <li>Site-specific factors (e.g., facility type, discharge destination) may affect applicable BOD limits.</li>
+        <li>Engineering judgment is required to interpret removal efficiency requirements mentioned in <strong>Section 24-44.2(5)</strong> ([G2]).</li>
+      </ul>
+    </div>
+
+    <div class="next-step">
+      <strong>Next Step:</strong> Verify the full text of Section 24-42(2) for explicit BOD limits and consult Miami-Dade County's Environmental Quality Control Board if clarification is needed.
+    </div>
+  </div>
+
+  <!-- Footer with metadata -->
+  <div class="card" style="border-radius: 12px; padding: 24px 32px;">
+    <div class="confidence-row">
+      <span class="confidence-label">Source Confidence</span>
+      <div class="confidence-bar-bg"><div class="confidence-bar"></div></div>
+      <span class="confidence-value">78%</span>
+    </div>
+
+    <div class="meta-grid">
+      <div class="meta-item">
+        <div class="label">Model</div>
+        <div class="value">Nemotron Super 49B</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Tokens Used</div>
+        <div class="value">5,088</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Cost</div>
+        <div class="value">$0.0009</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    RegOS regulatory analysis — Miami-Dade Chapter 24, Sections [G1]–[G5]. Review cited sections for your specific facility context.
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -50,8 +50,14 @@
 	import { Shortcut, shortcuts } from '$lib/shortcuts';
 
 	const i18n = getContext('i18n');
+	import RegOSDisclaimerModal from '$lib/components/RegOSDisclaimerModal.svelte';
+	import { getRegosPublicConfig } from '$lib/apis/configs';
+
 
 	let loaded = false;
+	let regosConfig = null;
+	import { writable } from 'svelte/store';
+	const showRegOSDisclaimer = writable(false);
 	let DB = null;
 	let localDBChats = [];
 
@@ -470,6 +476,8 @@
 			{/if}
 		</div>
 	</div>
+
+<RegOSDisclaimerModal bind:show={$showRegOSDisclaimer} disclaimerConfig={regosConfig?.disclaimer} />
 {/if}
 
 <style>

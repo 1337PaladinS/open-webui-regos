@@ -1,0 +1,277 @@
+Sec. 24-42.8 - Stormwater-related standards for Miami-Dade County. 
+
+(1)  Purpose and intent. The purpose and intent of this section is to safeguard public health, safety, and welfare and protect water quality by setting minimum requirements and standards for development and other activities and actions that may alter or affect the storage, runoff volume or flow, course, treatment, discharge, disposal, ponding or flooding, or quality of stormwater. 
+
+(2)  Definitions. The following definitions shall apply to this section. 
+
+(a)  Best management practice (BMP) for stormwater treatment shall mean a practice or combination of practices determined by the Director, based on research, field-testing, and expert review, to be the most effective and practicable, including economic and technological considerations, of improving water quality by reducing excess nutrients and other pollutant loads in water. 
+
+(b)  Event mean concentration (EMC) shall mean the average pollutant concentration for a given land use, expressed in units of mass per volume (e.g., mg/L). 
+
+(c)  Impervious Area Setback (IAS) shall mean the minimum distance measured perpendicular from the property line inward to the closest impervious surface, excluding public rights-of-way. 
+
+(d)  Percent pervious area (PPA) shall mean the ratio calculated as the total pervious area divided by the total property area measured within the property lines, excluding public rights-of-way, expressed as a percentage. 
+
+(3)  General requirements and procedures. The following shall govern all applications subject to this section. 
+
+(a)  Applicability. On and after March 31, 2025, this section applies to all development orders, including, without limitation, initial, intermediate, and final development orders as defined in Chapter 33G and their municipal equivalents. 
+
+(b)  Stormwater evaluations. 
+
+(i)  In addition to the specific requirements set forth in this section regarding stormwater quantity and quality, all applications for development orders shall be evaluated to ensure prevention of stormwater seepage, runoff, discharge, or other greater impact compared to pre-development conditions, onto adjacent and adjoining parcels resulting from the proposed development. 
+
+(ii)  Evaluations shall be performed using generally accepted engineering and scientific standards and principles approved by the Director, as such standards and principles are defined in subsection 24-15.1. 
+
+(iii)  Evaluations of water quality pursuant to this section shall verify that the applicable stormwater control measures (SCMs) provide adequate treatment to the water quality volume (WQV) calculated for the subject development. 
+
+(c)  Detention and retention. 
+
+(i)  Detention and retention systems shall not collect or store a quantity of stormwater that exceeds the design limitation of the storage area. 
+
+(ii)  Where retention is used: 
+
+1.  Dry retention shall be accomplished with a storage basin or swale having a bottom elevation at least one foot above the average October groundwater level as set forth in this section. 
+
+2.  Wet retention shall be accomplished with a storage basin having a bottom elevation at least lower than one foot below the average May groundwater level as set forth in this section or in the County public works manual, whichever is stricter. 
+
+3.  Excavations shall be no larger than necessary to accomplish retention, except as approved or required by the Director. 
+
+4.  Where the lake excavation standards set forth in Chapter 33 are stricter than the requirements of this section, Chapter 33 shall control. 
+
+(d)  Exfiltration. Where exfiltration is used, the invert elevation of the perforated conveyance pipe shall be placed at or above the average October groundwater level as set forth in this section or in the County public works manual, whichever is stricter, or at such other elevation as may be approved by the Director. 
+
+(e)  Infiltration. Where infiltration is used, the grassed swale or open basin to which stormwater is conveyed shall be at least one foot above the average October groundwater level as set forth in this section or in the County public works manual, whichever is stricter. 
+
+(f)  Gravity injection. Where gravity injection is used, the bottom of the well casing shall be more than two feet below the average yearly highest groundwater elevation as set forth in this section. 
+
+(g)  Pressure injection. Where pressure injection is used, the maximum head on the well shall not exceed 8 feet NGVD or as otherwise permitted by the Florida Department of Environmental Protection. 
+
+(h)  Wastewater collection and transmission systems. To protect stormwater quality, a wastewater collection or transmission system shall not be designed, constructed, placed, or used on land where stormwater can pond or flood, unless such system is designed to be watertight and is approved by the Director. 
+
+(i)  Pollutant loading. Pre- and post-development pollutant loading calculations, which may be performed through modeling, shall be submitted for the Director's review and approval and shall include existing and proposed best management practices for stormwater treatment. Calculations shall be signed and sealed by a professional engineer licensed in the state of Florida. 
+
+(j)  Pre-existing wastewater collection or transmission systems, non-structural impervious surface improvements, or stormwater infrastructure, including outfalls. Notwithstanding any provision to the contrary, wastewater collection or transmission systems that were lawfully installed prior to [insert effective date of ordinance], and non-structural impervious surface improvements and stormwater infrastructure, including outfalls, that were lawfully installed prior to March 31, 2025, and that are not thereafter proposed to be enlarged or otherwise modified to increase capacity shall not be required to comply with this section, except in the following circumstances: 
+
+(i)  For a wastewater collection or transmission system, the Director determines that the system is located in an area subject to ponding or flooding, is not watertight, and does not otherwise adequately prevent inflows. 
+
+(ii)  For a non-structural impervious surface improvement, the Director determines that the improvement has caused substantial stormwater runoff or discharge onto an adjacent parcel not approved for stormwater retention pursuant to this chapter. 
+
+(iii)  For stormwater infrastructure, including an outfall, the Director determines that such a facility is causing violations of water quality standards set forth in this chapter. 
+
+(iv)  The Director shall provide written notice of the deficiencies to the owner of the subject property and, where applicable, the wastewater collection or transmission system or stormwater infrastructure, and shall order the submission, for the Director's review and approval, of: 
+
+1.  plans demonstrating how the deficiencies are to be corrected; and 
+
+2.  after implementation of the approved plans, as-built plans demonstrating that the deficiencies have been corrected. 
+
+(v)  Plans required pursuant to this subsection shall comply with the requirements of Division 1 of Article I for submission of plans. 
+
+(k)  Compliance with other regulations. No provision of this section shall be construed to permit a less stringent design standard than that required by other applicable regulations. 
+
+(4)  Minimum stormwater standards for all development applications or approvals. On and after March 31, 2025, the following shall govern installation, replacement, or expansion of a non-structural impervious surface improvement and all other development applications or approvals on any parcel or property. 
+
+(a)  General requirements: 
+
+(i)  Non-structural impervious surface improvements shall not cause stormwater runoff onto adjacent parcels that are not designed and are not approved by the Director to receive such runoff. 
+
+(ii)  Pavers shall be reviewed as non-structural impervious surface improvements, except that pavers installed and maintained in accordance with all of the following shall be deemed to be pervious areas: 
+
+1.  Pavers are installed in low traffic areas with sandy soils, slopes less than 5 degrees (<5°), and a minimum of 24 inches between the water table and the paver base. 
+
+2.  Pavers are certified by the manufacturer to be pervious. 
+
+3.  Soils underlying pavers have a minimum permeability rate of 0.8 inches (2 cm) per hour, and pavers may be combined with an underdrain discharging into exfiltration trenches or other drainage infrastructure. Such an underdrain shall be required if the permeability rate of underlying soils is less than 0.8 inches (2 cm) per hour. An underdrain system, including any connected infrastructure, shall be designed to allow for periodic maintenance. 
+
+(iii)  For all pervious areas, the property owner shall be responsible for periodic maintenance to avoid clogging and soil compaction or other substantial reduction of permeability. Maintenance of pervious areas includes but is not limited to maintenance of swales as required by Chapter 19 and pressure cleaning of permeable pavers and permeable pavement. All improvements shall be reviewed prior to approval to ensure that post-development stormwater impacts and runoff are limited to pre-development levels at the site boundary. 
+
+1.  The applicant shall submit a signed and sealed engineering report for the Director's review and approval. 
+
+2.  It is provided, however, that an engineering report shall not be required for single family and duplex residences that meet the stormwater quantity standards for single-family and duplex residences set forth in subparagraph (b)(i) below. 
+
+(iv)  Stormwater impacts and runoff levels may be calculated based on peak flow, volume, or a combination of the two. 
+
+(v)  The applicant shall demonstrate that the volume of runoff from the proposed improvement will be controlled by retaining runoff on site, infiltrating the runoff, ensuring that the volume of runoff during all storms greater than half of the two-year event remains constant, or a combination of such mechanisms. 
+
+(vi)  For purposes of this subsection: 
+
+1.  A "townhouse" as defined in the most current Florida Building Code, Building Edition, shall be considered a single-family property. 
+
+2.  A "system" means a facility, or one or more separate facilities, structures, devices, equipment, or appurtenances that manage stormwater. 
+
+(vii)  Perimeter site elevation shall be harmonized with the grades of adjacent and abutting parcels, except that the Director may approve onsite dry retention, dry detention, and stormwater inlets that are located no more than 12 inches below the minimum elevations of the County Flood Criteria map. 
+
+(b)  Single-family and duplex residences under certain conditions. This paragraph shall govern individual single-family or duplex lots that are not part of a subdivision application and are not subject to a stricter water quantity requirement by other applicable local, County, South Florida Water Management District, or State regulation. For such lots, prior written approval by the Director shall be required pursuant to this section, except under certain circumstances for lots in municipalities and only to the extent provided in Section 24-15. Applications pursuant to this paragraph shall comply with subparagraph (a) above and all of the following: 
+
+(i)  Stormwater quantity. Lots shall retain, at a minimum, the runoff from a 25-year/10-minute storm event with zero off-site discharge. The following is considered equivalent to a 25-year/10-minute storm event with zero off-site discharge retention. 
+
+1.  For lots with an area of 5,500 square feet or less: 
+
+a.  a minimum of 5 feet of pervious area setback on a minimum of 3 sides of the property, with a 6-inch-deep swale along the property perimeter, and a minimum of 20 percent of pervious lot area; or 
+
+b.  a minimum of 2.5 feet of pervious area setback on a minimum of 2 sides of the property and 10 feet of pervious area setback on a minimum of 1 side, with a 6-inch-deep swale along the property perimeter, and a minimum of 20 percent of pervious lot area. 
+
+2.  For lots larger than 5,500 square feet: 
+
+a.  a minimum of 5 feet of pervious area setback on a minimum of 3 sides of the property, with a 6-inch-deep swale along the property perimeter, and a minimum of 25 percent of pervious lot area; or 
+
+b.  a minimum of 2.5 feet of pervious area setback on a minimum of 2 sides of the property and 10 feet of pervious area setback on a minimum of 1 side, with a 6-inch-deep swale along the property perimeter, and a minimum of 25 percent of pervious lot area. 
+
+3.  The elevations along the perimeter of the property should match the existing elevations of the adjacent properties. 
+
+4.  If the proposed grading raises the property more than 1.5 feet compared to the elevations of the adjacent properties, a retaining wall or equivalent feature shall be required. 
+
+5.  Site grading shall direct stormwater away from buildings and shall prevent stormwater from running off to or discharging onto an adjacent parcel not approved for stormwater retention. 
+
+6.  Where an existing or proposed site boundary elevation could allow runoff or discharge onto an adjacent property that has not been approved for stormwater retention pursuant to this chapter, retaining walls or other features to prevent offsite runoff shall be provided, subject to the Director's approval. 
+
+7.  For lots, regardless of size, where buildings are proposed to have five stories or more, the lot shall retain, at a minimum, the run-off from a 25-year/6-hour storm event with zero off-site discharge, unless a higher retention standard is required by other applicable local, County, South Florida Water Management District, or State regulation. 
+
+(ii)  Stormwater quality. Green areas, swales, pervious pavers, pervious pavement, dry shallow exfiltration trenches, retention systems, or similar infrastructure or other development as may be acceptable to the Director shall be utilized to satisfy the minimum stormwater retention onsite. 
+
+(iii)  To meet the requirements set forth in subparagraphs (i) and (ii) above, the following shall not be located within the impervious area setback and shall not be included in calculations of minimum pervious area required by this section: structures; nonstructural impervious surface improvements; installations or improvements that do not qualify as a previous area; or other impediments to stormwater infiltration, including, without limitation, over-compaction of soils. 
+
+(iv)  The area from the property line to the impervious area setback shall be pervious, to prevent stormwater runoff and discharges onto adjacent parcels and land. 
+
+(v)  The improvement will not cause or let stormwater to run off or discharge onto adjacent parcels, properties, land, or surface water bodies, except for public rights-of-way, as determined by the Director. 
+
+(vi)  Administrative adjustments authorized. Notwithstanding any provision to the contrary, where existing site conditions preclude full compliance with this section, the Director is authorized to approve an alternative design that complies with applicable state and federal requirements and achieves the highest level of water quality. 
+
+(vii)  For existing single-family or duplex residences, an application shall not be required to comply with the stormwater quality and quantity standards set forth above where the application does not include, as determined by the Director: a non-structural impervious surface improvement; or any other improvement that increases impervious area on the lot or that is anticipated to cause pollution, contamination, flooding, or runoff. 
+
+(viii)  Single-family or duplex residences that are part of a subdivision application or are subject to stricter stormwater quantity requirements by other applicable local, County, South Florida Water Management District, or State regulation shall be governed by paragraph 4(c). 
+
+(c)  All other developments and improvements. Applications for all other developments and non-structural impervious surface improvements shall demonstrate compliance with the following stormwater quantity and quality standards in addition to the general requirements of paragraph (4)(a). 
+
+(i)  Stormwater Quantity. 
+
+1.  Lowest site elevation shall be harmonized with the grades of adjacent and abutting parcels, except that the Director may approve onsite dry retention, dry detention, and stormwater inlets that are located no more than 12 inches below the minimum elevations of the County Flood Criteria map. 
+
+2.  The Director may approve off-site discharge to an adjacent parcel approved for stormwater retention. 
+
+3.  Onsite retention systems shall be designed for a minimum of a 25-year/6-hour storm event with zero off-site discharge unless a higher retention standard is required by other applicable local, County, South Florida Water Management District, or State regulation. 
+
+4.  Retention systems shall be designed to recover as follows: 
+
+a.  Onsite dry retention systems shall recover to the seasonal highwater table within 24 hours of the storm event. 
+
+b.  Wet retention systems shall recover the permanent storage volume within 24 hours of the storm event. 
+
+5.  Where a new overflow or outfall is proposed to discharge onto surface waters of secondary canals under County jurisdiction or primary canals maintained and operated by the South Florida Water Management District,, on-site retention of the 25-year/3-day storm event with zero off-site discharge shall be provided, unless a higher retention standard is required by other applicable County, South Florida Water Management District, or State regulation. 
+
+[6.]  Properties located in a cut and fill basin (Basin B, the Bird Drive Basin, and the North Trail Basin) shall comply with the following: 
+
+a.  The required drainage facilities shall be an onsite retention system for the 100-year/3-day storm event, with zero off-site discharge. Exfiltration discharge shall not be used in determining the peak stage for the 100-year/3-day storm event. 
+
+b.  A property shall be deemed to comply with the foregoing onsite retention requirement where the applicable percentage of the property's total lot area is set aside for stormwater management purposes. 
+
+i.  If the stormwater management area is a wet retention area: 
+
+A.  North Trial Basin—28.60 percent. 
+
+B.  Bird Drive Basin—30.00 percent. 
+
+C.  Basin B—28.60 percent. 
+
+ii.  If the stormwater management area is a dry retention area: 
+
+A.  North Trial Basin—33.25 percent. 
+
+B.  Bird Drive Basin—38.00 percent. 
+
+C.  Basin B—39.00 percent. 
+
+c.  Alternatively, the Director may approve drainage to an off-site stormwater management area within the same basin, provided that such stormwater management area can contain the runoff generated by the 100-year, 3-day storm event with zero off-site discharge and complies with all other applicable provisions of this chapter. 
+
+[7.]  For properties that are located outside of the Urban Development Boundary, the required drainage shall be onsite retention of the 100-year, 3-day storm event. 
+
+[8.]  Drainage wells may be used to comply with retention requirements where such wells: 
+
+a.  comply with applicable state regulations; and 
+
+b.  comply with stormwater quality requirements and sedimentation restrictions contained in this chapter; and 
+
+c.  provide a well box designed for a minimum of 90 seconds of detention, based on peak flow rate calculated by the engineer of record and provided with the signed and sealed engineering analysis and report. 
+
+[9.]  For lots, regardless of size, where commercial, industrial, or multifamily buildings, including parking facilities, are proposed to have five stories or more, onsite retention systems shall be designed for a minimum of a 25-year/6-hour storm event with zero off-site discharge, unless a higher retention standard is required by other applicable local, County, South Florida Water Management District, or State regulation. 
+
+(ii)  Stormwater Quality. 
+
+1.  In evaluating stormwater quality, the greater of the following volumes shall be used: the onsite retention systems' volume; two and one-half inches of the total impervious area, excluding public rights of way; or one inch over the total area, excluding the public rights of way. 
+
+2.  If served or to be served by one or more outfalls, discharges shall be maintained free of debris, plastics, and floatable, settleable, suspended, or aquatic trash, and stormwater quality shall meet the strictest of the following standards: 
+
+a.  post-development pollutant loads shall not exceed pre-development loads; or 
+
+b.  post-development pollutant reduction shall not be less than 85 percent based on average annual loading; or 
+
+c.  post-development pollutant loads shall not cause water quality violations in receiving water bodies; or 
+
+d.  level of treatment sufficient to accomplish the percent reduction specified in the load allocation of an adopted Total Maximum Daily Load (TMDL) or adopted Reasonable Assurance Plan (RAP) for the pollutant(s) not meeting water quality standards, provided that if the TMDL or RAP for a particular pollutant is less strict than a., b., or c. above, then the strictest standard shall control for any particular pollutant. 
+
+3.  For outfalls to any of the water bodies listed below, onsite retention and detention systems, and any combined treatment train and new technologies, shall provide a minimum water quality treatment volume equivalent to 150 percent of that otherwise required by this section and post-development pollutant reduction of 95 percent and shall require a class II permit pursuant to this chapter: 
+
+a.  Biscayne Bay. 
+
+b.  Any surface water designated as an Outstanding Florida Waters pursuant to chapter 62-302.700(9), Florida Administrative Code. 
+
+c.  Any canal, except for dead end canal segments that the Director determines to not be connected to Biscayne Bay or any surface water designated as an Outstanding Florida Water. 
+
+d.  Any tributary that is connected, as determined by the Director, to either Biscayne Bay or a surface water designated as an Outstanding Florida Water. 
+
+4.  Administrative adjustments authorized. Notwithstanding any provision to the contrary, where the Director determines that existing site conditions preclude full compliance with this section, the Director may approve an alternative design that complies with applicable state and federal requirements and achieves the highest level of water quality, provided that the applicant demonstrates that removal efficiency and design criteria are based on field-verified data approved by the Director or data and reports published by the Florida Department of Environmental Protection. 
+
+(iii)  For existing developments, an application shall not be required to comply with the stormwater quality and quantity standards set forth above where the application does not include, as determined by the Director: a non-structural impervious surface improvement; or any other improvement that increases impervious area on the lot or that is anticipated to cause pollution, contamination, flooding, or runoff. 
+
+(d)  Public right-of-way projects not part of a subdivision application. Public right-of-way projects that are not part of a subdivision application shall comply with the following stormwater quantity and quality standards in addition to the general requirements of paragraph (4)(a): 
+
+(i)  Stormwater Quantity 
+
+1.  Where approved by the Director, stormwater inlets and catch basins may be located up to twelve inches below County Flood Criteria. 
+
+2.  The right-of-way shall be graded to prevent stormwater from running off or discharging onto adjacent parcels not approved for stormwater retention pursuant to this chapter. 
+
+3.  Green areas, swales, retention or detention areas, and exfiltration trenches may be used when consistent with this chapter, Sections 2-100 and 2-103.1, and the County public works manual. 
+
+(ii)  Stormwater Quality. Unless otherwise approved by both the Director and the Director of Public Works, public rights-of-way shall comply with the stricter of: the stormwater quality requirements set forth in paragraph (4)(c) above; or the County public works manual. 
+
+(iii)  Administrative adjustments authorized. Notwithstanding any provision to the contrary, where existing site conditions preclude full compliance with this section for public rights-of-way, the Director, following consultation with the Director of Public Works, is authorized to approve an alternative design that complies with applicable state and federal requirements and achieves the highest level of water quality. 
+
+(e)  Other Requirements. 
+
+(i)  If provided, interior garage drains shall be connected to a separate onsite drainage system with a two-foot sand filter below the pipe invert and above the mean high-water table. 
+
+(ii)  If provided, dumpster pads shall be located adjacent and graded to a green area for proper stormwater management and to prevent waste liquids from entering the drains. 
+
+(f)  Erosion and Sedimentation Controls. Erosion and sedimentation controls shall be provided in accordance with the following: 
+
+(i)  Construction activities involving earth work or excavations along public rights-of-way or adjacent to water bodies shall provide erosion and sedimentation controls to limit impacts to existing drainage facilities, water bodies, and natural preserve areas. The controls shall be included in the Stormwater Pollution Prevention Plan (SWPPP) to be submitted as part of a permit application and shall be subject to review and approval by the Director. 
+
+(ii)  Construction projects involving more than one acre of total impervious area, including existing impervious area at the site, shall provide temporary structural stormwater features to retain stormwater runoff onsite from a 25-year/6-hour storm event during and until the completion of all construction activities. 
+
+(iii)  During construction, open ground soils shall be stabilized or covered for protection from rainfall to prevent erosion and sedimentation into public rights-of-way, adjacent properties, water bodies, and natural preserved areas. 
+
+(g)  Design seasonal water table. 
+
+(i)  The design seasonal water table (October and May) shall be based on the latest current and future groundwater elevations maps and data that are officially adopted by Miami-Dade County ordinance, the United States Geological Service, or the South Florida Water Management District, and the most restrictive shall apply. 
+
+(ii)  Future groundwater elevation maps that incorporate sea level rise forecasts based on the Intermediate High curve projections promulgated by the National Oceanic and Atmospheric Administration (NOAA) shall be used, when available, to best match the future time horizon with the anticipated life cycle being used for design of infrastructure. 
+
+(h)  Tail-water design seasonal elevation. 
+
+(i)  The tail-water design seasonal elevation for outfalls shall be based on the latest current surface water elevations that are officially adopted by Miami-Dade County ordinance, the United States Geological Service, NOAA, and the South Florida Water Management District, and the most restrictive shall apply. 
+
+(ii)  Future surface water elevations that incorporate sea level rise based on the Intermediate High curve projections promulgated by NOAA shall be used, when available, to best match the future time horizon with the anticipated life cycle being used for design of infrastructure. 
+
+(iii)  Seasonal surface water elevation calculations shall be signed and sealed by an engineer licensed in the State of Florida. 
+
+(i)  Notwithstanding any provision of this chapter to the contrary, development that contains at least 10 acres of total area, or at least 2 acres of impervious surface area, shall provide on-site retention of the 25-year/3-day storm event with zero off-site discharge. 
+
+(i)  The construction, alteration, or operation of a stormwater water management system in such a development shall also require a Surface Water Management General Permit, which may be issued by the Department pursuant to authority delegated by the South Florida Water Management District. 
+
+(ii)  It is provided, however, that a Surface Water Management General Permit is not required if the project does not meet the District-specific threshold for a Surface Water Management General Permit, as defined in the South Florida Water Management District Environmental Resource Permit Applicant's Handbook - Volume II, effective May 22, 2016, as may be amended. 
+
+(j)  Any development that includes placement of fill shall provide flood routing calculations demonstrating that the peak stage for the 100-year design storm is not encroaching on the floodplain. No such fill may be placed until such calculations have been submitted in a report signed and sealed by a professional engineer licensed in the State of Florida and have been reviewed and approved in writing by the Director. 
+
+(k)  Notwithstanding any provisions of this chapter to the contrary, any subdivision or development that includes more than one contiguous parcel shall provide, at a minimum, on-site retention of the 25-year/3-day storm event with zero off-site discharge, unless otherwise approved by the Director. 
+
+(Ord. No. 24-92, § 4, 9-4-24)

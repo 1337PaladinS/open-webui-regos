@@ -1,0 +1,87 @@
+Sec. 24-45. - Regulation of underground storage facilities. 
+
+(1)  Legislative intent. The intent and purpose of this section is to safeguard the public health, safety and welfare by regulating underground storage facilities. 
+
+(2)  Short title; applicability; construction. This section shall be known as the "Underground Storage Facilities Ordinance." The provisions of this section shall be effective in the incorporated and unincorporated areas of Miami-Dade County and shall be liberally construed to effect the purpose set forth herein. 
+
+(3)  Performance Standards For Underground Storage Facilities 
+
+(a)  It shall be unlawful for any person to operate, maintain, or cause, permit allow, let or suffer the operation or maintenance of any underground storage facility installed prior to June 2, 1992 without a network of groundwater monitoring wells of design and location approved by the Director or the Director's designee. 
+
+(b)  Underground storage facilities installed prior to June 2, 1992 and located in the Northwest Wellfield protection area, the West Wellfield Interim protection area, the basic wellfield protection area of any public utility potable water supply well or within any property served or to be served by any source of potable water supply other than a public water supply shall include: 
+
+(i)  A secondary containment system consisting of double-walled tanks and double-walled piping, and 
+
+(ii)  A continuous automatic leak detection system approved by the Director or the Director's designee which is capable of detecting a leak from any point in the underground storage facility by monitoring the piping sumps, dispenser liners, and the interstices between the following two components: 
+
+1.  the double walls of the tanks and, 
+
+2.  between the double walls of the piping. 
+
+(c)  It shall be unlawful for any person to install, modify, expand, replace, or permit, cause, allow, let or suffer the installation, modification, expansion or replacement of any underground storage facility installed after June 2, 1992 without complying with all of the following: 
+
+(i)  Installation of a network of groundwater monitoring wells of design and location approved by the Director or the Director's designee prior to installation of said monitoring wells, and 
+
+(ii)  Installation of a secondary containment system consisting of double-walled tanks and double-walled piping, and 
+
+(iii)  Installation of a continuous automatic leak detection system approved by the Director or the Director's designee which is capable of detecting a leak from any point in the underground storage facility by monitoring the piping sumps, dispenser liners, and the interstices between the following two components: 
+
+1.  the double walls of the tanks and, 
+
+2.  between the double walls of the piping. 
+
+(iv)  Approval of plans by the Director or the Director's designee in accordance with the requirements of Section 24-15(6) of this Code. 
+
+(d)  Underground storage facilities installed prior to the effective date of this ordinance with flexible liner secondary containment systems approved by the Director or the Director's designee shall upgrade the existing systems to comply with the requirements set forth herein not later than December 31, 2009. 
+
+(e)  Underground storage facilities installed with modular, rigid, sealed, impervious hydrocarbon-resistant encasing systems approved by the Director or the Director's designee shall upgrade the existing systems to comply with the requirements set forth herein not later than December 31, 2009. 
+
+(4)  Operational Requirements 
+
+(a)  Release Detection. 
+
+(i)  The owner or operator of the underground storage facility shall be responsible for monthly visual inspections of the groundwater for the purpose of detecting the presence of free product in each compliance monitoring well as required by Section 24-45(1) herein. 
+
+(ii)  The owner or operator of the underground storage facility shall maintain a record of the results of the visual inspections in the form of an on-site inspection log. The monthly visual inspection record shall be made available to Department representatives for inspection upon request. 
+
+(iii)  In the event groundwater in the compliance monitoring wells of the underground storage facility is contaminated by free product, the owner or operator of the underground storage facility shall immediately implement the provisions of Section 24-45(5)(b) of this Code and, cease the monthly visual inspections of the monitoring wells, and shall, within thirty (30) days from the date of the detection of free product, implement an alternate method of release detection capable of detecting new releases pursuant to the requirements of Chapter 62-761, Florida Administrative Code. When an alternate method of release detection is implemented, the owner or operator of the underground storage facility shall maintain the approved network of monitoring wells, pursuant to the requirements of Section 24-45 of this Code, in a functional condition and make them accessible for periodic inspection by Department representatives upon request. 
+
+(iv)  The owner or operator of underground storage facilities operating with approved secondary containment systems shall perform monthly inspections of the continuous automatic leak detection system to verify the proper operation of the system. A record of the results of the monthly inspections shall be maintained on site and be made available to Department representatives for inspection upon request. 
+
+(b)  Operating Permits. Underground storage facilities with a capacity greater than one hundred and ten (110) gallons shall obtain an operating permit as required by Section 24-18(12) herein. A current and valid storage tank registration placard issued by the Florida Department of Environmental Protection is hereby determined to satisfy the requirement of obtaining an operating permit as set forth in Section 24-18(12) of this Code. It shall be unlawful for any person to operate, maintain or permit, cause, allow, let or suffer the operation or maintenance of any underground storage facility with a capacity greater than one hundred and ten (110) gallons without an operating permit issued in accordance with the requirements of this Chapter or current storage tank registration placard issued by the Florida Department of Environmental Protection. 
+
+(c)  It shall be unlawful for any person to operate, maintain or permit, cause, allow, let or suffer the operation or maintenance of any underground storage facility located within the Northwest Wellfield Protection Area or the West Wellfield Interim Protection Area, except for those underground storage facilities that were installed prior to November 15, 1983 and which are used exclusively for the retail sale of gasoline, gasohol, or diesel fuel. 
+
+(5)  Discharges From Underground Storage Facilities 
+
+(a)  In the event that a discharge of hazardous materials from an underground storage facility to the environment or into a secondary containment system has occurred or may have occurred, the Department shall require the operator or owner of the underground storage facility, or the owner of the real property upon which said underground storage facility is located, to immediately investigate and may require testing of the underground storage facility and the groundwater and soil in the area of the underground storage facility. The required investigation shall determine whether the underground storage facility has discharged or is discharging hazardous materials into the secondary containment system of the facility or into the environment outside of said facility. 
+
+(b)  Operators of underground storage facilities as well as any persons, individually or otherwise, having a legal, beneficial, or equitable interest in the underground storage facilities or in the real property upon which said underground storage facilities are located shall be jointly and severally liable and responsible for immediately accomplishing the following when the underground storage facility has discharged, is discharging or may be discharging any hazardous materials of any quantity whatsoever into the environment outside of said facility: 
+
+(i)  Locating and determining the cause of the discharge. 
+
+(ii)  Stopping and preventing any further discharges. 
+
+(iii)  Implementing and completing the site rehabilitation actions for contaminants in accordance with Section 24-44 herein. 
+
+(iv)  Notify the Department of such discharge within twenty-four (24) hours of any such discharge. 
+
+(6)  Removal or Abandonment of Underground Storage Facilities 
+
+(a)  Unmaintained underground storage facilities shall be removed from the ground and disposed of in accordance with state and local laws, rules, and regulations, or abandoned in place as set forth below within ninety (90) days of discovery by the owner or operator, discovery by Department representatives of the unmaintained underground storage facility, or notification of the owner or operator by the Director or the Director's designee, whichever occurs first. Prior to implementation of such removal or abandonment in place the owner or operator shall submit written notification of the proposed removal or abandonment in place to the Department on Department-approved forms. Subsequent to the written notification, the owner or operator shall notify the Department a minimum of two (2) working days prior to commencing such removal or abandonment activities. 
+
+(b)  The owner or operator shall provide access to Department representatives to the underground storage facility, excavation, excavated soils, and exposed groundwater for the purpose of inspection. If the groundwater table in the excavation is not visible at the time of inspection, or if there is any evidence of ground pollution or water pollution, the Department may require from the owner or operator of the underground storage facility the installation of one or more groundwater monitoring wells or soil borings or both in the area of the excavation. 
+
+(c)  It shall be unlawful for any person to abandon in place or permit, cause, allow, let or suffer such abandonment in place of any underground storage facility without the prior written approval of the Director or the Director's designee The Director or the Director's designee shall issue his written approval only if the abandonment in place is necessary to protect human health, the environment or the structural integrity of adjacent buildings. A Tank Closure Assessment Report (TCAR) prepared in accordance with Florida Department of Environmental Protection reference standard entitled "Storage Tank System Closure Assessment Requirements", Revised April 1998, as same may be amended from time to time, shall be prepared and submitted to the Department within sixty (60) days of abandonment in place of any underground storage facility. 
+
+(d)  Abandonment in place of an underground storage facility shall mean: 
+
+(i)  installation and sampling of the monitoring wells and soil borings required for the TCAR, and 
+
+(ii)  emptying, inerting and cleaning the interior of the underground storage facility, and 
+
+(iii)  filling the underground storage facility with a non-shrinking, inert, solid, material approved by the Department. 
+
+(7)  Residential Tanks Underground storage facilities with total storage volumes less than 300 gallons located at single family residences shall be exempt from Sections 24-45(3) and (4) herein. 
+
+(Ord. No. 04-214, §§ 1, 5, 12-2-04; Ord. No. 05-196, §§ 3, 4, 11-3-05; Ord. No. 08-55, § 2, 5-6-08)

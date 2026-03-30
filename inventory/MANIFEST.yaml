@@ -1,0 +1,273 @@
+version: "2.0"
+open_webui_version: "0.8.1"
+inventory_date: "2026-03-20"
+last_reorganization: "2026-03-20"
+classification_key:
+  baseline: "Ships with stock Open WebUI 0.8.1, unmodified"
+  modified: "Stock Open WebUI file changed for RegOS"
+  custom: "Created entirely for RegOS"
+  ephemeral: "Build artifacts, caches — not inventoried in detail"
+  removed: "Deleted on 2026-03-20 — see REMOVAL_CANDIDATES.md for audit trail"
+
+# ─────────────────────────────────────────────
+# TOP-LEVEL DIRECTORIES
+# ─────────────────────────────────────────────
+
+directories:
+
+  # --- Stock Open WebUI ---
+  - path: backend/
+    type: baseline
+    note: "Python backend (FastAPI). Some files patched by installer — see SOURCE_PATCHES.md"
+
+  - path: src/
+    type: baseline
+    note: "Svelte frontend (SvelteKit). Some files patched by installer — see SOURCE_PATCHES.md"
+
+  - path: static/
+    type: baseline
+    note: "Frontend static assets (fonts, images, emojis, audio, themes)"
+
+  - path: docs/
+    type: baseline
+    note: "Stock Open WebUI documentation (CONTRIBUTING, SECURITY, apache)"
+
+  - path: scripts/
+    type: baseline
+    note: "Open WebUI build/utility scripts"
+
+  - path: cypress/
+    type: baseline
+    note: "Cypress E2E test suite"
+
+  - path: test/
+    type: baseline
+    note: "Test fixtures and test files"
+
+  - path: .github/
+    type: baseline
+    note: "GitHub Actions workflows, issue templates"
+
+  # --- Build Artifacts ---
+  - path: .svelte-kit/
+    type: ephemeral
+    note: "SvelteKit build output"
+
+  - path: node_modules/
+    type: ephemeral
+    note: "NPM dependencies"
+
+  - path: .claude/
+    type: ephemeral
+    note: "Claude Code worktree artifacts"
+
+  # --- RegOS Custom Directories ---
+  - path: regos_setup/
+    type: custom
+    note: "Core RegOS development workspace — functions, APIs, data, scripts, docs, tests"
+    children:
+      - path: functions/graphrag_filter.py
+        type: custom
+        note: "Core GraphRAG retrieval filter (v0.17.3)"
+      - path: functions/graphrag_filter.md
+        type: custom
+        note: "Technical documentation for GraphRAG filter"
+      - path: functions/audit_logger.py
+        type: custom
+        note: "Audit logging filter (v0.4.0)"
+      - path: functions/audit_logger.md
+        type: custom
+        note: "Technical documentation for audit logger"
+      - path: functions/threshold_eval.py
+        type: custom
+        note: "[OBSOLETE — unused] Early Tools-based threshold evaluation. Superseded by graphrag_filter.py v0.14.0."
+      - path: functions/threshold_eval.md
+        type: custom
+        note: "Documentation for threshold_eval.py (includes obsolescence notice)"
+      - path: functions/escalation_action.py
+        type: custom
+        note: "Manual escalation Action (v1.0.0) — user-triggered expert review"
+      - path: functions/escalation_action.md
+        type: custom
+        note: "Documentation for escalation_action.py"
+      - path: functions/graphrag_pipe.py
+        type: custom
+        note: "[OBSOLETE — abandoned v0.1.0] Original Pipe approach, replaced by Filter pattern"
+      - path: functions/graphrag_pipe.md
+        type: custom
+        note: "Documentation for graphrag_pipe.py (includes obsolescence notice)"
+      - path: api/breach_api.py
+        type: custom
+        note: "REST API for breach/compliance dashboard"
+      - path: api/breach_api.md
+        type: custom
+        note: "Documentation for breach_api.py"
+      - path: api/scada_stream.py
+        type: custom
+        note: "SCADA streaming API — WebSocket, SSE, REST batch ingestion"
+      - path: api/scada_stream.md
+        type: custom
+        note: "Documentation for scada_stream.py"
+      - path: api/apas_bridge.py
+        type: custom
+        note: "APAS Telemetry polling bridge"
+      - path: api/apas_bridge.md
+        type: custom
+        note: "Documentation for apas_bridge.py"
+      - path: data/regulatory_thresholds.json
+        type: custom
+        note: "96 Chapter 24 regulatory thresholds"
+      - path: data/concepts.json
+        type: custom
+        note: "Ontology concepts for FEA graph"
+      - path: data/apas_metric_mappings.json
+        type: custom
+        note: "APAS metric-to-parameter mapping (8 active + 14 templates)"
+      - path: data/chaptor_24_graph.json
+        type: custom
+        note: "Full Neo4j graph export for Chapter 24"
+      - path: cypher/batch_01.cypher
+        type: custom
+        note: "Cypher batch load script for Neo4j"
+      - path: setup/
+        type: custom
+        note: "Setup scripts and instructions for fresh deployment"
+      - path: scripts/
+        type: custom
+        note: "Utility and demo scripts"
+      - path: tests/
+        type: custom
+        note: "Test suites — adversarial guardrails, phase 1/2 test results"
+      - path: n8n/
+        type: custom
+        note: "n8n escalation workflow JSON, setup guide, email preview/formatting artifacts"
+      - path: prompts/
+        type: custom
+        note: "Prompt templates (graph extraction)"
+      - path: system_prompt.md
+        type: custom
+        note: "RegOS Compliance Copilot system prompt"
+      - path: REGOS_CHANGELOG.md
+        type: custom
+        note: "Complete development changelog (9 sessions, all features)"
+      - path: README.md
+        type: custom
+        note: "RegOS setup overview and component summary"
+      - path: extra/
+        type: custom
+        note: "Supplementary material — extended docs, diagnostics, trackers, chapter 24 source"
+
+  - path: regos-installer/
+    type: custom
+    note: "RegOS installer (v2, current) — 10-step automated deployment + source patches. Planned for eventual separation to own repo."
+    children:
+      - path: install.sh
+        type: custom
+        note: "Main installer entry point"
+      - path: steps/
+        type: custom
+        note: "10 installation steps"
+      - path: source-patches/apply-patches.py
+        type: custom
+        note: "Surgical source patching — 15 patches to stock Open WebUI"
+      - path: source-patches/fragments/
+        type: custom
+        note: "Replacement code fragments"
+      - path: source-patches/new/
+        type: custom
+        note: "3 new Svelte components injected into source tree"
+      - path: functions/
+        type: custom
+        note: "Deployable copies of filter functions"
+      - path: data/
+        type: custom
+        note: "Deployable copies of JSON data files"
+      - path: scripts/
+        type: custom
+        note: "Deployable demo/verify scripts"
+      - path: docs/
+        type: custom
+        note: "Full documentation bundle"
+      - path: lib/
+        type: custom
+        note: "Shell libraries (api.sh, docker.sh, logger.sh)"
+      - path: config/
+        type: custom
+        note: "Install configuration"
+      - path: api/regos_api.py
+        type: custom
+        note: "RegOS API wrapper for installer"
+
+  - path: regos-docs/
+    type: custom
+    note: "All RegOS documentation (.docx, .xlsx, .pptx, .svg, .drawio) — consolidated from root"
+
+  - path: strategies/
+    type: custom
+    note: "Strategy documents — Municipal Code Chunking, Benchmark Strategy"
+
+  - path: inventory/
+    type: custom
+    note: "This inventory — MANIFEST, BASELINE, REGOS_MAP, SOURCE_PATCHES, REMOVAL_CANDIDATES"
+
+  - path: APAS-Legal-PDF-Chunking-Dashboard/
+    type: custom
+    note: "Standalone app — legal PDF chunking dashboard (Next.js + FastAPI). Planned for extraction to separate repo."
+
+
+# ─────────────────────────────────────────────
+# ROOT-LEVEL FILES
+# ─────────────────────────────────────────────
+
+root_files:
+
+  baseline:
+    - CHANGELOG.md
+    - CODE_OF_CONDUCT.md
+    - CONTRIBUTOR_LICENSE_AGREEMENT
+    - LICENSE
+    - LICENSE_HISTORY
+    - LICENSE_NOTICE
+    - TROUBLESHOOTING.md
+    - Makefile
+    - confirm_remove.sh
+    - contribution_stats.py
+    - cypress.config.ts
+    - demo.png
+    - hatch_build.py
+    - i18next-parser.config.ts
+    - package.json
+    - postcss.config.js
+    - pyproject.toml
+    - run-compose.sh
+    - run-ollama-docker.sh
+    - run.sh
+    - svelte.config.js
+    - tailwind.config.js
+    - tsconfig.json
+    - update_ollama_models.sh
+    - vite.config.ts
+
+  modified:
+    - path: Dockerfile
+      note: "May include neo4j in requirements install"
+    - path: docker-compose.yaml
+      note: "Includes RegOS service configuration"
+    - path: README.md
+      note: "Contains APAS/RegOS setup instructions"
+    - path: .env.example
+      note: "Contains RegOS-specific env var templates"
+    - path: .gitignore
+      note: "Includes RegOS-specific exclusions + .env"
+    - path: package-lock.json
+      note: "Regenerated after dependency changes"
+
+  custom:
+    - path: OPERATIONS.md
+      note: "RegOS operational procedures"
+    - path: "Opa-locka, FL Code of Ordinances.pdf"
+      note: "Source PDF for municipal code processing (5.4 MB)"
+
+  ephemeral:
+    - uv.lock
+    - .DS_Store

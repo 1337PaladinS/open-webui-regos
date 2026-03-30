@@ -1,0 +1,1061 @@
+Sec. 24-5. - Definitions. 
+
+In construing the provisions of this chapter, where the context will permit and no definition is provided herein, the definitions provided in Chapter 403, Florida Statutes, as may be amended from time to time, and in rules and regulations promulgated thereunder, as may be amended from time to time, shall apply. The following words and phrases when used in this chapter shall have the meanings ascribed to them in this section: 
+
+(1)  Abandonment in place of an underground storage facility shall mean: 
+
+(1)  Installation and sampling of the monitoring wells and soil borings required for the TCAR, and 
+
+(2)  Emptying, inerting and cleaning the interior of the underground storage facility, and 
+
+(3)  Filling the underground storage facility with a non-shrinking, inert and solid material approved by the Department. 
+
+(2)  Aboveground storage facility shall mean a tank, pipe, vessel or other container, or any combination of the foregoing, used or designed to be used for the aboveground storage or aboveground transmission of hazardous materials including but not limited to line leak detectors, monitoring wells and secondary containment systems associated therewith. 
+
+(1)  Aboveground storage facilities have less than ten (10) percent of their total volume below the surface of the ground. 
+
+(2)  Facilities with ten (10) percent or more of their volume below the ground surface and which are contained within a vault or structure of sufficient size to allow human access and visual inspection of all components thereof are hereby determined to be aboveground storage facilities. 
+
+(3)  Accelerated FOG maintenance shall mean cleaning performed by utilities to prevent sanitary sewer overflows caused by FOG blockages in sanitary sewer systems, including but not limited to laterals, gravity mains, pump stations, and air release valves. 
+
+(4)  Adequate protection by natural means shall mean one (1) or more of the following processes of nature that produces water consistently meeting the requirements of the standards in this chapter: dilution, storage, sedimentation, sunlight, aeration, and the associated physical and biological processes which tend to accomplish natural purification in surface waters and, in the case of groundwaters, the natural purification of water by infiltration through soil and percolation through underlying material and storage below the ground water table, as may be approved by the Director. 
+
+(5)  Adequate protection by treatment shall mean complete or full treatment which is the combination of the controlled processes of coagulation, sedimentation, absorption, filtration, disinfection, or other processes which produce a water consistently meeting the potable water standards including processes which are appropriate to the quality of the raw water supply; works which are of adequate capacity to meet maximum demands without creating health hazards, and which are located, designed and constructed to eliminate or prevent pollution; and conscientious operation by well trained and competent personnel whose qualifications are commensurate with the responsibilities of the position and acceptable to the DERM. 
+
+(6)  Adequate transmission capacity shall mean that each pump station receiving sewage flow from the sewer service connection, the pump station immediately downstream from the pump station receiving sewage flow from the sewer service connection, and all pump stations through which sewage flow from the sewer service connection is transmitted to the wastewater treatment facility receiving such sewage flow, is operating with a Projected NAPOT equal to or less than ten (10) hours per day. For each pump station receiving new additional sewage flow from the sewer service connection, the pump station immediately downstream from the pump station receiving new additional sewage flow from the sewer service connection, and all pump stations through which new additional sewage flow from the sewer service connection is transmitted to the wastewater treatment facility receiving such sewage flow, is operating with a Proposed NAPOT equal to or less than ten (10) hours per day. If the above conditions are not met by a booster-type station, the station will be considered to have adequate transmission capacity if so determined by a peak capacity study that takes into consideration adjacent pump stations and downstream force mains. 
+
+(7)  Adequate treatment capacity shall mean that the wastewater treatment plant which will receive flow from a sewer service connection shall not be in noncompliance as defined in 40 C.F.R. Part 123.45, Appendix A. 
+
+(8)  Adequate water depth shall mean the vertical extent of the water column above submerged bottom lands which is sufficient at all times to prevent any damage to the submerged bottom lands and to any natural resources in or upon the submerged bottom lands. 
+
+(9)  Adverse environmental impact shall mean any change in the physical or biological conditions of the natural environment within or adjacent to the area that results in a substantial detrimental effect upon flora, fauna, air, water, minerals or other natural characteristic(s) of the area. 
+
+(10)  Affected tree shall mean any tree which shall be, or already has been, removed, relocated, or effectively destroyed, thereby requiring a permit pursuant to Ordinance Number 89-8. 
+
+(11)  Agricultural fallowing period shall mean a period of inactivity, not to exceed five years, of a previously established, lawfully permitted agricultural operation prior to the resumption of an agricultural operation. 
+
+(12)  Agricultural operation shall mean the growing of crops, the raising of fowl, animals or bees, as a gainful occupation, but shall not include such activities engaged in as a hobby or truck farming in residential areas. 
+
+(13)  Agricultural site alteration shall mean preparation of a site for commercial or noncommercial horticultural or floricultural uses including, but not limited to: row crops, farms, groves, nurseries, horticultural farming, truck farming, barns, sheds or other structures not habitable by human beings which are used for the storage of farm machinery, fertilizer, seed or other items or equipment ancillary to an on-site agricultural use; and the maintenance and raising of animals for commercial purposes. 
+
+(14)  Agricultural vehicle or agricultural equipment maintenance facility shall mean a facility which repairs or maintains vehicles or equipment ancillary to and directly supportive of a bona fide agricultural purpose and which vehicle or equipment are owned or operated by the owner or leasee of the agricultural vehicle or agricultural equipment maintenance facility. 
+
+(15)  Air contaminants shall mean a particulate, gas or odor, including, but not limited to, smoke, charred paper, dust, soot, grime, carbon or any particulate matter, or irritating, malodorous or noxious acids, fumes or gases, or any combination thereof, but shall not include uncombined water vapor. 
+
+(16)  Air pollution shall mean the presence in the outdoor atmosphere of one (1) or more air contaminants or the combination thereof in such quantities and of such duration which are injurious to human, plant or animal life, or property, or which unreasonably interfere with the comfortable enjoyment of life or property, or the conduct of business. 
+
+(17)  Alter or altering a mangrove tree shall mean removing, poisoning, defoliating, or destroying a mangrove tree, either partially or entirely. 
+
+(18)  Ambient (natural) temperature shall mean the existing temperature of the receiving water at a location which is unaffected by man-made thermal discharges and a location which is also of a depth and exposure to winds and currents which typify the most environmentally stable portions of the receiving bodies of water. 
+
+(19)  Annular space shall mean the space between two (2) casings or between the outer casing and the wall of the well hole. 
+
+(20)  Approved recycling or recovery equipment shall mean any device designed to recapture or reuse ozone-depleting compounds which has the written approval of the Director or the Director's designee. 
+
+(21)  Asbestos shall mean a fibrous, rock-forming material, including, but not limited to, such amphibole varieties as tremilite, actinolite, anthophyllite, grunerite, richterite, edenite, amosite, crocilolite, and such serpentine varieties as amianthus and chrysotile, as well as synthetic asbestos fibers, including, but not limited to, fluor-tremilite, fluor-richterite, and fluor-edenite. 
+
+(22)  Asset Management Program shall mean a management program that maintains a desired level of service for utility owned or operated WCTS, considering life cycle cost, to ensure compliance with regulatory requirements. 
+
+(23)  Association of primary and secondary wetland plant species shall mean an assemblage of primary and secondary wetland species within a defined area. In order for said assemblage to be classified as an association, it must be composed of at least twenty-five (25) percent primary wetland species. 
+
+(24)  Average day pumpage wellfield protection area shall mean the area within the cone of influence of a public utility potable water supply well based upon average day pumpage. 
+
+(25)  Average shall mean the arithmetic average of the results of at least three (3) separate samples collected within a referenced specific time period. At least one (1) of these samples shall be taken at peak flow conditions, where applicable, and a minimum of twenty-five (25) percent of the referenced time period shall serve as an interval between successive samples. 
+
+(26)  Back of the House shall mean all areas where food is stored, processed, cooked, prepared, and assembled, and cleanup areas. It does not include offices, dry storage or front of the house areas. 
+
+(27)  Back-up pump shall mean the highest capacity pump installed in a pump station. 
+
+(28)  Balanced system shall mean a gasoline or gasohol vapor recovery system that draws such vapor through a nozzle boot to an underground storage tank by means of the pressure differential created as the volume of gasoline or gasohol in the underground storage tank is reduced and the volume of gasoline or gasohol in the motor vehicle fuel tank is increased during motor vehicle refueling. 
+
+(29)  Basic wellfield protection area shall mean the area within two hundred ten (210) days travel time from a public utility potable water supply well based upon maximum day pumpage. 
+
+(30)  Basin B shall mean those lands within the following geographical boundary, all of which are designated as a cut and fill basin: 
+
+Section 13, 14, and 24, Township 52 South, Range 39 East, less those portions thereof lying southwesterly of the southwesterly right-of-way of Okeechobee Road, and 
+
+Sections 16, 17, 18 and 20, Township 52 South, Range 40 East, and 
+
+Section 19, Township 52 South, Range 40 East, less that portion thereof lying southwesterly of the northeasterly right-of-way of the Miami Canal and northwesterly of the northwesterly right-of-way of the Florida Turnpike, and 
+
+That portion of Section 21, Township 52 South, Range 40 East, lying westerly of the westerly right-of-way of Interstate I-75, and 
+
+Section 30, Township 52 South, Range 40 East, less that portion thereof lying northwesterly of the northwesterly right-of-way of the Florida Turnpike, and less those portions included within the right-of-way of the Miami River, and 
+
+Section 31, Township 52 South, Range 40 East, and 
+
+Sections 6, 7, 8, 17, 18 and 19, Township 53 South, Range 40 East, and 
+
+Section 30, Township 53 South, Range 40 East, less the southeast one quarter thereof. 
+
+All lying in Miami-Dade County, Florida. 
+
+(31)  Best Management Practices shall mean a schedule of activities, prohibitions of practices, maintenance procedures, and other management practices to prevent or minimize pollution. 
+
+(32)  Bird Drive Basin shall mean those lands within the following geographical boundary, all of which are designated as a cut and fill basin: 
+
+All those sections and fractions of Sections of the west one half of Township 54 South, Range 39 East and the west one quarter of Sections 3 and 10 which lie south of the Tamiami Trail, except Sections 21, 28 and 33 and except that portion of Section 31 which lies south of North Kendall Drive (State Road 94). 
+
+(33)  Bird Drive Everglades Wetland Basin shall mean the wetlands described below: 
+
+That portion of Section 3, Township 54 South, Range 39 East lying south of U.S. Highway 41 (Tamiami Trail) and lying west of S.W. 143 Avenue north of S.W. 9th Terrace and lying west of S.W. 144 Avenue south of S.W. 9th Terrace; those portions of Sections 4, 5, and 6, Township 54 South, Range 39 East lying south of U.S. Highway 41 (Tamiami Trail); that portion of Section 10, Township 54 South, Range 39 East lying west of S.W. 144 Avenue; that portion of Section 31, Township 54 South, Range 39 East, lying north of S.W. 88th Street (North Kendall Drive); and Sections 7, 8, 9, 16, 17, 18, 19, 20, 29, 30, and 32, Township 54 South, Range 39 East. 
+
+(34)  Black Grease shall mean any FOG commingled with septic wastes (bathroom wastes). 
+
+(35)  Blackwater shall mean that portion of domestic sewage not emanating from residential showers, residential baths, residential bathroom washbasins, or residential clothes washing machines. 
+
+(36)  Boat docking facility shall mean a place where vessels may be secured to a fixed or floating structure or to the shoreline. 
+
+(37)  Boat slip shall mean a berthing space for a vessel which has been created or authorized pursuant to a permit or permits issued by the Department. 
+
+(38)  Boat storage facility shall mean a facility where recreational vessels are stored on uplands by one (1) or more of the following methods: 
+
+(1)  On boat trailers on a paved or unpaved surface; 
+
+(2)  On individual boat racks; or 
+
+(3)  On multi-story boat racks. 
+
+(39)  Bona fide agricultural purposes shall mean good faith commercial or domestic agricultural use of the land. In determining whether the use of the land for agricultural purposes is bona fide, the following factors as set forth in Section 193.461, Florida Statutes (and as amended from time to time), though nonexclusive, shall be taken into consideration: 
+
+(1)  The length of time the land has been so utilized; 
+
+(2)  Whether the use has been continuous; 
+
+(3)  The purchase price paid; 
+
+(4)  Size, as it relates to specific agricultural use; 
+
+(5)  Whether an indicated effort has been made to care sufficiently and adequately for the land in accordance with accepted commercial agricultural practices, including, without limitation, fertilizing, liming, tilling, mowing, reforesting, and other accepted agricultural practices; 
+
+(6)  Whether such land is under lease and, if so, the effective date, length, terms and conditions of the lease; and 
+
+(7)  Such other factors as may from time to time become applicable. 
+
+(40)  Bona fide fruit grove shall mean a grove of fruit trees specifically planted to produce edible fruit for commercial purposes or for personal consumption by the owner. 
+
+(41)  Botanical garden shall mean any publicly-owned real property used for the cultivation of plants for display or scientific research. 
+
+(42)  Brown Grease shall mean FOG waste collected in, or removed from, a FOG control device. 
+
+(43)  Building backup shall mean a wastewater release or backup, into a building, that is caused by blockages, flow conditions, or other malfunctions in a utility collection and transmission system. A wastewater backup or release that is caused by blockages, flow conditions or other malfunctions of a private lateral is not a building backup. 
+
+(44)  Building permit shall mean a permit pursuant to the Florida Building Code. 
+
+(45)  Building Sewer shall mean the part of the building drainage system that extends from the end of the building drain and conveys the discharge to utility or non-utility owned or operated sanitary sewer system. 
+
+(46)  Building Sanitary Drains shall mean the pipes intended to receive sanitary wastewater and effluent from FOG control devices where FOG control devices are installed or required. FOG or food waste shall not be discharged into the building sanitary drains. 
+
+(47)  C-9 Wetland Basin shall mean the wetlands within the following geographic boundaries: 
+
+Beginning at the intersection of U.S. Highway 27 (Okeechobee Road) and the south right-of-way of the C-9 Canal; thence run easterly to the west right-of-way of Interstate Highway 75; thence run southerly to the west right-of-way line of the Homestead Extension of Florida's Turnpike; thence run southwesterly and southerly to the north right-of-way of U.S. Highway 27 (Okeechobee Road); thence run northwesterly to the point of beginning. 
+
+(48)  Canopy coverage shall mean the areal extent of ground within the drip line of a tree. 
+
+(49)  Canopy shall mean those trees which constitute the tallest layer within a forest. 
+
+(50)  Capacity, Management, Operations, and Maintenance (CMOM) shall mean a program of accepted industry practices to properly manage, operate and maintain sanitary wastewater collection, transmission and treatment systems, investigate capacity-constrained areas of these systems, and respond to Sanitary Sewer Overflow (SSO) events. 
+
+(51)  Casing shall mean the tubular material utilized to shut off or exclude a stratum or strata other than the source bed and conduct water from only the source bed to the surface. 
+
+(52)  Clean fill shall mean material consisting of soil, rock, sand, earth, marl, clay, stone and/or concrete rubble. 
+
+(53)  Closure shall mean cessation of operation of a County solid waste management system facility and the act of securing such a facility, in accordance with applicable regulatory requirements, so that it will pose no significant threat to human health or the environment. This includes closing, long term monitoring, maintenance and financial responsibility. 
+
+(54)  Coastal band community shall mean a mangrove community which borders Biscayne Bay or one (1) of the tributaries of Biscayne Bay and which receives frequent tidal inundation and whose dominant floral constituent is mature Rhizophora mangle. The boundary of a coastal band community shall not be limited or affected by artificial boundaries such as, but not limited to, property lines. 
+
+(55)  Coastal resources management line shall mean the landward extent of the areas where detrital cycles contribute to the ecological productivity of coastal waters. 
+
+(56)  Coastal waters shall mean all waters in the State which are not classified as fresh waters. 
+
+(57)  Coliform group shall include all organisms considered in the coliform group as set forth in Standard Methods for the Examination of Water and Waste Water, sixteenth edition. 
+
+(58)  Combustible refuse shall mean any combustible waste material containing carbon in a free or combined state. 
+
+(59)  Combustion contaminants shall mean particulate matter discharged into the atmosphere from the burning of any kind of material containing carbon in a free or combined state. 
+
+(60)  Commercial boat docking facility shall mean a boat docking facility which has boat slips, moorings, davit spaces, or vessel tieup spaces of which more than fifty (50) percent are designated for or contain commercial vessels. 
+
+(61)  Commercial vehicle storage facility shall mean a storage facility for: the parking and storage of operable, nondisabled, licensed commercial motor vehicles (as defined in Section 320.01, Florida Statutes), construction equipment, or agricultural equipment; and incidental temporary parking of operable, nondisabled, licensed passenger automobiles to serve such allowable uses on the same parcel. For purposes of this chapter, this classification does not include: standalone automobile parking and storage uses, such as car rental facilities; or storage of vehicles and equipment associated with agricultural, aquacultural, or horticultural production, as allowed pursuant to Section 33-279. 
+
+(62)  Commercial vessel shall mean any vessel engaged in any activity wherein a consideration is paid by the user either directly or indirectly to the owner, operator or custodian of the vessel; or any vessel engaged in the taking of saltwater fish or saltwater products for sale either to the consumer, retail dealer or wholesale dealer. 
+
+(63)  Community water system shall mean a public water system which serves at least fifteen (15) service connections used by year-round residents or which regularly serves at least twenty-five (25) year-round residents. 
+
+(64)  Comprehensive environmental impact statement ("CEIS") shall mean a detailed report, based upon current data obtainable at the time of permit application submittal, which describes the proposed work and its purposes and which addresses one (1) or more of the following assessment points so as to permit assessment of the probable environmental impacts, benefits and detriments of the proposed work: 
+
+(1)  An analysis of the probable impact of the proposed work in the wetland environment, including impact on ecological systems such as floral, faunal, marine and freshwater communities. Both direct and indirect potential adverse environmental impacts shall be included in the analysis. The statement shall include the effect, if any, of the proposed work upon the ability of the wetland to: 
+
+(a)  Receive and store surface waters and to recharge groundwater. 
+
+(b)  Contribute to quantity and quality of the water supply and protect against saltwater intrusion. 
+
+(c)  Protect adjacent uplands from hurricane and tidal storm surges. 
+
+(d)  Provide filtration and uptake of nutrients and pollutants from surface waters. 
+
+(e)  Contribute sheet flow of surface waters to adjacent areas. 
+
+(f)  Provide habitat for indigenous floral and faunal species, and rare, threatened and endangered species, as defined in this chapter. 
+
+(g)  Provide protection for the recharge area of a wellfield. 
+
+(2)  An analysis of other adverse environmental impacts which cannot be avoided should the proposal be implemented, such as water or air pollution, undesirable land use patterns, urban congestion, threats to health or other consequences adverse to the County's environmental goals, as set forth in this Code and the Miami-Dade County Comprehensive Development Master Plan. 
+
+(3)  A description and analysis of alternatives to the proposed work which avoid or mitigate some or all of the probable adverse environmental impacts of the proposed work or which increase the beneficial environmental effects of the proposed work. An economic cost-benefit analysis may be submitted by the applicant for the proposed work and each such alternative. 
+
+(4)  An analysis of the cumulative and long-term effects of the proposed work. The analysis shall compare the proposed work's short-term use of the environment with long-term environmental parameters including, but not limited to, biological productivity, habitat quality, protection of hydrological resources, and nutrient and pollution attenuation capacity. 
+
+(5)  An analysis of all irreversible commitments of natural resources which would occur if the proposed work is implemented. This analysis shall include the extent to which the proposed work would curtail the range of beneficial uses of the environment. 
+
+(6)  A summary of the problems and objections raised by any federal, State or local entities and by the public in the review process, the disposition of the issues involved, and the reasons therefor. 
+
+(7)  A description and analysis of the socioeconomic benefits that may be derived from implementation of the proposed work as well as the potential negative impacts to the public resulting from denial of or modifications to the proposed work. 
+
+(65)  Condensed fumes shall mean minute solid particles generated by the condensation of vapors from solid matter volatilization from the molten state, or may be generated by chemical processes, operations or reactions, when these processes create air-borne particles. 
+
+(66)  Cone of influence means a localized depression or draw-down of the groundwater due to water supply well pumpage. 
+
+(67)  Construction and demolition debris shall mean solid waste comprised exclusively of materials which are not hazardous materials and which are not water soluble, including steel, concrete, glass, brick, soils not containing any hazardous materials, asphalt roofing and paving material, and lumber from a construction or demolition project. 
+
+(68)  Contaminant shall mean any substance present in any medium which may cause an adverse effect upon public health, public safety, public welfare or the environment, or causes a nuisance as defined in Section 24-5, Section 24-27 or Section 24-28. 
+
+(69)  Cooling pond shall mean a body of water enclosed by natural or constructed restraints which has been approved by the State of Florida Department of Environmental Protection for purposes of controlling heat dissipation from thermal discharges. 
+
+(70)  County Flood Criteria Map shall be as defined in Chapter 11C. 
+
+(71)  County public works department or public works department means the public works department as defined in Section 2-99. 
+
+(72)  County public works manual shall mean the manual of minimum standards for public works construction promulgated by the County public works department pursuant to Section 2-100. 
+
+(73)  Cross-connection shall mean any physical connection or arrangement whereby contamination may enter a water supply system; such as two (2) otherwise separate piping systems, one (1) of which contains or is designed to contain potable water and the other waste water or other fluids or material of unknown or questionable safety, where intermixing may occur depending on the pressure or temperature differential between the two (2) systems. 
+
+(74)  CTLs shall mean Clean-up Target Levels as set forth in Section 24-44. 
+
+(75)  Cumulative adverse environmental impact shall mean adverse environmental impact, as defined in this chapter, resulting from a proliferation of a particular proposed work or land use within a wetland area. 
+
+(76)  Daily average pump station operating time shall mean the total of the number of operating hours for all nonvariable speed and non-multiple-speed pumps in the pump station for the month divided by the number of days in the month which is then divided by the total number of the same type of pumps in the pump station less one (1) pump of the same type, or the equivalent thereof as approved by the Director or the Director's designee. 
+
+(77)  Davit space shall mean an area along a bulkhead or pier where a vessel may be suspended over tidal waters by a mechanical device. 
+
+(78)  De minimis quantity shall mean a volume of one quarter U.S. gallon (946.4 milliliters) or less stored in a closed container; or in the case of fuel, lubricating oils or hydraulic fluids, de minimis quantity shall also mean either a volume of one U.S. gallon or less stored in a closed container or, the total volume inside a gear box, a hydraulic reservoir, or a crankcase. Items that individually meet the volumetric requirements of de minimis quantity shall not be considered de minimis if the aggregated volume of such items at one facility exceeds 5 gallons. 
+
+(79)  Department shall mean the Division of Environmental Resources Management of the Miami-Dade County Department of Regulatory and Economic Resources or successor department responsible for administration of this chapter. 
+
+(80)  Detention shall mean a facility or system that delays or reduces the discharge of a given volume of stormwater runoff into surface waters through the collection and temporary storage of said stormwater with subsequent release into the ground or to surface waters. There are two type of detention, wet and dry: 
+
+(i)  Wet detention is storage of stormwater at or below the design mean high water table. 
+
+(ii)  Dry detention is storage of stormwater one foot above the design mean high water table. 
+
+(iii)  Examples of detention systems are excavated or natural depression storage areas, pervious pavement with subgrade, or above ground storage areas. 
+
+(81)  Detention pond shall mean detention that consists of an open basin that is used for storage to reduce stormwater peak flow rates or pollutants. 
+
+(82)  Developed land shall mean any land that contains development. 
+
+(83)  Developed property shall mean any parcel of land that contains an impervious area. 
+
+(84)  Development shall mean: any activity or material change in the use or character of land, including, but not limited to, the placement or construction of any structure, utility, fill, impervious area, or site improvement on land; or any act that requires a building permit. Development includes, without limitation, mining, dredging, filling, grading, paving, excavating, drilling operations, or permanent storage of materials or equipment. 
+
+(85)  Dewater shall mean to: 
+
+(a)  discharge off-site or on-site water including during construction or during maintenance of stormwater or other utility infrastructure, from an excavation, underground structure, stormwater infrastructure, trench, or depressed land; or 
+
+(b)  discharge water from an on-site lake to an on-site or off-site canal, ditch, other surface waters, or from one location to another, including stormwater or other utility infrastructure, in a similar manner; however, discharging to an on-site lake that is already permitted pursuant to this chapter and that is already connected in accordance with this chapter to a conveyance canal or to surface waters shall not be classified as dewatering. 
+
+(86)  Diameter breast height (DBH) shall mean the diameter of a tree's trunk measured at a point four and one-half (4½) feet from where the tree emerges from the ground at natural grade. In the case of multiple-trunked trees, the DBH shall mean the sum of each trunk's diameter measured at the point four and one-half (4½) feet from where the tree emerges from the ground at natural grade. 
+
+(87)  Director shall mean the primary official that has been delegated responsibility to administer the Department, with duties created pursuant to this chapter. Except where expressly provided or where context dictates otherwise, the term "Director" includes the Director's designee. 
+
+(88)  Dishmachine shall mean equipment used to sanitize but without washing dishware, utensils, and other items placed therein. 
+
+(89)  Dishwasher shall mean equipment that washes and sanitizes. 
+
+(90)  Dissolved hydrocarbon shall mean any substance soluble in fluorocarbon-113 and dispersed, emulsified, or otherwise dissolved throughout a sample. 
+
+(91)  Domestic sewage shall mean human body waste and wastewater from toilets, showers, sinks, baths, laundry equipment, kitchen equipment, and other fixtures or equipment designed and used for human sanitation, as determined by the Director, whether located within residential or nonresidential land uses. 
+
+(92)  Dominance shall mean the species or group of species having the largest total number of individuals in the canopy and/or understory within a defined area. 
+
+(93)  Dominant plant community shall mean a minimum of fifty-one (51) percent of the plant cover within an area based on the following formula: Dominance equals one hundred (100) multiplied by the total estimated basal area of wetland plant species divided by the total estimated basal area of all plant species. 
+
+(94)  Drainage area shall mean a geographically defined land surface having topographical features such that stormwater runoff will be directed towards a drain or common receiving point or area. 
+
+(95)  Drainage well shall mean any excavation that is drilled, cored, bored, washed, driven, dug, jetted or otherwise constructed when the intended use of such excavation is for the artificial recharge of groundwater, or the intentional introduction of water into any underground formation. 
+
+(96)  Dredging shall mean the removal of soil (i.e., rock, clay, peat, sand, marl, sediments or other naturally occurring soil material) from the surface of submerged or unsubmerged coastal or freshwater wetlands, tidal waters or submerged bay-bottom lands. Dredging shall include, but not be limited to, the removal of soils by use of clamshells, suction lines, draglines, dredges or backhoes. 
+
+(97)  Drainfield or disposal system shall mean a system designed to distribute domestic sewage effluent for treatment and disposal onsite. This system is deemed to be a component of an OSTDS for purposes of this chapter. 
+
+(98)  Drip line shall mean an imaginary vertical line extending from the outermost horizontal circumference of a tree's branches to the ground. 
+
+(99)  Dry storage space shall mean a designated place where a recreational vessel is stored on uplands by one (1) of the following methods: 
+
+(1)  On a boat trailer on a paved or unpaved surface; 
+
+(2)  On an individual boat rack; or 
+
+(3)  On a multi-story boat rack. 
+
+(100)  Dust shall mean minute solid particles released into the air by natural forces or by mechanical processes such as crushing, grinding, milling, drilling, demolishing, shoveling, conveying, covering, bagging, sweeping, etc. 
+
+(101)  Dwelling shall mean any building which is wholly or partly used or intended to be used for living, sleeping, cooking and eating. 
+
+(102)  Dwelling unit shall mean any room or group of rooms located within a dwelling and forming a single habitable unit with facilities used or intended to be used for living, sleeping, cooking and eating. This term shall include, for the purposes of this article, rooming units. 
+
+(103)  East Turnpike Wetland Basin shall mean the wetlands described below: 
+
+Those portions of Sections 18 and 19, Township 52 South, Range 40 East, lying east of the Homestead Extension of Florida's Turnpike; and Sections 6, 7, 8, 17 and 18, Township 53 South, Range 40 East, Miami-Dade County, Florida. 
+
+(104)  Effectively destroy shall mean the girdling, or damaging of a tree's trunk, branch or root system or cutting, pruning or trimming not done in accordance with the most recent American National Standards (ANSI) A-300 Standard Practices for Tree Care Operations. 
+
+(105)  Emission shall mean the act of passing into the atmosphere an air contaminant or gas stream which contains or may contain an air contaminant; or the material so passed to the atmosphere. 
+
+(106)  Engineering control shall mean a process or structure which eliminates or reduces the migration of contaminants or eliminates or reduces the exposure of human and environmental receptors to contaminants. 
+
+(107)  Environment shall mean the complex of climatic, edaphic and biotic factors that act upon an organism or an ecological community and ultimately determine its form and survival and which will be affected by the proposed work. 
+
+(108)  Environmental remediation shall mean clean-up of, or mitigation for, air, soil or water contamination from the County solid waste management system and those facilities for which the County is legally responsible for environmental clean-up or mitigation. 
+
+(109)  Environmentally-sensitive tree resources shall mean a specimen tree, natural forest community, or any other tree or trees that substantially contribute(s) to the aesthetics of an area, and which are not exempted from permit requirements under Section 24-49(4)(f). 
+
+(110)  Equivalent residential unit (ERU) shall mean the statistically estimated average horizontal impervious area of residential developed property per dwelling unit. This estimated average is calculated by dividing the total estimated impervious area of four residential categories, to wit, single family, mobile home, multifamily and condominium, by the estimated total number of residential dwelling units. For the purposes of this article, each dwelling unit, whether a single family residence, mobile home, unit in a multifamily building, or condominium unit, is assigned one ERU. 
+
+(111)  Excavation shall mean the action or process of creating any lake, rockmining (excluding ancillary property uses necessary for extracting and processing subsurface materials), reservoir, pond or other surface water. 
+
+(112)  Exfiltration shall mean the process by which: 
+
+(a)  stormwater flows out of a trench or a buried perforated pipe or structure into the surrounding ground; or 
+
+(b)  in the context of a WCTS, wastewater flowing from the WCTS (including sewer service connections) into the ground through such means as defective pipes, pipe joints, connections, or manholes or other defects or perforations in the system. 
+
+(113)  Existing heat source shall mean any thermal discharge: 
+
+(1)  Which is presently taking place, or 
+
+(2)  For which a construction or operating permit has been issued prior to the effective date of these rules. 
+
+(114)  Facility shall mean anything that is built or purchased to make an action or operation easier or to serve a special purpose. 
+
+(115)  Fats, Oils and Grease or FOG shall mean any substance such as vegetable or animal product used in, or a byproduct of, the cooking, food preparation, or cleaning process, that can cause or lead to corrosion, blockages, reduced flow, or interference with the sanitary sewer system when discharged alone or combined with other materials or waste. EPA Method 1664 referenced in Section 24-42.4 determines extractable materials including relatively non-volatile hydrocarbons, vegetable oils, animal fats, waxes, soaps, greases, and related materials which encompass FOG. 
+
+(116)  Feasible distance shall mean the criteria and distance calculated by the Director, in accordance with Section 24-43.4, to determine when connection to a public water main, public sanitary sewer system, or both is required, as referenced in Section 24-43.4. 
+
+(117)  Filling shall mean the alteration of wetlands, tidal waters or bay-bottom lands, by adding material or soil to obtain higher elevations or better compaction of existing elevations. 
+
+(118)  Firebreak shall mean an area of bare ground no more than ten (10) feet in width in a forest which has been created to prevent the spreading of wild fires. 
+
+(119)  First inch of retention shall mean the disposal by on-site retention of the volume of stormwater generated by the first inch of runoff from a defined drainage area. 
+
+(120)  First inch of runoff shall mean the volume of stormwater runoff generated during the initial stages of a rainfall event and is calculated as the volume of stormwater runoff generated during the time required to supply and transport to the emergency overflow outfall, one (1) inch of stormwater runoff from the farthest point in the basin, as set forth in "DESIGN OF DRAINAGE STRUCTURE, AN UPDATED POLICY FOR THE DESIGN OF STORM RUNOFF DRAINAGE STRUCTURES, DECEMBER 1980," a document prepared by and on file in the offices of the Miami-Dade County Department of Environmental Resources Management. 
+
+(121)  Fixed structure shall mean anything of a permanent or temporary nature which is built, constructed, placed or installed in, on, over or upon tidal waters. Fixed structures shall not include vessels or floating structures. 
+
+(122)  Floating hydrocarbon shall mean any substance soluble in fluorocarbon-113 as set forth in EPA Method 413.1 and floating or otherwise forming a visible layer upon any aqueous surface. 
+
+(123)  Floating structure shall mean a barge-like entity, with or without accommodations, which is not used as a means of transportation on water but which serves purposes or provides services typically associated with a structure upon or improvements to real property. A floating structure includes, but is not limited to, a residence, place of business, office, hotel, motel, restaurant, lounge, retail or wholesale store, clubhouse, helicopter pad, meeting facility, or a storage or parking facility. Incidental movement or the capability of movement upon water shall not preclude an entity from classification as a floating structure. Registration of the entity as a vessel in accordance with Chapter 327, Florida Statutes, shall not preclude an entity from classification as a floating structure. 
+
+(124)  Flooding shall mean the accumulation of stormwater on the ground surface which occurs as a result of excessive rainfall precipitation which has saturated the soil and filled the canals, lakes, ditches and drainage structures beyond their storage and transmission capacities. 
+
+(125)  Florida No. 1 grade or equivalent shall mean the classification of the quality of a nursery plant as published in Grades and Standards for Nursery Plants, Part II, Florida Department of Agriculture and Consumer Services, Division of Plant Industry. 
+
+(126)  Flue shall mean any duct or passage for air, gases, or airborne materials, such as a stack or chimney. 
+
+(127)  FOG Capacity Limit shall mean the combined FOG and solids depth equal to twenty-five (25) percent of the design hydraulic depth in any location of a FOG control device, or seventy-five (75) percent of the rated FOG and solids capacity established by third party certification. 
+
+(128)  FOG Control Device shall mean equipment designed to remove, hold and prevent the passage of FOG to onsite sewage treatment and disposal systems and sanitary sewer systems. 
+
+(129)  FOG Control Device Operator shall mean a person or entity which has management control for FOG control devices which serve other FOG generators. 
+
+(130)  FOG Generator shall mean any nonresidential facility, including, but not limited to, restaurants, bakeries, hotel and cafeteria kitchens, commercial kitchens, kitchens serving hospitals, nursing homes, daycares, assisted living facilities and other healthcare facilities, food processing plants or such other nonresidential facilities that can introduce food waste or FOG into building sanitary drains, building sewers, onsite sewage treatment and disposal systems, or non-utility or utility sanitary sewer systems. A FOG generator also includes those nonresidential facilities that produce yellow grease. However, a facility classified as a Significant Industrial User pursuant to Section 24-42.4 shall not be treated as a FOG Generator and shall not be subject to the provisions of Section 24-42.6. 
+
+(131)  FOG Generator Certified Staff shall mean a FOG generator employee which has attended training prescribed by the Director or Director's designee, and has received certification for training. 
+
+(132)  FOG Liquid Waste Transporter Certified Staff shall mean a FOG Liquid Waste Transporter employee which has attended training prescribed by the Director or Director's designee, and has received certification for training. 
+
+(133)  FOG Operating Permit shall mean an operating permit issued to FOG generators or FOG control device operators pursuant to Sections 24-18 and 24-42.6. 
+
+(134)  FOG Sampling Point shall mean a reasonably accessible location for sampling the effluent of a FOG control device. 
+
+(135)  Force main shall mean any pipe that receives and conveys, under pressure, wastewater from the discharge side of a pump. A force main is intended to convey wastewater under pressure. 
+
+(136)  Forest management plan shall mean a document which specifies the techniques that will be implemented to maintain and preserve an individual natural forest community. 
+
+(137)  Free chlorine shall mean chlorine existing in water as hypochlorous acid, hypochlorite ions, and molecular chlorine. 
+
+(138)  Free product shall mean any non-aqueous liquid. 
+
+(139)  French drain shall mean a structure consisting of a perforated, slotted or open joint pipe buried in a trench and surrounded by ballast rock and used for the underground disposal of stormwater runoff into groundwater or the unsaturated zone. 
+
+(140)  Fresh waters shall mean all waters of the state which are contained in lakes and ponds, or are in flowing streams above the zone in which tidal actions influence the salinity of the water and where the concentration of chloride ions is normally less than five hundred (500) milligrams per liter. 
+
+(141)  Front of the House shall mean office space, dry storage, but shall not include areas defined as back of the house. 
+
+(142)  Fully loaded vessel shall mean: 
+
+(1)  All of the vessel's fuel tanks, water tanks and other tanks are full, 
+
+(2)  The vessel has the maximum allowable number of crew, passengers, equipment and provisions pursuant to the manufacturer's specifications and, where applicable, the United States Coast Guard certification, 
+
+(3)  The vessel has all safety and rescue equipment required pursuant to state, federal and, if applicable, international law, and 
+
+(4)  The vessel contains the maximum authorized amount (by weight) of cargo pursuant to state, federal and, if applicable, international law. 
+
+(143)  Garbage shall mean every refuse accumulation of animal, fruit or vegetable matter that attends the preparation, use, cooking and dealing in, or storage of edibles, and any other matter, of any nature whatsoever, which is subject to decay, putrefaction and the generation of noxious or offensive gases or odors, or which, during or after decay, may serve as breeding or feeding material for flies or other germ-carrying insects. 
+
+(144)  Gas shall mean a formless fluid which occupies space and which can be changed to a liquid or solid state only by increasing pressure with decreased or controlled temperature, or by decreased temperature with increased or controlled pressure. 
+
+(145)  Grassed swale shall mean a depression on the ground surface which is covered by vegetation and is located entirely within the unsaturated zone. 
+
+(146)  Gravity Grease Interceptor shall mean a FOG control device that primarily relies on the difference in specific gravity between wastewater and FOG to affect separation of FOG from wastewater. 
+
+(147)  Gravity injection means the introduction of water into a well from which the water enters the groundwater without any force other than the force of gravity. Said well shall be in excess of two (2) feet below the average yearly highest groundwater elevation as specified in the Miami-Dade County Public Works Manual as same may be amended from time to time. 
+
+(148)  Gravity sewer line or gravity sewer shall mean a pipe that receives, contains and conveys wastewater, not normally under pressure, but is intended to flow unassisted under the influence of gravity. 
+
+(149)  Graywater shall mean that portion of domestic sewage emanating from residential showers, residential baths, residential bathroom washbasins, or residential clothes washing machines. 
+
+(150)  Grease Interceptor shall mean a FOG control device. 
+
+(151)  Grease Waste Drains shall mean the pipes intended to receive FOG and food waste. They convey the discharge to solids separators, when installed, and FOG control devices. 
+
+(152)  Ground cover shall mean plants, other than turf grass, normally reaching an average maximum height of not more than twenty-four (24) inches at maturity. 
+
+(153)  Ground pollution shall mean the introduction into or upon any ground of any organic or inorganic matter or deleterious substances in such quantities, proportions or accumulations which are injurious to human, plant, animal, fish and other aquatic life, or property, or which unreasonably interfere with the comfortable enjoyment of life or property, or the conduct of business. It shall be a rebuttable presumption that the introduction of any hazardous waste as defined in Section 24-5 or hazardous materials as defined in Section 24-5 into or upon the ground, which exceeds any of the clean-up target levels (CTLs) set forth in Section 24-44, shall constitute and shall be deemed to be ground pollution. 
+
+(154)  Halophytic vegetation shall mean the following species: 
+
+Aizoaceae (carpetweed family)—Sesuvium portulacastrum (sea purslane) 
+
+Amaranthaceae (amaranth family)—Philoxerus vermicularis (marsh samphire) 
+
+Amaryllidaceae (amaryllis family)—Hymenocallis latifolia (spider lily) 
+
+Apocynaceae (oleander family)—Rhabdadenia biflora (mangrove rubber vine) 
+
+Asteraceae (aster family)—Aster tenuifolius var. aphyllus (salt-marsh aster) 
+
+Baccharis angustifolia (false willow) 
+
+Baccharis halimifolia (groundsel tree) 
+
+Borrichia arborescens (oxeye daisy) 
+
+Borrichia frutescens (oxeye daisy) 
+
+Iva frutescens (marsh elder) 
+
+Avicenniaceae (black mangrove family—Avicennia germinans (black mangrove) 
+
+Batidaceae (saltwort family)—Batis maritima (saltwort) 
+
+Chenopodiaceae (goosefoot family)—Salicornia virginica (perennial glasswort) 
+
+Salicornia bigelovii (annual glasswort) 
+
+Suaeda linearis (sea blite) 
+
+Salsola kali (saltwort) 
+
+Combretaceae (white mangrove family)—Conocarpus erecta (buttonwood) 
+
+Laguncularia racemosa (white mangrove) 
+
+Cymodoceaceae (manatee grass family)—Halodule wrightii (Cuban shoal weed) 
+
+Syringodium filiforme (manatee grass) 
+
+Cyperaceae (sedge family)—Cyperus odoratus (sedge) 
+
+Cyperus ligularis (sedge) 
+
+Cyperus planifolius (sedge) 
+
+Fimbristylis castanea 
+
+Fimbristylis spathacea 
+
+Hydrocharitaceae (frog's bit family)—Thalassia testudinum (turtle grass) 
+
+Juncaceae (rush family) 
+
+Juncus roemerianus (rush) 
+
+Juncaginaceae (arrow grass family)—Triglochin striata 
+
+Plumbaginaceae (leadwort family)—Limonium carolinianum var. carolinianum (sea lavender) 
+
+Limonium carolinianum var. angustatum (sea lavender) 
+
+Poaceae (grass family)—Distichlis spicata (seashore salt grass) 
+
+Monanthochloe littoralis (Key grass) 
+
+Paspalum vaginatum (salt joint grass) 
+
+Spartina alterniflora (smooth cord grass) 
+
+Spartina patens (salt-meadow cord grass) 
+
+Spartina spartinae (gulf cord grass) 
+
+Sporobolus virginicus (Virginia dropseed) 
+
+Primulaceae (primrose family)—Samolus ebracteatus (water pimpernel) 
+
+Pteridaceae (bracken family)—Acrostichum aureum (coastal leather fern) 
+
+Rhizophoraceae (red mangrove family)—Rhizophora mangle (red mangrove) 
+
+Ruppiaceae (widgeon grass family)—Ruppia maritima (widgeon grass) 
+
+Solanaceae (nightshade family)—Lycium carolinanum (Christmasberry) 
+
+Surianaccac (bay-cedar family)—Suriana maritima (bay cedar) 
+
+(155)  Harmful obstruction or undesirable alteration of the natural flow of surface water shall mean any substantial diversion, obstruction, creation of backwater conditions, interruption, adverse change in velocity, volume, or depth of the natural flow of surface water. Natural flow need not be uniform or uninterrupted and may be seasonal or periodic. 
+
+(156)  Hazard index shall mean the sum of more than one (1) hazard quotient for multiple contaminants or for multiple exposure pathways. 
+
+(157)  Hazard quotient shall mean the ratio of a single contaminant exposure level over a specified time period to a reference dose for that contaminant derived from a similar exposure period. 
+
+(158)  Hazardous materials shall mean any waste, product, substance, or combination or breakdown product thereof which, because of its biological or chemical characteristics, if introduced into a potable water supply well, will impair the potability of the water withdrawn by the potable water supply well or which will be harmful or potentially harmful to human, plant or animal life or property or the conduct of business or which will increase the cost of operation of utility water supply treatment facilities or which will increase the reliance by consumers of potable water from such potable utility water supply wells on the operation of utility water supply treatment facilities to provide potable water which is not harmful or potentially harmful to human, plant or animal life or property or the conduct of business. 
+
+There shall be a rebuttable presumption that any waste, product, substance, combination, or breakdown product containing any chemical listed as a contaminant in Section 24-44(2)(f)(v) Table 1 and Table 2, 24-43.3(2)(h) or Chapter 62-550, FAC., Table 1, Table 2, Table 3, Table 4, Table 5 and Table 6, as same may be amended from time to time, shall constitute a hazardous material if the chemical is present in the waste, product, substance, combination, or breakdown product at concentrations which exceed the groundwater cleanup target level set forth in Section 24-44(2)(f)(v)1 unless it is demonstrated, to the satisfaction of the Director or the Director's designee, that based on its physical properties, the chemical will not seep, run, drain or otherwise discharge to the ground or groundwater. The omission of any chemical from the list of contaminants in Section 24-44(2)(f)(v) Table 1 and Table 2, Section 24-43.3(2)(h) or Chapter 62-550, FAC., Table 1, Table 2, Table 3, Table 4, Table 5 and Table 6, as same may be amended from time to time shall not create any presumption that the chemical, wastes, products, substances, or combination containing that chemical, or breakdown product of that chemical is not a hazardous material. To determine the cleanup target level of a chemical, not included as a contaminant in Section 24-44(2)(f)(v) Table 1 and Table 2, Section 24-43.3(2)(f)(h) or Chapter 62-550, FAC., Table 1, Table 2, Table 3, Table 4, Table 5 and Table 6, the groundwater cleanup target level(s) for that chemical shall be established using the procedures, equations and input parameters set forth in the DERM Technical Report: "Development of Clean-up Target Levels (CTLs) for Chapter 24 of the Code of Miami-Dade County, Florida" (dated September, 2005) or the most current update thereto. Nothing herein shall be construed to limit in any way the power of the Director or the Director's designee in the performance of his duties and responsibilities to determine that a chemical, waste, product, substance, or combination containing the chemical, or breakdown product of that chemical is a hazardous material as defined hereinabove. 
+
+(159)  Hazardous waste shall mean: 
+
+(1)  A waste defined as a hazardous waste in 40 C.F.R. Part 261, 
+
+(2)  Used radiator fluid, 
+
+(3)  Used lubricating oil, 
+
+(4)  Used transmission fluid, 
+
+(5)  Used brake fluid, or 
+
+(6)  Used power steering fluid. 
+
+(160)  Health care facilities shall mean hospitals, skilled nursing facilities, clinics, intermediate care facilities, ambulatory surgical centers, health maintenance organizations, doctor's offices, dentist's offices or free standing hemodialysis centers. 
+
+(161)  Health hazards shall mean any conditions, devices, or practices in a water supply system or its operation which create a possible danger to the health and well-being of the water consumer. (An example of a health hazard is a structural defect in the water supply system, whether of location, design or construction, which may regularly or occasionally prevent satisfactory purification of water supply or cause it to be polluted from extraneous sources.) 
+
+(162)  Heated-water discharges shall mean the effluents from commercial or industrial activities or processes in which water is used for the purpose of transporting waste heat. 
+
+(163)  Highway shall mean any public thoroughfare, including streets, designed for motor vehicles. 
+
+(164)  High Annual Monthly Average (HAMA) shall mean the largest value within the last twelve (12) calendar months of the monthly daily average pump operating time for each pump station. A utility may request one exclusion per twelve (12) month period for one monthly average run time reading exceeding fifteen (15) hours per day if the high hours were caused by a maintenance problem that has been addressed and resolved. 
+
+(165)  Hydromechanical Grease Interceptor shall mean a FOG control device that is third party tested and certified, and relies on the difference in specific gravity between wastewater and FOG to affect separation of FOG from wastewater, and may incorporate a flow control device, air entrainment, and other means or principles to improve the efficacy of separation as demonstrated by third-party testing, validation and certification. 
+
+(166)  Impervious area or impervious surface shall mean: 
+
+(a)  a surface area that does not allow penetration by water, including, but not limited to, all structures, roof extensions, slabs, patios, porches, driveways, sidewalks, parking areas, swimming pools, athletic courts, and decks; or 
+
+(b)  a surface area that has a permeability rate of less than 0.8 inches per hour (2 cm per hour) for penetration of water, including, without limitation: pavers and pavement that are not certified by the manufacturer to have a minimum permeability rate of 0.8 inches per hour (2 cm per hour); highly compacted ground or fill; and clays and other fine-grained soils. 
+
+(167)  Individual water supply shall mean a well or wells or other source of water, and pump and piping if any, located on the premises served for supplying twenty-five (25) persons or less. 
+
+(168)  Industrial liquid waste facility shall mean any facility engaged in the manufacture, production, fabrication, packaging, repackaging, repair, processing or sale of goods or services, and which produces or generates or may reasonably be expected to produce or generate liquid waste. 
+
+(169)  Industrial waste shall mean discharges, effluents, spills, or leaks of any hazardous wastes, hazardous materials, process wastewater, or wastes other than domestic sewage, from an industrial liquid waste facility. 
+
+(170)  Infiltration means: 
+
+(a)  the permeation of water to soak through the vegetation and soil; or 
+
+(b)  in the context of stormwater, this definition also includes, but is not limited to, the vertical downward flow of stormwater through the ground into the Biscayne Aquifer or the flow of groundwater into the surface waters in canals and ditches; or 
+
+(c)  in the context of a WCTS, this definition also includes, but is not limited to, the entry of water, other than wastewater, into the WCTS (including sewer service connections) from the ground through such means as defective pipes, pipe joints, connections, or manholes or other defects or perforations in the WCTS. 
+
+(171)  Inflow shall mean water, other than wastewater, that enters the WCTS (including sewer service connections) from sources such as, but not limited to, roof leaders, cellar drains, yard drains, area drains, drains from springs and swampy areas, manhole covers, cross connections between storm sewers and sanitary sewers, catch basins, storm water surface runoff, street wash waters, or drainage. 
+
+(172)  Institutional control shall mean a restriction on the use of, or access to, a site to eliminate or minimize exposure to contaminants. Examples include, but are not limited to, deed restrictions, restrictive covenants, or conservation easements. 
+
+(173)  Interceptor Monitoring Alarm shall mean a system and its components capable of monitoring levels in a FOG control device on a regular interval. The system shall trigger a visual and audible alarm at the FOG Capacity Limit. 
+
+(174)  Interceptor Monitoring Device shall mean a system and its components capable of monitoring floating and settled solids in a FOG control device on a regular interval, triggering a visual and audible alarm at the FOG Capacity Limit, and reporting data electronically to the Department at a frequency and format approved by the Director or Director's designee. 
+
+(175)  Interim sewage treatment plant shall mean any sewage treatment plant, public or private, including but not limited to interim package sewage treatment plants, that discharges its effluent directly into the Biscayne Aquifer or inland surface waters of Miami-Dade County. 
+
+(176)  Intermediate care facilities shall mean day care centers, day nurseries, convalescent homes, adult congregate living facilities, rooming houses, boarding homes, homes for the elderly, homes for dependent children or retirement villages or any other facility providing shelter and supervision for dependent individuals who because of their mental or physical condition require health related care and services above the level of room and board. 
+
+(177)  Key manhole shall mean the sanitary sewer manhole into which the entire sewage flow from a sewer subsystem is discharged. 
+
+(178)  Landclearing shall mean the removal of vegetation or soils from submerged or unsubmerged wetlands. Landclearing shall not mean the removal of the following undesirable exotic vegetation: Melaleuca, Australian pine, or Brazilian pepper trees. 
+
+(179)  Landscape replacement plan shall mean a drawing containing proposed tree removal, tree replacement planting, tree relocation and preservation areas. 
+
+(180)  Level of Service (LOS) shall mean the quality of service to be delivered by a utility to its customers, and shall include consideration of the prevention of overflows, provision for uninterrupted service without backups, limitation of excessive infiltration and inflow, odor control, provision of suitable maintenance and replacement of aging components, prevention of nuisance conditions at pump stations, avoidance of excessive costs, and compliance with regulatory requirements. Life cycle costs shall also be considered. 
+
+(181)  Life Cycle Cost (LCC) shall mean the sum of all recurring and one-time (non-recurring) costs over the full life span, or a specified period, of a structure, component, or system, less the remaining (residual or salvage) value at the end of ownership or its useful life. 
+
+(182)  Liquid waste generator shall mean any person or entity whose act or process produces liquid waste, or who by the nature of its operations uses materials in a process which would subsequently require disposal as a liquid waste as defined in this chapter. 
+
+(183)  Liquid waste shall mean liquid or sludge waste materials resulting from domestic, commercial, industrial, mining, institutional, agricultural, or governmental operations, including such materials to be recycled or otherwise beneficially reused, that would cause a nuisance or would otherwise cause a violation of this chapter if discharged to the ground or waters of Miami-Dade County. Liquid waste includes, but is not limited to, solvents, sewage, industrial waste, hazardous waste, semisolid waste, and potentially infectious waste, as well as the materials resulting from or contained in any of the following: waste treatment works; air pollution control facility; onsite sewage treatment and disposal system; FOG control device; sediment trap; portable toilet; or oil-water separator. Notwithstanding any other provision to the contrary, the following shall not constitute liquid waste for purposes of this definition: subsurface materials that are extracted as a result of rock mining and that are not discharged to canals, wetlands, or other water bodies. 
+
+(184)  Liquid waste transporter shall mean any person or entity which carries, conveys, bears or transports any liquid waste in any moving vehicle including but not limited to a car, truck, tank car, railroad car or other vehicle. 
+
+(185)  Loading facility shall mean a gasoline, gasohol or petroleum distillates storage and distribution facility with an average daily throughput (calculated over a thirty-day period) equal to or greater than twenty thousand (20,000) gallons of gasoline, gasohol or petroleum distillates. 
+
+(186)  Local agencies shall mean any county or municipal government or agency thereof. 
+
+(187)  Mangrove tree shall mean any of the following species, regardless of size, including mangrove trees as small as rooted seedlings: Avicennia germinans (black mangrove), Rhizophora mangle (red mangrove), Laguncularia racemosa (white mangrove). Notwithstanding the foregoing, mangrove tree shall not include seedlings smaller than 3—5 leaf stage rooted seedlings. 
+
+(188)  Maximum contaminant level shall mean the maximum permissible level of a contaminant in water which is delivered to any user of a public water system. 
+
+(189)  Maximum day pumpage wellfield protection area shall mean the area within the cone of influence of a public utility potable water supply well based upon maximum day pumpage. 
+
+(190)  Metal recycling facility shall mean a facility using equipment to crush, shred, cut or otherwise process ferrous scrap metal into prepared ferrous scrap for resale or reuse. For the purpose of this definition, facilities limited to dealing in non-ferrous metals are not included. 
+
+(191)  Miami-Dade County Nursery Report shall mean a monthly, published bulletin listing availability of trees, prices of trees, and stock of many major nurseries in Miami-Dade County which is prepared by the Florida Nurserymen and Grower Association. 
+
+(192)  Minimum flow shall mean the rate of sewage flow, expressed in gallons per day per inch diameter per mile, measured at a pump station wet well or a key manhole of a sewer subsystem from 1:00 a.m. to 5:00 a.m. or at such other time when the rate of sewage flow transmitted through the pump station or key manhole is at the lowest rate during any one (1) twenty-four-hour period exclusive of known or estimated sewage flows from commercial and industrial sources of wastewater. 
+
+(193)  Mist shall mean a suspension of any finely divided liquid in any gas. 
+
+(194)  Mobile home shall mean the same term as defined by Section 320.01(2), Florida Statutes, as same may be amended from time to time. 
+
+(195)  Monitoring well or test well shall mean a well constructed with a surface seal and a sand filter pack in accordance with accepted technical design practices to provide for the collection of representative groundwater samples for laboratory analyses. Such wells may also be used to detect the presence of free product or collect water-level elevation data to aid in determining the direction of groundwater flow. 
+
+(196)  Mooring shall mean a temporary or permanent piling or floating device anchored in tidal waters for the purpose of securing a vessel. 
+
+(197)  Motor vehicle fuel delivery vessel shall mean a tank truck or trailer equipped with a storage tank used for the transportation of gasoline or gasohol from sources of supply to stationary storage tanks at motor vehicle fuel service stations. 
+
+(198)  Motor vehicle fuel service station shall mean any location which has underground storage facilities or aboveground storage facilities or both and which location has a total storage capacity of gasoline or gasohol of ten thousand (10,000) gallons or more, or which dispenses ten thousand (10,000) gallons or more per month of gasoline or gasohol to motor vehicle fuel tanks from such location. 
+
+(199)  Motor vehicle shall mean any car, truck, bus or other self-propelled wheeled conveyance that does not run on rails. 
+
+(200)  Multiple-chamber incinerator shall mean any article, machine, equipment, contrivance, structure or part of a structure, used to dispose of combustible refuse by burning, consisting of three (3) or more refractory-lined combustion chambers in a series, physically separated by refractory walls, interconnected by gas passage ports or ducts and employing adequate design parameters necessary for maximum combustion of the material to be burned. 
+
+The refractories shall have a pyrometric cone equivalent of at least seventeen (17), tested according to the method described in the American Society for Testing [and] Materials, Method C-24. 
+
+(201)  NAPOT shall mean yearly nominal daily average pump station operating time as set forth below: 
+
+(A)  For fixed-speed pump stations: The total of the number of operating hours for all pumps for the reporting period divided by the number of days in the reporting period, which is then divided by the total number of pumps less one pump. This is then averaged with the same computation performed for all months falling within the previous 365 days. 
+
+(B)  For non-fixed speed pump stations: The total kilowatt-hours (kW-hrs) of consumption for all pumps during the reporting period divided by the number of hours in the reporting period, divided by the sum of horsepower (HP) for all pumps less the horsepower of the largest pump, then divided by the conversion factor 0.746 kW/HP, the result which is then multiplied by the non-fixed pump ratio corresponding to the pump type. This result is then averaged with the same computation performed for all months falling within the previous 365 days. 
+
+Non-fixed pump ratios are as follows: 
+
+Multi-speed pump: ten (10) divided by 46 percent 
+
+Variable speed pump: ten (10) divided by 49 percent 
+
+Magnetic Drive pump: ten (10) divided by 65 percent 
+
+Electrolyte rheostat or resistor bank pump: ten (10) divided by 61 percent 
+
+(202)  Native plant species shall mean a plant species with a geographic distribution indigenous to all or part of Miami-Dade County. Plants which are described as being native to Miami-Dade County in botanical manuals such as, but not limited to, "A Flora of Tropical Florida" by Long and Lakela and "The Biology of Trees Native to Tropical Florida" by P.B. Tomlinson, are native plant species within the meaning of this definition. Plant species which have been introduced into Miami-Dade County by man are not native plant species. 
+
+(203)  Natural attenuation shall mean a method of site rehabilitation action which allows natural processes to contain the spread of contaminants and to reduce the concentration of contaminants in groundwater and soil. Natural attenuation processes include, but are not limited to, diffusion and dispersion in conjunction with the following: sorption, biodegradation, chemical reactions, or volatilization. 
+
+(204)  Natural forest community shall mean all stands of trees (including their associated understory) which were designated as Natural Forest Communities on the Miami-Dade County Natural Forest Community Maps and approved by the Board of County Commissioners, pursuant to Resolution No. R-1764-84. These maps may be revised from time to time by resolution in order to reflect current conditions and to ensure that, at a minimum, the canopy and understory of designated natural forest communities are dominated by native plant species, as defined herein. The Department shall evaluate the following additional factors when reviewing existing and proposed natural forest community sites: 
+
+(1)  The presence of endangered, threatened, rare or endemic species included on the Federal List of Endangered and Threatened Species, the Florida Game and Fresh Water Fish Commission List of Endangered and Potentially Endangered Fauna and Flora in Florida, or the Miami-Dade County Comprehensive Development Master Plan List of Endangered, Threatened, Rare and Endemic Plants in Miami-Dade County. 
+
+(2)  Overall plant species diversity of the site. 
+
+(3)  Size of the trees. 
+
+(4)  Size of the site. 
+
+(5)  Wildlife habitat value of the site. 
+
+(6)  Geological features of the site. 
+
+(7)  Percentage of the site covered by exotic (non-native) species. 
+
+Within one hundred twenty (120) days of the effective date of Ordinance Number 89-8, the Department shall develop a quantitative evaluation form incorporating the above factors to be used in evaluating natural forest community sites, and shall include a minimum quantitative threshold standard for inclusion on the revised natural forest community maps. Said evaluation form may be revised from time to time as appropriate, and shall be reviewed and approved by the Tree and Forest Resources Committee prior to its utilization. 
+
+Upon completion of the review of the existing natural forest community maps, the Director shall recommend to the Board of County Commissioners that only those sites which meet the minimum quantitative threshold standard established in the above-described evaluation form be maintained on the list and that all other sites be deleted. This shall not preclude the further addition of sites to the maps. The Director shall also recommend to the Board of County Commissioners that all applicable boundary changes be made to all remaining sites. 
+
+(205)  Natural grade shall mean the ground elevation of a property prior to the placement of any fill on the site. 
+
+(206)  Naturally occurring background concentrations shall mean concentrations of contaminants which are naturally occurring in the groundwater, surface water, soil or sediment in the vicinity of a site. 
+
+(207)  Non-utility shall mean the entity that owns or operates any water transmission, distribution or treatment facilities and/or sanitary sewer collection, transmission or treatment facilities, which is not a utility. Sharing of water transmission, distribution or treatment facilities and/or sanitary sewer collection, transmission or treatment facilities by no more than three (3) adjacent properties, as approved by the Director or Director's designee, shall not render a non-utility a utility. 
+
+(208)  Nonresidential development property shall mean any parcel of land which contains an impervious area and which is classified by the Miami-Dade County Property Appraiser as land use types 10 through and including 49 and 70 through and including 99 as set forth in the Florida Administrative Code Rule 12D-8.008(2)(c), as same may be amended from time to time. 
+
+(209)  Non-structural impervious surface improvement shall mean the installation or placement of pavement, slab, pavers, or other materials or items that reduce the pervious area, as determined by the Director; or the compaction of ground or fill in a manner that results in an impervious surface conducive to stormwater runoff, as determined by the Director. 
+
+(210)  Nonviable shall mean not capable of existing and continuing to provide the biological or aesthetic qualities associated with a healthy, functioning tree resource. 
+
+(211)  North Trail Basin shall mean those lands located in western Miami-Dade County within the following geographical boundary, all of which are designated as a cut and fill basin: 
+
+Sections 33, 34, 35 and 36, Township 53 South, Range 39 East and, Government Lots 1, 2, 3 and 4, Townships 53-54 South and, those portions of Sections 1, 2, 3 and 4, Township 54 South, Range 39 East, which lie north of the north right-of-way line of the Tamiami Canal. 
+
+(212)  North Trail Wetland Basin shall mean the wetlands described below: 
+
+That portion of Section 3, Township 54 South, Range 39 East, lying north of U.S. Highway 41 (Tamiami Trail); that portion of Section 4, Township 54 South, Range 39 East, lying north of U.S. Highway 41 (Tamiami Trail); Government Lot 2, located between Townships 53 and 54 South, Range 39 East; Government Lot 3, located between Townships 53 and 54 South, Range 39 East and Government Lot 4, located between Townships 53 and 54 South, Range 39 East, Miami-Dade County, Florida. 
+
+(213)  NPDES permit shall mean a permit issued pursuant to the federally approved state National Pollutant Discharge Elimination System (NPDES) Program, set forth in section 403.0885, Florida Statutes, as may be amended. 
+
+(214)  Nuisance shall mean and include the use of any property, facilities, equipment, processes, products or compounds, or the commission of any acts or any work that causes or materially contributes to: 
+
+(1)  The emission into the outdoor air of dust, fume, gas, mist, odor, smoke or vapor, or any combination thereof, of a character and in a quantity as to be detectable by a considerable number of persons or the public so as to interfere with their health, repose or safety, or cause severe annoyance or discomfort, or which tends to lessen normal food and water intake, or produces irritation of the upper respiratory tract, or produces symptoms of nausea, or is offensive or objectionable to normal persons because of inherent chemical or physical properties, or causes injury or damage to real property, personal property or human, animal or plant life of any kind, or which interferes with normal conduct of business, or is detrimental or harmful to the health, comfort, living conditions, welfare and safety of the inhabitants of this County. 
+
+(2)  The discharge into any of the waters of this County of any organic or inorganic matter or deleterious substance or chemical compounds, or any effluent containing the foregoing, in such quantities, proportions or accumulations so as to interfere with the health, repose or safety of any considerable number of persons or the public, or to cause severe annoyance or discomfort, or which tends to lessen normal food and water intake, or produces symptoms of nausea, or is offensive or objectionable to normal persons because of inherent chemical or physical properties, or causes injury or damage to real property, personal property, human, plant or animal life of any kind, or which interferes with normal conduct of business, or is detrimental or harmful to the health, comfort, living conditions, welfare and safety of the inhabitants of this County. 
+
+(3)  Any violation of provisions of this chapter which becomes detrimental to health or threatens danger to the safety of persons or property, or gives offense to, is injurious to, or endangers the public health and welfare, or prevents the reasonable and comfortable use and enjoyment of property by any considerable number of the public. 
+
+(4)  Adverse environmental impact to a coastal or freshwater wetlands. 
+
+(5)  Cumulative adverse environmental impact to a coastal or freshwater wetlands. 
+
+(6)  Adverse environmental impact to environmentally-sensitive tree resources. 
+
+(7)  Cumulative adverse environmental impact to environmentally-sensitive tree resources. 
+
+(215)  Odor shall mean that property of a substance which materially offends the sense of smell. 
+
+(216)  Oil-effluent water separator shall mean any tank, box, sump or other container in which any petroleum or product thereof, floating on or entrained or contained in water entering such tank, box, sump or other container, is physically separated and removed from such water prior to outfall, drainage, or recovery of such water. 
+
+(217)  On-site domestic well system shall mean any water supply system using a well and piping to provide potable water for human consumption. 
+
+(218)  On-site shall mean within the boundaries of a facility location, property, project, or site, including those sites spatially separated by public or private rights-of-way. 
+
+(219)  On-site retention shall mean retention of stormwater on-site. 
+
+(220)  Onsite sewage treatment and disposal system or OSTDS shall mean a system, and components thereof, to treat and dispose of domestic sewage that is decentralized and is located either on the site from which the domestic sewage is generated or on an adjacent or nearby site. The term includes all system components, including, without limitation, the following: standard subsurface, filled, or mound drainfield; aerobic treatment unit; graywater system tank; laundry wastewater system tank; septic tank; grease interceptor; pump tank; solids or effluent pump; solids separator; disposal system for hydraulic conveyance to the point of discharge, further treatment, or both; aerobic treatment unit or system; performance based treatment unit or system; wastewater treatment system not classified as a sewage treatment plant; or waterless, incinerating, or organic waste composting toilet. An OSTDS does not include an interim sewage treatment plant as defined herein. 
+
+(221)  Open outdoor fire shall mean any combustion of combustible material of any type outdoors, in the open, not in any approved enclosure or device, where the products of combustion are not directed through a flue. 
+
+(222)  Out of service shall mean an underground storage facility which is empty, does not have hazardous materials transferred into or withdrawn from the underground storage facility, is not in active use and is in compliance with the requirements set forth in Chapter 62-761.800, Florida Administrative Code. 
+
+(223)  Outer wellfield protection zone shall mean the maximum extent of area protected by the wellfield protection provisions set forth in Chapter 24 of the Code of Miami-Dade County, Florida, for one wellfield or if a wellfield complex exists, the maximum extent of area protected by the wellfield protection provisions set forth in Chapter 24 of the Code of Miami-Dade County, Florida, as set forth in the wellfield protection maps adopted by the Board of County Commissioners. 
+
+(224)  Outfall shall mean the discharge point of water or other liquids into any surface water, retention system, or other land. This definition includes, but is not limited to, the outlet from which a pipe discharges into a lake, canal, wetland, other surface water, or retention system. 
+
+(225)  Overflow shall mean: 
+
+(a)  a drainage structure or pipe designed to discharge to an on-site or off-site location any excess stormwater runoff after an initial runoff volume has been retained on-site; or 
+
+(b)  in the context of a WCTS, the discharge of sewage from any publicly or privately-owned or operated sanitary sewer collection system or wastewater treatment facility to the surface of the ground or to a surface water. 
+
+(226)  Overland sheet flow shall mean stormwater runoff flowing over an unrestricted ground surface area. 
+
+(227)  Owner-builder shall mean (an) owner(s) in fee who construct(s) no more than one (1) single-family or duplex residence per year for personal use and occupancy by said owner(s), and not intended for sale. 
+
+(228)  Ozone-depleting compound shall mean any of the substances identified in Section 602(a) and Section 602(b) of Title VI of the Clean Air Act Amendments of 1990 by the United States Environmental Protection Agency as contributing to the depletion or destruction of the stratospheric ozone layer of the Earth. 
+
+(229)  Particulate matter shall mean any material which at standard conditions, is emitted into the atmosphere in a finely divided form as liquid or solid or both, but shall not include uncombined water vapor. 
+
+(230)  Party or parties responsible for site rehabilitation actions shall mean the discharger or, if the discharger is unknown or the contamination was the result of a previously unreported discharge, the property owner or operator who is subject to the provisions of Section 24-44(2). 
+
+(231)  Peak flow shall mean the greatest one hour flow at any point in the WCTS expected to occur as a result of a 4.5 inch one day rain event. 
+
+(232)  Permeability shall mean the ability of an aquifer, soil, rock or other geological formation to transmit water. 
+
+(233)  Person shall be construed to include any natural person, individual, public or private corporation, firm, association, joint venture, partnership, municipality, governmental agency, political subdivision, public officer or any other entity whatsoever, or any combination of such, jointly or severally. 
+
+(234)  Pervious area shall mean a surface area that allows the penetration of water. This definition shall not include impervious areas that minimally or incidentally allow the penetration of water, whether by design or defect. Examples of pervious areas include but are not limited to: green areas and swales with soils classified as Group A in the Soil Survey promulgated by the United States Department of Agriculture Natural Resources Conservation Service (NRCS) and with a minimum permeability rate of 0.8 inches per hour (2 cm per hour); and pavers and pavement that are certified by the manufacturer to have a minimum permeability rate of 0.8 inches per hour (2 cm per hour). 
+
+(235)  Point of discharge (POD) for a heated-water discharge shall mean either that point at which the effluent physically leaves its carrying conduit (open or closed) and discharges into the waters of the State, or a specific point designated by the Florida Department of Environmental Protection for that particular thermal discharge. 
+
+(236)  Pollution prevention shall mean the use of materials processes, or practices that reduce or eliminate the creation of, or toxicity of, pollutants or wastes at the source. 
+
+(237)  Pollution shall mean the presence of any foreign substance (organic, inorganic, radiological, biological or thermal) in water which tends to degrade its quality so as to constitute a hazard or impair the usefulness of the water. 
+
+(238)  Positive drainage shall mean the direct disposal of stormwater runoff by overland sheet flow, or through a channel ditch or closed pipe system, into an on-site or off-site surface water body such as, but not limited to, a lake, lagoon, river, canal, bay, or the ocean. 
+
+(239)  Potable water shall mean water that is satisfactory for drinking, culinary and domestic purposes meeting the quality standards defined in this chapter. 
+
+(240)  ppm (vol.) shall mean parts per million by volume. 
+
+(241)  ppm (wt.) shall mean parts per million by weight and is equivalent to milligrams per liter. 
+
+(242)  Prepared ferrous scrap shall mean any scrap iron or steel which has been mechanically or otherwise processed into a raw material meeting any of the specifications contained in the Scrap Specifications Circular 1993, published by the Institute of Scrap Recycling Industries, Inc., Washington, D.C. Guidelines for Ferrous Scrap. 
+
+(243)  Prescribed burning shall mean the process of periodic deliberate burning of a pineland in a controlled manner taking into consideration weather and understory moisture conditions, for the purposes of maintaining the pineland in a natural condition and for the promotion of pine regeneration. 
+
+(244)  Preservation area shall mean portions of a site that are to be protected from any tree or understory removal (except as required by the Department) and maintained without any development. 
+
+(245)  Private lateral shall mean that portion of a sanitary sewer conveyance pipe that extends from a single-family, multi-family, apartment, or other dwelling unit or commercial or industrial structure, to which wastewater service is or has been provided, up to the property line of such structure. 
+
+(246)  Process weight per hour shall mean the total weight of all materials, except uncombined water, introduced into any unit process, which process may cause any discharge into the atmosphere. Solid fuels charged will be considered as part of the process weight, but liquid and gaseous fuels, combustion air, excess air, infiltrated and other air added to the process, will not be so considered. The process weight per hour will be derived by dividing the total process weight by the number of hours in one (1) complete operation from the beginning of any given process to the completion thereof, excluding any time during which the equipment is idle. 
+
+(247)  Projected NAPOT shall mean the total of the NAPOT plus the calculated additional hours expected as a result of all anticipated sewage flow resulting from all previously authorized additional sewer flows. 
+
+(248)  Proposed NAPOT shall mean the total of the Projected NAPOT plus the calculated additional hours expected as a result of all anticipated new additional sewage. 
+
+(249)  Protective barrier shall mean a temporary fence or other structure built to restrict passage into an area surrounding a tree or stand of trees for the purpose of preventing any disturbance to the roots, trunk or branches of the tree or trees. 
+
+(250)  Public water system shall mean plumbing for the provision to the public of water for human consumption, such plumbing has at least fifteen (15) service connections or regularly serves an averages of at least twenty-five (25) individuals daily at least three (3) months out of the year or serves at least five (5) individuals and is not a single-family residence or a duplex residence. Such term includes: 
+
+(1)  Any collection, treatment, storage and distribution facilities under control of the operator of such system and used primarily in connection with such system, and 
+
+(2)  Any collection or pretreatment storage facilities not under such control which are used primarily in connection with such system. 
+
+(251)  Public water main shall mean any water main in a public water system owned and operated by a public utility. 
+
+(252)  Publicly owned treatment works (POTW) shall mean any device or system that is used in the treatment (including recycling and reclamation) of sewage and that is owned by a state, county, or municipality. Sewers, pipes, or other conveyances are included only if they convey sewage to a POTW. 
+
+(253)  Pump station shall mean facilities comprised of pumps which pump wastewater to a higher hydraulic elevation, including all related electrical, mechanical, and structural systems necessary to the operation of that pump station. 
+
+(254)  Rare, threatened and endangered species shall include all species classified as endangered, threatened or rare by Sections 581.185—581.187 and Chapter 372 of the Florida Statutes, as amended from time to time; or by Appendix A or B of the Comprehensive Development Master Plan for Miami-Dade County, Florida, as amended from time to time. 
+
+(255)  Rated multiple-speed pump station motor horsepower shall mean the sum of the rated horsepower for the same type of pumps in the pump station less the rated horsepower of the one (1) pump of the same type having the greatest rated horsepower, or the equivalent thereof as approved by the Director or the Director's designee. 
+
+(256)  Rated variable-speed pump station motor horsepower shall mean the sum of the rated horsepowers for the same type of pumps in the pump station less the rated horsepower of the one (1) pump of the same type having the greatest rated horsepower, or the equivalent thereof as approved by the Director or the Director's designee. 
+
+(257)  Recreational boat docking facility shall mean a boat docking facility which has boat slips, moorings, vessel tieup spaces, or davit spaces of which fifty (50) percent or more are designated for or contain recreational vessels. 
+
+(258)  Recreational vessel shall mean any vessel used by its owner or operator for noncommercial purposes. 
+
+(259)  Refrigerant shall mean any substance containing any ozone-depleting compound which is utilized in any refrigeration system. 
+
+(260)  Refrigeration system shall mean any refrigerator, freezer, chiller, cold storage warehouse, refrigeration unit, or any kind of air conditioner (mobile, portable, stationary, motor vehicle). 
+
+(261)  Relocated tree shall mean a tree which has been transplanted pursuant to Ordinance Number 89-8 and which continues to be viable at least one (1) year after transplanting. 
+
+(262)  Replacement tree shall mean a shade tree, small tree, or palm tree required to be planted pursuant to the provisions of Ordinance Number 89-8. 
+
+(263)  Reserved area shall mean the area on a property reserved for the installation or replacement of a drainfield or disposal system. 
+
+(264)  Residential developed property shall mean any parcel of land which contains an impervious area and which is classified by the Miami-Dade County Property Appraiser as land use types 00 through and including 09 and land use types 50 through and including 69 if said land use contains a single-family or multifamily residence, as set forth in Florida Administrative Code Rule 12D-8.008(2)(c), as same may be amended from time to time. 
+
+(265)  Residential FOG Source shall mean a residential kitchen that can introduce food waste or FOG into a building drain, building sewer, onsite sewage treatment and disposal system, or non-utility or utility sanitary sewer system. 
+
+(266)  Resource recovery and management facility shall mean any facility the purpose of which is disposal, recycling, incineration, processing, storage, transfer, or treatment of solid or liquid waste; but for the purpose of permitting does not include sewage treatment, industrial waste treatment, or facilities exclusively within State or federal jurisdiction. 
+
+(267)  Retention shall mean a facility or system designed to prevent the discharge of a given volume of stormwater runoff. There are two types of retention, open and closed: 
+
+(a)  In open retention, water levels are drawn down by evaporation, groundwater recharge through seepage or infiltration, or both evaporation and recharge. 
+
+(b)  There are two types of open retention, wet and dry: 
+
+(i)  Open wet retention is storage of stormwater at or below the design mean high water table. 
+
+(ii)  Open dry retention is storage of stormwater above the design mean high water table. 
+
+(iii)  Examples of open retention systems are excavated or natural depression storage areas, pervious pavement with subgrade, or above ground storage areas. 
+
+(c)  Closed retention consists of a closed storage tank or other enclosure that is constructed to retain water during rain events and that uses vactor trucks or other pumping systems to evacuate the stored water. 
+
+(268)  Retention pond shall mean retention that consists of an open basin that is used for the storage and ultimate disposal of stormwater runoff by evaporation and seepage. 
+
+(269)  Right-of-way shall mean a strip of ground dedicated by the subdivider, or deeded by the owner, for public use. 
+
+(270)  Ringelmann Chart shall mean the method of estimating smoke density described in U.S. Bureau of Mines Information Circular 7718. 
+
+(271)  Risk Reduction shall mean the lowering or elimination of the level of risk posed to human health or the environment through interim remedial actions, remedial action, or institutional, and, if applicable, engineering controls. 
+
+(272)  Road shall mean any cleared, plowed, bulldozed, filled, graded, excavated or paved area, elevated boardwalk or roadway used or capable of being used for the passage of vehicles or persons. Roads shall not mean tracks used or capable of being used solely by off-road vehicles such as airboats, swamp buggies and all-terrain vehicles. 
+
+(273)  Rockmining shall mean the dredging or excavation of an area for the purpose of extracting subsurface materials. Rockmining shall also include ancillary property uses necessary for extracting and processing subsurface materials. 
+
+(274)  Rockplowing shall mean the alteration of wetlands by breaking up the limestone surface of a wetland in preparation for agriculture. Rockplowing may include the regrading of surface materials into planting beds at elevations sufficiently high to protect crops from flooding. 
+
+(275)  Rooming unit shall mean any room or group of rooms, forming a single habitable unit, used or intended to be used for living and sleeping but not for cooking or eating purposes. 
+
+(276)  Root ball shall mean a group of roots extending from the base of a tree trunk that must be intact when relocating a tree in order to promote survival of the tree. 
+
+(277)  Sanitary nuisance shall mean the commission of any action, by an individual, municipality, organization or corporation, or the keeping, maintaining, propagation, existence or permission of anything, by an individual, municipality, organization or corporation, by which the health or life of an individual or the health or life of individuals, may be threatened or impaired or by which or through which, directly or indirectly, disease may be caused. 
+
+(278)  Sanitary sewer shall mean a conduit which is a part of a gravity or pressurized force main system which receives and transports waste water for treatment and disposal. 
+
+(279)  Sanitary Sewer Overflow (SSO) shall mean any discharge of wastewater to ground, groundwater or surface water, including waters of the United States or the State, from any WCTS or wastewater treatment facility in the County through a point source or sources not permitted in any NPDES permit, as well as any overflow, spill, or release of wastewater to public or private property from a WCTS or wastewater treatment facility that may not have reached ground water or surface water, including waters of the United States or the State, and including all building backups. 
+
+(280)  Secondary containment system shall mean an impervious layer of materials which is installed so that any volume of hazardous materials which may be discharged from an underground storage facility will be prevented from contacting the environment outside said impervious layer for the period of time necessary to detect and recover all the discharged hazardous materials. Materials or devices used to provide a secondary containment system may include concrete, impervious liners, slurry walls, double-walled tanks, double-walled piping or other devices or materials approved by the Director or the Director's designee. 
+
+(281)  Seepage shall mean the flow of water or any other liquid through the soil or ground. 
+
+(282)  Septic tank shall mean a receptacle constructed to promote separation of solid and liquid components of wastewater, to provide limited digestion of organic matter, to store solids, and to allow clarified liquid to discharge for further treatment and disposal. For purposes of this chapter, a septic tank is classified as an onsite sewage treatment and disposal system (OSTDS). 
+
+(283)  Sewage lateral connection shall mean the pipe which transmits wastewater from a building, residence or facility to a utility or non-utility owned or operated gravity sanitary sewer collection system. 
+
+(284)  Sewage loading shall mean the total sewage flow generated by the actual or projected uses on a property calculated using the flow rates in Section 24-43.1(5), divided by the unsubmerged area of said property. Abutting easements and right-of-way shall be included to the centerline thereof in calculating the unsubmerged area of the property. 
+
+(285)  Sewer extension shall mean any sewer project that requires either a general or individual construction permit as set forth in Chapter 62-604 of the Florida Administrative Code, as may be amended from time to time. 
+
+(286)  Sewer service area shall mean that portion of a utility or non-utility owned or operated sanitary sewer collection system which contributes sewage flow to a particular pump station. 
+
+(287)  Sewer subsystem shall mean a portion of a utility or non-utility owned or operated sanitary sewer collection system which discharges sewage to a particular key manhole. 
+
+(288)  Shredder residue shall mean the predominantly non-metallic solid material including, without limitation, plastic, broken glass, rubber, foam rubber, soil and fabric, resulting from the shredding of ferrous metals such as, but not limited to, scrap automobiles and appliances. 
+
+(289)  Shrub shall mean a self-supporting woody perennial plant of low to medium height characterized by multiple stems and branches continuous from the base. 
+
+(290)  Site plan shall mean a drawing having a scale sufficient to provide the following information: property lines, relevant rights-of-way, and location of all proposed or existing buildings, OSTDSs, utility easements, fences, walls, parking areas, driveways, access roads, setbacks, and any other site development. 
+
+(291)  Site rehabilitation action or SRA shall mean source removal, if applicable, site assessment and, if required, one or more of the following: risk assessment, monitoring or remediation. These site rehabilitation actions serve to characterize the nature and extent of contamination and to reduce the levels of contaminants through applicable treatment methods to comply with the clean-up target levels (CTLs) set forth in this chapter. 
+
+(292)  Slab covered trench shall mean a trench cut into a rock strata supporting a reinforced concrete slab and providing the necessary wall and bottom areas required for exfiltration of stormwater. 
+
+(293)  Small quantity generator of hazardous waste shall mean any person who brings into existence a quantity of fifty-five (55) gallons or less of hazardous waste during any one (1) period of three hundred sixty-five (365) consecutive days. However, within the average day pumpage wellfield protection area of the Miami Springs Lower Wellfield, Miami Springs Upper Wellfield, Hialeah Wellfield and John E. Preston Wellfield, a small quantity generator of hazardous waste shall mean any person who brings into existence a quantity of fifty-five (55) gallons or less of hazardous waste during any one (1) period of one hundred twenty (120) consecutive days. 
+
+(294)  Smoke shall mean the solid particles produced by incomplete combustion or organic substances, including, but not limited to, particles, fly ash, cinders, tarry matter, soot and carbon. 
+
+(295)  Solids Separator shall mean a separator intended to capture solids and allow FOG to pass through. It is installed at the source or on the grease waste drains prior to a FOG control device. 
+
+(296)  Solid waste shall mean garbage, rubbish, refuse, trash, yard trash, construction and demolition debris, or other discarded material, including solids or contained gaseous material resulting from domestic, industrial, commercial, mining, agricultural, or governmental operations. However, subsurface materials which do not contain hazardous materials and which are extracted as a result of rockmining are not included in this definition. 
+
+(297)  Source bed shall mean the stratum or strata from which water is drawn in the well. 
+
+(298)  Source gas volume shall mean the volume, in standard cubic feet, of all gases leaving a source operation; and the boundary of a source operation is that point or surface at which the separation of the air contaminants from the process materials, or the conversion of the process materials into air contaminants, is essentially complete. 
+
+(299)  Source operation shall mean the last operation preceding the emission of an air contaminant, which operation: 
+
+(1)  Results in the separation of the air contaminant from the process material or in the conversion of the process materials and air contaminants, as in the case of combustion fuel; and 
+
+(2)  Is not an air pollution abatement operation. 
+
+(300)  South Miami Heights Wellfield Complex shall mean the following wellfields: South Miami Heights, Roberta Hunter Park, Caribbean Park and Rockpit 77 Park wellfields. 
+
+(301)  Specimen tree shall mean a tree with any individual trunk which has a DBH of eighteen (18) inches or greater, provided, however, that the following trees are not specimen trees: 
+
+(1)  All trees listed in Section 24-49(4)(f). 
+
+(2)  Non-native fruit trees that are cultivated or grown for the specific purpose of producing edible fruit, including, but not limited to, mangos, avocados, or species of citrus. 
+
+(3)  Non-native species of the genus Ficus. 
+
+(4)  All multitrunk trees in the palm family, except Acoelorrhaphe wrightii and Phoenix reclinata which have a minimum overall height of fifteen (15) feet. 
+
+(302)  SRA (see Site rehabilitation action) 
+
+(303)  Standard conditions shall mean a pressure of fourteen and seven-tenths (14.7) pounds per square inch, absolute, and a temperature of sixty (60) degrees Fahrenheit. Results of all analyses and tests shall be calculated or reported at this gas temperature and pressure. 
+
+(304)  Standard sample is taken to mean that for the bacteriological test it shall consist of: 
+
+(1)  For the bacteriological fermentation tube test, five (5) standard portions of either: 
+
+(a)  Ten milliliters (10 ml). 
+
+(b)  One hundred milliliters (100 ml). 
+
+(2)  For the membrane filter technique, not less than fifty milliliters (50 ml). 
+
+(305)  State of Florida Conservation and Recreation Lands Trust Fund shall mean a fund established under Florida Statutes Chapter 375 (as amended from time to time) for the purposes of purchasing environmentally-sensitive land. 
+
+(306)  State-approved plant nursery shall mean a business actively engaged in propagating, growing, maintaining and selling tree species that has been licensed to conduct such business by the State of Florida or Miami-Dade County. 
+
+(307)  Storm sewer shall mean stormwater infrastructure that is designed to carry stormwater runoff. 
+
+(308)  Stormwater infrastructure shall mean a structural control of stormwater or natural feature on a parcel of land or watershed that collects, conveys, stores, absorbs, treats, uses, reuses, or otherwise affects the quantity or quality of stormwater, including facilities or systems that convey stormwater to natural features. Stormwater infrastructure may, but does not necessarily, constitute "green infrastructure" or "low impact development (LID)," as those terms are defined in section 18C-3, or "Green Stormwater Infrastructure (GSI)," as defined by the Florida Department of Environmental Protection. 
+
+(309)  Stormwater management area shall mean that portion of a tract of land or parcel that shall be left at natural grade (unfilled), filled to an elevation no less than four inches above the seasonal high water table, or excavated below natural grade, for the purposes of managing water that results from rainfall, storing water in the Biscayne Aquifer, or recharging the Biscayne Aquifer. 
+
+(310)  Stormwater management program shall be as defined in section 403.031, Florida Statutes, as may be amended from time to time. 
+
+(311)  Stormwater management system shall be as defined in section 403.031, Florida Statutes, as may be amended from time to time. 
+
+(312)  Stormwater runoff shall mean the excess rainfall precipitation that runs over the ground surface when the rate of rainfall precipitation exceeds the rate of stormwater infiltration. 
+
+(313)  Stormwater shall mean the water that results from rainfall. 
+
+(314)  Stormwater utility shall be as defined in section 403.031, Florida Statutes, as may be amended from time to time. 
+
+(315)  Structural controls of stormwater shall mean a facility or system consisting of physical devices or infrastructure used to control stormwater, including, but not limited to, levees, dikes, pump stations, piping, structures, spillways, locks, embankments, roadways, lakes, retention ponds or other retention systems, and detention ponds or other detention systems. 
+
+(316)  Substantial reduction in recharge of water to the Biscayne Aquifer shall mean a reduction in natural infiltration rates or reduction of volume of surface water from a defined area; or transportation of surface waters off-site to the extent that a site's natural hydrological regimen is changed. 
+
+(317)  Supervisory Control and Data Acquisition (SCADA) shall mean an electronic system to provide a utility with information and control functions for all pump stations in the WCTS at a central location. These systems are generally intended to be monitored on a 24-hour basis. 
+
+(318)  Surcharged gravity sanitary sewer shall mean a condition during which a gravity sanitary sewer contains sewerage flows above the crown of the pipe. 
+
+(319)  System shall include anything that is a facility. 
+
+(320)  Test well (see Monitoring well) 
+
+(321)  Third Party Certified shall mean a certification by an independent entity that specific equipment or devices have been tested and meet or exceed standards established by the certifying entity and which the certifying entity has reviewed or audited the manufacturing process. The certifying entity shall be recognized by the Director or Director's designee and can include, but is not limited to, the National Sanitation Foundation (NSF), American Society of Mechanical Engineers (ASME), Plumbing and Drainage Institute (PDI) or Canadian Standards Association (CSA) or combination of these and other entities to include the aforementioned requirements. 
+
+(322)  Top pruning shall mean the removal of any distal branches or limbs of a mangrove tree which will result in the reduction in the overall height of the mangrove tree. 
+
+(323)  Total hazardous organic materials (THOM) shall mean the sum of all quantifiable concentration values of organics presumed to be hazardous materials by the designation of the Board of County Commissioners pursuant to Section 24-5 of the Code of Miami-Dade County, Florida. 
+
+(324)  Total metals shall mean the sum of the concentration of copper, nickel, total chromium, and zinc. 
+
+(325)  Total toxic organics (TTO) shall mean the sum of all quantifiable concentration values of those organics set forth in 40 CFR 413 and 40 CFR 433 of the Code of Federal Regulations, and Xylene. 
+
+(326)  Transitional Northeast Everglades shall mean the wetlands within the following geographic boundaries: 
+
+Beginning at a point on the north right-of-way line of theoretical N.W. 12th Street as it intersects the east side of the Miami-Dade-Broward levee, thence run northerly along the east side of the Miami-Dade-Broward levee for approximately 10 miles to its point of intersection with the eastern right-of-way line of the State Road 997 (Krome Avenue); thence, run northeasterly along the eastern right-of-way line of said State Road 997 (Krome Avenue); to its intersection with the west right-of-way line of U.S. Highway 27 (Okeechobee Road); thence run southeasterly along said west right-of-way line of U.S. Highway 27 (Okeechobee Road); to its intersection with the western right-of-way line of the Homestead Extension of Florida's Turnpike; thence run southerly along said western right-of-way line of the Homestead Extension of Florida's Turnpike; for approximately 8 miles to theoretical N.W. 12th Street; thence run westerly along theoretical N.W. 12th Street to the point of beginning. 
+
+Beginning at a point on the south right-of-way line of U.S. Highway 41 as it intersects the west right-of-way line of State Road 997; thence run southerly along the west right-of-way line of State Road 997 for approximately 4 miles to the southeast corner of Section 25, Township 54 South, Range 38 East; thence run westerly for approximately 1 mile along the south section line of said Section 25 to its intersection with the east right-of-way line of Levee 31N; thence run northerly for approximately 4 miles along the east right-of-way line of Levee 31N to its intersection with the south right-of-way line of U.S. Highway 41; thence run easterly for approximately 1 mile to the point of beginning. 
+
+(327)  Transmissivity shall mean the rate at which groundwater is transmitted through a unit width of aquifer under a unit hydraulic gradient. 
+
+(328)  Trash shall mean solid waste comprised of yard trash or construction and demolition debris, and shall include but not be limited to paper, cardboard, cloth, glass, plastics, street sweepings, and vehicle tires. 
+
+(329)  Travel time shall mean the period of time in days or equivalent distance in feet for groundwater to travel from one (1) point in an aquifer to another point in the aquifer. 
+
+(330)  Tree island shall mean a vegetative community located within freshwater wetlands whose dominant vegetative components consist of native hardwood trees and shrubs. 
+
+(331)  Tree removal shall mean directly or indirectly cutting down, destroying, removing or relocating, or effectively destroying (through damaging, trimming, authorizing or allowing the cutting down, destroying, removing, moving or damaging of) any tree. 
+
+(332)  Tree shall mean a woody or fibrous perennial plant with a trunk having a minimum DBH of three (3) inches or with an overall height of twelve (12) or more feet. Tree shall not include any mangrove tree as defined in Section 24-5. 
+
+(333)  Tree survey shall mean a drawing overlaid directly upon the site plan sufficient to provide the following information: 
+
+(1)  The location, plotted by accurate techniques, in relation to all proposed development, of all existing trees which are proposed to be destroyed, relocated or preserved, 
+
+(2)  The common and scientific name of each tree, 
+
+(3)  The DBH of each tree, or if a multiple trunk tree, the sum DBH for all trunks, and 
+
+(4)  An estimate of the height of the canopy. 
+
+(334)  Tree well shall mean a soil retaining structure designed to maintain the existing natural ground elevation beneath a tree to preserve the tree when the surrounding area is filled to raise the ground elevation. Tree wells shall have a minimum radius of three (3) feet from the trunk of the tree and a maximum radius of ten (10) feet from the trunk of the tree. 
+
+(335)  Underground storage facility shall mean a tank, pipe, vessel or other container, or any combination of the foregoing, used or designed to be used for the underground storage or underground transmission of hazardous materials. This definition includes, but is not limited to: line leak detectors; monitoring wells; continuous automatic leak detection systems; and secondary containment system associated therewith. This definition excludes: hydraulic lift systems; oil-water separators; sanitary sewers; OSTDSs; the primary pipeline transmitting jet fuel from Port Everglades to Homestead Air Base; and any other primary pipeline transmitting hazardous materials from one county to another county. Underground storage facilities have ten (10) percent or more of their total volume below the surface of the ground. 
+
+(336)  Understory shall mean the complex of woody, fibrous, herbaceous, and graminoid plant species that are typically associated with a natural forest community. 
+
+(337)  Unencapsulated polystyrene shall mean polystyrene that is not fully enclosed in material that reduces the chance that it can be released into tidal waters if the polystyrene is degraded or damaged. 
+
+(338)  Unmaintained underground storage facility shall mean an underground storage facility which was not or is not properly closed or placed out of service in accordance with the rules and regulations of the State of Florida and Section 24-45(6) of this Code and for which there is neither a valid operating permit issued pursuant to Section 24-18(2) of this Code nor, a valid registration placard issued by the State of Florida Department of Environmental Protection. 
+
+(339)  Unsubmerged land shall mean any land which meets or exceeds the minimum elevation required by Miami-Dade County flood criteria. 
+
+(340)  Urban Development Boundary shall mean the line established by the Miami-Dade County Board of County Commissioners delineating the approved urban development boundary for Miami-Dade County, as amended by ordinance from time to time. 
+
+(341)  Utility shall mean the entity that owns or operates any water transmission, distribution or treatment facilities and/or sanitary sewer collection, transmission or treatment facilities that provides water and/or sewer service to entities other than itself. 
+
+(342)  Vacuum assist system shall mean a gasoline or gasohol vapor recovery system that uses a vacuum generating device to create a vacuum in the vapor return line from the nozzle boot to the underground storage tank during motor vehicle refueling. 
+
+(343)  Vapor shall mean any mixed material in a gaseous state which is deformed from a substance usually a liquid, by increased temperature. 
+
+(344)  Vessel shall mean a watercraft, boat, ship, yacht, barge, canoe, or kayak, used or capable of being used as a means of transportation on water. Vessel shall not mean a floating structure as defined in Section 24-5. Notwithstanding that the floating structure has previously been used as a means of transportation on water or is capable of being used as a means of transportation on water, vessel shall not mean a floating structure as defined in Section 24-5. 
+
+(345)  Vessel tieup space shall mean an area abutting a bulkhead or shoreline where a vessel may be secured. 
+
+(346)  Wash-Down Area shall mean an area where FOG generators wash the back of the house mats or equipment. 
+
+(347)  Waste discharge shall mean any outfall, ditch, pipe, soakage pit, drainage well, drainfield, or any other method or device by which treated or untreated sewage, industrial waste, or other wastes can enter the surface waters, tidal salt water, or groundwaters, so as to cause water pollution as herein defined. 
+
+(348)  Water Control Map or Water Control Plan shall mean the official map or maps of Miami-Dade County that show existing and proposed water-control facilities and their general locations and that are adopted by the Board of County Commissioners and recorded in a Plat Book or other official record book of the public records of Miami-Dade County. 
+
+(349)  Water dependent use shall mean a use which cannot exist or occur without association with marine, freshwater or estuarine water masses. 
+
+(350)  Water pollution shall mean the introduction in, on or upon any surface water or ground water, or tidal water, of any organic or inorganic matter or deleterious substances in such quantities, proportions, accumulations or levels which exceed any of the clean-up target levels (CTLs) set forth in Section 24-44, or which are injurious to human, plant, animal, fish and other aquatic life, or property, or which unreasonably interfere with the comfortable enjoyment of life or property, or the conduct of business. 
+
+(351)  Water system shall mean a system which supplies water for drinking, culinary, fire, industrial, commercial, or domestic purposes. 
+
+(352)  Watershed shall mean the same term as defined by Section 403.031(17), Florida Statutes, as same may be amended from time to time. 
+
+(353)  WCTS shall mean Wastewater Collection and Transmission Systems, including all pipes, force mains, gravity sewer lines, pump stations, manholes and appurtenances thereto, designed to collect and convey sewage (domestic, commercial and industrial) to a wastewater treatment plant. 
+
+(354)  Well Stimulation shall mean a well intervention, exploration, operation, or maintenance procedure performed by injecting fluid, which may include additives, into a rock formation to increase the rate of production at an oil or gas well by increasing the flow of hydrocarbons from the formation into the wellbore. Well stimulation includes, but is not limited to, the processes known as hydraulic fracturing, acid fracturing, and cyclic steam injection, which are sometimes referred to as "fracking," as well as matrix acidizing and fracture acidizing. Well stimulation does not include routine well cleaning that does not affect the integrity of the well or the formation. 
+
+(355)  Wellfield shall mean the surface and subsurface area surrounding a potable water supply well, through which water is likely to move toward and reach the potable water well. 
+
+(356)  Wellfield complex shall mean two or more wellfields which: a.) provide raw water to the same water treatment facility or provide raw water to interconnected water treatment facilities for treatment of raw water from the same wellfield and, b.) which wellfields are within the same outer wellfield protection zone. 
+
+(357)  Wellfield Protection Area shall mean the area defined by the maps of cones of influence as set forth herein. 
+
+(358)  Wetlands shall mean those areas as defined in Chapter 373, Florida Statutes, as same may be amended from time to time. 
+
+(359)  Work shall mean any project, activity, or any artificial or man-made alteration of the environment, including, but not limited to, the construction or maintenance of roads; landclearing; trimming or cutting of a mangrove tree(s); dredging; filling; construction or placement of structures, floating structures, fixed structures, facilities or dwellings; excavations; or rockplowing. 
+
+(360)  WWTP shall mean Wastewater Treatment Plant, including devices or systems used in the storage, treatment, recycling, and reclamation of municipal wastewater. This definition shall include all facilities owned, managed, operated, and maintained by Miami-Dade County, including but not limited to, the North District WWTP, the Central District WWTP, the South District WWTP, and all components of those plants. 
+
+(361)  Yard trash shall mean solid waste comprised of vegetative matter resulting from landscaping maintenance or land clearing operations and shall include, but not be limited to, Melaleuca, Australian pine, Brazilian pepper and other tree and shrub trimmings, grass clippings, palm fronds, trees and tree stumps, and soils not containing any hazardous materials. 
+
+(362)  Yellow Grease shall mean FOG generated as a byproduct from cooking or food preparation that is not mixed with water, wastewater or other waste. 
+
+(Ord. No. 04-214, §§ 1, 5, 12-2-04; Ord. No. 05-196, § 1, 11-3-05; Ord. No. 06-125, § 1, 9-12-06; Ord. No. 08-55, § 2, 5-6-08; Ord. No. 12-58, § 1, 7-3-12; Ord. No. 13-27, § 1, 4-2-13; Ord. No. 14-49, § 1, 5-20-14; Ord. No. 15-25, § 1, 4-21-15; Ord. No. 15-88, § 1, 9-1-15; Ord. No. 18-10, § 1, 2-6-18; Ord. No. 18-22, § 1, 2-21-18; Ord. No. 18-28, § 1, 3-6-18; Ord. No. 21-42, §§ 4, 8, 6-2-21; Ord. No. 22-83, § 2, 7-7-22; Ord. No. 22-137, §§ 2, 4, 10-18-22; Ord. No. 22-141, § 3, 10-18-22; Ord. No. 24-14, § 6, 2-6-24; Ord. No. 24-92, § 1, 9-4-24)

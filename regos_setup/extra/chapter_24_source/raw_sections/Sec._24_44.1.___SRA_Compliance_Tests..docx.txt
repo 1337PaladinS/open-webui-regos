@@ -1,0 +1,15 @@
+Sec. 24-44.1. - SRA Compliance Tests. 
+
+Sampling points to determine compliance with Section 24-44(2) shall be as follows: 
+
+(1)  Soil. Soil samples shall be collected from locations nearest to the point of entry of a contaminant or contaminants to the ground. Additional sampling points may be required if existing sampling points are determined to be inadequate to establish the extent and degree of contamination in the judgment of the Director or the Director's designee. Sampling point locations and the number of samples required shall be established in accordance with the requirements set forth in Section 24-44(2)(j)(iv). 
+
+(2)  Groundwater. Groundwater samples shall be collected from groundwater monitoring wells nearest to the point of entry of a contaminant or contaminants into the groundwater. Additional test wells may be required to be installed and maintained if existing sampling points are determined to be inadequate to establish the extent and degree of contamination in the judgment of the Director or the Director's designee. Sampling point locations and the number of samples required shall be established in accordance with the requirements set forth in Section 24-44(2)(j)(iv). 
+
+If surface waters are, or are reasonably expected to be, affected by contaminated groundwater, as demonstrated through groundwater monitoring well data, groundwater flow rate and direction, or fate and transport modeling data, groundwater samples shall be collected from groundwater monitoring wells as close to the groundwater/surface water interface as is physically possible. 
+
+(3)  Surface Water. Surface water samples shall be collected nearest to and downstream from the point of entry of a contaminant or contaminants into the surface water. Sampling point locations and the number of samples required shall be established in accordance with the requirements set forth in Section 24-44(2)(j)(iv). 
+
+(4)  Sediment. Sediment samples shall be collected nearest to and downstream from the point of entry of a contaminant or contaminants into the surface water. Sampling point locations and the number of samples required shall be established in accordance with the requirements set forth in Section 24-44(2)(j)(iv). 
+
+(Ord. No. 04-214, §§ 1, 5, 12-2-04; Ord. No. 08-55, § 2, 5-6-08)

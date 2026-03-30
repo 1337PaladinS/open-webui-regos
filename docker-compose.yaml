@@ -24,7 +24,37 @@ services:
       - 'OLLAMA_BASE_URL=http://ollama:11434'
       - 'WEBUI_SECRET_KEY='
       - NODE_OPTIONS=--max-old-space-size=4096
+      # ── Auth0 SSO (OIDC) ──
+      - ENABLE_OAUTH_SIGNUP=true
+      - OAUTH_PROVIDER_NAME=Auth0
+      - OAUTH_CLIENT_ID=SfknyaHKLzep6ZVt7eVIe2kUwp07s72Y
+      - OAUTH_CLIENT_SECRET=ZsJKtSejKBMXgg7SMiWbl0uBUmQwcwOhNW_Ny8Oo8-TZZcfSKpZ_DBl6u_NQsDyv
+      - OPENID_PROVIDER_URL=https://dev-xfxeixftsfjfmbg5.us.auth0.com/.well-known/openid-configuration
+      - OAUTH_SCOPES=openid email profile
+      - OPENID_REDIRECT_URI=http://localhost:3000/oauth/oidc/callback
+      # ── OAuth Role Mapping (Auth0 → Guest) ──
+      - ENABLE_OAUTH_ROLE_MANAGEMENT=true
+      - OAUTH_ROLES_CLAIM=https://open-webui/roles
+      - OAUTH_ALLOWED_ROLES=guest
+      - OAUTH_ADMIN_ROLES=admin
 
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    restart: unless-stopped
+
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    container_name: n8n
+    ports:
+      - ${N8N_PORT-5678}:5678
+    volumes:
+      - n8n-data:/home/node/.n8n
+    environment:
+      - N8N_HOST=0.0.0.0
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://localhost:${N8N_PORT-5678}/
+      - N8N_SECURE_COOKIE=false
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
@@ -32,3 +62,4 @@ services:
 volumes:
   ollama: {}
   open-webui: {}
+  n8n-data: {}

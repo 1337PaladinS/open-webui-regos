@@ -91,7 +91,8 @@ export const getSessionUser = async (token: string) => {
 			'Content-Type': 'application/json',
 			Authorization: `Bearer ${token}`
 		},
-		credentials: 'include'
+		credentials: 'include',
+		body: JSON.stringify({ email })
 	})
 		.then(async (res) => {
 			if (!res.ok) throw await res.json();
@@ -332,7 +333,8 @@ export const userSignOut = async () => {
 		headers: {
 			'Content-Type': 'application/json'
 		},
-		credentials: 'include'
+		credentials: 'include',
+		body: JSON.stringify({ email })
 	})
 		.then(async (res) => {
 			if (!res.ok) throw await res.json();

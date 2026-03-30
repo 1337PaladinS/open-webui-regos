@@ -655,3 +655,120 @@ async def get_banners(
     user=Depends(get_verified_user),
 ):
     return request.app.state.config.BANNERS
+
+
+
+############################
+# RegOS Settings
+############################
+
+
+class RegOSDisclaimerForm(BaseModel):
+    enabled: bool
+    title: str
+    body: str
+    accept_label: str
+
+
+class RegOSGuestForm(BaseModel):
+    enabled: bool
+    message_limit: int
+    generation_limit: int
+    session_ttl: int
+    show_button: bool
+
+
+class RegOSConfidenceForm(BaseModel):
+    enabled: bool
+    style: str
+    high_threshold: int
+    medium_threshold: int
+
+
+class RegOSSettingsForm(BaseModel):
+    disclaimer: RegOSDisclaimerForm
+    guest: RegOSGuestForm
+    confidence: RegOSConfidenceForm
+
+
+@router.get("/regos")
+async def get_regos_config(request: Request, user=Depends(get_admin_user)):
+    return {
+        "disclaimer": {
+            "enabled": request.app.state.config.REGOS_DISCLAIMER_ENABLED,
+            "title": request.app.state.config.REGOS_DISCLAIMER_TITLE,
+            "body": request.app.state.config.REGOS_DISCLAIMER_BODY,
+            "accept_label": request.app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL,
+        },
+        "guest": {
+            "enabled": request.app.state.config.REGOS_GUEST_ENABLED,
+            "message_limit": request.app.state.config.REGOS_GUEST_MESSAGE_LIMIT,
+            "generation_limit": request.app.state.config.REGOS_GUEST_GENERATION_LIMIT,
+            "session_ttl": request.app.state.config.REGOS_GUEST_SESSION_TTL,
+            "show_button": request.app.state.config.REGOS_GUEST_SHOW_BUTTON,
+        },
+        "confidence": {
+            "enabled": request.app.state.config.REGOS_CONFIDENCE_ENABLED,
+            "style": request.app.state.config.REGOS_CONFIDENCE_STYLE,
+            "high_threshold": request.app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD,
+            "medium_threshold": request.app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD,
+        },
+    }
+
+
+@router.post("/regos")
+async def set_regos_config(
+    request: Request,
+    form_data: RegOSSettingsForm,
+    user=Depends(get_admin_user),
+):
+    data = form_data.model_dump()
+
+    request.app.state.config.REGOS_DISCLAIMER_ENABLED = data["disclaimer"]["enabled"]
+    request.app.state.config.REGOS_DISCLAIMER_TITLE = data["disclaimer"]["title"]
+    request.app.state.config.REGOS_DISCLAIMER_BODY = data["disclaimer"]["body"]
+    request.app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = data["disclaimer"]["accept_label"]
+
+    request.app.state.config.REGOS_GUEST_ENABLED = data["guest"]["enabled"]
+    request.app.state.config.REGOS_GUEST_MESSAGE_LIMIT = data["guest"]["message_limit"]
+    request.app.state.config.REGOS_GUEST_GENERATION_LIMIT = data["guest"]["generation_limit"]
+    request.app.state.config.REGOS_GUEST_SESSION_TTL = data["guest"]["session_ttl"]
+    request.app.state.config.REGOS_GUEST_SHOW_BUTTON = data["guest"]["show_button"]
+
+    request.app.state.config.REGOS_CONFIDENCE_ENABLED = data["confidence"]["enabled"]
+    request.app.state.config.REGOS_CONFIDENCE_STYLE = data["confidence"]["style"]
+    request.app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = data["confidence"]["high_threshold"]
+    request.app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = data["confidence"]["medium_threshold"]
+
+    return await get_regos_config(request, user)
+
+
+@router.get("/regos/public")
+async def get_regos_public_config(request: Request, user=Depends(get_verified_user)):
+    """Public-facing subset of RegOS config for non-admin users."""
+    return {
+        "disclaimer": {
+            "enabled": request.app.state.config.REGOS_DISCLAIMER_ENABLED,
+            "title": request.app.state.config.REGOS_DISCLAIMER_TITLE,
+            "body": request.app.state.config.REGOS_DISCLAIMER_BODY,
+            "accept_label": request.app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL,
+        },
+        "guest": {
+            "enabled": request.app.state.config.REGOS_GUEST_ENABLED,
+            "show_button": request.app.state.config.REGOS_GUEST_SHOW_BUTTON,
+        },
+        "confidence": {
+            "enabled": request.app.state.config.REGOS_CONFIDENCE_ENABLED,
+            "style": request.app.state.config.REGOS_CONFIDENCE_STYLE,
+        },
+    }
+
+
+@router.get("/regos/guest-status")
+async def get_regos_guest_status(request: Request):
+    """Unauthenticated endpoint for login page guest button visibility."""
+    return {
+        "enabled": request.app.state.config.REGOS_GUEST_ENABLED,
+        "show_button": request.app.state.config.REGOS_GUEST_SHOW_BUTTON,
+    }
+

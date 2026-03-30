@@ -1,0 +1,129 @@
+Sec. 24-43.4. - Feasible distance for public sanitary sewers and water mains. 
+
+(1)  Purpose and intent. The purpose and intent of this section is to safeguard the public health, safety, and welfare by providing specific standards for the determination of feasible distance, which relates to when a property is required to connect to public sanitary sewers and public water mains. Such determinations of feasible distance are required by Section 24-43.1 and Section 24-43.2. Feasible distance is distinct from, and shall not be conflated with, a determination as to whether a public water main or public sanitary sewer system is available and operative, as referenced in Sections 24-43.1(7) and 24-43.2(10). 
+
+(2)  General requirements. 
+
+(a)  Total floor area. Feasible distance shall be calculated based on total floor area in accordance with this subsection. 
+
+(i)  Definition. For purposes of this section, "total floor area" means the sum all square feet of length and depth of a building area that is or is proposed to be covered by a roof, including, without limitation, the length and depth of each floor, covered patio, closet, elevator, and garage, regardless of whether the covered area is habitable space, as defined in Section 33-1, or contains plumbing. 
+
+(ii)  Multiple buildings. Where a property contains multiple buildings, total floor area shall include all buildings. 
+
+(iii)  Exclusions from total floor area. Notwithstanding any provision to the contrary, total floor area shall not include: 
+
+1.  a prefabricated storage shed located on property that is developed with or zoned for single-family or duplex use; or 
+
+2.  utility appurtenances, as defined in the County manual of public works construction promulgated pursuant to Section 2-100, that do not contain plumbing. 
+
+(iv)  Additions to existing development. The following applies to additions of existing development, whether attached or detached structures: 
+
+1.  If the addition is less than 25 percent of the total floor area of the existing development, then feasible distance shall be calculated using the total floor area of the addition, but the minimum feasible distances provided herein in subsections (3) and (4) shall not apply. 
+
+2.  If the addition is 25 percent or more of the total floor area of the existing development, then feasible distance shall be calculated using the total floor area of both the existing development and the addition. 
+
+3.  Addition shall be as defined in the Florida Building Code. 
+
+(b)  Feasible distance analysis conducted for each development application. Feasible distance shall be analyzed for each development order or development permit that is subject to Section 24-43.1 and 24-43.2, regardless of whether the property or portion thereof was found to not be within feasible distance when a prior development order or development permit was issued. 
+
+(i)  Multi-phase developments, lots within a parent tract, or single development plan. 
+
+1.  For applications for tentative plat or modifications or extensions thereof, total floor area shall be based on the development of all phases, the entire parent tract, or the entire plan, as applicable, where a property is part of any of the following: a multi-phase development, a larger parent tract, or a single development plan, including, but not limited to a site plan approval (ASPR), hearing plan approved as part of a zoning resolution or proffered in connection with a zoning resolution, development of regional impact, planned area development, or conceptual plan submitted as part of a zoning hearing, or the municipal equivalent of any of the foregoing as determined by the Director. 
+
+2.  Notwithstanding the foregoing, for an application to modify or extend a tentative plat that was approved prior to October 28, 2022, feasible distance shall be calculated in accordance with the standards that were in effect at the time the tentative plat was approved. 
+
+(ii)  Except as provided in this subsection, once a property or portion thereof has been determined to be within feasible distance of public water, public sanitary sewer, or both, all modifications, additions, or expansions to development on the property shall be deemed to be within feasible distance of the applicable infrastructure, regardless of whether any individual phase or subpart of a proposed development would not be within feasible distance if measured independently. 
+
+(iii)  Once a property or portion thereof is determined to be within feasible distance, the owner shall record, in the Public Records of Miami-Dade County and at the owner's expense, a covenant in a form acceptable to the Director acknowledging that the property shall be required to connect to the applicable public infrastructure as a condition of any building permit for development on the property or portion thereof, provided, however, that such connection requirement shall not apply to building permits for repairs, including repairs that are required as part of a building recertification conducted pursuant to Section 8-11, as may be amended. 
+
+(iv)  At time of subdivision approval, if the application does not contain specific information to calculate total floor area, total floor area shall be calculated based on the maximum lot coverage, height, floors, and floor area ratio permitted within the applicable zoning regulations and subject to the analysis required by this paragraph (2)(b). 
+
+(c)  In performing the analyses required by this section, the Director shall utilize recognized engineering practices to determine the appropriate alignment or route to connect to the applicable public infrastructure, based on the distance between the property and the point of connection to the applicable infrastructure. 
+
+(i)  In determining this distance, the Director shall measure from each point of connection to the applicable infrastructure to the closest point on the perimeter of the property, excluding all distances within the perimeter. 
+
+(ii)  Public sanitary sewers and public water mains shall not traverse more than one property or lot unless the Director determines that appropriate access for all properties that rely on the connection have been provided in a form acceptable to the Director. Examples of such access include, without limitation, an easement provided to the County for public water or sewer utility use, in a form acceptable to the Director, that has been recorded in the public records of Miami-Dade County. 
+
+(d)  If a property is not within feasible distance of a public water main, public sanitary sewer, or both, only those uses that, pursuant to this article, are allowed to be served by an onsite domestic well, an OSTDS, or both, as applicable, shall be permitted. The lack of feasible distance shall not be construed to permit any uses not otherwise permitted by this article. 
+
+(e)  Definition of variables. For purposes of the calculations required by this section: 
+
+F = A+B+C, where 
+
+A = 0, for a proposed development that is entirely located more than 1,000 feet from any of the following: lake, stream, river, lagoon, pond, wetland, bay, canal, or tidal waters (except this shall not be deemed to include decorative reflective pools or fishponds that contain water less than 24 inches deep, that contain less than 250 square feet in area, and contain less than 2,250 gallons in volume); otherwise, A = 1. 
+
+B = 0, for a proposed development that is entirely located outside a special flood hazard area; otherwise, B = 1. 
+
+C = 0, for a proposed development that is entirely located outside a wellfield protection area; otherwise, C = 1. 
+
+(3)  Feasible distance for public sanitary sewers. Feasible distance for public sanitary sewers shall be calculated as follows: 
+
+(a)  Individual single-family residence or duplex, excluding subdivisions. For an individual single-family or duplex residence, feasible distance to a gravity sanitary sewer main shall be measured in feet as follows: 
+
+Feasible Distance (in feet) = [Total Floor Area] ÷ 20. If, however, the result of this equation is less than 100, feasible distance shall be deemed to be 100 feet. 
+
+(b)  Single-family residence or duplex subdivision. For a single-family or duplex subdivision, feasible distance shall be measured in feet as follows. 
+
+(i)  Gravity sewer. Feasible distance to a gravity sanitary sewer main shall be: 
+
+Feasible Distance (in feet) = [(Total Floor Area) x (F+1)] ÷ 20. 
+
+If, however, the result of this equation is less than 500, feasible distance shall be deemed to be 500 feet. 
+
+(ii)  Force main. Feasible distance to a force main for a development with 10 or more single-family or duplex residences shall be: 
+
+Feasible Distance (in feet) = [((Total Floor Area) ÷ 17) - 1,000] x (F+1). 
+
+If, however, the result of this equation is less than 500, feasible distance shall be deemed to be 500 feet. 
+
+(c)  Other residential subdivision. For other residential subdivisions, feasible distance shall be measured in feet as follows: 
+
+(i)  Gravity sewer. Feasible distance to a gravity sewer shall be: 
+
+Feasible Distance (in feet) = 
+
+[(Total Floor Area) x (F+1)] ÷ 20. 
+
+If, however, the result of this equation is less than 100, feasible distance shall be deemed to be 100 feet. 
+
+(ii)  Force main. Feasible distance to a force main shall be: 
+
+Feasible Distance (in feet) = 
+
+[((Total Floor Area) ÷ 17) - 1,000] x (F+1). 
+
+If, however, the result of this equation is less than 500, feasible distance shall be deemed to be 500 feet. 
+
+(d)  Other uses. For all other uses that do not generate a liquid waste other than domestic sewage, feasible distance to gravity sewer or force main shall be measured in feet as follows: 
+
+Feasible Distance (in feet) = 
+
+[(Total Floor Area) x (F+1)] ÷ 15. 
+
+If, however, the result of this equation for an industrial use is less than 700, then feasible distance shall be deemed to be 700 feet. If, however, the result of this equation for any other use is less than 500, feasible distance shall be deemed to be 500 feet. 
+
+(4)  Feasible distance for public water main. Feasible distance for public water main shall be calculated as follows: 
+
+(a)  Individual single-family residence or duplex, excluding subdivisions. For an individual single-family or duplex residence, feasible distance shall be: 
+
+Feasible Distance (in feet) = [Total Floor Area] ÷ 12. If, however, the result of this equation is less than 200, feasible distance shall be deemed to be 200 feet. 
+
+(b)  Single-family residence or duplex subdivision. For a single-family or duplex subdivision, feasible distance shall be: 
+
+Feasible Distance (in feet) = 
+
+[((Total Floor Area) x (F+1)] ÷ 12. 
+
+If, however, the result of this equation is less than 750, feasible distance shall be deemed to be 750 feet. 
+
+(c)  All other uses. For all other uses, feasible distance shall be: 
+
+Feasible Distance (in feet) = 
+
+[(Total Floor Area) x (F+1)] ÷ 10. 
+
+If, however, the result of this equation for an industrial use is less than 1000, then feasible distance shall be deemed to be 1000 feet. 
+
+If, however, the result of this equation for any other use is less than 750, feasible distance shall be deemed to be 750 feet. 
+
+(Ord. No. 22-137, § 3, 10-18-22; Ord. No. 23-87, § 2, 10-3-23)

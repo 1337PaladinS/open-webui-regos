@@ -1,0 +1,345 @@
+Sec. 24-42.2. - Sanitary sewer collection and transmission systems. 
+
+(1)  Reference Documents. The following documents, as amended from time to time, shall be used as a reference for the requirements set forth in this Section: 
+
+(a)  U.S. EPA's Sewer System Infrastructure Analysis and Rehabilitation Handbook (October 1991, EPA/625/6-91/030). 
+
+(b)  EPA's Handbook: State of Technology Report for Force Main Rehabilitation, EPA/600/R-10/10/044, March 2010. 
+
+(c)  EPA's Handbook: Condition Assessment of Wastewater Collection Systems (State of Technology Review Report), EPA/600/R-09/049, May 2009. 
+
+(d)  Existing Sewer Evaluation and Rehabilitation, WEF Manual of Practice No. FD-6, 1994. 
+
+(e)  Design of Wastewater and Stormwater pumping Stations, WEF Manual of Practice No FD-4. 
+
+(f)  Guide for Evaluating Capacity, Management, Operations, and Maintenance (CMOM) Programs at Sanitary Sewer Collection Systems, EPA 305-B-05-002. 
+
+(g)  Manpower Requirements for Wastewater Collection Systems in Cities and Towns of up to 150,000 Population, EPA 832-R-73-104. 
+
+(h)  Manpower Requirements for Wastewater Collection Systems in Cities and Towns of 150,000 to 500,000 Population, EPA 832-R-74-102. 
+
+(i)  Gravity Sanitary Sewer Design and Construction, WEF Manual of Practice No. FD-5, 2007. 
+
+(j)  Wastewater Collection Systems Management, WEF Manual of Practice No. FD-7, 2009. 
+
+(k)  Recommended Standards for Wastewater Facilities, Policies for the Design, Review, and Approval of Plans and Specifications for Wastewater Collection and Treatment Facilities. Health Research Inc., Health Education Services Division, Albany, NY, 2004. 
+
+(l)  AWWA Standard for Installation of Ductile-Iron Water Mains and their Appurtenances, ANSI/AWWA C600-82, American Water Works Association. 
+
+(2)  New sanitary sewer system requirements. All new sanitary sewer systems shall be designed, constructed, tested and operated in accordance with the latest editions of the reference documents listed in Section 24-42.2(1). 
+
+(3)  Existing gravity sanitary sewer requirements. 
+
+(a)  Each utility or non-utility owned or operated sanitary sewer collection system shall be evaluated in order to identify and reduce infiltration and inflow into the sanitary sewer collection system to less than five thousand (5,000) gallons per inch pipe diameter per day per mile of pipe and laterals. The utility or non-utility shall implement a sewer system evaluation survey (SSES) and submit a report summarizing the findings of the SSES to the Department for review and approval. SSES reports are due on or before each and every ten (10) year anniversary of November 12, 2002, the original due date required by this Chapter. Such evaluation activities shall consider the total length of the gravity sewer lines and associated manholes in the sanitary sewer collection system. Said report shall include, in addition to any of the above requirements, decision making criteria, procedures and protocols for prioritization of the evaluation of gravity sewer lines and associated manholes, and selected rehabilitation methods to be used if the infiltration and inflow into the sanitary sewer collection system is greater than or equal to five thousand (5,000) gallons per inch pipe diameter per day per mile of pipe and laterals. Any and all rehabilitation work proposed to correct deficiencies identified during the SSES shall be completed within four (4) years after the submission of the SSES report. A second report, noting the completion of this work and describing the testing done showing compliance with the Code requirements, shall be submitted to the Department within four (4) years after the submission of the SSES report. 
+
+(i)  Flow testing for the SSES shall be done between June 1 and November 30 of the same calendar year, except as otherwise approved in writing by the Director or the Director's designee. In areas where the groundwater level is tidally influenced, the testing shall be carried out within two (2) hours of the local high tide. 
+
+(ii)  In the event that implementation of the initial sewer system infiltration and inflow rehabilitation programs fail to achieve the performance standards established in this Section, the person responsible for the system's operation may, in lieu of performing additional rehabilitation, submit a cost-benefit analysis which analyzes the feasibility of performing additional rehabilitation to achieve said performance standards. If the Director or the Director's designee determines that there is no technically feasible, economically reasonable means of compliance, then no further rehabilitation shall be required during the current cycle. 
+
+(b)  Where an evaluation pursuant to this Section indicates that a private lateral is a source of infiltration or inflow, or both, to a utility or non-utility owned or operated sanitary sewer, the utility or non-utility shall report to the Director or the Director's designee the source of the infiltration or inflow within thirty (30) days from the date of discovery of said discharges. The property owner shall repair or replace the portion of private lateral which is the source of infiltration or inflow, or both, within ninety (90) days of notification. The Director or the Director's designee shall commence enforcement actions, if required, to cause the cessation of the infiltration or inflow. 
+
+(c)  Each utility or non-utility owned or operated sanitary sewer system shall provide the following reports to the Director or the Director's designee: 
+
+(i)  The daily average pump station operating time and the multiple and variable speed daily average pump station power consumption, as applicable, for each pump station in the sanitary sewer system shall be reported to the Director or the Director's designee on a monthly basis no later than fourteen (14) calendar days after the end of the preceding monthly reporting period. The report shall be in such form as prescribed by the Director or the Director's designee. The report shall include an explanation for any single event, Act of God, or other documentable reason which leads to excessive pump station operating time or power consumption. The Director or Director's designee may exclude such data from the nominal average pump operating time calculations. 
+
+(ii)  The existence of stormwater discharges into any utility or non-utility owned or operated sanitary sewer collection system shall be reported to the Director or the Director's designee within thirty (30) days from the date of discovery of said discharges. All stormwater discharges into sanitary sewers shall be corrected within six (6) months of discovery. The status of corrective actions to eliminate stormwater discharges into any sanitary sewer collection system shall be reported to the Director or the Director's designee semiannually, January 1 and July 1 of each year, by the person responsible for the operation of said system. 
+
+(iii)  An annual report documenting all completed sewer system evaluations and rehabilitation work, as well as a schedule for any proposed rehabilitation work shall be submitted to the Director or the Director's designee no later than sixty (60) days after the end of each calendar year. 
+
+(4)  Utility and non-utility identification requirements. 
+
+(a)  Each pump in each and every pump station shall be provided with a properly functioning meter, which measures either elapsed pump operating time or power consumption for each pump station or the equivalent thereof as approved by the Director or the Director's designee. 
+
+(b)  All pump stations shall be clearly marked with the identification number for the pump station and a 24-hour contact phone number for the operator of the pump station. 
+
+(5)  Requirements for non-utility pump stations. 
+
+(a)  All pump stations shall be inspected not less than quarterly, by duly licensed professionals in the relevant fields or trades, for the purpose of identifying any equipment malfunction and physical deficiencies that could lead to equipment malfunctions. All persons operating any and all sanitary sewer pump stations shall complete the correction of all equipment malfunctions and physical deficiencies that could lead to equipment malfunctions identified during the pump station inspections no later than six (6) months after the date during which the inspection was completed. If an equipment malfunction or physical deficiency causes or contributes to an overflow condition, correction or repair of the malfunction or deficiency shall be completed no later than sixty (60) days from the date that the overflow condition is identified. 
+
+(b)  In the event that the person responsible for the operation of any sanitary sewer pump station determines that a pump station which has caused or contributed to an overflow condition, should be upgraded, rather than repaired as set forth in this Section, said person shall, within thirty (30) days of the date the overflow condition is identified, submit to the Director or the Director's designee for approval a plan for the upgrade along with a proposed schedule of implementation. 
+
+(c)  All sanitary sewer collection systems shall be maintained in a manner so as to prevent or minimize the possibility of overflows. 
+
+(d)  All sanitary sewer collection systems shall have a written maintenance plan including, but not limited to, inspection procedures, preventative maintenance schedules, corrective maintenance procedures, and reporting procedures. 
+
+(e)  All pump stations shall, at a minimum, contain fully operable alarm or monitoring equipment which reports the following information: 
+
+(i)  High water level alarms in wet wells; 
+
+(ii)  Pump station power failures. 
+
+(f)  All system operators shall monitor their systems in a manner that allows sufficient response time to correct the detected problem prior to overflow occurring and to minimize the extent of an overflow. 
+
+(6)  Electronic Atlas. Each utility shall provide an electronic sanitary sewer system atlas, in a format compatible with Miami-Dade County Water and Sewer Department's electronic atlas and approved by the Director or the Director's designee, which shall be submitted to the Director or the Director's designee no later than January 6, 2016. The electronic atlas shall include delineation of all pump station basins (i.e., sewer service areas) and pump station locations (including X,Y coordinates); pump station specifications, which at a minimum shall include number of pumps, horsepower and pump drive type for each pump, flow rate and total dynamic head at rated operating point; emergency power supply; all gravity sewer lines, including diameter, material, and year installed; manholes and siphons with all inverts and rim elevations; force mains, including diameter, material, and year installed; valves, including air release, check, and isolating (plug, gate, butterfly, and ball valves); flow meters and other items as may be determined by the Director or the Director's designee. 
+
+Updates to the electronic atlas shall be submitted to the Director or the Director's designee annually. If no changes have been made to the WCTS, the Utility shall certify to the Department that no changes have been made during the previous year. 
+
+(7)  Collection and transmission system model. All utility owned or operated sanitary sewer collection systems shall participate in a County-wide, regional computerized collection and transmission system model or models to: i) assist in the development and implementation of operation and maintenance procedures to optimize transmission capacity within the collection system; and ii) evaluate the impact of infiltration and inflow rehabilitation programs, proposed system modifications, upgrades and expansions to the transmission capacity and performance of the collection system. The model or models for each collection and transmission system shall be updated at intervals of no more than five (5) years. The model for each utility shall be capable of predicting, during conditions of expected peak flow, the flow in each force main and major gravity main, the hydraulic pressure at any point in any force main, the flow capacity at each pump station with and without the backup pump, the peak pumping rate at each station, and the likelihood and location of SSOs and surcharged conditions where the backup pump is out of service. The design and development and subsequent updates of the model or models required herein shall be approved by the Director or the Director's designee prior to implementation. 
+
+(8)  CMOM requirements for utilities. CMOM requirements set forth herein shall apply to all utilities, except that for requirements other than those of Sections 24-42.2(3)(a) and 24-42.2(9)(a), where a utility is required to implement CMOM requirements under a U.S. E.P.A. Consent Decree, the utility shall adhere to the requirements and timeframes stipulated by the U.S. E.P.A. Consent Decree until such time that the U.S. E.P.A. CMOM requirement is terminated or the U.S. E.P.A. Consent Decree is terminated. Upon U.S. E.P.A. CMOM requirement termination or Consent Decree termination, the utility shall continue to implement the requirements of the U.S. E.P.A. approved CMOM requirements as enforceable requirements of this section and shall be reviewed and updated annually by the utility and submitted as a CMOM Plan to the Director on or before February 15 of each year. If the utility proposes no changes, the utility shall submit a letter of no changes to the Director on or before February 15. The Director or Director's designee shall approve, approve with conditions or disapprove the CMOM Plan. If the Director or Director's designee disapproves the CMOM Plan, the utility shall resubmit the corrected CMOM Plan within sixty (60) days of disapproval notification. 
+
+Within one hundred and eighty (180) days of the effective date of this Section, each utility shall submit to the Department an approvable Plan of Compliance for the implementation of a CMOM program that shall include all the requirements set forth in Section 24-42.2(9) through (14). All of the staffing requirements not otherwise noted in Section 24-42.2(9) through (14), shall be satisfied within three hundred and sixty-five (365) days of the Director or Director's designee approving the Plan of Compliance. 
+
+If the Director or Director's designee disapproves the Plan of Compliance, the utility shall resubmit the corrected Plan of Compliance within sixty (60) days of notification. If the resubmitted Plan of Compliance is disapproved by the Director or Director's designee, the utility shall resubmit the corrected Plan within thirty (30) days of disapproval notification. If the utility does not provide the required documents within the times noted, or if the second resubmittal is determined to be inadequate, or the utility does not implement the actions proposed in a timely manner, the utility shall be determined to be nonresponsive. The Director or Director's designee shall not issue any certification of adequate transmission and treatment capacity for new additional sewage flow for any facility served by a utility determined to be nonresponsive. Once the Plan of Compliance is approved by the Director or the Director's designee, the utility shall implement the Plan of Compliance according to the schedules provided in Section 24-42.2(9) through (14) or as provided in the Plan of Compliance approved by the Director or the Director's designee. 
+
+(9)  Sewer Overflow Response Plan (SORP). All utilities shall develop and maintain a SORP requiring, at a minimum, the following: 
+
+(a)  Whenever a Sanitary Sewer Overflow (SSO) is identified, the utility shall provide the following reports: 
+
+(i)  Within four (4) hours of the utility's discovery of a SSO, the utility shall verbally report all SSOs to the Department's emergency phone number, providing the following information: location and source of the SSO, whether the release is ongoing, whether the release has reached surface water, and the estimated flow rate or total discharge. 
+
+(ii)  Within twenty-four (24) hours of the utility's discovery of a SSO reaching waters of the United States or the State, or a SSO equal to or exceeding one thousand (1,000) gallons, or a SSO that will reasonably be expected to endanger public health or the environment, the utility shall verbally report the SSO to the FDEP by way of the State Warning Point Hotline, noting the location and volume of the overflow. 
+
+(iii)  Within five (5) days of the utility's discovery of a SSO, the utility shall provide to the Department a written report containing the following: 
+
+1.  The location of the SSO by street address, or any other appropriate method (i.e., latitude-longitude); and 
+
+2.  The estimated date and time when the SSO began and stopped, or, if it is still an active SSO, the anticipated time to stop the SSO; and 
+
+3.  All steps taken to respond to the SSO; and 
+
+4.  The name of the receiving water, if applicable; and 
+
+5.  An estimate of the volume (in gallons) of the sewage spilled; and 
+
+6.  A description of the WCTS component from which the SSO was released (such as manhole, crack in pipe, pump station wet well or constructed overflow pipe); and 
+
+7.  Subject to available information, an estimate of the SSO's impact on public health and to water quality in the receiving water body; and 
+
+8.  The cause(s) or suspected cause(s) of the SSO; and 
+
+9.  The date of the last SSO at the same point; and 
+
+10.  All steps taken or to be taken to reduce, prevent, or eliminate reoccurrence of the SSO; and 
+
+11.  A list of all notifications to the public and other agencies or departments; and 
+
+12.  All steps taken or to be taken to clean up any surfaces that have been in contact and/or contaminated by the SSO. 
+
+If the SSO reaches waters of the United States or the State, or exceeds 1,000 gallons, or will reasonably be expected to endanger public health or the environment, the written report shall also be sent to the FDEP. 
+
+(iv)  Each utility shall provide a report to the Director or the Director's designee, within ninety (90) days of the start of the event, detailing all steps taken to prevent a reoccurrence of the event, including work order records from investigation and repair activities related to the SSO, and a list and description of complaints from customers or others regarding the SSO. 
+
+(b)  Each utility shall maintain, for not less than five (5) years, all records associated with each SSO. The implementation of the required records program shall be completed within six (6) months of approval of the Plan of Compliance. 
+
+(c)  Each utility shall provide and maintain a set of procedures for anticipated response to all SSOs to stop the SSO, repair the damaged component that caused the SSO, minimize the environmental impact, and minimize the chance of injury and health risk of SSOs. These procedures shall include, at a minimum, the following: 
+
+(i)  A detailed description of actions the utility will undertake to immediately provide notice to the public (through the local news media or other means including signs or barricades to restrict access) of a SSO; and 
+
+(ii)  A detailed description of actions the utility will undertake to provide notice to appropriate local, state, and federal agencies/authorities; and 
+
+(iii)  A detailed plan (including the development of responsive standard operating procedures) to minimize the volume of untreated wastewater transmitted to the portion of the WCTS impacted by the events precipitating the SSO to minimize the overflow volume; and 
+
+(iv)  A detailed description of the utility's response to building backups, including the time frame for responses and the measures to be taken to clean up building backups caused by conditions in the utility's sewer system, including procedures necessary to disinfect and/or remove items potentially contaminated by building backups. This shall also include a description of the utility's follow-up process to insure adequacy of cleanup. 
+
+(d)  Each utility shall maintain a detailed plan of the resources to be used to correct or repair the conditions causing or contributing to the SSO. 
+
+(e)  Each utility shall maintain a detailed plan to ensure its preparedness to respond to a SSO, including response training of utility employees and personnel of other affected agencies necessary for effective implementation of the SORP in the event of a SSO, and establish procedures and provide adequate training to response personnel to estimate SSO volumes. The required training shall be completed within six (6) months of approval of the Plan of Compliance, and a description of the training completed shall be included in the annual CMOM report described in Section 24-42.2(15). 
+
+(f)  Each utility shall maintain a list of those SSO locations within the area of the WCTS served by each pump station that have been recorded as overflowing more than once within the previous twelve (12) month period and/or those locations at which a SSO is likely to occur first in the event of a failure at the pump station. 
+
+(g)  Each utility shall maintain a description of pump station emergency bypass/pump-around strategies and procedures. 
+
+(h)  Each utility shall provide an active public contact point, available twenty-four (24) hours a day for reporting overflows, with an established plan for activating a response to the overflow. Pump stations shall be marked with a twenty-four (24) hour contact number to report overflows and other problems. 
+
+(i)  Each utility shall develop and maintain a rain event inspection route for inspections of known potential points of overflow. Locations shall be selected based on system construction and historical data (e.g., Rain Derived Infiltration Inflow (RDII), SSOs, and areas subject to stormwater and/or tidal flooding). The rain event inspection routes shall be created and submitted to the Director or the Director's designees within six (6) months of the approval of the Plan of Compliance. 
+
+(10)  Information Management System (IMS). All utilities shall develop and maintain an IMS requiring, at a minimum, the following: 
+
+(a)  System component and functions: 
+
+(i)  A management component to provide utility managers with guidance and instruction to adequately evaluate operations, personnel training and history, maintenance, customer service and sewer system rehabilitation activities so that overall sewer system performance can be determined and utility planning can be conducted. Management reports and standard management forms shall be used. 
+
+(ii)  An operations function to provide utility managers and field supervisors with guidance to adequately track scheduled operational activities and to enhance operational performance. This component shall use operating reports, with standard operation forms for field personnel and shall provide for field supervisor review. 
+
+(iii)  A maintenance function to provide utility managers and field supervisors with guidance to adequately track scheduled maintenance activities and enhance maintenance performance. This component shall use maintenance reports, with standard maintenance forms for field personnel and shall provide for field supervisor review. 
+
+(iv)  The IMS programs shall be implemented within one year of approval of the Plan of Compliance. A summary, demonstrating that the IMS programs have been fully implemented, shall be submitted to the Department within eighteen (18) months of approval of the Plan of Compliance and thereafter included in the CMOM report. 
+
+(b)  A description of information that will be entered into the system, and how it will be entered and recorded. 
+
+(c)  A description of the management and work reports that will be generated from inputted data, including examples and frequency for review of the reports. 
+
+(d)  A set of standard forms to be used by field and management personnel. 
+
+(e)  A description of how the records will be maintained. 
+
+(f)  A description of the computer software to be utilized for the system and cited references for software training and procedures for utilizing the software. 
+
+(g)  A Geographic Information System (GIS) map for the entire WCTS using software compatible with the GIS system used by Miami-Dade County, and a program for keeping the data current in this system, including as-built drawings and information, in an electronic format compatible with the GIS system used by Miami-Dade County which shall be made available to the Department by January 6, 2017, and annually thereafter. In addition to storing and displaying the existing WCTS data, the system shall, at a minimum, include the following capabilities: 
+
+(i)  As-built drawings and information, including new and corrected asset attribute data. 
+
+(ii)  A streamlined data entry process for new assets, including electronic as-built data and necessary standards so that all new assets are added to the GIS system within ninety (90) calendar days of their activation in the field. 
+
+(iii)  The GIS shall interface with the hydraulic computer model used by the utility to model the WCTS to allow information to be efficiently exported to the model. 
+
+(iv)  Provide a flagging process for investigators to note GIS inaccuracies. 
+
+(v)  Provide for additional GIS training and refresher training. 
+
+(vi)  Determination of all manhole rim elevations and sewer inverts at connections to manholes and pump stations and their inclusion into GIS via suitable as-built drawings, or GPS or traditional surveying field measurements. 
+
+(h)  Development and implementation of performance indicators to provide utility managers with guidance to adequately evaluate data collected in the IMS for use in determining the condition of the sewer system and an evaluation of the utility's CMOM program. Performance indicators shall include, without limitation, the linear footage of gravity sewer line and force main inspections, the linear footage of gravity sewers cleaned, the number of manholes inspected, the number of manholes cleaned/maintained, the number of inverted siphons inspected, the number of inverted siphons cleaned/maintained, the number of SSOs per mile of gravity sewer, the number of SSOs per mile of force main, the number of SSOs per pump station, per capita wastewater flow, and such other performance indicators as the utility may suggest and the Department approve. 
+
+(i)  Maintenance activity tracked by type (corrective, preventative, and emergency). 
+
+(11)  Sewer System Asset Management Plan (SSAMP): All utilities shall develop and maintain an Asset Management Program requiring, at a minimum, the following: 
+
+(a)  A Current Condition Assessment of all Sewer System components shall be performed every five (5) years, including, but not limited to, pump station components, gravity sewer lines, manholes, siphons, aerial crossings, and force mains. Data gathered from the latest round of Infiltration/Exfiltration/Inflow (I/E/I) sewer assessments may be used as a baseline conditional assessment to meet this component for the first year. For future years, the evaluation shall be done according to the practices described in sections 24-42.2(12) through (14). 
+
+(b)  A statement of the Level of Service (LOS) the utility intends to provide the customers it serves. 
+
+(c)  Identification of Critical Assets within the sewer system that are absolutely necessary to have in service to maintain the developed LOS. This list shall be evaluated and updated as necessary at intervals of no more than five (5) years. 
+
+(d)  Identification of minimum Life Cycle Cost (LCC) for each critical asset using Generally Acceptable Accounting Principles with all assumptions noted. The calculations of minimum LCC for each critical asset shall be repeated at intervals of no more than three (3) years. 
+
+(e)  A long-term funding plan to fully implement and pay for all identified LCCs for each critical asset. The long-term funding plan shall include all potential sources of revenue and the likelihood of securing funding from each source. Long term evaluation of costs and funding shall be done according to currently recognized accounting practices. The Department shall be immediately notified of any changes in the availability or disposition of any revenue sources. The long-term funding plan shall be submitted to the Department for review and approval within one year of approval of the Plan of Compliance and thereafter included in the annual CMOM report. 
+
+(12)  Gravity Sewer System Operation and Maintenance (O&M) Program: Each utility shall develop and maintain a gravity sewer system O&M program to address SSOs and blockages, particularly those caused by fats, oils and grease, roots, and debris. The program shall, at a minimum, include the following: 
+
+(a)  Written preventative O&M schedules and procedures which shall be scheduled appropriately and shall include, but not be limited to: 
+
+(i)  Inspection and maintenance of all gravity sewers, manholes, and inverted siphons. 
+
+(ii)  Identification and documentation of gravity sewers, manholes, and inverted siphons condition, including grease, roots, and debris accumulation. 
+
+(iii)  Identification of maintenance needs. 
+
+(iv)  Scheduling preventative maintenance work and cleaning which the utility may schedule in connection with the force main assessment program or the force main rehabilitation/replacement program. 
+
+(b)  Engineering evaluation of potential sulfide and corrosion control options and control of other forms of deterioration which shall include potential problems and control options including a recommendation of preferred control methods. The engineering evaluation of required corrosion controls shall be completed and a report summarizing the findings and recommendations shall be submitted to the Department within one year of the approval of the Plan of Compliance. 
+
+(c)  Prioritization for evaluation of gravity sewers based on size of pipe, locations of past SSOs, community input or other appropriate criteria. The prioritization for evaluation of the gravity sewers shall be completed and submitted to the Department within six (6) months of the approval of the Plan of Compliance. 
+
+(d)  Inspection of gravity sewers, manholes, inverted siphons and easements, including inspection of river/creek/canal crossings, stream bank encroachment toward sewers, easement accessibility, including the need to control vegetative growth or encroachment of man-made structures or activities that could threaten the integrity of the affected gravity sewers, manholes, or inverted siphons. Inspections shall include written reports and photographic/video records where appropriate. Inspectors shall promptly report any evidence of past SSOs. Any observed SSO shall be promptly reported in accordance with the SORP. 
+
+(e)  A schedule for the maintenance of easements. 
+
+(f)  A staffing and funding plan sufficient in structure, skills, numbers and funding to allow completions of the operation and maintenance activities required by this Section. The staffing requirements for the collection system O&M shall be met within six (6) months of the approval of the Plan of Compliance. A staffing report, demonstrating that the staffing requirements have been met, shall be submitted to the Department within one year of the approval of the Plan of Compliance and thereafter included in the annual CMOM report. 
+
+(g)  Data attributes for the mapping program allowing program data to be compared in the IMS against other pertinent data such as the occurrence of SSOs, including repeat SSO locations and permit violations. 
+
+(h)  An inventory management system that includes: 
+
+(i)  A list of all critical equipment and critical spare parts, identifying each as stored by the utility or not stored by the utility; and 
+
+(ii)  A list identifying where critical equipment and critical spare parts that are not stored by the utility may be secured to allow for timely repairs; and 
+
+(iii)  Written procedures for annually updating the critical equipment and spare parts inventories in the inventory management system. 
+
+(i)  Monthly reports which list equipment problems and the status of work orders generated during the previous month. 
+
+(j)  Storm event preparation and recovery plan. 
+
+(13)  Pump Station Operations and Preventative Maintenance Program: Each utility shall develop and maintain a pump station operations and preventive maintenance program to facilitate proper operation and maintenance activities associated with pump stations within the WCTS. The program shall, at a minimum, include the following: 
+
+(a)  Identification of the means and modes of communication between pump stations, field crews, and supervising staff. 
+
+(b)  Technical specifications for each pump station within the utility WCTS including, at a minimum: number of pumps, horsepower and operating point of pumps, manufacturer and model and serial numbers for pumps, voltage and full load current for motors, pump speed(s), type and description of station controls, station type, type and size of station valves, generator type, if present, including prime mover, kilowatt rating, fuel type and capacity, and nominal voltage. 
+
+(c)  A description of the monitoring system for each pump station which shall continuously monitor, report, and transmit information for each pump station. All utility owned or operated sanitary sewer collection systems shall be continuously monitored and recorded at a central location via a SCADA system, or equal. All pump stations shall report a minimum of high water level, power failure, low battery voltage, and remote signal failure. Pump stations with dry wells or pumps larger than twenty-five (25) horsepower shall also report operating hours after midnight, pump starts, wet well level, high and low level alarm set points, kilowatt power usage based on pump amperage, instantaneous and average station flow based on flow meter or calculated from pump amperage and discharge pressure, discharge pressure, high and low pressure alarm set points, intrusion alarm, and drywell flooding at drywell stations. 
+
+(d)  Written preventative operations and maintenance schedules and procedures which shall be scheduled not less than monthly and shall include, but not be limited to: 
+
+(i)  Written procedures for periodic service and calibration of instrumentation such as sensors, alarm systems, and remote monitoring equipment. 
+
+(ii)  Predictive inspection and service for all pump stations including, but not limited to: 
+
+1.  Reading and maintaining records from elapsed time meters and pump start counters; and 
+
+2.  Observing and documenting wet well conditions. 
+
+3.  Checking and resetting as necessary system operating points. 
+
+4.  Checking and maintaining records of system pressure. 
+
+5.  Checking pump station SCADA system. 
+
+6.  Checking stand-by power sources. 
+
+7.  Checking motor electrical systems including, but not limited to, phase line voltages, quarterly checks of motor phase current draw and winding resistance; and 
+
+8.  Identifying maintenance needs. 
+
+(e)  Written standard emergency and reactive O&M procedures. The utility may use portable pumps, portable generators, or alternate power sources as it deems appropriate. The procedures shall, at a minimum, include: 
+
+(i)  Criteria used to determine the need for emergency operations and maintenance. 
+
+(ii)  Initiation/use of stand-by power or portable pumps, where applicable. 
+
+(iii)  Evaluation of the need for additional equipment for emergency or reactive operations including, but not limited to, additional generators and portable pumps (for pump around operations). 
+
+(iv)  Evaluation of the need for on-site standby power for each pump station. 
+
+(v)  Establishment of standard forms, reporting procedures and performance measures for emergency and reactive operations and maintenance. 
+
+(f)  Inventory Management System: Each utility shall provide an inventory management system that includes: 
+
+(i)  A list of all critical equipment and critical spare parts, identifying whether each is stored by the utility or not stored by the utility. 
+
+(ii)  A list identifying where critical equipment and critical spare parts that are not stored by the utility may be secured to allow for timely repairs. 
+
+(iii)  Written procedures for annually updating the critical equipment and spare parts inventories in the inventory management system. 
+
+(g)  Monthly reports which list equipment problems and the status of work orders generated during the previous month. 
+
+(h)  A staffing and funding plan sufficient in structure, skills, numbers and funding to allow completions of the operation and maintenance activities required by this Section. The listing of required resource commitments including staffing, contractual support and equipment shall be submitted to the Department for review and approval within six (6) months of the Director or the Director's designee approval of the Plan of Compliance and shall thereafter be included in the annual CMOM report. 
+
+(i)  Storm event preparation and recovery plan. 
+
+(14)  Force Main Operations, Preventative Maintenance and Assessment/Rehabilitation Program. Each utility shall develop and maintain a force main operations, preventive maintenance and assessment/rehabilitation program to facilitate proper operation and maintenance activities associated with force mains within the WCTS. The program shall include, at a minimum, the following: 
+
+(a)  Analysis of all utility force mains including an evaluation of corrosion and sulfide control options which shall include potential problems and corrosion control options including recommendations of preferred corrosion control methods. 
+
+(b)  Inspection of force mains and easements, including inspection of river/creek/canal crossings, bank encroachment toward sewers, easement accessibility including control of vegetative growth and man-made structures. Inspections shall include written reports and photographic/video records where appropriate, and shall include any evidence of past SSOs. Any observed SSO shall be promptly reported in accordance with the SORP. 
+
+(c)  A schedule and procedures for the maintenance of easements. 
+
+(d)  A staffing and funding plan sufficient in structure, skills, numbers and funding to allow completions of the operation and maintenance activities required by this Section. The listing of required resource commitments including staffing, contractual support and equipment shall be submitted to the Department for review and approval within six (6) months of the approving the Plan of Compliance and thereafter included in the annual CMOM report. 
+
+(e)  Inventory Management System: Each utility shall provide an inventory management system that includes: 
+
+(i)  A list of all critical equipment and critical spare parts, identifying whether each is stored by the utility or not stored by the utility. 
+
+(ii)  A list identifying where critical equipment and critical spare parts that are not stored by the utility may be secured to allow for timely repairs. 
+
+(iii)  Written procedures for annually updating the critical equipment and spare parts inventories in the inventory management system. 
+
+(f)  Monthly reports which list equipment problems and the status of work orders generated during the previous month. 
+
+(g)  A force main criticality assessment of the structural integrity of all utility force mains and the risk of critical failure to prioritize further assessment and/or rehabilitation/replacement. The assessment shall be based on previous assessment of the structural integrity of the force main, size, age, pipe material of the force main, length of the force main and availability of the nearest WCTS component which could handle flows from that force main in the event of failure, the operating pressure in the force main during peak flow events, and the availability of new pipe in the event of failure. 
+
+(h)  A force main prioritization report providing the result of the utility's force main criticality assessment, including a prioritized schedule for the implementation of the force main assessment program. The force main prioritization report shall be submitted to the Director or the Director's designee for review and approval. 
+
+(i)  A force main assessment program in accordance with the schedule set forth in the force main prioritization report. At a minimum, the force main assessment program shall include: 
+
+(i)  Standard procedures and schedule for continual above-ground assessment of each force main in the WCTS, including standard forms for the visual assessment of force main routes and guidelines for assessment of unusual conditions, and 
+
+(ii)  Standard procedures and schedule for continual assessment of each force main in the WCTS where it crosses a surface water body or drainage way. This section shall include standard forms for the visual assessment of force main routes and above ground conditions that may show structural or leakage issues with the force main, and 
+
+(iii)  Standard procedures and schedules for inspecting and identifying force mains that are corroded or at risk of corrosion or other degradation, including a system for prioritizing repair of corrosion defects and corrosion identification forms, and 
+
+(iv)  Standard procedures and schedules for monitoring existing cathodic protection measures on existing force mains, and detailed cathodic protection requirements for any newly installed force mains, and 
+
+(v)  Standard procedures and schedules for implementing acoustic monitoring of the utility force mains including leak detection, acoustic monitoring for wire-breaks in prestressed concrete cylinder pipe, and sonar or ultrasonic monitoring for pipe defect analysis. Any information from this testing shall be used to establish a list of potential corrosion problems and need for rehabilitation of the force main to prevent future failures and SSO, and 
+
+(vi)  Criteria for use of ground-penetrating radar to determine leaks, force main bedding conditions and/or force main bedding voids, and 
+
+(vii)  Assessment of the feasibility and need of installation of parallel force mains to provide continuity of service in the event of a force main determined by the utility to be highly critical. Highly critical force mains include, but are not limited to, 24-inch diameter or larger force mains that, in the event of a failure, pose a significant impact to the environment, public health or safety, or economy, or any combination of those matters, as a result of not being able to be isolated, bypassed, or repaired before said impacts occur. 
+
+(j)  A force main rehabilitation/replacement program which shall include, at a minimum, the following: 
+
+(i)  Standard procedures for repairing each force main in the WCTS that is deemed to be in need of repair pursuant to the force main prioritization report and/or force main assessment program. Repair technologies shall include, but not be limited to, open cut replacement of section(s) of pipe, spot repairs using cured-in-place pipe, mechanical sleeves or repair clamps, or joint repairs using internal sleeves or external devices. 
+
+(ii)  Standard procedures for rehabilitating each force main in the WCTS that is deemed to be in need of rehabilitation pursuant to the force main prioritization report and/or force main assessment program. Rehabilitation technologies shall include, but not be limited to, spray-on linings, close fit linings, cured-in-place pipe, and woven hose linings. 
+
+(iii)  Standard procedures for replacing each force main in the WCTS that is deemed to be in need of replacement pursuant to the force main prioritization report and/or force main assessment program. Replacement technologies shall include, but not be limited to, open cut replacement of pipe, slip-lining, pipe bursting, directional drilling, and micro-tunneling/pipe jacking. 
+
+(k)  Storm event preparation and recovery plan. 
+
+(l)  The assessment of all the force mains in the utility WCTS shall be completed and a report summarizing the findings of the assessment and a plan to remedy all deficiencies shall be submitted to the Department within six (6) months of the approval of the Plan of Compliance, and within six months of each five (5) year anniversary of the date of the approval of the Plan of Compliance. All force main deficiencies discovered in each assessment shall be remedied within fifty-four (54) months of the due date of the respective assessment. 
+
+(15)  Annual CMOM Report. Each utility shall provide, by January 31 of each year, beginning in 2016, an approvable report describing changes needed to update the utility's CMOM program for the upcoming year. The report shall include, at a minimum, the current staffing in all positions, new work required to maintain the utility's WCTS, new capital work identified in the previous year, training carried out in the previous year, SSOs from the system during the previous year and corrective actions for the SSOs, pump station and mains determined to have inadequate capacity during the previous year, the corrective plans for those pump station and mains, any changes in the funding sources level and availability, how the funding requirements for the previous year were met, and expected funding requirements for the upcoming year. 
+
+(Ord. No. 04-214, §§ 1, 5, 12-2-04; Ord. No. 08-55, § 2, 5-6-08; Ord. No. 14-29, § 1, 3-4-14; Ord. No. 15-88, § 3, 9-1-15)

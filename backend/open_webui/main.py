@@ -369,6 +369,20 @@ from open_webui.config import (
     WEBUI_AUTH,
     WEBUI_NAME,
     WEBUI_BANNERS,
+    # RegOS Settings
+    REGOS_DISCLAIMER_ENABLED,
+    REGOS_DISCLAIMER_TITLE,
+    REGOS_DISCLAIMER_BODY,
+    REGOS_DISCLAIMER_ACCEPT_LABEL,
+    REGOS_GUEST_ENABLED,
+    REGOS_GUEST_MESSAGE_LIMIT,
+    REGOS_GUEST_GENERATION_LIMIT,
+    REGOS_GUEST_SESSION_TTL,
+    REGOS_GUEST_SHOW_BUTTON,
+    REGOS_CONFIDENCE_ENABLED,
+    REGOS_CONFIDENCE_STYLE,
+    REGOS_CONFIDENCE_HIGH_THRESHOLD,
+    REGOS_CONFIDENCE_MEDIUM_THRESHOLD,
     WEBHOOK_URL,
     ADMIN_EMAIL,
     SHOW_ADMIN_DETAILS,
@@ -1324,7 +1338,28 @@ app.state.MODELS = MODELS
 
 # Add the middleware to the app
 if ENABLE_COMPRESSION_MIDDLEWARE:
-    app.add_middleware(CompressMiddleware)
+    
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
+
+app.add_middleware(CompressMiddleware)
 
 
 class RedirectMiddleware(BaseHTTPMiddleware):
@@ -1367,7 +1402,49 @@ class RedirectMiddleware(BaseHTTPMiddleware):
         return response
 
 
+
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
+
 app.add_middleware(RedirectMiddleware)
+
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
+
 app.add_middleware(SecurityHeadersMiddleware)
 
 
@@ -1412,6 +1489,27 @@ class APIKeyRestrictionMiddleware:
 
         await self.app(scope, receive, send)
 
+
+
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
 
 app.add_middleware(APIKeyRestrictionMiddleware)
 
@@ -1471,6 +1569,27 @@ async def inspect_websocket(request: Request, call_next):
             )
     return await call_next(request)
 
+
+
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
 
 app.add_middleware(
     CORSMiddleware,
@@ -1535,7 +1654,28 @@ except ValueError as e:
     audit_level = AuditLevel.NONE
 
 if audit_level != AuditLevel.NONE:
-    app.add_middleware(
+    
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
+
+app.add_middleware(
         AuditLoggingMiddleware,
         audit_level=audit_level,
         excluded_paths=AUDIT_EXCLUDED_PATHS,
@@ -1626,6 +1766,38 @@ async def embeddings(request: Request, form_data: dict, user=Depends(get_verifie
         dict: OpenAI-compatible embeddings response.
     """
     # Make sure models are loaded in app state
+    # Guest rate limiting: cap chats AND generations per guest session
+    if user.role == "guest":
+        from open_webui.config import GUEST_MESSAGE_LIMIT
+
+        # 1. Chat limit (number of conversations)
+        guest_chats = Chats.get_chat_list_by_user_id(
+            user.id, include_archived=True, limit=GUEST_MESSAGE_LIMIT + 1
+        )
+        if len(guest_chats) >= GUEST_MESSAGE_LIMIT:
+            raise HTTPException(
+                status_code=429,
+                detail="Guest chat limit reached. Sign up for unlimited access.",
+            )
+
+        # 2. Generation limit (total AI responses across all chats)
+        gen_limit = request.app.state.config.REGOS_GUEST_GENERATION_LIMIT
+        if gen_limit and gen_limit > 0:
+            total_generations = 0
+            for c in guest_chats:
+                history = c.chat.get("history", {})
+                messages = history.get("messages", {})
+                if isinstance(messages, dict):
+                    total_generations += sum(
+                        1 for m in messages.values()
+                        if isinstance(m, dict) and m.get("role") == "assistant"
+                    )
+            if total_generations >= gen_limit:
+                raise HTTPException(
+                    status_code=429,
+                    detail=f"Guest generation limit ({gen_limit}) reached. Sign up for unlimited access.",
+                )
+
     if not request.app.state.MODELS:
         await get_all_models(request, user=user)
     # Use generic dispatcher in utils.embeddings
@@ -1639,6 +1811,38 @@ async def chat_completion(
     form_data: dict,
     user=Depends(get_verified_user),
 ):
+    # Guest rate limiting: cap chats AND generations per guest session
+    if user.role == "guest":
+        from open_webui.config import GUEST_MESSAGE_LIMIT
+
+        # 1. Chat limit (number of conversations)
+        guest_chats = Chats.get_chat_list_by_user_id(
+            user.id, include_archived=True, limit=GUEST_MESSAGE_LIMIT + 1
+        )
+        if len(guest_chats) >= GUEST_MESSAGE_LIMIT:
+            raise HTTPException(
+                status_code=429,
+                detail="Guest chat limit reached. Sign up for unlimited access.",
+            )
+
+        # 2. Generation limit (total AI responses across all chats)
+        gen_limit = request.app.state.config.REGOS_GUEST_GENERATION_LIMIT
+        if gen_limit and gen_limit > 0:
+            total_generations = 0
+            for c in guest_chats:
+                history = c.chat.get("history", {})
+                messages = history.get("messages", {})
+                if isinstance(messages, dict):
+                    total_generations += sum(
+                        1 for m in messages.values()
+                        if isinstance(m, dict) and m.get("role") == "assistant"
+                    )
+            if total_generations >= gen_limit:
+                raise HTTPException(
+                    status_code=429,
+                    detail=f"Guest generation limit ({gen_limit}) reached. Sign up for unlimited access.",
+                )
+
     if not request.app.state.MODELS:
         await get_all_models(request, user=user)
 
@@ -2281,8 +2485,50 @@ try:
             prefix=(f'{REDIS_KEY_PREFIX}:session:' if REDIS_KEY_PREFIX else 'session:'),
         )
 
-        app.add_middleware(SessionAutoloadMiddleware)
-        app.add_middleware(
+        
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
+
+app.add_middleware(SessionAutoloadMiddleware)
+        
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
+
+app.add_middleware(
             StarSessionsMiddleware,
             store=redis_session_store,
             cookie_name='owui-session',
@@ -2293,7 +2539,28 @@ try:
     else:
         raise ValueError('No Redis URL provided')
 except Exception as e:
-    app.add_middleware(
+    
+########################################
+#
+# REGOS
+#
+########################################
+
+app.state.config.REGOS_DISCLAIMER_ENABLED = REGOS_DISCLAIMER_ENABLED
+app.state.config.REGOS_DISCLAIMER_TITLE = REGOS_DISCLAIMER_TITLE
+app.state.config.REGOS_DISCLAIMER_BODY = REGOS_DISCLAIMER_BODY
+app.state.config.REGOS_DISCLAIMER_ACCEPT_LABEL = REGOS_DISCLAIMER_ACCEPT_LABEL
+app.state.config.REGOS_GUEST_ENABLED = REGOS_GUEST_ENABLED
+app.state.config.REGOS_GUEST_MESSAGE_LIMIT = REGOS_GUEST_MESSAGE_LIMIT
+app.state.config.REGOS_GUEST_GENERATION_LIMIT = REGOS_GUEST_GENERATION_LIMIT
+app.state.config.REGOS_GUEST_SESSION_TTL = REGOS_GUEST_SESSION_TTL
+app.state.config.REGOS_GUEST_SHOW_BUTTON = REGOS_GUEST_SHOW_BUTTON
+app.state.config.REGOS_CONFIDENCE_ENABLED = REGOS_CONFIDENCE_ENABLED
+app.state.config.REGOS_CONFIDENCE_STYLE = REGOS_CONFIDENCE_STYLE
+app.state.config.REGOS_CONFIDENCE_HIGH_THRESHOLD = REGOS_CONFIDENCE_HIGH_THRESHOLD
+app.state.config.REGOS_CONFIDENCE_MEDIUM_THRESHOLD = REGOS_CONFIDENCE_MEDIUM_THRESHOLD
+
+app.add_middleware(
         SessionMiddleware,
         secret_key=WEBUI_SECRET_KEY,
         session_cookie='owui-session',
