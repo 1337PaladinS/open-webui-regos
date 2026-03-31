@@ -51,6 +51,7 @@ DRY_RUN="${DRY_RUN:-false}"
 CREATE_MODEL="${CREATE_MODEL:-true}"
 SETUP_GROUPS="${SETUP_GROUPS:-false}"
 REGOS_CONFIGURE="${REGOS_CONFIGURE:-false}"
+MODULES="${MODULES:-}"  # chapter24, opalocka, or both
 
 # ─── Parse CLI arguments ──────────────────────────────────────────────
 SINGLE_STEP=""
@@ -69,6 +70,7 @@ while [[ $# -gt 0 ]]; do
     --setup-groups) SETUP_GROUPS=true; shift ;;
     --interactive) INTERACTIVE=true; shift ;;
     --configure)   REGOS_CONFIGURE=true; shift ;;
+    --modules)     MODULES="$2"; shift 2 ;;
     --help|-h)
       echo "Usage: ./install.sh [OPTIONS]"
       echo ""
@@ -76,6 +78,10 @@ while [[ $# -gt 0 ]]; do
       echo "  --container NAME    Docker container name (default: open-webui)"
       echo "  --api-url URL       Open WebUI API URL (default: http://localhost:3000)"
       echo "  --token TOKEN       JWT or API key for authentication"
+      echo "  --modules MODULE    Regulatory module(s) to install:"
+      echo "                        chapter24  — Chapter 24 (Miami-Dade Environmental)"
+      echo "                        opalocka   — Opa-Locka (Municipal Code)"
+      echo "                        both       — Install both modules"
       echo "  --step N            Run only step N (e.g., 05)"
       echo "  --dry-run           Preview without making changes"
       echo "  --verbose           Enable debug output"
@@ -109,11 +115,32 @@ if [[ "$INTERACTIVE" == "true" ]]; then
     read -rp "API Token: " OPENWEBUI_TOKEN
   fi
 
+  if [[ -z "$MODULES" ]]; then
+    echo ""
+    echo "Which regulatory module(s) do you want to install?"
+    echo "  1) Chapter 24      — Miami-Dade Environmental Regulations"
+    echo "  2) Opa-Locka       — Municipal Code of Ordinances"
+    echo "  3) Both"
+    echo ""
+    read -rp "Select [1/2/3]: " module_choice
+    case "$module_choice" in
+      1) MODULES="chapter24" ;;
+      2) MODULES="opalocka" ;;
+      3) MODULES="both" ;;
+      *) log_warn "Invalid choice — defaulting to 'both'"; MODULES="both" ;;
+    esac
+  fi
+
   read -rp "Create custom model? [Y/n]: " input
   [[ "${input,,}" == "n" ]] && CREATE_MODEL=false
 
   read -rp "Setup user groups? [y/N]: " input
   [[ "${input,,}" == "y" ]] && SETUP_GROUPS=true
+fi
+
+# ─── Default modules to 'both' if not set ─────────────────────────────
+if [[ -z "$MODULES" ]]; then
+  MODULES="both"
 fi
 
 # ─── Load step scripts ────────────────────────────────────────────────
@@ -123,7 +150,7 @@ done
 
 # ─── Export for step scripts ──────────────────────────────────────────
 export CONTAINER_NAME OPENWEBUI_URL OPENWEBUI_TOKEN VERBOSE DRY_RUN
-export CREATE_MODEL SETUP_GROUPS INSTALLER_DIR REGOS_CONFIGURE
+export CREATE_MODEL SETUP_GROUPS INSTALLER_DIR REGOS_CONFIGURE MODULES
 
 # ─── Run ──────────────────────────────────────────────────────────────
 START_TIME=$(date +%s)

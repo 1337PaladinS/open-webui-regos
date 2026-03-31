@@ -2,7 +2,12 @@
 
 Standalone installer for **RegOS** (Regulatory Compliance Copilot) — deploys onto stock Open WebUI with a single command. No fork required.
 
-RegOS transforms Open WebUI into a regulatory compliance assistant powered by Graph-RAG retrieval against Miami-Dade Chapter 24, automated threshold evaluation against 96 regulatory limits, tamper-evident audit logging, and confidence-scored responses with escalation workflows.
+RegOS transforms Open WebUI into a regulatory compliance assistant powered by Graph-RAG retrieval, automated threshold evaluation, tamper-evident audit logging, and confidence-scored responses with escalation workflows.
+
+RegOS supports multiple regulatory modules that can be installed independently or together:
+
+- **Chapter 24** — Miami-Dade Environmental Regulations (96 regulatory thresholds, wastewater/stormwater/industrial compliance)
+- **Opa-Locka** — City of Opa-Locka Code of Ordinances and Land Development Regulations (municipal code, zoning, ethics, business licensing)
 
 ## Quick Start
 
@@ -42,14 +47,15 @@ The source patcher is idempotent — safe to re-run on already-patched source.
 
 | Component | Description |
 |---|---|
-| **graphrag_filter** | Core filter — Graph-RAG retrieval, color-coded confidence banners, threshold evaluation, escalation, guardrails |
+| **graphrag_filter_chapter24** | Graph-RAG filter for Chapter 24 — Miami-Dade environmental regulatory retrieval, threshold evaluation, guardrails |
+| **graphrag_filter_opalocka** | Graph-RAG filter for Opa-Locka — municipal code retrieval, role entity traversal, cross-reference expansion |
 | **audit_logger** | Tamper-evident audit trail with SHA-256 hashing |
 | **threshold_eval** | Standalone threshold evaluation against 96 Chapter 24 limits |
 | **regulatory_thresholds.json** | 96 regulatory thresholds from Miami-Dade Chapter 24 |
 | **concepts.json** | Knowledge graph ontology definitions |
 | **apas_metric_mappings.json** | APAS telemetry sensor-to-regulation mappings |
 | **Demo scripts** | Hash verification, record display, tamper simulation |
-| **Custom model** | "RegOS Compliance Copilot" with system prompt and function assignments |
+| **Custom model(s)** | Module-specific models with tailored system prompts (Chapter 24 Copilot, Opa-Locka Copilot, or both) |
 | **Guest access mode** | Anonymous guest experience (configurable chat + generation limits, session TTL, locked-down permissions) |
 | **Onboarding disclaimer** | One-time service agreement modal for all users on first visit |
 | **Admin panel tab** | Top-level RegOS tab in Open WebUI admin panel — configure disclaimer, guest access, and confidence display |
@@ -104,8 +110,20 @@ Open WebUI → click your profile icon → **Settings** → **Account** → **AP
 For granular control over individual installer steps:
 
 ```bash
-# Full install (requires running container)
+# Full install — both modules (requires running container)
 ./install.sh --token <jwt>
+
+# Install only the Opa-Locka module
+./install.sh --modules opalocka --token <jwt>
+
+# Install only Chapter 24
+./install.sh --modules chapter24 --token <jwt>
+
+# Install both modules explicitly
+./install.sh --modules both --token <jwt>
+
+# Interactive mode — prompts for module selection
+./install.sh --interactive --token <jwt>
 
 # Single step only
 ./install.sh --step 05 --token <jwt>    # Re-register functions only
@@ -125,8 +143,8 @@ For granular control over individual installer steps:
 | 02 | Install `neo4j` Python driver inside the container |
 | 03 | Copy data files (thresholds, concepts, mappings) into container |
 | 04 | Copy demo/utility scripts into container |
-| 05 | Register filter functions via Open WebUI REST API |
-| 06 | Create "RegOS Compliance Copilot" custom model |
+| 05 | Register filter functions via Open WebUI REST API (module-aware) |
+| 06 | Create custom model(s) with module-specific system prompts |
 | 07 | (Optional) Create user groups |
 | 08 | Verify everything installed correctly |
 | 09 | Verify guest access mode & onboarding disclaimer deployment |
@@ -221,7 +239,8 @@ Key settings:
 | `CONTAINER_NAME` | `open-webui` | Docker container name |
 | `OPENWEBUI_URL` | `http://localhost:3000` | API base URL |
 | `OPENWEBUI_TOKEN` | — | Required for steps 05-10 |
-| `CREATE_MODEL` | `true` | Create the custom model |
+| `MODULES` | `both` | Regulatory module(s): `chapter24`, `opalocka`, or `both` |
+| `CREATE_MODEL` | `true` | Create the custom model(s) |
 | `SETUP_GROUPS` | `false` | Create user groups |
 | `BASE_MODEL` | `openrouter/google/gemini-2.0-flash-001` | LLM backend |
 | `GUEST_MESSAGE_LIMIT` | `10` | Max chats per guest session |
@@ -230,11 +249,12 @@ Key settings:
 
 ## Post-Installation
 
-1. **Set Neo4j credentials**: Admin → Functions → `graphrag_filter` → Valves → enter Neo4j URI + password
-2. **Upload Knowledge Base**: Upload Chapter 24 PDF documents to a Knowledge Base in Open WebUI
-3. **Assign KB to model**: Edit the RegOS model → connect the Knowledge Base
+1. **Set Neo4j credentials**: Admin → Functions → select the installed filter(s) → Valves → enter Neo4j URI + password
+2. **Upload Knowledge Base**: Upload regulatory PDF documents to a Knowledge Base in Open WebUI
+3. **Assign KB to model**: Edit the RegOS model(s) → connect the Knowledge Base
 4. **Configure RegOS settings**: Admin → RegOS → adjust disclaimer, guest access, and confidence display
-5. **Test**: Select "RegOS Compliance Copilot" in chat → ask: *"What are the BOD limits for wastewater discharge?"*
+5. **Test Chapter 24**: Select "RegOS Chapter 24 Copilot" → ask: *"What are the BOD limits for wastewater discharge?"*
+6. **Test Opa-Locka**: Select "RegOS Opa-Locka Copilot" → ask: *"What are the requirements for lobbyist registration under Section 2-18?"*
 
 ## Graph Data
 

@@ -5,6 +5,25 @@ All notable changes to the RegOS Installer will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2026-03-31
+
+### Added
+
+- **Multi-module installer** — The installer now supports multiple regulatory modules. Use `--modules chapter24`, `--modules opalocka`, or `--modules both` to select which module(s) to install. Interactive mode presents a numbered menu. Defaults to `both` when not specified.
+- **Opa-Locka GraphRAG filter** (`graphrag_filter_opalocka.py`) — Full adaptation of the GraphRAG filter for the City of Opa-Locka Code of Ordinances and Land Development Regulations. Queries the `chunk_search` fulltext index on AuraDB, traverses `Role` entities via `MENTIONS_ROLE`, and expands cross-references via `REFERENCES` relationships between chunks.
+- **Opa-Locka system prompt** (`system_prompt_opalocka.md`) — Tailored system prompt for the Opa-Locka municipal code assistant.
+- **Opa-Locka test prompts** (`opalocka_test_prompts.md`) — 18 test prompts across 6 categories.
+- **Module-aware model creation** — Step 06 creates module-specific models (`regos-chapter24-copilot` and/or `regos-opalocka-copilot`) with the correct system prompt for each.
+
+### Changed
+
+- **File nomenclature** — GraphRAG filters and system prompts now carry module suffixes: `graphrag_filter_chapter24.py`, `graphrag_filter_opalocka.py`, `system_prompt_chapter24.md`, `system_prompt_opalocka.md`.
+- **Step 05** — Module-aware function registration. Shared functions always installed.
+- **Step 06** — Creates one or two models depending on selected modules.
+- **GraphRAG filter tuning** — `max_sections` 5→12, `max_section_chars` 2000→8000, `entity_search_limit` 8→15, `min_relevance_score` 0.5→0.3, `faithfulness_threshold` 0.50→0.35. Output validation disabled by default.
+
+---
+
 ## [1.9.0] - 2026-03-10
 
 ### Added

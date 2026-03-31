@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 # Step 05: Register filter functions via Open WebUI REST API
+#
+# Respects the MODULES variable (chapter24 | opalocka | both) to decide
+# which GraphRAG filter(s) to register. Shared functions (audit_logger,
+# escalation_action, graphrag_pipe) are always installed.
 
 step_05_register_functions() {
   log_step "05" "Registering filter functions"
@@ -20,10 +24,31 @@ step_05_register_functions() {
   local func_dir="${INSTALLER_DIR}/functions"
   local registered=0 failed=0
 
-  # Register each function
-  local functions=("graphrag_filter:filter" "audit_logger:filter" "escalation_action:action" "graphrag_pipe:pipe")
+  # ── Shared functions (always installed) ──
+  local shared_functions=("audit_logger:filter" "escalation_action:action" "graphrag_pipe:pipe")
 
-  for entry in "${functions[@]}"; do
+  # ── Module-specific GraphRAG filters ──
+  local module_functions=()
+
+  case "${MODULES:-both}" in
+    chapter24)
+      module_functions=("graphrag_filter_chapter24:filter")
+      log_info "Module: Chapter 24 (Miami-Dade Environmental)"
+      ;;
+    opalocka)
+      module_functions=("graphrag_filter_opalocka:filter")
+      log_info "Module: Opa-Locka (Municipal Code of Ordinances)"
+      ;;
+    both|*)
+      module_functions=("graphrag_filter_chapter24:filter" "graphrag_filter_opalocka:filter")
+      log_info "Modules: Chapter 24 + Opa-Locka"
+      ;;
+  esac
+
+  # Combine shared + module-specific
+  local all_functions=("${shared_functions[@]}" "${module_functions[@]}")
+
+  for entry in "${all_functions[@]}"; do
     local func_id="${entry%%:*}"
     local func_type="${entry##*:}"
     local func_file="${func_dir}/${func_id}.py"
