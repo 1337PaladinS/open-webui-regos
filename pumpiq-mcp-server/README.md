@@ -226,12 +226,12 @@ You should see the Swagger UI HTML. Visit `http://localhost:8001/docs` in your b
 2. Go to **Admin Settings → External Tools**
 3. Click **+ Add Server**
 4. Configure:
-   - **Type:** MCP (Streamable HTTP)
+   - **Type:** OpenAPI
    - **URL:** `http://pumpiq-mcp:8001`
    - **Auth:** None
 5. Click **Save**
 
-> **Important:** Use the Docker service name `pumpiq-mcp` (not `localhost` or `host.docker.internal`) since both containers are on the same Docker Compose network.
+> **Important:** Use **OpenAPI** as the type, not "MCP (Streamable HTTP)". MCPO converts the MCP tools into an OpenAPI spec, which is what Open WebUI consumes. Use the Docker service name `pumpiq-mcp` (not `localhost` or `host.docker.internal`) since both containers are on the same Docker Compose network.
 
 ### Step 4 — Use the tools in a chat
 
@@ -264,7 +264,7 @@ This rebuilds the container with your changes and restarts it. Open WebUI will a
 
 | Issue | Fix |
 |-------|-----|
-| "Failed to connect to MCP server" in Open WebUI | Make sure URL is `http://pumpiq-mcp:8001` (service name, not localhost) |
+| "Failed to connect to MCP server" in Open WebUI | Use **OpenAPI** type (not "MCP Streamable HTTP"). URL: `http://pumpiq-mcp:8001` |
 | Tools not showing in chat | Click the tools/+ icon in the chat input area and toggle them on |
 | NOAA CDO tools return auth errors | Add `NOAA_CDO_TOKEN` to `.env` and restart: `docker compose up -d pumpiq-mcp` |
 | Container won't start | Check logs: `docker logs pumpiq-mcp` |
