@@ -206,4 +206,7 @@ ARG BUILD_HASH
 ENV WEBUI_BUILD_VERSION=${BUILD_HASH}
 ENV DOCKER=true
 
+# APAS: bake first-boot script into the image (used by RunPod template)
+COPY --chmod=755 runpod/start.sh /runpod/start.sh
+
 CMD [ "bash", "start.sh"]
