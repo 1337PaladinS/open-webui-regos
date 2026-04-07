@@ -1,0 +1,87 @@
+name: APAS Prod Image (CUDA + Ollama)
+
+# Builds the APAS production image: CUDA 12.8 GPU support + bundled Ollama.
+# Targets RunPod amd64 GPUs. Published to ghcr.io/<repo>:apas-prod and :apas-prod-<sha>.
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - regos-anmol-dev
+    paths:
+      - 'Dockerfile'
+      - 'backend/**'
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'pyproject.toml'
+      - '.github/workflows/apas-prod-build.yaml'
+
+env:
+  REGISTRY: ghcr.io
+
+jobs:
+  build-apas-prod:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Set image name to lowercase
+        run: |
+          echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
+          echo "FULL_IMAGE_NAME=ghcr.io/${IMAGE_NAME,,}" >>${GITHUB_ENV}
+        env:
+          IMAGE_NAME: '${{ github.repository }}'
+
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.FULL_IMAGE_NAME }}
+          tags: |
+            type=raw,value=apas-prod,enable=${{ github.ref == 'refs/heads/main' }}
+            type=raw,value=apas-prod-dev,enable=${{ github.ref == 'refs/heads/regos-anmol-dev' }}
+            type=sha,prefix=apas-prod-git-
+          flavor: |
+            latest=false
+
+      - name: Build and push APAS prod image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha,scope=apas-prod
+          cache-to: type=gha,scope=apas-prod,mode=max
+          build-args: |
+            BUILD_HASH=${{ github.sha }}
+            USE_CUDA=true
+            USE_CUDA_VER=cu128
+            USE_OLLAMA=true
+            USE_SLIM=false
+            USE_PERMISSION_HARDENING=false
+            USE_EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+            USE_AUXILIARY_EMBEDDING_MODEL=TaylorAI/bge-micro-v2
+
+      - name: Inspect pushed image
+        run: |
+          docker buildx imagetools inspect ${{ env.FULL_IMAGE_NAME }}:apas-prod-git-${GITHUB_SHA::7} || true
