@@ -134,6 +134,13 @@ RUN apt-get update && \
     libmariadb-dev \
     python3-dev \
     ffmpeg libsm6 libxext6 zstd \
+    openssh-server procps \
+    && mkdir -p /var/run/sshd /root/.ssh \
+    && chmod 700 /root/.ssh \
+    && ssh-keygen -A \
+    && sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin prohibit-password/' /etc/ssh/sshd_config \
+    && sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication no/' /etc/ssh/sshd_config \
+    && sed -i 's/^#\?PubkeyAuthentication.*/PubkeyAuthentication yes/' /etc/ssh/sshd_config \
     && rm -rf /var/lib/apt/lists/*
 
 # install python dependencies
@@ -185,7 +192,7 @@ COPY --chown=$UID:$GID --from=build /app/package.json /app/package.json
 # copy backend files
 COPY --chown=$UID:$GID ./backend .
 
-EXPOSE 8080
+EXPOSE 8080 22
 
 HEALTHCHECK CMD curl --silent --fail http://localhost:${PORT:-8080}/health | jq -ne 'input.status == true' || exit 1
 
