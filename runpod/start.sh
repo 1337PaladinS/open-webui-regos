@@ -93,7 +93,21 @@ else
   log "sshd not installed — skipping"
 fi
 
-# --- 4. Hand off to upstream Open WebUI entrypoint --------------------------
+# --- 4. PumpIQ MCP server ---------------------------------------------------
+# Runs mcpo bridge wrapping the PumpIQ stdio MCP server on port 8001.
+# Env vars: NOAA_CDO_TOKEN, SFWMD_API_KEY (optional, set in RunPod template).
+if [ -f /opt/pumpiq-mcp/dist/index.js ]; then
+  log "starting PumpIQ MCP server on :8001"
+  NOAA_CDO_TOKEN="${NOAA_CDO_TOKEN:-}" \
+  SFWMD_API_KEY="${SFWMD_API_KEY:-}" \
+  nohup mcpo --port 8001 --host 0.0.0.0 -- node /opt/pumpiq-mcp/dist/index.js \
+    >>"${LOGS_DIR}/pumpiq-mcp.log" 2>&1 &
+  log "PumpIQ MCP server started (pid $!)"
+else
+  log "PumpIQ MCP server not found — skipping"
+fi
+
+# --- 5. Hand off to upstream Open WebUI entrypoint --------------------------
 log "handing off to upstream start.sh"
 cd /app/backend
 exec bash start.sh

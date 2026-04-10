@@ -46,6 +46,16 @@ COPY . .
 ENV APP_BUILD_HASH=${BUILD_HASH}
 RUN npm run build
 
+######## PumpIQ MCP server ########
+FROM node:22-alpine AS pumpiq-build
+
+WORKDIR /mcp
+COPY pumpiq-mcp-server/package*.json ./
+RUN npm ci --production=false
+COPY pumpiq-mcp-server/tsconfig.json ./
+COPY pumpiq-mcp-server/src/ ./src/
+RUN npm run build && npm prune --production
+
 ######## WebUI backend ########
 FROM python:3.11.14-slim-bookworm AS base
 
@@ -134,7 +144,7 @@ RUN apt-get update && \
     libmariadb-dev \
     python3-dev \
     ffmpeg libsm6 libxext6 zstd \
-    openssh-server procps \
+    openssh-server procps nodejs npm \
     && mkdir -p /var/run/sshd /root/.ssh \
     && chmod 700 /root/.ssh \
     && ssh-keygen -A \
@@ -142,6 +152,12 @@ RUN apt-get update && \
     && sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication no/' /etc/ssh/sshd_config \
     && sed -i 's/^#\?PubkeyAuthentication.*/PubkeyAuthentication yes/' /etc/ssh/sshd_config \
     && rm -rf /var/lib/apt/lists/*
+
+# PumpIQ MCP server — copy pre-built artefacts + install mcpo bridge
+COPY --from=pumpiq-build /mcp/dist /opt/pumpiq-mcp/dist
+COPY --from=pumpiq-build /mcp/node_modules /opt/pumpiq-mcp/node_modules
+COPY --from=pumpiq-build /mcp/package.json /opt/pumpiq-mcp/package.json
+RUN pip3 install --no-cache-dir mcpo
 
 # install python dependencies
 COPY --chown=$UID:$GID ./backend/requirements.txt ./requirements.txt
@@ -192,7 +208,7 @@ COPY --chown=$UID:$GID --from=build /app/package.json /app/package.json
 # copy backend files
 COPY --chown=$UID:$GID ./backend .
 
-EXPOSE 8080 22
+EXPOSE 8080 8001 22
 
 HEALTHCHECK CMD curl --silent --fail http://localhost:${PORT:-8080}/health | jq -ne 'input.status == true' || exit 1
 
