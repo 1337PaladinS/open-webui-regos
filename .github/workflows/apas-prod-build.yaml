@@ -16,6 +16,8 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - 'pyproject.toml'
+      - 'pumpiq-mcp-server/**'
+      - 'runpod/**'
       - '.github/workflows/apas-prod-build.yaml'
 
 env:
