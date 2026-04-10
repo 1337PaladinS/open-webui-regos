@@ -1,0 +1,30 @@
+{
+  "name": "pumpiq-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for PumpIQ environmental data integrations (NOAA, USGS, SFWMD)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "pumpiq-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
