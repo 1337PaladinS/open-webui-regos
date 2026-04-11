@@ -35,6 +35,17 @@ step_06_create_model() {
       models+=("regos-chapter24-copilot|RegOS Chapter 24 Copilot|system_prompt_chapter24.md|graphrag_filter_chapter24|RegOS Regulatory Compliance Copilot — Chapter 24 Miami-Dade Environmental")
       models+=("regos-opalocka-copilot|RegOS Opa-Locka Copilot|system_prompt_opalocka.md|graphrag_filter_opalocka|RegOS Municipal Code Assistant — City of Opa-Locka Code of Ordinances")
       ;;
+    all)
+      models+=("regos-chapter24-copilot|RegOS Chapter 24 Copilot|system_prompt_chapter24.md|graphrag_filter_chapter24|RegOS Regulatory Compliance Copilot — Chapter 24 Miami-Dade Environmental")
+      models+=("regos-opalocka-copilot|RegOS Opa-Locka Copilot|system_prompt_opalocka.md|graphrag_filter_opalocka|RegOS Municipal Code Assistant — City of Opa-Locka Code of Ordinances")
+      models+=("regos-miami-gardens-copilot|RegOS Miami Gardens Copilot|system_prompt_miami_gardens.md|graphrag_filter_miami_gardens|RegOS Municipal Code Assistant — City of Miami Gardens")
+      models+=("regos-pinecrest-copilot|RegOS Pinecrest Copilot|system_prompt_pinecrest.md|graphrag_filter_pinecrest|RegOS Municipal Code Assistant — Village of Pinecrest")
+      models+=("regos-north-miami-beach-copilot|RegOS North Miami Beach Copilot|system_prompt_north_miami_beach.md|graphrag_filter_north_miami_beach|RegOS Municipal Code Assistant — City of North Miami Beach")
+      models+=("regos-coral-gables-copilot|RegOS Coral Gables Copilot|system_prompt_coral_gables.md|graphrag_filter_coral_gables|RegOS Municipal Code Assistant — City of Coral Gables")
+      models+=("regos-homestead-copilot|RegOS Homestead Copilot|system_prompt_homestead.md|graphrag_filter_homestead|RegOS Municipal Code Assistant — City of Homestead")
+      models+=("regos-miami-copilot|RegOS Miami Copilot|system_prompt_miami.md|graphrag_filter_miami|RegOS Municipal Code Assistant — City of Miami")
+      models+=("regos-miami-beach-copilot|RegOS Miami Beach Copilot|system_prompt_miami_beach.md|graphrag_filter_miami_beach|RegOS Municipal Code Assistant — City of Miami Beach")
+      ;;
   esac
 
   for entry in "${models[@]}"; do

@@ -17,6 +17,7 @@ on:
       - 'package-lock.json'
       - 'pyproject.toml'
       - 'pumpiq-mcp-server/**'
+      - 'regos-installer/api/**'
       - 'runpod/**'
       - '.github/workflows/apas-prod-build.yaml'
 

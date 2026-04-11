@@ -31,15 +31,23 @@ curl -X POST http://157.245.15.224:8300/api/regos/query \
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | question | string | Yes | The regulatory compliance question |
+| model | string | No | Model ID override (default: server `REGOS_MODEL_ID` env var). Use `GET /api/regos/models` to list. |
 | stream | boolean | No | Enable SSE streaming (default: false) |
 | show_reasoning | boolean | No | Include model thinking tokens (default: false) |
 | context | string | No | Optional prior context (facility info, etc.) |
 | show_trace | boolean | No | Include retrieval trace (default: false) |
+| tool_ids | array[string] | No | Tool IDs to enable for this request (e.g. `["server:mcp:pumpiq"]`). Use `GET /api/regos/tools` to list. |
+| conversation_id | string | No | Continue an existing conversation |
+| messages | array | No | Full message history (advanced multi-turn usage) |
 
 ### Other Endpoints
 
+- `GET /api/regos/models` — List all custom models available for querying
+- `GET /api/regos/tools` — List all tools (MCP servers, functions) available for tool_ids
 - `GET /api/regos/health` — Health check
 - `GET /api/regos/info` — Sidecar configuration info
+
+> **Full documentation:** See `regos-installer/docs/SIDECAR_API.md` for the complete reference including architecture diagrams, MCP tool-calling details, deployment guides, and all usage examples.
 
 ---
 
@@ -151,4 +159,4 @@ systemctl restart regos-api
 
 ---
 
-*Last updated: March 2026*
+*Last updated: April 2026*

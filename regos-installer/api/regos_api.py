@@ -1,7 +1,7 @@
 """
 RegOS Sidecar API — Single-endpoint proxy for the full RegOS pipeline.
 
-Sits alongside Open WebUI and chains inlet → LLM → outlet in one call.
+Sits alongside Open WebUI and chains inlet -> LLM -> outlet in one call.
 Consumers don't need to know about Open WebUI internals, model IDs, or
 the two-step filter dance. They just POST a question and get back a
 fully-scored, cited, trace-enabled response.
@@ -9,7 +9,7 @@ fully-scored, cited, trace-enabled response.
 Environment:
   OPENWEBUI_URL     Base URL of your Open WebUI instance (e.g. https://eqcb.apas.ai)
   OPENWEBUI_TOKEN   Admin API token from Open WebUI
-  REGOS_MODEL_ID    Model ID to query (default: better-hardeepai)
+  REGOS_MODEL_ID    Default model ID to query (default: better-hardeepai)
   REGOS_API_PORT    Port for the sidecar API (default: 8300)
 
 Usage:
@@ -22,15 +22,26 @@ Usage:
     -H "Content-Type: application/json" \
     -d '{"question": "What are the BOD limits for wastewater?"}'
 
-  # Streaming response:
+  # With a specific model:
   curl -X POST https://<your-sidecar-host>:8300/api/regos/query \
     -H "Content-Type: application/json" \
-    -d '{"question": "What are the BOD limits?", "stream": true}'
+    -d '{"question": "What are the BOD limits?", "model": "regos-miami-copilot"}'
+
+  # With MCP tools enabled:
+  curl -X POST https://<your-sidecar-host>:8300/api/regos/query \
+    -H "Content-Type: application/json" \
+    -d '{"question": "What is the current pump station flow?", "tool_ids": ["server:mcp:pumpiq"]}'
 
   # Streaming with reasoning/thinking tokens visible:
   curl -N -X POST https://<your-sidecar-host>:8300/api/regos/query \
     -H "Content-Type: application/json" \
     -d '{"question": "What are the BOD limits?", "stream": true, "show_reasoning": true}'
+
+  # List available custom models:
+  curl https://<your-sidecar-host>:8300/api/regos/models
+
+  # List available tools (MCP servers + tool functions):
+  curl https://<your-sidecar-host>:8300/api/regos/tools
 """
 
 import os
@@ -46,11 +57,11 @@ from fastapi.responses import StreamingResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-# ─── Logging ─────────────────────────────────────────────────────────
+# --- Logging ---------------------------------------------------------------
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("regos-api")
 
-# ─── Configuration (env vars or defaults) ─────────────────────────────
+# --- Configuration (env vars or defaults) -----------------------------------
 
 OPENWEBUI_URL = os.getenv("OPENWEBUI_URL", "http://localhost:3000")  # Set to your host, e.g. https://eqcb.apas.ai
 OPENWEBUI_TOKEN = os.getenv("OPENWEBUI_TOKEN", "")
@@ -58,12 +69,12 @@ REGOS_MODEL_ID = os.getenv("REGOS_MODEL_ID", "better-hardeepai")
 DEFAULT_STREAM = os.getenv("REGOS_DEFAULT_STREAM", "false").lower() == "true"
 PORT = int(os.getenv("REGOS_API_PORT", "8300"))
 
-# ─── App Setup ────────────────────────────────────────────────────────
+# --- App Setup --------------------------------------------------------------
 
 app = FastAPI(
     title="RegOS API",
     description="Regulatory Compliance Copilot — single-endpoint sidecar proxy",
-    version="1.0.0",
+    version="2.0.0",
 )
 
 app.add_middleware(
@@ -74,16 +85,18 @@ app.add_middleware(
 )
 
 
-# ─── Request / Response Models ────────────────────────────────────────
+# --- Request / Response Models -----------------------------------------------
 
 class RegOSRequest(BaseModel):
     question: str = Field(..., description="The regulatory compliance question")
+    model: Optional[str] = Field(default=None, description="Model ID to use (omit to use server default). Use GET /api/regos/models to list available models.")
     stream: bool = Field(default=False, description="Enable SSE streaming")
     show_reasoning: bool = Field(default=False, description="Include reasoning/thinking tokens in streaming response")
     context: Optional[str] = Field(default=None, description="Optional prior context or facility info")
     show_trace: bool = Field(default=False, description="Include retrieval trace in response")
     conversation_id: Optional[str] = Field(default=None, description="Continue an existing conversation")
     messages: Optional[list] = Field(default=None, description="Full message history (advanced usage)")
+    tool_ids: Optional[list[str]] = Field(default=None, description="List of tool IDs to make available to the model. Use GET /api/regos/tools to list available tools. Example: ['server:mcp:pumpiq']")
 
 
 class RegOSResponse(BaseModel):
@@ -94,7 +107,23 @@ class RegOSResponse(BaseModel):
     usage: Optional[dict] = Field(default=None, description="Token usage stats")
 
 
-# ─── Helpers ──────────────────────────────────────────────────────────
+class ModelInfo(BaseModel):
+    id: str = Field(..., description="Model ID to use in query requests")
+    name: str = Field(default="", description="Display name")
+    description: Optional[str] = Field(default=None, description="Model description")
+    base_model_id: Optional[str] = Field(default=None, description="Underlying base model (e.g. openrouter/nvidia/llama-3.1-nemotron-70b-instruct)")
+    is_active: bool = Field(default=True, description="Whether the model is active")
+    tags: Optional[list[dict]] = Field(default=None, description="Model tags for categorisation")
+
+
+class ToolInfo(BaseModel):
+    id: str = Field(..., description="Tool ID to pass in tool_ids")
+    name: str = Field(default="", description="Display name")
+    type: str = Field(default="", description="Tool type: 'function', 'mcp', or 'openapi'")
+    description: Optional[str] = Field(default=None, description="What the tool does")
+
+
+# --- Helpers ------------------------------------------------------------------
 
 def _auth_headers():
     if not OPENWEBUI_TOKEN:
@@ -106,6 +135,11 @@ def _auth_headers():
         "Authorization": f"Bearer {OPENWEBUI_TOKEN}",
         "Content-Type": "application/json",
     }
+
+
+def _resolve_model(req: RegOSRequest) -> str:
+    """Return the model ID for this request: per-request override or server default."""
+    return req.model or REGOS_MODEL_ID
 
 
 def _build_messages(req: RegOSRequest) -> list:
@@ -148,25 +182,30 @@ def _extract_reasoning_from_usage(usage: Optional[dict]) -> Optional[str]:
     return None
 
 
-# ─── Core: Non-Streaming ─────────────────────────────────────────────
+# --- Core: Non-Streaming -----------------------------------------------------
 
 async def _query_blocking(req: RegOSRequest) -> RegOSResponse:
     """
-    Full pipeline: /api/chat/completions → collect response → /api/chat/completed
+    Full pipeline: /api/chat/completions -> collect response -> /api/chat/completed
     Returns the outlet-processed response with confidence scores and trace.
     """
     headers = _auth_headers()
     messages = _build_messages(req)
+    model_id = _resolve_model(req)
 
     # Step 1: Call chat/completions (inlet filters fire, LLM generates response)
     chat_payload = {
-        "model": REGOS_MODEL_ID,
+        "model": model_id,
         "messages": messages,
         "stream": False,
     }
 
+    # Inject tool_ids so Open WebUI's middleware resolves and executes tools
+    if req.tool_ids:
+        chat_payload["tool_ids"] = req.tool_ids
+
     async with aiohttp.ClientSession() as session:
-        # ── Step 1: Inlet + LLM ──
+        # -- Step 1: Inlet + LLM (+ tool-calling loop if tool_ids provided) --
         async with session.post(
             f"{OPENWEBUI_URL}/api/chat/completions",
             headers=headers,
@@ -180,7 +219,7 @@ async def _query_blocking(req: RegOSRequest) -> RegOSResponse:
         # Extract the assistant's response
         assistant_msg = completion.get("choices", [{}])[0].get("message", {})
         usage = completion.get("usage")
-        model_used = completion.get("model", REGOS_MODEL_ID)
+        model_used = completion.get("model", model_id)
 
         # Extract reasoning content if available and requested
         reasoning_content = None
@@ -194,7 +233,7 @@ async def _query_blocking(req: RegOSRequest) -> RegOSResponse:
                 or _extract_reasoning_from_usage(usage)      # Fall back to usage metadata
             )
 
-        # ── Step 2: Outlet (confidence scoring, threshold eval, audit logging) ──
+        # -- Step 2: Outlet (confidence scoring, threshold eval, audit logging) --
         # Build the completed payload: full conversation including assistant response
         # /api/chat/completed requires: id, model, chat_id, session_id
         # Tag with "regos-api:" prefix so audit logs can distinguish API vs UI calls
@@ -203,13 +242,13 @@ async def _query_blocking(req: RegOSRequest) -> RegOSResponse:
         session_id = f"regos-api:{uuid.uuid4()}"
         completed_payload = {
             "id": msg_id,
-            "model": REGOS_MODEL_ID,
+            "model": model_id,
             "messages": completed_messages,
             "chat_id": req.conversation_id or f"api-{uuid.uuid4()}",
             "session_id": session_id,
         }
 
-        logger.info(f"[OUTLET] Calling /api/chat/completed for model={REGOS_MODEL_ID}")
+        logger.info(f"[OUTLET] Calling /api/chat/completed for model={model_id}")
         async with session.post(
             f"{OPENWEBUI_URL}/api/chat/completed",
             headers=headers,
@@ -244,7 +283,7 @@ async def _query_blocking(req: RegOSRequest) -> RegOSResponse:
     )
 
 
-# ─── Core: Streaming ─────────────────────────────────────────────────
+# --- Core: Streaming ---------------------------------------------------------
 
 async def _query_streaming(req: RegOSRequest):
     """
@@ -258,12 +297,17 @@ async def _query_streaming(req: RegOSRequest):
     """
     headers = _auth_headers()
     messages = _build_messages(req)
+    model_id = _resolve_model(req)
 
     chat_payload = {
-        "model": REGOS_MODEL_ID,
+        "model": model_id,
         "messages": messages,
         "stream": True,
     }
+
+    # Inject tool_ids so Open WebUI's middleware resolves and executes tools
+    if req.tool_ids:
+        chat_payload["tool_ids"] = req.tool_ids
 
     show_reasoning = req.show_reasoning
 
@@ -272,7 +316,7 @@ async def _query_streaming(req: RegOSRequest):
         full_reasoning = ""
 
         async with aiohttp.ClientSession() as session:
-            # ── Phase 1: Stream the LLM response ──
+            # -- Phase 1: Stream the LLM response --
             async with session.post(
                 f"{OPENWEBUI_URL}/api/chat/completions",
                 headers=headers,
@@ -306,7 +350,7 @@ async def _query_streaming(req: RegOSRequest):
                         chunk = json.loads(data_str)
                         delta = chunk.get("choices", [{}])[0].get("delta", {})
 
-                        # ── Reasoning token detection ──
+                        # -- Reasoning token detection --
                         # Providers use different field names for reasoning/thinking:
                         reasoning_piece = (
                             delta.get("reasoning_content")    # OpenRouter / DeepSeek
@@ -326,7 +370,7 @@ async def _query_streaming(req: RegOSRequest):
                             yield f"data: {json.dumps(reasoning_chunk)}\n\n"
                             continue  # Don't forward as regular content
 
-                        # ── Regular content ──
+                        # -- Regular content --
                         content_piece = delta.get("content", "")
 
                         # If we were in reasoning phase and now got content, send a marker
@@ -350,7 +394,7 @@ async def _query_streaming(req: RegOSRequest):
                 marker = {"choices": [{"delta": {"role": "reasoning_end"}, "finish_reason": None}]}
                 yield f"data: {json.dumps(marker)}\n\n"
 
-            # ── Phase 2: Trigger outlet filters ──
+            # -- Phase 2: Trigger outlet filters --
             if full_content:
                 assistant_msg = {"role": "assistant", "content": full_content}
                 completed_messages = messages + [assistant_msg]
@@ -358,13 +402,13 @@ async def _query_streaming(req: RegOSRequest):
                 session_id = f"regos-api:{uuid.uuid4()}"
                 completed_payload = {
                     "id": msg_id,
-                    "model": REGOS_MODEL_ID,
+                    "model": model_id,
                     "messages": completed_messages,
                     "chat_id": req.conversation_id or f"api-{uuid.uuid4()}",
                     "session_id": session_id,
                 }
 
-                logger.info(f"[OUTLET-STREAM] Calling /api/chat/completed for model={REGOS_MODEL_ID}")
+                logger.info(f"[OUTLET-STREAM] Calling /api/chat/completed for model={model_id}")
                 async with session.post(
                     f"{OPENWEBUI_URL}/api/chat/completed",
                     headers=headers,
@@ -409,7 +453,7 @@ async def _query_streaming(req: RegOSRequest):
     )
 
 
-# ─── Routes ───────────────────────────────────────────────────────────
+# --- Routes -------------------------------------------------------------------
 
 @app.post("/api/regos/query", response_model=None)
 async def regos_query(req: RegOSRequest):
@@ -417,14 +461,140 @@ async def regos_query(req: RegOSRequest):
     Query the RegOS Compliance Copilot.
 
     Automatically routes through the full pipeline:
-    inlet filters (graph retrieval, context injection) → LLM → outlet filters
+    inlet filters (graph retrieval, context injection) -> LLM -> outlet filters
     (confidence scoring, threshold evaluation, audit logging).
 
     Set `stream: true` for Server-Sent Events streaming.
+    Set `model` to override the default model (see GET /api/regos/models).
+    Set `tool_ids` to enable MCP tools (see GET /api/regos/tools).
     """
     if req.stream:
         return await _query_streaming(req)
     return await _query_blocking(req)
+
+
+@app.get("/api/regos/models", response_model=list[ModelInfo])
+async def list_models():
+    """
+    List all custom models defined in the Open WebUI instance.
+
+    Returns only custom models (those with a base_model_id — i.e. models
+    created via the Open WebUI admin panel or the RegOS installer, NOT
+    raw base models like 'gpt-4o' or 'llama3'). Use the `id` field as
+    the `model` parameter in /api/regos/query.
+    """
+    headers = _auth_headers()
+
+    async with aiohttp.ClientSession() as session:
+        # Fetch all models from Open WebUI's models API
+        # /api/models/list returns custom models with pagination
+        all_models = []
+        page = 1
+
+        while True:
+            async with session.get(
+                f"{OPENWEBUI_URL}/api/models/list",
+                headers=headers,
+                params={"page": page},
+            ) as resp:
+                if resp.status != 200:
+                    error_text = await resp.text()
+                    raise HTTPException(
+                        status_code=resp.status,
+                        detail=f"Failed to list models: {error_text}",
+                    )
+                data = await resp.json()
+
+            items = data.get("items", [])
+            if not items:
+                break
+
+            for item in items:
+                # Only include custom models (those with a base_model_id)
+                base_model = item.get("base_model_id")
+                if base_model:
+                    meta = item.get("meta", {})
+                    all_models.append(ModelInfo(
+                        id=item.get("id", ""),
+                        name=item.get("name", item.get("id", "")),
+                        description=meta.get("description"),
+                        base_model_id=base_model,
+                        is_active=item.get("is_active", True),
+                        tags=meta.get("tags"),
+                    ))
+
+            # Check if there are more pages
+            total = data.get("total", 0)
+            if page * 30 >= total:  # PAGE_ITEM_COUNT = 30
+                break
+            page += 1
+
+    logger.info(f"[MODELS] Found {len(all_models)} custom models")
+    return all_models
+
+
+@app.get("/api/regos/tools", response_model=list[ToolInfo])
+async def list_tools():
+    """
+    List all tools available in the Open WebUI instance.
+
+    Returns tool functions and MCP server tools. Use the `id` field
+    in the `tool_ids` array of /api/regos/query to enable tools for
+    a request. MCP tools have IDs prefixed with 'server:mcp:'.
+    """
+    headers = _auth_headers()
+    all_tools = []
+
+    async with aiohttp.ClientSession() as session:
+        # 1. Fetch tool functions (user-defined Python tools)
+        async with session.get(
+            f"{OPENWEBUI_URL}/api/v1/tools/",
+            headers=headers,
+        ) as resp:
+            if resp.status == 200:
+                tools_data = await resp.json()
+                for tool in tools_data:
+                    meta = tool.get("meta", {})
+                    all_tools.append(ToolInfo(
+                        id=tool.get("id", ""),
+                        name=tool.get("name", tool.get("id", "")),
+                        type="function",
+                        description=meta.get("description", tool.get("content", "")[:200] if tool.get("content") else None),
+                    ))
+            else:
+                logger.warning(f"[TOOLS] Failed to fetch tool functions: HTTP {resp.status}")
+
+        # 2. Fetch tool server connections (MCP + OpenAPI servers)
+        async with session.get(
+            f"{OPENWEBUI_URL}/api/v1/tools/servers",
+            headers=headers,
+        ) as resp:
+            if resp.status == 200:
+                servers_data = await resp.json()
+                for server in servers_data:
+                    server_type = server.get("type", "openapi")
+                    server_info = server.get("info", {})
+                    server_id = server_info.get("id", "")
+
+                    if server_type == "mcp":
+                        tool_id = f"server:mcp:{server_id}"
+                    else:
+                        tool_id = f"server:{server_id}"
+
+                    all_tools.append(ToolInfo(
+                        id=tool_id,
+                        name=server_info.get("name", server_id),
+                        type=server_type,
+                        description=server_info.get("description"),
+                    ))
+            elif resp.status == 404:
+                # Older Open WebUI versions may not have this endpoint
+                logger.info("[TOOLS] /api/v1/tools/servers not available")
+            else:
+                logger.warning(f"[TOOLS] Failed to fetch tool servers: HTTP {resp.status}")
+
+    logger.info(f"[TOOLS] Found {len(all_tools)} tools")
+    return all_tools
 
 
 @app.get("/api/regos/health")
@@ -437,7 +607,7 @@ async def health_check():
                 timeout=aiohttp.ClientTimeout(total=5),
             ) as resp:
                 if resp.status == 200:
-                    return {"status": "healthy", "openwebui": "connected", "model": REGOS_MODEL_ID}
+                    return {"status": "healthy", "openwebui": "connected", "default_model": REGOS_MODEL_ID}
                 return {"status": "degraded", "openwebui": f"HTTP {resp.status}"}
     except Exception as e:
         return {"status": "unhealthy", "openwebui": str(e)}
@@ -447,20 +617,23 @@ async def health_check():
 async def info():
     """Return sidecar configuration."""
     return {
-        "version": "1.1.0",
-        "model": REGOS_MODEL_ID,
+        "version": "2.0.0",
+        "default_model": REGOS_MODEL_ID,
         "openwebui_url": OPENWEBUI_URL,
         "streaming_supported": True,
         "reasoning_supported": True,
+        "tool_calling_supported": True,
         "endpoints": {
             "query": "POST /api/regos/query",
+            "models": "GET /api/regos/models",
+            "tools": "GET /api/regos/tools",
             "health": "GET /api/regos/health",
             "info": "GET /api/regos/info",
         },
     }
 
 
-# ─── Main ─────────────────────────────────────────────────────────────
+# --- Main ---------------------------------------------------------------------
 
 if __name__ == "__main__":
     import uvicorn
