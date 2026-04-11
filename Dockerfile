@@ -208,7 +208,11 @@ COPY --chown=$UID:$GID --from=build /app/package.json /app/package.json
 # copy backend files
 COPY --chown=$UID:$GID ./backend .
 
-EXPOSE 8080 8001 22
+# RegOS sidecar API (regos_api + apas_bridge + scada_stream)
+COPY --chown=$UID:$GID ./regos-installer/api /opt/regos-api/api
+RUN pip3 install --no-cache-dir aiohttp
+
+EXPOSE 8080 8001 8300 22
 
 HEALTHCHECK CMD curl --silent --fail http://localhost:${PORT:-8080}/health | jq -ne 'input.status == true' || exit 1
 

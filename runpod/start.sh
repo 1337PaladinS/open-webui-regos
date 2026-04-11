@@ -107,7 +107,24 @@ else
   log "PumpIQ MCP server not found — skipping"
 fi
 
-# --- 5. Hand off to upstream Open WebUI entrypoint --------------------------
+# --- 5. RegOS Sidecar API ---------------------------------------------------
+# Runs the RegOS API (regos_api + apas_bridge + scada_stream) on port 8300.
+# Env vars: OPENWEBUI_TOKEN, REGOS_MODEL_ID (set in RunPod template).
+if [ -f /opt/regos-api/api/regos_api.py ]; then
+  log "starting RegOS sidecar API on :8300"
+  OPENWEBUI_URL="http://localhost:8080" \
+  OPENWEBUI_TOKEN="${OPENWEBUI_TOKEN:-}" \
+  REGOS_MODEL_ID="${REGOS_MODEL_ID:-regos-chapter24-copilot}" \
+  REGOS_API_PORT="8300" \
+  nohup python3 -m uvicorn api.regos_api:app \
+    --host 0.0.0.0 --port 8300 --app-dir /opt/regos-api \
+    >>"${LOGS_DIR}/regos-api.log" 2>&1 &
+  log "RegOS sidecar API started (pid $!)"
+else
+  log "RegOS sidecar API not found — skipping"
+fi
+
+# --- 6. Hand off to upstream Open WebUI entrypoint --------------------------
 log "handing off to upstream start.sh"
 cd /app/backend
 exec bash start.sh
