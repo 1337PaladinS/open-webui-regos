@@ -164,7 +164,32 @@ else
   log "RegOS sidecar API not found — skipping"
 fi
 
-# --- 7. Hand off to upstream Open WebUI entrypoint --------------------------
+# --- 7. Ollama model warmup (background) ------------------------------------
+# On pod restart, Ollama starts with no model in VRAM. The first user request
+# triggers a cold load (30-60s). This background script waits for Ollama to be
+# ready, then sends a tiny prompt to preload the model into GPU memory.
+# OLLAMA_KEEP_ALIVE=-1 ensures it stays loaded permanently.
+OLLAMA_WARMUP_MODEL="${OLLAMA_WARMUP_MODEL:-}"
+if [ -n "${OLLAMA_WARMUP_MODEL}" ]; then
+  (
+    log "warmup: waiting for Ollama to become ready..."
+    for i in $(seq 1 60); do
+      if curl -sf http://localhost:11434/api/tags >/dev/null 2>&1; then
+        log "warmup: Ollama is ready, preloading model '${OLLAMA_WARMUP_MODEL}'"
+        # Pull the model if not already present (no-op if cached in /workspace/ollama)
+        curl -sf http://localhost:11434/api/pull -d "{\"name\":\"${OLLAMA_WARMUP_MODEL}\"}" >/dev/null 2>&1 || true
+        # Send a tiny generate request to load model into VRAM
+        curl -sf http://localhost:11434/api/generate -d "{\"model\":\"${OLLAMA_WARMUP_MODEL}\",\"prompt\":\"hi\",\"options\":{\"num_predict\":1}}" >/dev/null 2>&1
+        log "warmup: model '${OLLAMA_WARMUP_MODEL}' loaded into VRAM"
+        break
+      fi
+      sleep 2
+    done
+  ) &
+  log "warmup script launched in background (pid $!)"
+fi
+
+# --- 8. Hand off to upstream Open WebUI entrypoint --------------------------
 log "handing off to upstream start.sh"
 cd /app/backend
 exec bash start.sh
