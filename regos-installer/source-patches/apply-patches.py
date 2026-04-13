@@ -894,17 +894,33 @@ def patch_guest_api_frontend(root: Path):
         c = c.replace(old_fn, new_fn)
         print("  [OK] Updated userGuestSignIn signature")
 
-    # Add body with email to the fetch call
-    old_fetch = """\t\tcredentials: 'include'
+    # Add body with email to the guest fetch call ONLY.
+    # Previous version used a broad anchor that matched ALL fetch calls in the
+    # file, injecting `body: JSON.stringify({ email })` into getSessionUser()
+    # and userSignOut() where `email` is not in scope — causing a
+    # ReferenceError that wiped localStorage.token on every page refresh.
+    old_guest_fetch = """\tfetch(`${WEBUI_API_BASE_URL}/auths/guest`, {
+\t\tmethod: 'POST',
+\t\theaders: {
+\t\t\t'Content-Type': 'application/json'
+\t\t},
+\t\tcredentials: 'include'
 \t})"""
-    new_fetch = """\t\tcredentials: 'include',
+    new_guest_fetch = """\tfetch(`${WEBUI_API_BASE_URL}/auths/guest`, {
+\t\tmethod: 'POST',
+\t\theaders: {
+\t\t\t'Content-Type': 'application/json'
+\t\t},
+\t\tcredentials: 'include',
 \t\tbody: JSON.stringify({ email })
 \t})"""
-    if old_fetch in c and "JSON.stringify({ email })" not in c:
-        c = c.replace(old_fetch, new_fetch)
+    if old_guest_fetch in c:
+        c = c.replace(old_guest_fetch, new_guest_fetch)
         print("  [OK] Added email body to guest fetch")
-    else:
+    elif "JSON.stringify({ email })" in c:
         print("  [SKIP] Guest API already sends email")
+    else:
+        print("  [WARN] Could not locate guest fetch block — manual check needed")
 
     write_file(f, c)
     print("  [OK] auths/index.ts patched")
