@@ -21,14 +21,14 @@ originRequest:
 ingress:
   # Primary RegOS interface (Open WebUI)
   - hostname: HOSTNAME_PLACEHOLDER
-    service: http://localhost:8080
+    service: http://127.0.0.1:8080
     originRequest:
       # Prevent Cloudflare from buffering streamed responses (SSE/LLM tokens)
       disableChunkedEncoding: true
 
   # RegOS Sidecar API v2
   - hostname: regos-api.apas.ai
-    service: http://localhost:8300
+    service: http://127.0.0.1:8300
     originRequest:
       disableChunkedEncoding: true
 
