@@ -7,8 +7,10 @@
 #      (so SQLite, uploads, vector DB, configs persist across image upgrades)
 #   3. Install PUBLIC_KEY into /root/.ssh/authorized_keys and start sshd
 #      (gives RunPod web terminal + runpodctl ssh access on custom images)
-#   4. Optional escape hatch: APAS_RESET_DB=1 wipes webui.db on boot
-#   5. Hand off to the upstream Open WebUI start script (which itself
+#   4. Start Cloudflare Tunnel (*.apas.ai custom domains) if configured
+#   5. Start PumpIQ MCP server on :8001
+#   6. Start RegOS Sidecar API on :8300
+#   7. Hand off to the upstream Open WebUI start script (which itself
 #      starts the bundled Ollama — we no longer start it here to avoid
 #      the double-bind on port 11434)
 #
@@ -93,7 +95,45 @@ else
   log "sshd not installed — skipping"
 fi
 
-# --- 4. PumpIQ MCP server ---------------------------------------------------
+# --- 4. Cloudflare Tunnel (*.apas.ai custom domains) -----------------------
+# Requires one-time setup: see docs/CLOUDFLARE_TUNNEL_RUNBOOK.md
+#   CLOUDFLARED_TUNNEL_ID  – tunnel UUID
+#   CLOUDFLARED_HOSTNAME   – primary hostname (e.g. regos.apas.ai)
+# Credentials JSON must be at /workspace/cloudflared/<tunnel-id>.json
+CF_DIR="${WORKSPACE}/cloudflared"
+CF_TUNNEL_ID="${CLOUDFLARED_TUNNEL_ID:-}"
+CF_HOSTNAME="${CLOUDFLARED_HOSTNAME:-regos.apas.ai}"
+
+if command -v cloudflared >/dev/null 2>&1 && [ -n "${CF_TUNNEL_ID}" ]; then
+  CF_CREDS="${CF_DIR}/${CF_TUNNEL_ID}.json"
+  CF_CONFIG="${CF_DIR}/config.yml"
+
+  if [ -f "${CF_CREDS}" ]; then
+    # Generate config.yml from template, replacing placeholders
+    mkdir -p "${CF_DIR}"
+    sed \
+      -e "s|TUNNEL_ID_PLACEHOLDER|${CF_TUNNEL_ID}|g" \
+      -e "s|CREDS_FILE_PLACEHOLDER|${CF_CREDS}|g" \
+      -e "s|HOSTNAME_PLACEHOLDER|${CF_HOSTNAME}|g" \
+      /runpod/cloudflared-config.yml > "${CF_CONFIG}"
+
+    log "starting cloudflared tunnel (${CF_HOSTNAME} -> localhost)"
+    nohup cloudflared tunnel --config "${CF_CONFIG}" run \
+      >>"${LOGS_DIR}/cloudflared.log" 2>&1 &
+    log "cloudflared started (pid $!)"
+  else
+    log "cloudflared credentials not found at ${CF_CREDS} — skipping tunnel"
+    log "  run the one-time setup: see docs/CLOUDFLARE_TUNNEL_RUNBOOK.md"
+  fi
+else
+  if [ -z "${CF_TUNNEL_ID}" ]; then
+    log "CLOUDFLARED_TUNNEL_ID not set — skipping Cloudflare Tunnel"
+  else
+    log "cloudflared binary not found — skipping tunnel"
+  fi
+fi
+
+# --- 5. PumpIQ MCP server ----------------------------------------------------
 # Runs mcpo bridge wrapping the PumpIQ stdio MCP server on port 8001.
 # Env vars: NOAA_CDO_TOKEN, SFWMD_API_KEY (optional, set in RunPod template).
 if [ -f /opt/pumpiq-mcp/dist/index.js ]; then
@@ -107,7 +147,7 @@ else
   log "PumpIQ MCP server not found — skipping"
 fi
 
-# --- 5. RegOS Sidecar API ---------------------------------------------------
+# --- 6. RegOS Sidecar API ---------------------------------------------------
 # Runs the RegOS API (regos_api + apas_bridge + scada_stream) on port 8300.
 # Env vars: OPENWEBUI_TOKEN, REGOS_MODEL_ID (set in RunPod template).
 if [ -f /opt/regos-api/api/regos_api.py ]; then
@@ -124,7 +164,7 @@ else
   log "RegOS sidecar API not found — skipping"
 fi
 
-# --- 6. Hand off to upstream Open WebUI entrypoint --------------------------
+# --- 7. Hand off to upstream Open WebUI entrypoint --------------------------
 log "handing off to upstream start.sh"
 cd /app/backend
 exec bash start.sh

@@ -196,6 +196,13 @@ RUN if [ "$USE_OLLAMA" = "true" ]; then \
     rm -rf /var/lib/apt/lists/*; \
     fi
 
+# Install cloudflared for Cloudflare Tunnel (*.apas.ai custom domains)
+RUN curl -fsSL https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb \
+    -o /tmp/cloudflared.deb && \
+    dpkg -i /tmp/cloudflared.deb && \
+    rm -f /tmp/cloudflared.deb && \
+    cloudflared --version
+
 # copy embedding weight from build
 # RUN mkdir -p /root/.cache/chroma/onnx_models/all-MiniLM-L6-v2
 # COPY --from=build /app/onnx /root/.cache/chroma/onnx_models/all-MiniLM-L6-v2/onnx
@@ -233,7 +240,8 @@ ARG BUILD_HASH
 ENV WEBUI_BUILD_VERSION=${BUILD_HASH}
 ENV DOCKER=true
 
-# APAS: bake first-boot script into the image (used by RunPod template)
+# APAS: bake first-boot script + cloudflared config template into the image
 COPY --chmod=755 runpod/start.sh /runpod/start.sh
+COPY runpod/cloudflared-config.yml /runpod/cloudflared-config.yml
 
 CMD [ "bash", "start.sh"]
