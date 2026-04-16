@@ -52,7 +52,7 @@ import uuid
 from typing import Optional
 
 import aiohttp
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import StreamingResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -83,6 +83,22 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+# --- Exception handler ------------------------------------------------------
+# Starlette's default 500 handler returns plain-text "Internal Server Error"
+# with no diagnostic info. Replace it with a JSON handler that logs the
+# traceback server-side and returns a useful payload to the caller.
+@app.exception_handler(Exception)
+async def _unhandled_exception_handler(request: Request, exc: Exception):
+    logger.exception(f"Unhandled exception in {request.method} {request.url.path}")
+    return JSONResponse(
+        status_code=500,
+        content={
+            "detail": f"{type(exc).__name__}: {exc}",
+            "path": request.url.path,
+        },
+    )
 
 
 # --- Request / Response Models -----------------------------------------------
@@ -484,50 +500,68 @@ async def list_models():
     the `model` parameter in /api/regos/query.
     """
     headers = _auth_headers()
+    all_models: list[ModelInfo] = []
 
-    async with aiohttp.ClientSession() as session:
-        # Fetch all models from Open WebUI's models API
-        # /api/models/list returns custom models with pagination
-        all_models = []
-        page = 1
+    def _extract(item: dict) -> None:
+        """Append a ModelInfo from an Open WebUI model record if it's a custom model."""
+        if not isinstance(item, dict):
+            return
+        base_model = item.get("base_model_id")
+        if not base_model:
+            return
+        meta = item.get("meta") or {}
+        all_models.append(ModelInfo(
+            id=item.get("id", ""),
+            name=item.get("name", item.get("id", "")),
+            description=meta.get("description"),
+            base_model_id=base_model,
+            is_active=item.get("is_active", True),
+            tags=meta.get("tags"),
+        ))
 
-        while True:
-            async with session.get(
-                f"{OPENWEBUI_URL}/api/models/list",
-                headers=headers,
-                params={"page": page},
-            ) as resp:
-                if resp.status != 200:
-                    error_text = await resp.text()
+    # Open WebUI's paginated custom-models endpoint is mounted at /api/v1/models
+    # (NOT /api/models — that top-level path is the flat compatibility list).
+    url = f"{OPENWEBUI_URL}/api/v1/models/list"
+
+    try:
+        async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=15)) as session:
+            page = 1
+            while True:
+                async with session.get(url, headers=headers, params={"page": page}) as resp:
+                    if resp.status != 200:
+                        error_text = await resp.text()
+                        raise HTTPException(
+                            status_code=resp.status,
+                            detail=f"Upstream {url} returned {resp.status}: {error_text[:500]}",
+                        )
+                    data = await resp.json()
+
+                # Tolerate both paginated dict ({items, total}) and flat list shapes
+                if isinstance(data, dict):
+                    items = data.get("items") or []
+                    for item in items:
+                        _extract(item)
+                    total = data.get("total", 0)
+                    if not items or page * 30 >= total:
+                        break
+                    page += 1
+                elif isinstance(data, list):
+                    for item in data:
+                        _extract(item)
+                    break
+                else:
                     raise HTTPException(
-                        status_code=resp.status,
-                        detail=f"Failed to list models: {error_text}",
+                        status_code=502,
+                        detail=f"Unexpected response shape from {url}: {type(data).__name__}",
                     )
-                data = await resp.json()
-
-            items = data.get("items", [])
-            if not items:
-                break
-
-            for item in items:
-                # Only include custom models (those with a base_model_id)
-                base_model = item.get("base_model_id")
-                if base_model:
-                    meta = item.get("meta", {})
-                    all_models.append(ModelInfo(
-                        id=item.get("id", ""),
-                        name=item.get("name", item.get("id", "")),
-                        description=meta.get("description"),
-                        base_model_id=base_model,
-                        is_active=item.get("is_active", True),
-                        tags=meta.get("tags"),
-                    ))
-
-            # Check if there are more pages
-            total = data.get("total", 0)
-            if page * 30 >= total:  # PAGE_ITEM_COUNT = 30
-                break
-            page += 1
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.exception("[MODELS] Failed to list models")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to list models: {type(e).__name__}: {e}",
+        )
 
     logger.info(f"[MODELS] Found {len(all_models)} custom models")
     return all_models
@@ -543,55 +577,92 @@ async def list_tools():
     a request. MCP tools have IDs prefixed with 'server:mcp:'.
     """
     headers = _auth_headers()
-    all_tools = []
+    all_tools: list[ToolInfo] = []
 
-    async with aiohttp.ClientSession() as session:
-        # 1. Fetch tool functions (user-defined Python tools)
-        async with session.get(
-            f"{OPENWEBUI_URL}/api/v1/tools/",
-            headers=headers,
-        ) as resp:
-            if resp.status == 200:
-                tools_data = await resp.json()
-                for tool in tools_data:
-                    meta = tool.get("meta", {})
-                    all_tools.append(ToolInfo(
-                        id=tool.get("id", ""),
-                        name=tool.get("name", tool.get("id", "")),
-                        type="function",
-                        description=meta.get("description", tool.get("content", "")[:200] if tool.get("content") else None),
-                    ))
-            else:
-                logger.warning(f"[TOOLS] Failed to fetch tool functions: HTTP {resp.status}")
-
-        # 2. Fetch tool server connections (MCP + OpenAPI servers)
-        async with session.get(
-            f"{OPENWEBUI_URL}/api/v1/tools/servers",
-            headers=headers,
-        ) as resp:
-            if resp.status == 200:
-                servers_data = await resp.json()
-                for server in servers_data:
-                    server_type = server.get("type", "openapi")
-                    server_info = server.get("info", {})
-                    server_id = server_info.get("id", "")
-
-                    if server_type == "mcp":
-                        tool_id = f"server:mcp:{server_id}"
+    try:
+        async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=15)) as session:
+            # 1. Fetch tool functions (user-defined Python tools)
+            try:
+                async with session.get(
+                    f"{OPENWEBUI_URL}/api/v1/tools/",
+                    headers=headers,
+                ) as resp:
+                    if resp.status == 200:
+                        tools_data = await resp.json()
+                        if isinstance(tools_data, list):
+                            for tool in tools_data:
+                                if not isinstance(tool, dict):
+                                    continue
+                                # meta can be explicitly null in Open WebUI responses;
+                                # `tool.get("meta", {})` would keep the None — guard with `or {}`.
+                                meta = tool.get("meta") or {}
+                                description = meta.get("description")
+                                if not description:
+                                    content = tool.get("content")
+                                    if isinstance(content, str) and content:
+                                        description = content[:200]
+                                all_tools.append(ToolInfo(
+                                    id=tool.get("id", ""),
+                                    name=tool.get("name", tool.get("id", "")),
+                                    type="function",
+                                    description=description,
+                                ))
+                        else:
+                            logger.warning(
+                                f"[TOOLS] /api/v1/tools/ returned unexpected shape: "
+                                f"{type(tools_data).__name__}"
+                            )
                     else:
-                        tool_id = f"server:{server_id}"
+                        logger.warning(f"[TOOLS] Failed to fetch tool functions: HTTP {resp.status}")
+            except Exception as inner:
+                logger.warning(f"[TOOLS] Tool functions fetch failed: {type(inner).__name__}: {inner}")
 
-                    all_tools.append(ToolInfo(
-                        id=tool_id,
-                        name=server_info.get("name", server_id),
-                        type=server_type,
-                        description=server_info.get("description"),
-                    ))
-            elif resp.status == 404:
-                # Older Open WebUI versions may not have this endpoint
-                logger.info("[TOOLS] /api/v1/tools/servers not available")
-            else:
-                logger.warning(f"[TOOLS] Failed to fetch tool servers: HTTP {resp.status}")
+            # 2. Fetch tool server connections (MCP + OpenAPI servers).
+            # This endpoint is version-dependent — treat ANY non-200 as "not available"
+            # so a missing/renamed route doesn't bring down the whole /tools response.
+            try:
+                async with session.get(
+                    f"{OPENWEBUI_URL}/api/v1/tools/servers",
+                    headers=headers,
+                ) as resp:
+                    if resp.status == 200:
+                        servers_data = await resp.json()
+                        if isinstance(servers_data, list):
+                            for server in servers_data:
+                                if not isinstance(server, dict):
+                                    continue
+                                server_type = server.get("type", "openapi")
+                                server_info = server.get("info") or {}
+                                server_id = server_info.get("id", "")
+
+                                if server_type == "mcp":
+                                    tool_id = f"server:mcp:{server_id}"
+                                else:
+                                    tool_id = f"server:{server_id}"
+
+                                all_tools.append(ToolInfo(
+                                    id=tool_id,
+                                    name=server_info.get("name", server_id),
+                                    type=server_type,
+                                    description=server_info.get("description"),
+                                ))
+                        else:
+                            logger.info(
+                                f"[TOOLS] /api/v1/tools/servers returned non-list shape "
+                                f"({type(servers_data).__name__}); skipping"
+                            )
+                    else:
+                        logger.info(f"[TOOLS] /api/v1/tools/servers not available (HTTP {resp.status})")
+            except Exception as inner:
+                logger.info(f"[TOOLS] /api/v1/tools/servers fetch failed: {type(inner).__name__}: {inner}; skipping")
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.exception("[TOOLS] Failed to list tools")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to list tools: {type(e).__name__}: {e}",
+        )
 
     logger.info(f"[TOOLS] Found {len(all_tools)} tools")
     return all_tools
