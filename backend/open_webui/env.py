@@ -837,6 +837,17 @@ if OFFLINE_MODE:
     ENABLE_VERSION_UPDATE_CHECK = False
 
 ####################################
+# GENERAL FILE LOGGING
+####################################
+
+# Set to a file path to persist general (non-audit) logs to disk with rotation.
+# Example: /workspace/logs/openwebui.log
+# Leave empty to disable file logging (logs go to stdout only).
+OWUI_LOG_FILE_PATH = os.getenv('OWUI_LOG_FILE_PATH', '')
+OWUI_LOG_FILE_ROTATION_SIZE = os.getenv('OWUI_LOG_FILE_ROTATION_SIZE', '50MB')
+OWUI_LOG_FILE_RETENTION_COUNT = int(os.getenv('OWUI_LOG_FILE_RETENTION_COUNT', '5'))
+
+####################################
 # AUDIT LOGGING
 ####################################
 

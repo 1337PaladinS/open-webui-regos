@@ -58,8 +58,26 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 # --- Logging ---------------------------------------------------------------
+from logging.handlers import RotatingFileHandler
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger("regos-api")
+
+# Persistent file logging with rotation (configured via REGOS_LOG_DIR env var)
+_regos_log_dir = os.getenv("REGOS_LOG_DIR", "")
+if _regos_log_dir:
+    os.makedirs(_regos_log_dir, exist_ok=True)
+    _file_handler = RotatingFileHandler(
+        os.path.join(_regos_log_dir, "regos-api.log"),
+        maxBytes=10 * 1024 * 1024,  # 10 MB
+        backupCount=5,
+    )
+    _file_handler.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] %(message)s"))
+    logger.addHandler(_file_handler)
+    # Also capture apas_bridge and uvicorn logs into the same file
+    for _name in ("apas_bridge", "uvicorn", "uvicorn.error", "uvicorn.access"):
+        logging.getLogger(_name).addHandler(_file_handler)
+    logger.info("File logging enabled: %s/regos-api.log (10MB rotation, 5 backups)", _regos_log_dir)
 
 # --- Configuration (env vars or defaults) -----------------------------------
 

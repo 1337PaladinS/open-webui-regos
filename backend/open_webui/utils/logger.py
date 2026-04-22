@@ -17,6 +17,9 @@ from open_webui.env import (
     ENABLE_OTEL,
     ENABLE_OTEL_LOGS,
     _LEVEL_MAP,
+    OWUI_LOG_FILE_PATH,
+    OWUI_LOG_FILE_ROTATION_SIZE,
+    OWUI_LOG_FILE_RETENTION_COUNT,
 )
 
 if TYPE_CHECKING:
@@ -164,6 +167,25 @@ def start_logger():
             format=stdout_format,
             filter=audit_filter,
         )
+    # --- General file logging (persistent, rotated) --------------------------
+    if OWUI_LOG_FILE_PATH:
+        try:
+            logger.add(
+                OWUI_LOG_FILE_PATH,
+                level=GLOBAL_LOG_LEVEL,
+                rotation=OWUI_LOG_FILE_ROTATION_SIZE,
+                retention=OWUI_LOG_FILE_RETENTION_COUNT,
+                compression='zip',
+                format=stdout_format,
+                filter=lambda record: 'auditable' not in record['extra'],
+                enqueue=True,  # thread-safe async writes
+            )
+            logger.info(f'File logging enabled: {OWUI_LOG_FILE_PATH} '
+                        f'(rotation={OWUI_LOG_FILE_ROTATION_SIZE}, retain={OWUI_LOG_FILE_RETENTION_COUNT})')
+        except Exception as e:
+            logger.error(f'Failed to initialize general log file handler: {str(e)}')
+
+    # --- Audit file logging ---------------------------------------------------
     if AUDIT_LOG_LEVEL != 'NONE' and ENABLE_AUDIT_LOGS_FILE:
         try:
             logger.add(
