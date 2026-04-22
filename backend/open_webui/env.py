@@ -844,7 +844,12 @@ if OFFLINE_MODE:
 # Example: /workspace/logs/openwebui.log
 # Leave empty to disable file logging (logs go to stdout only).
 OWUI_LOG_FILE_PATH = os.getenv('OWUI_LOG_FILE_PATH', '')
-OWUI_LOG_FILE_ROTATION_SIZE = os.getenv('OWUI_LOG_FILE_ROTATION_SIZE', '50MB')
+
+# Rotation size — accepts Loguru format like "50 MB", "100MB", "1 GB".
+# If a bare number is given (e.g. "50"), "MB" is appended automatically.
+_raw_rotation = os.getenv('OWUI_LOG_FILE_ROTATION_SIZE', '50 MB').strip()
+OWUI_LOG_FILE_ROTATION_SIZE = f'{_raw_rotation} MB' if _raw_rotation.isdigit() else _raw_rotation
+
 OWUI_LOG_FILE_RETENTION_COUNT = int(os.getenv('OWUI_LOG_FILE_RETENTION_COUNT', '5'))
 
 ####################################
