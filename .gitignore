@@ -1,3 +1,6 @@
+# APAS context files (Cowork session knowledge base — never commit)
+.apas-context/
+
 x.py
 yarn.lock
 .DS_Store
@@ -312,3 +315,45 @@ dist
 cypress/videos
 cypress/screenshots
 .vscode/settings.json
+
+# --- APAS: keep repo root clean (added 2026-04-28) ----------------------------
+# Generated documents at repo root — these belong in a shared drive or a
+# separate apas-docs repo, not in source. Subdirs (regos-docs/, docs/) are
+# intentionally NOT covered by these patterns; add them explicitly if needed.
+/*.docx
+/*.xlsx
+/*.pdf
+/*.pptx
+/*.zip
+
+# Test outputs and benchmark reports — regenerable, no value in tracking
+*_test_results.json
+*_benchmark.html
+*_benchmark_report.html
+*_ab_report.html
+ch24_ab_report.html
+chapter33-graph.dump
+*.dump
+
+# One-off scripts and harnesses at repo root (real ones live in scripts/)
+/create_copilots.sh
+/regos_chapter*_harness.py
+/chapter*_test_prompts.md
+
+# Transient handoff and summary docs
+/ADAPTATION_SUMMARY*.txt
+/*HANDOFF*.md
+
+# Mac OS / editor noise (defense in depth — .DS_Store is already covered above)
+**/.DS_Store
+.idea/
+*.swp
+*.swo
+
+# Sibling repos accidentally cloned inside this one — these are separate projects
+/APAS-chunking-dashboard
+/APAS-Legal-PDF-Chunking-Dashboard
+/APAS-Legal-PDF-Chunking-Dashboard/
+
+# Dev screenshots (move to docs/ if used in a write-up)
+/screenshots/
