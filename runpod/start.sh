@@ -28,6 +28,24 @@ LOGS_DIR="${WORKSPACE}/logs"
 
 log "boot starting — workspace=${WORKSPACE}"
 
+# --- 0. Ollama runtime safety defaults --------------------------------------
+# Prevent the 256K-context KV cache crash that detaches the GPU from the
+# container and requires a pod stop+start to recover.
+# See .apas-context/02-runpod-deployment.md "GPU Crash Root Cause" for full
+# writeup. All three use ${VAR:-default} so the RunPod template can override
+# but the safe values apply by default — image is self-protective even if
+# someone forgets to set them in the template.
+export OLLAMA_FLASH_ATTENTION="${OLLAMA_FLASH_ATTENTION:-true}"
+export OLLAMA_KV_CACHE_TYPE="${OLLAMA_KV_CACHE_TYPE:-q8_0}"
+export OLLAMA_CONTEXT_LENGTH="${OLLAMA_CONTEXT_LENGTH:-32768}"
+log "ollama runtime safety: FLASH_ATTENTION=${OLLAMA_FLASH_ATTENTION} KV_CACHE_TYPE=${OLLAMA_KV_CACHE_TYPE} CONTEXT_LENGTH=${OLLAMA_CONTEXT_LENGTH}"
+
+# Tell upstream backend/start.sh NOT to start Ollama — we start it ourselves
+# in section 6b so we can redirect its logs to a persistent file. Upstream's
+# `ollama serve &` (line 40 of backend/start.sh) has no redirect, sending
+# Ollama output to PID 1 → captured only by RunPod's ephemeral console.
+export USE_OLLAMA_DOCKER=false
+
 # --- 1. Volume layout -------------------------------------------------------
 mkdir -p "${WORKSPACE}/openwebui" "${OLLAMA_DIR}" "${LOGS_DIR}"
 
@@ -167,6 +185,20 @@ else
   log "RegOS sidecar API not found — skipping"
 fi
 
+# --- 6b. Ollama daemon (we start it here so we can capture logs) ------------
+# Upstream backend/start.sh would start Ollama with `ollama serve &` and no
+# log redirect — its stdout goes to PID 1 and is only visible in RunPod's
+# ephemeral console. We start it ourselves with redirection to a persistent
+# file so future GPU/CUDA faults are forensically recoverable.
+# USE_OLLAMA_DOCKER=false (set in section 0) prevents the duplicate launch.
+if command -v ollama >/dev/null 2>&1; then
+  log "starting ollama serve on :11434 (logs -> ${LOGS_DIR}/ollama.log)"
+  nohup ollama serve >>"${LOGS_DIR}/ollama.log" 2>&1 &
+  log "ollama started (pid $!)"
+else
+  log "ollama binary not found — skipping (Open WebUI will use OLLAMA_BASE_URL if configured)"
+fi
+
 # --- 7. Ollama model warmup (background) ------------------------------------
 # On pod restart, Ollama starts with no model in VRAM. The first user request
 # triggers a cold load (30-60s). This background script waits for Ollama to be
@@ -190,6 +222,34 @@ if [ -n "${OLLAMA_WARMUP_MODEL}" ]; then
     done
   ) &
   log "warmup script launched in background (pid $!)"
+fi
+
+# --- 7b. GPU / NVML watchdog -------------------------------------------------
+# Periodic check: if `nvidia-smi -L` fails, the GPU has detached from the
+# container (see .apas-context/02-runpod-deployment.md "GPU Crash Root Cause"
+# — known NVIDIA + runc + systemd issue, recovery requires pod stop+start).
+# Logs the event with timestamp + ollama state + device file state for
+# forensics. Quiet by design — file stays empty unless GPU is lost.
+if command -v nvidia-smi >/dev/null 2>&1; then
+  (
+    while true; do
+      if ! nvidia-smi -L >/dev/null 2>&1; then
+        ts=$(date -u +%FT%TZ)
+        {
+          echo "${ts} NVML LOST — GPU no longer visible from container"
+          echo "ollama /api/ps:"
+          curl -sf http://localhost:11434/api/ps 2>&1 || echo "  (ollama unreachable)"
+          echo "/dev/nvidia*:"
+          ls -la /dev/nvidia* 2>&1 || echo "  (no nvidia device files)"
+          echo "---"
+        } >>"${LOGS_DIR}/gpu-watchdog.log"
+      fi
+      sleep 30
+    done
+  ) &
+  log "gpu/nvml watchdog started (pid $!)"
+else
+  log "nvidia-smi not present — skipping gpu watchdog"
 fi
 
 # --- 8. Hand off to upstream Open WebUI entrypoint --------------------------
